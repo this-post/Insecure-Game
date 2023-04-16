@@ -1,0 +1,11783 @@
+﻿#include "pch-cpp.hpp"
+
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include <limits>
+
+
+template <typename T1>
+struct VirtualActionInvoker1
+{
+	typedef void (*Action)(void*, T1, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+template <typename T1>
+struct GenericVirtualActionInvoker1
+{
+	typedef void (*Action)(void*, T1, const RuntimeMethod*);
+
+	static inline void Invoke (const RuntimeMethod* method, RuntimeObject* obj, T1 p1)
+	{
+		VirtualInvokeData invokeData;
+		il2cpp_codegen_get_generic_virtual_invoke_data(method, obj, &invokeData);
+		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+template <typename T1>
+struct InterfaceActionInvoker1
+{
+	typedef void (*Action)(void*, T1, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+template <typename T1>
+struct GenericInterfaceActionInvoker1
+{
+	typedef void (*Action)(void*, T1, const RuntimeMethod*);
+
+	static inline void Invoke (const RuntimeMethod* method, RuntimeObject* obj, T1 p1)
+	{
+		VirtualInvokeData invokeData;
+		il2cpp_codegen_get_generic_interface_invoke_data(method, obj, &invokeData);
+		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+template <typename T1, typename T2>
+struct InvokerActionInvoker2;
+template <typename T1, typename T2>
+struct InvokerActionInvoker2<T1*, T2*>
+{
+	static inline void Invoke (Il2CppMethodPointer methodPtr, const RuntimeMethod* method, void* obj, T1* p1, T2* p2)
+	{
+		void* params[2] = { p1, p2 };
+		method->invoker_method(methodPtr, method, obj, params, NULL);
+	}
+};
+template <typename T1, typename T2, typename T3>
+struct InvokerActionInvoker3;
+template <typename T1, typename T2, typename T3>
+struct InvokerActionInvoker3<T1*, T2*, T3*>
+{
+	static inline void Invoke (Il2CppMethodPointer methodPtr, const RuntimeMethod* method, void* obj, T1* p1, T2* p2, T3* p3)
+	{
+		void* params[3] = { p1, p2, p3 };
+		method->invoker_method(methodPtr, method, obj, params, NULL);
+	}
+};
+
+// System.Collections.Generic.Dictionary`2<System.String,System.Collections.Generic.List`1<System.String>>
+struct Dictionary_2_t79BA378F246EFA4AD0AFFA017D788423CACA8638;
+// System.Collections.Generic.Dictionary`2<System.String,System.Int32>
+struct Dictionary_2_t5C8F46F5D57502270DD9E1DA8303B23C7FE85588;
+// System.Collections.Generic.Dictionary`2<System.String,System.Object>
+struct Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710;
+// System.Collections.Generic.Dictionary`2<System.String,PlayFab.ClientModels.SharedGroupDataRecord>
+struct Dictionary_2_t90F01328CE2DA3359FBE4ABC275E8A4A441F207E;
+// System.Collections.Generic.Dictionary`2<System.String,System.String>
+struct Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83;
+// System.Collections.Generic.Dictionary`2<System.String,System.UInt32>
+struct Dictionary_2_t3530A61C502BFE07F3ED20F8D9B10D762DB0F1D3;
+// System.Collections.Generic.Dictionary`2<System.String,PlayFab.ClientModels.UserDataRecord>
+struct Dictionary_2_tCCB825E12B065472E3DC7F9E132CF4B37C7226E2;
+// System.Collections.Generic.Dictionary`2<System.String,PlayFab.ClientModels.VirtualCurrencyRechargeTime>
+struct Dictionary_2_t980250F79C95159BFB075EFB408C944A4C31F774;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.AdCampaignAttributionModel>
+struct List_1_t84130783142757DD09A9C5474E78F0BBC3DA5B12;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.AdPlacementDetails>
+struct List_1_t352C6E0A448BDFB46B97AAFA229A67938AD7027B;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.CartItem>
+struct List_1_t07127EA14CA4D7E27B02EC1D9D7EB878FB216E51;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.CatalogItem>
+struct List_1_t97F26C489AE12E90E2AE13099DFAEF9DED0B8F0C;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.CharacterInventory>
+struct List_1_t1701865550109960DFAB6F38B2B293E04AD9947E;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.CharacterLeaderboardEntry>
+struct List_1_tF1AB119A40C4C4C0AD1C8B1D4896F87E4947DAF6;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.CharacterResult>
+struct List_1_tA848E8C0DB46B5FEF9D14E94E9501A6EDD685748;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.ContactEmailInfoModel>
+struct List_1_t3FE536429219911F92FD1C8652AC167ABC868CF9;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.FacebookInstantGamesPlayFabIdPair>
+struct List_1_t4FEA290778C8BA4594A23C022E14B6F3509259D4;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.FacebookPlayFabIdPair>
+struct List_1_t176D4CCD5CE6E641270ED2C16AC0C08031525076;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.FriendInfo>
+struct List_1_t6D8507218FAECCB535BB0160E5FF36043439BE65;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.GameCenterPlayFabIdPair>
+struct List_1_t90DF96744C9159EA1892F45C476475FD2924083D;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.GenericPlayFabIdPair>
+struct List_1_t43564592808D45D3E17CBDEBAF931C84D4025DBE;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.GenericServiceId>
+struct List_1_t9B91BE7A798D29A3000012C9037C15CFC12894DD;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.GetSegmentResult>
+struct List_1_t2006056A80F89FC3242936484F1B659BCBEC8941;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.GooglePlayFabIdPair>
+struct List_1_t71CE1D87B88DFBCA6EC3B86687C9672E590C83C7;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.GooglePlayGamesPlayFabIdPair>
+struct List_1_t37A1FDC26F6C0D9AA6B851E977ED5AA7B2C284F4;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.ItemInstance>
+struct List_1_t0EF5E12708A02CDDAB397230F7858B452CA3C264;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.ItemPurchaseRequest>
+struct List_1_t5E9A608270FE195066167121D49A36F80B9E22D5;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.KongregatePlayFabIdPair>
+struct List_1_t58E5A46A1013ABC842B46A744FB1A5B4E380256D;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.LinkedPlatformAccountModel>
+struct List_1_tE7EF529EDDDCFD9F25DC0ED76CA7446AC80E5231;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.LocationModel>
+struct List_1_t12CC81EA2CBCF5532AB9BEB0511D5085C5A3909E;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.MembershipModel>
+struct List_1_t4EAB2E936C3F5B2D0448CA03435BC4E92EF19E70;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.NintendoServiceAccountPlayFabIdPair>
+struct List_1_t347ED05405C8DA7325C059BEAD5AE9EC7DF2EF66;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.NintendoSwitchPlayFabIdPair>
+struct List_1_t2AD2009467B994C24ED420428E83761FA7746200;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.PSNAccountPlayFabIdPair>
+struct List_1_tAE008C79A7DCEF28048C143C44B2C1BC73960E45;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.PaymentOption>
+struct List_1_t75868E13E47CE7F4CD6523D1277CFCA7E6390685;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.PlayerLeaderboardEntry>
+struct List_1_tCBCB02FC07BD251869097197A968F8730C15CC46;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.PlayerStatisticVersion>
+struct List_1_tA1DE21C9669CF4509EC1A140CD7AA1978F9D2342;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.PurchaseReceiptFulfillment>
+struct List_1_t50A44D8AB20157819C0C38F1E5363424ACC9C999;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.PushNotificationRegistrationModel>
+struct List_1_t79717EC342FB9A91B12676776A0CC67F0602D5E2;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.RegionInfo>
+struct List_1_t7C8C73015E71402E06F497AA4626259BCA04D5D5;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.StatisticModel>
+struct List_1_t2D0759B3AF00A2641D8E5A4B894928F0F87F3C90;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.StatisticNameVersion>
+struct List_1_tC357ECA6F83AF178994F568AC76734126E9270B4;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.StatisticUpdate>
+struct List_1_t2BE2D151E3E6356A8F0DE6FDF222CFE019C3EE15;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.StatisticValue>
+struct List_1_tCDDF6F4596CECA134788D4BBE4D454B680279051;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.SteamPlayFabIdPair>
+struct List_1_t4DD7B6BF0DCD54F77005E9CB16B34AA3831649B5;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.StoreItem>
+struct List_1_tEA5BB14D850766BB1796E0FC9B1B68D0451A2710;
+// System.Collections.Generic.List`1<System.String>
+struct List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.SubscriptionModel>
+struct List_1_tE2B26FDEA1B16DEED1A7B1FC67EB449D05CBF115;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.TagModel>
+struct List_1_tA5C145CD860B7F495BAF017713B038BB84303E81;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.TitleNewsItem>
+struct List_1_tA1EA0E9437AE42314C4B00B909191D0B8ACDAE41;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.TradeInfo>
+struct List_1_t6A0E065076890870C4685CD54FFBA38E511AF6F8;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.TwitchPlayFabIdPair>
+struct List_1_t3E3414D8ECB90C7A51EB35E13889BD2FF0DC3D2B;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.UserOpenIdInfo>
+struct List_1_t36DD8E0BEC48B5AC224AC1F197CE5342EE4C6D62;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.ValueToDateModel>
+struct List_1_tA64A2C995850039E2DEA13FA8E06681F0F36E4FE;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.Variable>
+struct List_1_t2C5D0E860CC178448C938DBE2DA7B5EB1A8B1541;
+// System.Collections.Generic.List`1<PlayFab.ClientModels.XboxLiveAccountPlayFabIdPair>
+struct List_1_t5714EB5D583975242F3BCD3F610D00B5CAD397D2;
+// System.Delegate[]
+struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
+// System.Int32[]
+struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
+// PlayFab.ClientModels.AdRewardResults
+struct AdRewardResults_tCD3953C86B90682A93AB255F40D1B37AC745D82D;
+// System.AsyncCallback
+struct AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C;
+// PlayFab.AuthenticationModels.AuthenticateCustomIdRequest
+struct AuthenticateCustomIdRequest_tE91474227AC5EB717401D577941B21F995C8E5AC;
+// PlayFab.AuthenticationModels.AuthenticateCustomIdResult
+struct AuthenticateCustomIdResult_t4B35C3258C572E8DFCC590A16993C5BC3F934F36;
+// PlayFab.ClientModels.CollectionFilter
+struct CollectionFilter_t7CCEA28D3D380C695200F3E7739551F70D1611BF;
+// System.Delegate
+struct Delegate_t;
+// System.DelegateData
+struct DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E;
+// PlayFab.AuthenticationModels.DeleteRequest
+struct DeleteRequest_t0B9D2C009B483135923187736BB065BB74B2B1DE;
+// PlayFab.AuthenticationModels.EmptyResponse
+struct EmptyResponse_t5D64DF52A735AC35F2A14FC8A62D357FFFCA7652;
+// PlayFab.AuthenticationModels.EntityKey
+struct EntityKey_tFADF551D013525A30F2A6FB10A4FC4AF5F34278E;
+// PlayFab.ClientModels.EntityKey
+struct EntityKey_t3E92C74E390ABBE2C7066FD9D20C7E3DC948CC9C;
+// PlayFab.AuthenticationModels.EntityLineage
+struct EntityLineage_tBB3BF8ABA70636A13AE3412CE723954A429EE67E;
+// PlayFab.AuthenticationModels.EntityTokenResponse
+struct EntityTokenResponse_tCB7E0082B8ABD19A02403C6F9A438EF756D63E8B;
+// PlayFab.ClientModels.EntityTokenResponse
+struct EntityTokenResponse_tF62536B9F1B793EB4711A8394CE36934B5200D1B;
+// PlayFab.ClientModels.GameServerRegionsRequest
+struct GameServerRegionsRequest_tE52E8B0933978E8BFBF9C35B02910A09FD660FA1;
+// PlayFab.ClientModels.GameServerRegionsResult
+struct GameServerRegionsResult_t5193C393CE87A74A84E4E22E9AEA0106931A5949;
+// PlayFab.ClientModels.GenericPlayFabIdPair
+struct GenericPlayFabIdPair_t1C9E09D926074E8C215C364655EDC29EC7D5AD40;
+// PlayFab.ClientModels.GenericServiceId
+struct GenericServiceId_t845FFCE0230F5F2AC512688C09CB390784A40DCE;
+// PlayFab.ClientModels.GetAccountInfoRequest
+struct GetAccountInfoRequest_tC0147A50F81DD6B6BCC3ABD921E2930F6F43EBD4;
+// PlayFab.ClientModels.GetAccountInfoResult
+struct GetAccountInfoResult_t3749F7FEB631D14EE484694B7953E1EEC0D4997C;
+// PlayFab.ClientModels.GetAdPlacementsRequest
+struct GetAdPlacementsRequest_tE5AEC539C50FBCB69CDC269CCE806B7E12735FE1;
+// PlayFab.ClientModels.GetAdPlacementsResult
+struct GetAdPlacementsResult_tBDBA84AFBE0E8DFAA39F68B11B6C2E0ACAF58637;
+// PlayFab.ClientModels.GetCatalogItemsRequest
+struct GetCatalogItemsRequest_tCB1333AAA1EAFC89DFA7E9317A5C527C9B985553;
+// PlayFab.ClientModels.GetCatalogItemsResult
+struct GetCatalogItemsResult_tB411483732EB649E2A5C87171A9A4A9DFB9F5B7A;
+// PlayFab.ClientModels.GetCharacterDataRequest
+struct GetCharacterDataRequest_t6C05771F13C702A9045DD3B899170E5445B1766B;
+// PlayFab.ClientModels.GetCharacterDataResult
+struct GetCharacterDataResult_tF0476467F5B9B17397185F7E4DAF671E2FE8F891;
+// PlayFab.ClientModels.GetCharacterInventoryRequest
+struct GetCharacterInventoryRequest_t580ACC64D36255B5C5067A28C5CEF9EB0CF58CDD;
+// PlayFab.ClientModels.GetCharacterInventoryResult
+struct GetCharacterInventoryResult_t3B8789B3A7CDD4FB2D5412AAF4CC984E24F4BAF6;
+// PlayFab.ClientModels.GetCharacterLeaderboardRequest
+struct GetCharacterLeaderboardRequest_tAFAFAB8549BCD8A8E150271072595B60F4F1F3D3;
+// PlayFab.ClientModels.GetCharacterLeaderboardResult
+struct GetCharacterLeaderboardResult_t751226AA8B78F4B976034B2AAC6C2D2F15FCE8EE;
+// PlayFab.ClientModels.GetCharacterStatisticsRequest
+struct GetCharacterStatisticsRequest_t267D464960AF2DC89F894ACF664AA6B643EA6C34;
+// PlayFab.ClientModels.GetCharacterStatisticsResult
+struct GetCharacterStatisticsResult_t113C2ECA7AC503ED97126C8B4AF186BBE421C865;
+// PlayFab.ClientModels.GetContentDownloadUrlRequest
+struct GetContentDownloadUrlRequest_t51F47803DD20DD528B153AD2661EF0D7D4029654;
+// PlayFab.ClientModels.GetContentDownloadUrlResult
+struct GetContentDownloadUrlResult_tAFD987CB2B47A5D205B9D6780153BAB37915903E;
+// PlayFab.AuthenticationModels.GetEntityTokenRequest
+struct GetEntityTokenRequest_t058F7E73EA27EED4A7E6A49B1FF0770354FF6E69;
+// PlayFab.AuthenticationModels.GetEntityTokenResponse
+struct GetEntityTokenResponse_tD3A2F286A2716332E695130B0DDE7F9E2E0DABAC;
+// PlayFab.ClientModels.GetFriendLeaderboardAroundPlayerRequest
+struct GetFriendLeaderboardAroundPlayerRequest_tBC527554F4EA5DC6C05BF33AB959977C4D3045B4;
+// PlayFab.ClientModels.GetFriendLeaderboardAroundPlayerResult
+struct GetFriendLeaderboardAroundPlayerResult_t08E0989E5BB790AD662A7223F4C8E46218A66129;
+// PlayFab.ClientModels.GetFriendLeaderboardRequest
+struct GetFriendLeaderboardRequest_tC24921FC75AEB6D31EBAC1298F69419AF0F000B6;
+// PlayFab.ClientModels.GetFriendsListRequest
+struct GetFriendsListRequest_tD095DC6CD5427ABC61B3F315FBB7204A75739444;
+// PlayFab.ClientModels.GetFriendsListResult
+struct GetFriendsListResult_tD350BDB67572F168FA932E98CE7C34DB1CDC0E9A;
+// PlayFab.ClientModels.GetLeaderboardAroundCharacterRequest
+struct GetLeaderboardAroundCharacterRequest_tA81520118D8CC8B9D66E62B5999227D3378336B0;
+// PlayFab.ClientModels.GetLeaderboardAroundCharacterResult
+struct GetLeaderboardAroundCharacterResult_t3033C56D162F38E42CA2C368C46DA2921A493E41;
+// PlayFab.ClientModels.GetLeaderboardAroundPlayerRequest
+struct GetLeaderboardAroundPlayerRequest_tD1C22CFB0F1F778DB0B694C76C423419A476DCFC;
+// PlayFab.ClientModels.GetLeaderboardAroundPlayerResult
+struct GetLeaderboardAroundPlayerResult_tEC5343CE1F5409AC4FC072C15C5E0667D5AE763A;
+// PlayFab.ClientModels.GetLeaderboardForUsersCharactersRequest
+struct GetLeaderboardForUsersCharactersRequest_tEF2A6C42242BD951785B3C3D4F5D169DF8A25C3C;
+// PlayFab.ClientModels.GetLeaderboardForUsersCharactersResult
+struct GetLeaderboardForUsersCharactersResult_tE67CF47DF6B0C0EC8124A217495687D0ADAB2E89;
+// PlayFab.ClientModels.GetLeaderboardRequest
+struct GetLeaderboardRequest_t6815CF68472AB22065418C21DDEB07C883A41193;
+// PlayFab.ClientModels.GetLeaderboardResult
+struct GetLeaderboardResult_t03D04CF6DED866003050A495D94A7D8497AD492C;
+// PlayFab.ClientModels.GetPaymentTokenRequest
+struct GetPaymentTokenRequest_t163B16A27CC6BE1E00893D7EC3368B2D245E00DC;
+// PlayFab.ClientModels.GetPaymentTokenResult
+struct GetPaymentTokenResult_t24602A341F685C823DA42D3B4ED51299A20133F3;
+// PlayFab.ClientModels.GetPhotonAuthenticationTokenRequest
+struct GetPhotonAuthenticationTokenRequest_t9B058BB73A238036A56AAE722094C94037DEB1C5;
+// PlayFab.ClientModels.GetPhotonAuthenticationTokenResult
+struct GetPhotonAuthenticationTokenResult_t6A42DA77B0947BB88E9672ED8CBE52461CA65272;
+// PlayFab.ClientModels.GetPlayFabIDsFromFacebookIDsRequest
+struct GetPlayFabIDsFromFacebookIDsRequest_tB275AD11157BEDC861CAE56F8B8D86AC90E0051C;
+// PlayFab.ClientModels.GetPlayFabIDsFromFacebookIDsResult
+struct GetPlayFabIDsFromFacebookIDsResult_tAC717CC80C6863B47645241E22AAB0B5199A8FA1;
+// PlayFab.ClientModels.GetPlayFabIDsFromFacebookInstantGamesIdsRequest
+struct GetPlayFabIDsFromFacebookInstantGamesIdsRequest_tA75CEA154F216D5BF2C011E9DAE9BC3F8FD4E521;
+// PlayFab.ClientModels.GetPlayFabIDsFromFacebookInstantGamesIdsResult
+struct GetPlayFabIDsFromFacebookInstantGamesIdsResult_tB8681765E88FD8D1405CA301744B4EB363A1C9FB;
+// PlayFab.ClientModels.GetPlayFabIDsFromGameCenterIDsRequest
+struct GetPlayFabIDsFromGameCenterIDsRequest_t03B38A98E8957924A2A962D103A7E23CC68C6DD6;
+// PlayFab.ClientModels.GetPlayFabIDsFromGameCenterIDsResult
+struct GetPlayFabIDsFromGameCenterIDsResult_tDDDD12C3F3725D9C09FF048B818E8E7B5CADFB45;
+// PlayFab.ClientModels.GetPlayFabIDsFromGenericIDsRequest
+struct GetPlayFabIDsFromGenericIDsRequest_t5A5E297DB35E0E92333069915B7156E47A89328E;
+// PlayFab.ClientModels.GetPlayFabIDsFromGenericIDsResult
+struct GetPlayFabIDsFromGenericIDsResult_t4075E39127DC60513A34BD47FCD2EFD2220B5286;
+// PlayFab.ClientModels.GetPlayFabIDsFromGoogleIDsRequest
+struct GetPlayFabIDsFromGoogleIDsRequest_t3CAF0AB06B25DF209219981B9B370760572F0804;
+// PlayFab.ClientModels.GetPlayFabIDsFromGoogleIDsResult
+struct GetPlayFabIDsFromGoogleIDsResult_t2B5CA8F7E79F8E066B817055C73B99DA89A42893;
+// PlayFab.ClientModels.GetPlayFabIDsFromGooglePlayGamesPlayerIDsRequest
+struct GetPlayFabIDsFromGooglePlayGamesPlayerIDsRequest_t60FA7DD8AF722A7667CE69CECE1002EC1C5CAC6D;
+// PlayFab.ClientModels.GetPlayFabIDsFromGooglePlayGamesPlayerIDsResult
+struct GetPlayFabIDsFromGooglePlayGamesPlayerIDsResult_t0DC2980392783DF85E0900285356738EBE3D7CDE;
+// PlayFab.ClientModels.GetPlayFabIDsFromKongregateIDsRequest
+struct GetPlayFabIDsFromKongregateIDsRequest_t1C7F52700E5D3707F00FA27B987C6A9CDC69114D;
+// PlayFab.ClientModels.GetPlayFabIDsFromKongregateIDsResult
+struct GetPlayFabIDsFromKongregateIDsResult_t65A76AE8A7A25A3F7601EEA68688941873EAACF7;
+// PlayFab.ClientModels.GetPlayFabIDsFromNintendoServiceAccountIdsRequest
+struct GetPlayFabIDsFromNintendoServiceAccountIdsRequest_t257824B35205A9C99B0444960998E8A7E26B519A;
+// PlayFab.ClientModels.GetPlayFabIDsFromNintendoServiceAccountIdsResult
+struct GetPlayFabIDsFromNintendoServiceAccountIdsResult_tA4461DA79D669F1A17142350D6F021D1874497EF;
+// PlayFab.ClientModels.GetPlayFabIDsFromNintendoSwitchDeviceIdsRequest
+struct GetPlayFabIDsFromNintendoSwitchDeviceIdsRequest_tC3BD96F79D674CE16C3ED9ECE716DF17D45FA96D;
+// PlayFab.ClientModels.GetPlayFabIDsFromNintendoSwitchDeviceIdsResult
+struct GetPlayFabIDsFromNintendoSwitchDeviceIdsResult_tECF140F80FED44DF111B51657BFED4823A4C4145;
+// PlayFab.ClientModels.GetPlayFabIDsFromPSNAccountIDsRequest
+struct GetPlayFabIDsFromPSNAccountIDsRequest_t6215A503E62C27247574493608274CD9EAA56162;
+// PlayFab.ClientModels.GetPlayFabIDsFromPSNAccountIDsResult
+struct GetPlayFabIDsFromPSNAccountIDsResult_t24CA2B421532AC4D974235E8AB71F36C2257B35B;
+// PlayFab.ClientModels.GetPlayFabIDsFromSteamIDsRequest
+struct GetPlayFabIDsFromSteamIDsRequest_tC1E89AE77985DEA520133F183C582CDF312046F2;
+// PlayFab.ClientModels.GetPlayFabIDsFromSteamIDsResult
+struct GetPlayFabIDsFromSteamIDsResult_t688E60B8A112A704F2262F596DC78A6E5BBB98C4;
+// PlayFab.ClientModels.GetPlayFabIDsFromTwitchIDsRequest
+struct GetPlayFabIDsFromTwitchIDsRequest_t305BBF2368DEA56D8D8A39B2044CEB66BDE540A1;
+// PlayFab.ClientModels.GetPlayFabIDsFromTwitchIDsResult
+struct GetPlayFabIDsFromTwitchIDsResult_tBD52011CB3F0FF79DE2CFDA3AB748C3CCD6B011A;
+// PlayFab.ClientModels.GetPlayFabIDsFromXboxLiveIDsRequest
+struct GetPlayFabIDsFromXboxLiveIDsRequest_t73ACCAC2D27CFBE633FAAC6723E9CC12DDB035C9;
+// PlayFab.ClientModels.GetPlayFabIDsFromXboxLiveIDsResult
+struct GetPlayFabIDsFromXboxLiveIDsResult_t9D66C97D6008F3ED67EDDEE9CAC2DEE09A8DB595;
+// PlayFab.ClientModels.GetPlayerCombinedInfoRequest
+struct GetPlayerCombinedInfoRequest_tCF9E872A2AEAF953E4F96DCADD93C27B78D2DFE2;
+// PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams
+struct GetPlayerCombinedInfoRequestParams_t3917E84443A25D99911EAE3D92DD71B83391A370;
+// PlayFab.ClientModels.GetPlayerCombinedInfoResult
+struct GetPlayerCombinedInfoResult_t8FA02FB2B4EB7123C2BF5675C866BD6AA28AAB37;
+// PlayFab.ClientModels.GetPlayerCombinedInfoResultPayload
+struct GetPlayerCombinedInfoResultPayload_t6323557A81B0FF04C6B66FC1F916864A4D738BCC;
+// PlayFab.ClientModels.GetPlayerProfileRequest
+struct GetPlayerProfileRequest_t96486783D0AF60EB25563E45CFE3605488A71B5F;
+// PlayFab.ClientModels.GetPlayerProfileResult
+struct GetPlayerProfileResult_tC88B24D6F67E08246A094323793DFD03E7711447;
+// PlayFab.ClientModels.GetPlayerSegmentsRequest
+struct GetPlayerSegmentsRequest_t369D70CC3064DDB76E33223576F4A803BF1373CF;
+// PlayFab.ClientModels.GetPlayerSegmentsResult
+struct GetPlayerSegmentsResult_tBADE60D468AC3889608F56640D078B51F49C0B38;
+// PlayFab.ClientModels.GetPlayerStatisticVersionsRequest
+struct GetPlayerStatisticVersionsRequest_tC68F5AB538E6E36CC55F357CF12AE3352F238134;
+// PlayFab.ClientModels.GetPlayerStatisticVersionsResult
+struct GetPlayerStatisticVersionsResult_tC31D18B33F7A932B27073E638072846BD2BCE501;
+// PlayFab.ClientModels.GetPlayerStatisticsRequest
+struct GetPlayerStatisticsRequest_t84EB62C2DBFFD24EE3B200F275ACA9F38E456951;
+// PlayFab.ClientModels.GetPlayerStatisticsResult
+struct GetPlayerStatisticsResult_tFE1BD2E17D8A1BB108E7989512B4A16D59C2789A;
+// PlayFab.ClientModels.GetPlayerTagsRequest
+struct GetPlayerTagsRequest_tE2D18BFAFA7A80E9BF9FFC44F9CBD97F5B68A9D5;
+// PlayFab.ClientModels.GetPlayerTagsResult
+struct GetPlayerTagsResult_t14840C3B1B7D1D8D5F9886AE022D41B5EA972193;
+// PlayFab.ClientModels.GetPlayerTradesRequest
+struct GetPlayerTradesRequest_t3935D3E0B3F425F04440E46D1C19045BB8C7F78E;
+// PlayFab.ClientModels.GetPlayerTradesResponse
+struct GetPlayerTradesResponse_tDB187D9030084374BA4CF7BE5DC2756D747C80EE;
+// PlayFab.ClientModels.GetPublisherDataRequest
+struct GetPublisherDataRequest_t6FE8DFD96382EDEB5A07C6E57847EC6DC71C7EC3;
+// PlayFab.ClientModels.GetPublisherDataResult
+struct GetPublisherDataResult_t09A484540E7F707BAA87D645B1950167DFF2E381;
+// PlayFab.ClientModels.GetPurchaseRequest
+struct GetPurchaseRequest_t8AC38239A654F572F0D3C0850F48E1C2834AE1FF;
+// PlayFab.ClientModels.GetPurchaseResult
+struct GetPurchaseResult_t000F08A7E707E8866A377F417EAE58C12D11C772;
+// PlayFab.ClientModels.GetSegmentResult
+struct GetSegmentResult_tEA5188B42B6E5B1F15926AB703BCEF9CEC9B9D81;
+// PlayFab.ClientModels.GetSharedGroupDataRequest
+struct GetSharedGroupDataRequest_t9D365EF3CCF61A5BEAB96F7B6475A1750370E679;
+// PlayFab.ClientModels.GetSharedGroupDataResult
+struct GetSharedGroupDataResult_tE10462618F98D4D72B4D2A80ED15DE51E586713F;
+// PlayFab.ClientModels.GetStoreItemsRequest
+struct GetStoreItemsRequest_t795B5ADF001B53C52F13BC0031B798CBDCA5273C;
+// PlayFab.ClientModels.GetStoreItemsResult
+struct GetStoreItemsResult_t91D6A5BE358AF54C064CE69074FB2AAF16B5975A;
+// PlayFab.ClientModels.GetTimeRequest
+struct GetTimeRequest_tD244E02A36A259D9D162F39EF9850561A76D58F0;
+// PlayFab.ClientModels.GetTimeResult
+struct GetTimeResult_tEB8D1A02D5AAC653D33C64187044F9EB2795E661;
+// PlayFab.ClientModels.GetTitleDataRequest
+struct GetTitleDataRequest_t48B926031ABF3196C1C105A6AD3DF62FD3EE8B50;
+// PlayFab.ClientModels.GetTitleDataResult
+struct GetTitleDataResult_tBA9144A60C32E90FDDC5373F749CB2D21B6F7238;
+// PlayFab.ClientModels.GetTitleNewsRequest
+struct GetTitleNewsRequest_tD0FFE3851DEFDE35C3762D52999D333ED47CA828;
+// PlayFab.ClientModels.GetTitleNewsResult
+struct GetTitleNewsResult_t16E7083D187D4161DF3A0FA73BBA9569FC099DD4;
+// PlayFab.ClientModels.GetTitlePublicKeyRequest
+struct GetTitlePublicKeyRequest_tD55EB65A4BE9FE8BBA552A042E4D38D280AB0E3C;
+// PlayFab.ClientModels.GetTitlePublicKeyResult
+struct GetTitlePublicKeyResult_tB6D105C0270A7A373FF154F17FC5770C8F824392;
+// PlayFab.ClientModels.GetTradeStatusRequest
+struct GetTradeStatusRequest_t835601707B901582F75653879F3219C882F40F0B;
+// PlayFab.ClientModels.GetTradeStatusResponse
+struct GetTradeStatusResponse_t8F2A08C0A8E34CDD08950EAFC3AB65C4DA42FDAA;
+// PlayFab.ClientModels.GetUserDataRequest
+struct GetUserDataRequest_tCAF1E6FC4FE7E58BE0D3BDFE78230975CC08E501;
+// PlayFab.ClientModels.GetUserDataResult
+struct GetUserDataResult_t68AF037F9916162542CE2C905DFF0B0C935FC48E;
+// PlayFab.ClientModels.GetUserInventoryRequest
+struct GetUserInventoryRequest_t66955459A9F59280CDF3A98A5124052852A05BF2;
+// PlayFab.ClientModels.GetUserInventoryResult
+struct GetUserInventoryResult_t28E377BC480EF10C504D613456F8A7BE1F7E4B16;
+// PlayFab.ClientModels.GooglePlayFabIdPair
+struct GooglePlayFabIdPair_t72F94EC86476E7F6EAFA33E558822FDC8BB09D6F;
+// PlayFab.ClientModels.GooglePlayGamesPlayFabIdPair
+struct GooglePlayGamesPlayFabIdPair_tF60353DDD4A5EF68B950127EDEE1C1F5BA55653A;
+// PlayFab.ClientModels.GrantCharacterToUserRequest
+struct GrantCharacterToUserRequest_tE6E4139743D537B38EB1AB3AD9255F8FBF795ADB;
+// PlayFab.ClientModels.GrantCharacterToUserResult
+struct GrantCharacterToUserResult_t995B7F5EBD2955C6EFE4CC4C94DC33615D359D07;
+// System.IAsyncResult
+struct IAsyncResult_t7B9B5A0ECB35DCEC31B8A8122C37D687369253B5;
+// PlayFab.ClientModels.ItemInstance
+struct ItemInstance_tC84FDC49100051713F8BA4C6359C4DB48B3D0341;
+// PlayFab.ClientModels.ItemPurchaseRequest
+struct ItemPurchaseRequest_t92F81220686869A5DC3826889DB6091A48354C3B;
+// PlayFab.ClientModels.KongregatePlayFabIdPair
+struct KongregatePlayFabIdPair_tC4BC594035C641891C2BDBFBF907F1E86DB0E75E;
+// PlayFab.ClientModels.LinkAndroidDeviceIDRequest
+struct LinkAndroidDeviceIDRequest_tE370B4C43A2294AB1C93DB77F646956845E25F7D;
+// PlayFab.ClientModels.LinkAndroidDeviceIDResult
+struct LinkAndroidDeviceIDResult_t4C5F04B8430158F23DC644214A8D337824619911;
+// PlayFab.ClientModels.LinkAppleRequest
+struct LinkAppleRequest_tD84E9A0D6F6A8B62D3EE0CDA0B2796D05E91F5D1;
+// PlayFab.ClientModels.LinkCustomIDRequest
+struct LinkCustomIDRequest_t05FE277ACC4DF9F596B9B1364C7A9495AE97C3B8;
+// PlayFab.ClientModels.LinkCustomIDResult
+struct LinkCustomIDResult_t39271A15418FC2562F54CEC9A5C4448BB210D866;
+// PlayFab.ClientModels.LinkFacebookAccountRequest
+struct LinkFacebookAccountRequest_t88C4C375D233221A98D00DB50A9EFCD1B2D5478E;
+// PlayFab.ClientModels.LinkFacebookAccountResult
+struct LinkFacebookAccountResult_tF6DBE4CFEA793A6203945E018381F22047971081;
+// PlayFab.ClientModels.LinkFacebookInstantGamesIdRequest
+struct LinkFacebookInstantGamesIdRequest_t94A3B57DBAFA66C5760F0058BC521BFE1FC6B5D0;
+// PlayFab.ClientModels.LinkFacebookInstantGamesIdResult
+struct LinkFacebookInstantGamesIdResult_t1AAC9421C0C5BC3891EF7EBFBE208AC625FCCA96;
+// PlayFab.ClientModels.LinkGameCenterAccountRequest
+struct LinkGameCenterAccountRequest_tDBED4CD7330F5409D950EBEDF8FA2C8DDC546911;
+// PlayFab.ClientModels.LinkGameCenterAccountResult
+struct LinkGameCenterAccountResult_t647D19A9B79502ED157221910A1614E3F1D7D3BF;
+// PlayFab.ClientModels.LinkGoogleAccountRequest
+struct LinkGoogleAccountRequest_tA5203EA33908B8A3D2394CE795AA88DB598574DB;
+// PlayFab.ClientModels.LinkGoogleAccountResult
+struct LinkGoogleAccountResult_t596A08B9745E145CEFDADFA0E56063D3D00CBC78;
+// PlayFab.ClientModels.LinkGooglePlayGamesServicesAccountRequest
+struct LinkGooglePlayGamesServicesAccountRequest_t4270383DFD5F35D6B2F64FD7A991FC688AE6526C;
+// PlayFab.ClientModels.LinkGooglePlayGamesServicesAccountResult
+struct LinkGooglePlayGamesServicesAccountResult_tC37A276A9BFCA6363605956D660B3EE9632C3388;
+// PlayFab.ClientModels.LinkIOSDeviceIDRequest
+struct LinkIOSDeviceIDRequest_t3AD9F66E46AEC025EC5A5BDB1498F79BBF019175;
+// PlayFab.ClientModels.LinkIOSDeviceIDResult
+struct LinkIOSDeviceIDResult_tE942B412D48690F2CC586B2CC855EF661C95B4FC;
+// PlayFab.ClientModels.LinkKongregateAccountRequest
+struct LinkKongregateAccountRequest_t7799A47E023C84C2A094468997A37F9ECB7BCEC7;
+// PlayFab.ClientModels.LinkKongregateAccountResult
+struct LinkKongregateAccountResult_tAFE7D9B9BCC18083B4CDB5CFA61F960DAADD6BF8;
+// PlayFab.ClientModels.LinkNintendoServiceAccountRequest
+struct LinkNintendoServiceAccountRequest_tABB5C3BEAA7E4BD9C66753EB8E55A5D3D684DB6E;
+// PlayFab.ClientModels.LinkNintendoSwitchDeviceIdRequest
+struct LinkNintendoSwitchDeviceIdRequest_t797A16D441BB21AFDE5341E54954A1D992D4AF4C;
+// PlayFab.ClientModels.LinkNintendoSwitchDeviceIdResult
+struct LinkNintendoSwitchDeviceIdResult_t0EB5797B85E01D6D7A5D8059F6D041D1F14E645D;
+// PlayFab.ClientModels.LinkOpenIdConnectRequest
+struct LinkOpenIdConnectRequest_tF040FD89F84BACC7AC3E00A111457E05F413FC7C;
+// PlayFab.ClientModels.LinkPSNAccountRequest
+struct LinkPSNAccountRequest_tAD86DDC09E0704F6AF0489B4EE66B335D505C2CF;
+// PlayFab.ClientModels.LinkPSNAccountResult
+struct LinkPSNAccountResult_tD44785276C870B20241E65BFFA14D698BEC049D7;
+// PlayFab.ClientModels.LinkSteamAccountRequest
+struct LinkSteamAccountRequest_tBB6665529569D87319DF664D7EB1E444CE2D89E4;
+// PlayFab.ClientModels.LinkSteamAccountResult
+struct LinkSteamAccountResult_tAFCB32B4FB5C004D500CA25655AE4AB3446277D5;
+// PlayFab.ClientModels.LinkTwitchAccountRequest
+struct LinkTwitchAccountRequest_tDAAC83284F1560A202F78A1BADF487F9FD382A17;
+// PlayFab.ClientModels.LinkTwitchAccountResult
+struct LinkTwitchAccountResult_tC185948589359A8546F92AA06575DA6B24661EB8;
+// PlayFab.ClientModels.LinkXboxAccountRequest
+struct LinkXboxAccountRequest_tFE99D5422A8736251BF9D92D53D93F3CEB3EAF8E;
+// PlayFab.ClientModels.LinkXboxAccountResult
+struct LinkXboxAccountResult_tD83C17194A9B9F7222DE65604C58DE3B9AA49FDF;
+// PlayFab.ClientModels.LinkedPlatformAccountModel
+struct LinkedPlatformAccountModel_t1DA79542E08AB1A8DD40A2001C3A2A88CD136F25;
+// PlayFab.ClientModels.ListUsersCharactersRequest
+struct ListUsersCharactersRequest_tCF5408D5CA5D53886FC36DB99B07C82075EDCCD5;
+// PlayFab.ClientModels.ListUsersCharactersResult
+struct ListUsersCharactersResult_tCD7FD4A1E18258556F000EC213622028E1DE9AA3;
+// PlayFab.ClientModels.LocationModel
+struct LocationModel_t1DFBA1A2A4966887BCE78D3536B90613C246595A;
+// PlayFab.ClientModels.LogStatement
+struct LogStatement_t1817F7333FB8B5A212EC3EE93C17A94A92FD4D1E;
+// PlayFab.ClientModels.LoginResult
+struct LoginResult_tA8FAC976BB9AC98F055FB1BFFE740D450A957A8C;
+// PlayFab.ClientModels.LoginWithAndroidDeviceIDRequest
+struct LoginWithAndroidDeviceIDRequest_t3A4C3D2EEA546EC82D997D95542CE9B57F59023B;
+// PlayFab.ClientModels.LoginWithAppleRequest
+struct LoginWithAppleRequest_t432803D69AD4E022823FD67331F9E6725929F600;
+// PlayFab.ClientModels.LoginWithCustomIDRequest
+struct LoginWithCustomIDRequest_t9E1E078798737A8AD48B46EC9C0AA65092C8B05B;
+// PlayFab.ClientModels.LoginWithEmailAddressRequest
+struct LoginWithEmailAddressRequest_t0D4A01BAE6DE0702B2BF796303B84ABDF575AD49;
+// PlayFab.ClientModels.LoginWithFacebookInstantGamesIdRequest
+struct LoginWithFacebookInstantGamesIdRequest_t61431BD47D89224A04BD0D9D83D8641A7A605703;
+// PlayFab.ClientModels.LoginWithFacebookRequest
+struct LoginWithFacebookRequest_t9CA5170513098AA9DF2E2EE80A70D55C156DF5A3;
+// PlayFab.ClientModels.LoginWithGameCenterRequest
+struct LoginWithGameCenterRequest_t47DCB198B2366A518C7480ED1BEBF1306BBAD543;
+// PlayFab.ClientModels.LoginWithGoogleAccountRequest
+struct LoginWithGoogleAccountRequest_tF51EDE37EB36FFA7B25883424A588876FE031120;
+// PlayFab.ClientModels.LoginWithGooglePlayGamesServicesRequest
+struct LoginWithGooglePlayGamesServicesRequest_t10AFE0373B76927851BE9A1025302FD2CF44E0DA;
+// PlayFab.ClientModels.LoginWithIOSDeviceIDRequest
+struct LoginWithIOSDeviceIDRequest_tF8F87A2ED958950DD3929AB8ECFC6E7667F29A4F;
+// PlayFab.ClientModels.LoginWithKongregateRequest
+struct LoginWithKongregateRequest_t4AE23CFD1182E89A0CA8E547BB38E4ADA57B0FA5;
+// PlayFab.ClientModels.LoginWithNintendoServiceAccountRequest
+struct LoginWithNintendoServiceAccountRequest_tFA98602742349FC8F68FA91185CCCB322668DFB5;
+// PlayFab.ClientModels.LoginWithNintendoSwitchDeviceIdRequest
+struct LoginWithNintendoSwitchDeviceIdRequest_t7D332789DC3FA24808B86CCB9C41A4400FD50C17;
+// PlayFab.ClientModels.LoginWithOpenIdConnectRequest
+struct LoginWithOpenIdConnectRequest_tA8725EDACB83059224A03B9091ADC186E9DF2BBE;
+// PlayFab.ClientModels.LoginWithPSNRequest
+struct LoginWithPSNRequest_tB200DF6D65ABEF9B55227AFC0648EA145B54012C;
+// PlayFab.ClientModels.LoginWithPlayFabRequest
+struct LoginWithPlayFabRequest_t40758FC97BA27124A414398D558989E3ADC1BEDB;
+// PlayFab.ClientModels.LoginWithSteamRequest
+struct LoginWithSteamRequest_t394F4FD07286ED05DDAB471F812FB6A471BF86C2;
+// PlayFab.ClientModels.LoginWithTwitchRequest
+struct LoginWithTwitchRequest_t015A772F0B539E3986E1DD2B0CA61F420BF436F1;
+// PlayFab.ClientModels.LoginWithXboxRequest
+struct LoginWithXboxRequest_tE59BFE96922B056F69FC761526E8EEFD9588D179;
+// PlayFab.ClientModels.MatchmakeRequest
+struct MatchmakeRequest_t5DF656F1E5EDDFEDAFBB4F95B4E6EB09BB209681;
+// PlayFab.ClientModels.MatchmakeResult
+struct MatchmakeResult_t91A455F1630FADD17929926ADFF7FDF7649DF3F2;
+// PlayFab.ClientModels.MembershipModel
+struct MembershipModel_t3C7C2B88E0688100FF4FE3F8DAF8D90E3D2FCEF2;
+// System.Reflection.MethodInfo
+struct MethodInfo_t;
+// PlayFab.ClientModels.MicrosoftStorePayload
+struct MicrosoftStorePayload_t06065D771429807DA9B8ADEE81B6E2219795C25E;
+// PlayFab.ClientModels.ModifyUserVirtualCurrencyResult
+struct ModifyUserVirtualCurrencyResult_tF894EC7B9796D1FAF729AFE3B51659784FDE7EF1;
+// PlayFab.ClientModels.NameIdentifier
+struct NameIdentifier_tC463953295AF9517FB179D31BED70D412C5D144C;
+// PlayFab.ClientModels.NintendoServiceAccountPlayFabIdPair
+struct NintendoServiceAccountPlayFabIdPair_t31B8D8B6905F156B3F4B095613ADB0F1D4BCA0A9;
+// PlayFab.ClientModels.NintendoSwitchPlayFabIdPair
+struct NintendoSwitchPlayFabIdPair_t687B2A5829A336F37205F96BD81A5CA589CC1526;
+// PlayFab.ClientModels.OpenTradeRequest
+struct OpenTradeRequest_tA7910CAAFB97AB8643D279093230157EEA5CC4EE;
+// PlayFab.ClientModels.OpenTradeResponse
+struct OpenTradeResponse_t2CE0A33BD5DC0C64A948DFF6D5A513FAC50C1037;
+// PlayFab.ClientModels.PSNAccountPlayFabIdPair
+struct PSNAccountPlayFabIdPair_t5F266A64CD3768182B54DF5D9B1D5E058DF33865;
+// PlayFab.ClientModels.PayForPurchaseRequest
+struct PayForPurchaseRequest_t5BFF248C9CB1FF6730145725A875A8328B4FB1A6;
+// PlayFab.ClientModels.PayForPurchaseResult
+struct PayForPurchaseResult_t5E1B46A891BDD3D780DC2009E8922EA88BD69FFD;
+// PlayFab.ClientModels.PaymentOption
+struct PaymentOption_t1D243751621312CFA26FA5E4B3D4AB9480938CDF;
+// PlayFab.PlayFabAuthenticationContext
+struct PlayFabAuthenticationContext_t221B79722A7A90BF01896A080CB0488FC0A9971A;
+// PlayFab.SharedModels.PlayFabBaseModel
+struct PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E;
+// PlayFab.PlayFabError
+struct PlayFabError_t085A18640C2631872C3888388E2BC667C7B09C23;
+// PlayFab.SharedModels.PlayFabLoginResultCommon
+struct PlayFabLoginResultCommon_t564463F743BE39995D6BBD360F222C16FB74AA47;
+// PlayFab.SharedModels.PlayFabRequestCommon
+struct PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D;
+// PlayFab.SharedModels.PlayFabResultCommon
+struct PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40;
+// PlayFab.ClientModels.PlayStation5Payload
+struct PlayStation5Payload_tAFC96038092FCE7BE6749D798C481EBDA45A174D;
+// PlayFab.ClientModels.PlayerLeaderboardEntry
+struct PlayerLeaderboardEntry_tCFF8F31BA39EE8CAD577AC4938DDE619E6EE66A9;
+// PlayFab.ClientModels.PlayerProfileModel
+struct PlayerProfileModel_tEF2149D2652DD0B25B5250F8037A276739D1414A;
+// PlayFab.ClientModels.PlayerProfileViewConstraints
+struct PlayerProfileViewConstraints_t2D0216E216CDBEDAD806C569D17795B60FB7C550;
+// PlayFab.ClientModels.PlayerStatisticVersion
+struct PlayerStatisticVersion_tC0C529357C21A063B8C3F4FBBC5D412EAA3C7372;
+// PlayFab.ClientModels.PurchaseItemRequest
+struct PurchaseItemRequest_tE070606E4EAD464357558E48126C4734D2F7C506;
+// PlayFab.ClientModels.PurchaseItemResult
+struct PurchaseItemResult_t0F98838DD4B9DD95771031D96FD60D88597D764D;
+// PlayFab.ClientModels.PurchaseReceiptFulfillment
+struct PurchaseReceiptFulfillment_t186B9940CFED13815A2AEAC5253A2C9D4F9E6B50;
+// PlayFab.ClientModels.PushNotificationRegistrationModel
+struct PushNotificationRegistrationModel_t35ACE788D79DDE73C44F51819BBAC6214F267B26;
+// PlayFab.ClientModels.RedeemCouponRequest
+struct RedeemCouponRequest_t5675549F914957105DF0F1092BF4D9B9C2C8D1F2;
+// PlayFab.ClientModels.RedeemCouponResult
+struct RedeemCouponResult_tF194CA6CCFDD39047866D5A32510C64B4F1C45E7;
+// PlayFab.ClientModels.RefreshPSNAuthTokenRequest
+struct RefreshPSNAuthTokenRequest_tAF960E83D3F69FFE09A341DF66DE48E0DE3D47A9;
+// PlayFab.ClientModels.RegionInfo
+struct RegionInfo_t742920284384CB9F5B77AA896624869218F923F8;
+// PlayFab.ClientModels.RegisterForIOSPushNotificationRequest
+struct RegisterForIOSPushNotificationRequest_tAE58EB678D907A970C184A4A2FD2E9E75B3BE391;
+// PlayFab.ClientModels.RegisterForIOSPushNotificationResult
+struct RegisterForIOSPushNotificationResult_t3590642F3B094B5C4E1D094CBBC71D264CF28A8C;
+// PlayFab.ClientModels.RegisterPlayFabUserRequest
+struct RegisterPlayFabUserRequest_t9CCD4AA2142B94AA94D4F809486BB925E4EBEC4D;
+// PlayFab.ClientModels.RegisterPlayFabUserResult
+struct RegisterPlayFabUserResult_t9F7AF721561FB1E6C2D0F04CF3E38EB80F39300E;
+// PlayFab.ClientModels.RemoveContactEmailRequest
+struct RemoveContactEmailRequest_tE33A6A7E8163B419221F72305702BE6A72B5D058;
+// PlayFab.ClientModels.RemoveContactEmailResult
+struct RemoveContactEmailResult_t47A953EF532A4E6723358B699AD09F5B209280AE;
+// PlayFab.ClientModels.RemoveFriendRequest
+struct RemoveFriendRequest_t65DE6114B83F043B5D00AA3EADA456C1A640ED0C;
+// PlayFab.ClientModels.RemoveFriendResult
+struct RemoveFriendResult_t4D4C4DC05B609FF8C9F5758656C3ED678646A4A8;
+// PlayFab.ClientModels.RemoveGenericIDRequest
+struct RemoveGenericIDRequest_t334BD9293954FD10CECEF754B959B6CB03873601;
+// PlayFab.ClientModels.RemoveGenericIDResult
+struct RemoveGenericIDResult_tEE02A4C18E83ACE22323711023D49D1EEDC93D02;
+// PlayFab.ClientModels.RemoveSharedGroupMembersRequest
+struct RemoveSharedGroupMembersRequest_t672B79755C84F7963F0197AC7F649DFB47BE62D4;
+// PlayFab.ClientModels.RemoveSharedGroupMembersResult
+struct RemoveSharedGroupMembersResult_t9F15AE0E2590B802799C461D364AEC2F41C87EF3;
+// PlayFab.ClientModels.ReportAdActivityRequest
+struct ReportAdActivityRequest_tF280F9F16376E09CA24C97A15524A57355362D19;
+// PlayFab.ClientModels.ReportAdActivityResult
+struct ReportAdActivityResult_t1C560F4635F86A0C40F5325FE39CB7FBE1DE1F9A;
+// PlayFab.ClientModels.ReportPlayerClientRequest
+struct ReportPlayerClientRequest_t85D945417F8AD84B449F05E00BAE283608DDBDA4;
+// PlayFab.ClientModels.ReportPlayerClientResult
+struct ReportPlayerClientResult_t241E6D96E47D8719B56EFC690FD0F6CB76205BF8;
+// PlayFab.ClientModels.RestoreIOSPurchasesRequest
+struct RestoreIOSPurchasesRequest_t000097A3FD2F14C3F4F4DEBA527033F0BD3EF56E;
+// PlayFab.ClientModels.RestoreIOSPurchasesResult
+struct RestoreIOSPurchasesResult_tEA0A385A03BA6A9080C82D126B97BB62C9C22375;
+// PlayFab.ClientModels.RewardAdActivityRequest
+struct RewardAdActivityRequest_tE9341F9C11C66589454A65BB945DD2E86C078BB7;
+// PlayFab.ClientModels.RewardAdActivityResult
+struct RewardAdActivityResult_t94A00EAF9EE41752255A4673EF0E25B45E51117A;
+// PlayFab.ClientModels.ScriptExecutionError
+struct ScriptExecutionError_t15D016342B1D7DCF38FB8401037A2E748BF58785;
+// PlayFab.ClientModels.SendAccountRecoveryEmailRequest
+struct SendAccountRecoveryEmailRequest_t175EB9B99FA2F2D019EA567249BBAA92033021B1;
+// PlayFab.ClientModels.SendAccountRecoveryEmailResult
+struct SendAccountRecoveryEmailResult_tD397DE2B4C711854DDCC6CD65878726990E83350;
+// PlayFab.ClientModels.SetFriendTagsRequest
+struct SetFriendTagsRequest_tB1697AECA1FFB648EF0E49EE1E32A8DFF64F1172;
+// PlayFab.ClientModels.SetFriendTagsResult
+struct SetFriendTagsResult_t3FB32FF008D7F79F4468EA6DA4C920327F49E13F;
+// PlayFab.ClientModels.SetPlayerSecretRequest
+struct SetPlayerSecretRequest_t155B28C6752FE84EE84726EECAB2789B76F80CFE;
+// PlayFab.ClientModels.SetPlayerSecretResult
+struct SetPlayerSecretResult_t0F0A2B0A39F5311D0B7DB58A08704B54D5E78F8C;
+// PlayFab.ClientModels.SharedGroupDataRecord
+struct SharedGroupDataRecord_t6EABB17CCB23C3B14A9F2A29E1C0B06308DE22EB;
+// PlayFab.ClientModels.StartPurchaseRequest
+struct StartPurchaseRequest_tC40028ED224835E5869E8741528AFD27A5B3B497;
+// PlayFab.ClientModels.StartPurchaseResult
+struct StartPurchaseResult_t5AE695449ACBCC8CA93186640E203802B1E0B70F;
+// PlayFab.ClientModels.StatisticModel
+struct StatisticModel_tB2ED71209F882A61E023E593485AC3CBE7354CBD;
+// PlayFab.ClientModels.StatisticNameVersion
+struct StatisticNameVersion_t6435F7DD4C0291DA496DE0389D2E5A4FC161BCDE;
+// PlayFab.ClientModels.StatisticUpdate
+struct StatisticUpdate_tFF1ABF7B0BF17840014AAC48D4470605441B5D34;
+// PlayFab.ClientModels.StatisticValue
+struct StatisticValue_t41732BCF004BE4378AE04A44F6410E992855FB24;
+// PlayFab.ClientModels.SteamPlayFabIdPair
+struct SteamPlayFabIdPair_tFECA16BBF2AA75081EC51F9BF796DB77F7522E18;
+// PlayFab.ClientModels.StoreItem
+struct StoreItem_tADBFD4037B803EBC8EC6E38BA1FC7229FB63E71F;
+// PlayFab.ClientModels.StoreMarketingModel
+struct StoreMarketingModel_t4AF761FD531E9A70AC9BF74380D0485A2F5DE95F;
+// System.String
+struct String_t;
+// System.Text.StringBuilder
+struct StringBuilder_t;
+// PlayFab.ClientModels.SubscriptionModel
+struct SubscriptionModel_tE2460B7EA43E4F7761842C8E495DA045317FE5FF;
+// PlayFab.ClientModels.SubtractUserVirtualCurrencyRequest
+struct SubtractUserVirtualCurrencyRequest_t9EF5A4F8756E1C85E4DC210B659F064376422BD5;
+// PlayFab.ClientModels.TagModel
+struct TagModel_tA73EAC7F011DDE0C0433781A0E207DEFD3971740;
+// PlayFab.ClientModels.TitleNewsItem
+struct TitleNewsItem_t3FF911671D0CBBBC29FE3B156BD2CBFAA8E0E5B7;
+// PlayFab.ClientModels.TradeInfo
+struct TradeInfo_tBE9088C4A58089296E230210566577FD2AEEEE07;
+// PlayFab.ClientModels.TreatmentAssignment
+struct TreatmentAssignment_t3AAA5D796B6551BDF72B95A132BE5FE93F1FD99A;
+// PlayFab.ClientModels.TwitchPlayFabIdPair
+struct TwitchPlayFabIdPair_tF6965786D5E8E95243A21420C5A3CAF7A1A50320;
+// PlayFab.ClientModels.UnlinkAndroidDeviceIDRequest
+struct UnlinkAndroidDeviceIDRequest_tDEB5EEAC89390106CECE2C514E3B9FF6F9F72D9E;
+// PlayFab.ClientModels.UnlinkAndroidDeviceIDResult
+struct UnlinkAndroidDeviceIDResult_t1A883DF782BD48500607B480852AA2537F4F3327;
+// PlayFab.ClientModels.UnlinkAppleRequest
+struct UnlinkAppleRequest_t92C5AB52E8736CCA3D8DE4841B1BDB8F7FB83222;
+// PlayFab.ClientModels.UnlinkCustomIDRequest
+struct UnlinkCustomIDRequest_t46E020211057E7653AFE02D26F44F9E130D30521;
+// PlayFab.ClientModels.UnlinkCustomIDResult
+struct UnlinkCustomIDResult_t233F6432A9B50B2D68E3C568F574F4FA2D7BB60C;
+// PlayFab.ClientModels.UnlinkFacebookAccountRequest
+struct UnlinkFacebookAccountRequest_tA7E318BFED129D19D58FA04FD6FBF6B7ADF85928;
+// PlayFab.ClientModels.UnlinkFacebookAccountResult
+struct UnlinkFacebookAccountResult_t64890736BCF70AA84E14FBABA25758E9554324B1;
+// PlayFab.ClientModels.UnlinkFacebookInstantGamesIdRequest
+struct UnlinkFacebookInstantGamesIdRequest_t4B257DB75AFEEF708F6D5AC2C3BB1D09740F6C9C;
+// PlayFab.ClientModels.UnlinkFacebookInstantGamesIdResult
+struct UnlinkFacebookInstantGamesIdResult_tA3C0ECA8433D6677C4BB580C8589346222E32D43;
+// PlayFab.ClientModels.UnlinkGameCenterAccountRequest
+struct UnlinkGameCenterAccountRequest_t9596E9FC71D85C48FFF699F2AD829A3D0DEA901A;
+// PlayFab.ClientModels.UnlinkGameCenterAccountResult
+struct UnlinkGameCenterAccountResult_t6F0C5BCEB35453E4CA8E05A31D654A782BC5E95F;
+// PlayFab.ClientModels.UnlinkGoogleAccountRequest
+struct UnlinkGoogleAccountRequest_t67E73532283D56ED37F1E9F1289FDE4BE84967CC;
+// PlayFab.ClientModels.UnlinkGoogleAccountResult
+struct UnlinkGoogleAccountResult_t6622EFB999584E5DEC5DEB93D2935D979FBE846C;
+// PlayFab.ClientModels.UnlinkGooglePlayGamesServicesAccountRequest
+struct UnlinkGooglePlayGamesServicesAccountRequest_t2F717932AF82E7668AA9724038C2A9F2229F7872;
+// PlayFab.ClientModels.UnlinkGooglePlayGamesServicesAccountResult
+struct UnlinkGooglePlayGamesServicesAccountResult_t5C6E7A2299B43C75BA9B8680100BF966FCE31270;
+// PlayFab.ClientModels.UnlinkIOSDeviceIDRequest
+struct UnlinkIOSDeviceIDRequest_t1EE4B2AFE9CE7D0849D68EF258CADFB476EA53CA;
+// PlayFab.ClientModels.UnlinkIOSDeviceIDResult
+struct UnlinkIOSDeviceIDResult_t4596D43010D9025839A9679C5DB058CBBF794AE9;
+// PlayFab.ClientModels.UnlinkKongregateAccountRequest
+struct UnlinkKongregateAccountRequest_t2FEFF816F15AEF0C241926B63004694A5FC6FD87;
+// PlayFab.ClientModels.UnlinkKongregateAccountResult
+struct UnlinkKongregateAccountResult_tAB392A5AFFF5D1FDF901F514F11D3AD3B6021CC8;
+// PlayFab.ClientModels.UnlinkNintendoServiceAccountRequest
+struct UnlinkNintendoServiceAccountRequest_t06B51402344303DA405A305B5B1F9A54C9145C84;
+// PlayFab.ClientModels.UnlinkNintendoSwitchDeviceIdRequest
+struct UnlinkNintendoSwitchDeviceIdRequest_t35F44CBF87CFC802E5C568E898E4E203B3659A11;
+// PlayFab.ClientModels.UnlinkNintendoSwitchDeviceIdResult
+struct UnlinkNintendoSwitchDeviceIdResult_tC9E5AD9A628AFDDD3DC1E3A2463C9A53307DFCD8;
+// PlayFab.ClientModels.UnlinkOpenIdConnectRequest
+struct UnlinkOpenIdConnectRequest_t307BC82317C8730161E40EFDED957CF2A68E0799;
+// PlayFab.ClientModels.UnlinkPSNAccountRequest
+struct UnlinkPSNAccountRequest_t1060A17C5A70C60683D7F133E1ABBC8408A63EE3;
+// PlayFab.ClientModels.UnlinkPSNAccountResult
+struct UnlinkPSNAccountResult_t72E4629A6FCA43E0C5BAA9E2EE059A5E756096E7;
+// PlayFab.ClientModels.UnlinkSteamAccountRequest
+struct UnlinkSteamAccountRequest_t2876EA45B25D6F400BBB61DE5AC76A15EBAF02AA;
+// PlayFab.ClientModels.UnlinkSteamAccountResult
+struct UnlinkSteamAccountResult_t0B0222CF28C08B53406C9B62FBA815C7C3AEE74E;
+// PlayFab.ClientModels.UnlinkTwitchAccountRequest
+struct UnlinkTwitchAccountRequest_tE5BE128D46C7D5CCEE7B97DEEEC5CA2526CFCCE2;
+// PlayFab.ClientModels.UnlinkTwitchAccountResult
+struct UnlinkTwitchAccountResult_tD82751FFBDC681DE0BB88D43A2C9298CCF0D8AA4;
+// PlayFab.ClientModels.UnlinkXboxAccountRequest
+struct UnlinkXboxAccountRequest_t8E27CE0799DF36ECD984F4ED8DE17ED3657AE57E;
+// PlayFab.ClientModels.UnlinkXboxAccountResult
+struct UnlinkXboxAccountResult_tE2D65912D4AB4D5E32CA3561994FF8654DE07F7E;
+// PlayFab.ClientModels.UnlockContainerInstanceRequest
+struct UnlockContainerInstanceRequest_tB7E4282214EEE56EF6DDA6CC5C4C8780F8C0FC94;
+// PlayFab.ClientModels.UnlockContainerItemRequest
+struct UnlockContainerItemRequest_t820D81CB38D610CB71E1F56DC332E45B4B518ABC;
+// PlayFab.ClientModels.UnlockContainerItemResult
+struct UnlockContainerItemResult_t35CFBDF59A70BE18F28D78CCF1E3FBFC0878ECF7;
+// PlayFab.ClientModels.UpdateAvatarUrlRequest
+struct UpdateAvatarUrlRequest_t72A827E07538C3CD5BA65A04CDAFE440BFE37040;
+// PlayFab.ClientModels.UpdateCharacterDataRequest
+struct UpdateCharacterDataRequest_t1A476F394AE1FFF66454B7F95C6530097CDF706A;
+// PlayFab.ClientModels.UpdateCharacterDataResult
+struct UpdateCharacterDataResult_tAB9AAEEA9FE8658FC10180393C742EA1E50401BE;
+// PlayFab.ClientModels.UpdateCharacterStatisticsRequest
+struct UpdateCharacterStatisticsRequest_tE19059CA8705B365B5C50F31FCD9EF302D50F02F;
+// PlayFab.ClientModels.UpdateCharacterStatisticsResult
+struct UpdateCharacterStatisticsResult_t3F6EF334C142A8BC10FBA7320DDB57FA6BB0952A;
+// PlayFab.ClientModels.UpdatePlayerStatisticsRequest
+struct UpdatePlayerStatisticsRequest_t5B474D977EE17B8842BF33DF9E60B09281F2A496;
+// PlayFab.ClientModels.UpdatePlayerStatisticsResult
+struct UpdatePlayerStatisticsResult_tF1D48A2D96A003AFCDDE4DB38B179461B3E63E09;
+// PlayFab.ClientModels.UpdateSharedGroupDataRequest
+struct UpdateSharedGroupDataRequest_t770268D7040E97EEF614E28201FBA15B27F07ABC;
+// PlayFab.ClientModels.UpdateSharedGroupDataResult
+struct UpdateSharedGroupDataResult_tC2A0B472A61723265334227D8BA7EE580C3D7DD9;
+// PlayFab.ClientModels.UpdateUserDataRequest
+struct UpdateUserDataRequest_t00F2203E748C9D0B33E3CC673EAB649EB2B5662A;
+// PlayFab.ClientModels.UpdateUserDataResult
+struct UpdateUserDataResult_t23060B0433CB78E7CECEDFC3F7D63B91E051A74B;
+// PlayFab.ClientModels.UpdateUserTitleDisplayNameRequest
+struct UpdateUserTitleDisplayNameRequest_t7A00322DBF953F51971F85914E1F5B8B75CC8E1C;
+// PlayFab.ClientModels.UpdateUserTitleDisplayNameResult
+struct UpdateUserTitleDisplayNameResult_t624047AEE8BB730C8B15D244261478F5A65DF950;
+// PlayFab.ClientModels.UserAccountInfo
+struct UserAccountInfo_t1BF8B02028A765033899EE9940C15383AEF2726A;
+// PlayFab.ClientModels.UserAndroidDeviceInfo
+struct UserAndroidDeviceInfo_tF7DC5DEEEC9611A18C44C582A421C87EFAF143E7;
+// PlayFab.ClientModels.UserAppleIdInfo
+struct UserAppleIdInfo_tC957F5FCFCA8C6C4EA5ABB763DF6EAE0A83A00B5;
+// PlayFab.ClientModels.UserCustomIdInfo
+struct UserCustomIdInfo_tF34BF320AEE125010D3D390BE3019CF6074D15AB;
+// PlayFab.ClientModels.UserDataRecord
+struct UserDataRecord_tE7E165155A91F4CDC8FA7068664F554198EE0F45;
+// PlayFab.ClientModels.UserFacebookInfo
+struct UserFacebookInfo_t25341AA794CE37708FF857832B3D40C31005F859;
+// PlayFab.ClientModels.UserFacebookInstantGamesIdInfo
+struct UserFacebookInstantGamesIdInfo_t4AA586B3DB010191CA46294964526B9C6BD0DEFA;
+// PlayFab.ClientModels.UserGameCenterInfo
+struct UserGameCenterInfo_tF3E4DC8FCE46154B31494ABC83FF654AB1CE2C42;
+// PlayFab.ClientModels.UserGoogleInfo
+struct UserGoogleInfo_t375C252AF8732A3B29CC0ACA458788F57705CD16;
+// PlayFab.ClientModels.UserGooglePlayGamesInfo
+struct UserGooglePlayGamesInfo_tF42B79157DF36B2D327573D632CFB3CD62B0BBB8;
+// PlayFab.ClientModels.UserIosDeviceInfo
+struct UserIosDeviceInfo_tB0E4BB1232D6B58F35B0BD7730E967E50B25ACDD;
+// PlayFab.ClientModels.UserKongregateInfo
+struct UserKongregateInfo_t81FAC344B4B42B3689F7F42D355D8BE667E5B3BD;
+// PlayFab.ClientModels.UserNintendoSwitchAccountIdInfo
+struct UserNintendoSwitchAccountIdInfo_tBD867A24EE34BA9F1E516FC85B3D1E8BCC108F13;
+// PlayFab.ClientModels.UserNintendoSwitchDeviceIdInfo
+struct UserNintendoSwitchDeviceIdInfo_t53FA7FEB383F7C94C8DF61E423E3049ADF135388;
+// PlayFab.ClientModels.UserOpenIdInfo
+struct UserOpenIdInfo_t1243706E2AA47FF74B9FEF1FF537454B0D48FFE3;
+// PlayFab.ClientModels.UserPrivateAccountInfo
+struct UserPrivateAccountInfo_t91F7AE36BB4FCCB4CC40C6B6027F6BFC034D50A2;
+// PlayFab.ClientModels.UserPsnInfo
+struct UserPsnInfo_t8A71B58419169BBDA2512C61AB4D75B25CE15EAB;
+// PlayFab.ClientModels.UserSettings
+struct UserSettings_t53FD23BFE7D67CB8C0FA3FFB5F2FC733DA2D22E0;
+// PlayFab.ClientModels.UserSteamInfo
+struct UserSteamInfo_t9683A2E6234656912ED104E9AC9C9C6857CE23EA;
+// PlayFab.ClientModels.UserTitleInfo
+struct UserTitleInfo_tB92EBF892AF2FE961FBA3C279C86C5A4E6E17821;
+// PlayFab.ClientModels.UserTwitchInfo
+struct UserTwitchInfo_t4C6ECD3CCCCE4C62C7CB6F454D1ED64EDD3FE431;
+// PlayFab.ClientModels.UserXboxInfo
+struct UserXboxInfo_t43AC22B8C788C2E29748D1882F26FFFD82150C0D;
+// PlayFab.ClientModels.ValidateAmazonReceiptRequest
+struct ValidateAmazonReceiptRequest_t02C6A572352CCE41AE720F9A8BE4FD47A4F30243;
+// PlayFab.ClientModels.ValidateAmazonReceiptResult
+struct ValidateAmazonReceiptResult_tBDAAEA70544881D3EC12AB8B21812EAF164F25CF;
+// PlayFab.AuthenticationModels.ValidateEntityTokenRequest
+struct ValidateEntityTokenRequest_t208B61B7A774BBC7B3CD46D9296ED0BC848DEA3B;
+// PlayFab.AuthenticationModels.ValidateEntityTokenResponse
+struct ValidateEntityTokenResponse_t3BF0DD16B7B0A2D37AF6A38E77CE63119EFCF7AE;
+// PlayFab.ClientModels.ValidateGooglePlayPurchaseRequest
+struct ValidateGooglePlayPurchaseRequest_t19A3C53B5E1DE3BB7A655D929A41D5BED28AA50C;
+// PlayFab.ClientModels.ValidateGooglePlayPurchaseResult
+struct ValidateGooglePlayPurchaseResult_t94C27521EBF7C2B9547D9157FE0BAACBAA9FFB6C;
+// PlayFab.ClientModels.ValidateIOSReceiptRequest
+struct ValidateIOSReceiptRequest_t0FF3109216309862E61A7EC51269B623E98507F4;
+// PlayFab.ClientModels.ValidateIOSReceiptResult
+struct ValidateIOSReceiptResult_t7B8E9C32E11CF69C0F1644A9E70227BED479112C;
+// PlayFab.ClientModels.ValidateWindowsReceiptRequest
+struct ValidateWindowsReceiptRequest_t1925F0B1023AD2B5E54130D6903DB577AEC6D4C7;
+// PlayFab.ClientModels.ValidateWindowsReceiptResult
+struct ValidateWindowsReceiptResult_t5DFEC0D218EF949D252DFBC431EB81917AA436BC;
+// PlayFab.ClientModels.ValueToDateModel
+struct ValueToDateModel_t98B3C39B5FDB48BC22F6DFBE4839E6DFD03BB9FE;
+// PlayFab.ClientModels.Variable
+struct Variable_tDCD6D1358DFF185712A375020E6EA7576EB437E7;
+// PlayFab.ClientModels.VirtualCurrencyRechargeTime
+struct VirtualCurrencyRechargeTime_tD4B80CB3526B0CD22262886E3372D8A023D6CAA2;
+// System.Void
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
+// PlayFab.ClientModels.WriteClientCharacterEventRequest
+struct WriteClientCharacterEventRequest_t4B18CB6D5C5242AFA1B48ADFF7593381C1335ED3;
+// PlayFab.ClientModels.WriteClientPlayerEventRequest
+struct WriteClientPlayerEventRequest_tA95320423AC8066CD76C9C400278514D14E856DA;
+// PlayFab.ClientModels.WriteEventResponse
+struct WriteEventResponse_tCF2011905F8F5EFF4360597D91EDAF4C4AA3F116;
+// PlayFab.ClientModels.WriteTitleEventRequest
+struct WriteTitleEventRequest_t8F544A3D1AC64FE08CD1E18FF967FC84FBEFE4A3;
+// PlayFab.ClientModels.XboxLiveAccountPlayFabIdPair
+struct XboxLiveAccountPlayFabIdPair_t409FF6972AF23BC564AA53174AAEDDECAEC9F6DE;
+// PlayFab.Events.PlayFabEvents/PlayFabErrorEvent
+struct PlayFabErrorEvent_t32269E6C8CF3C5FF597C169C1CACE3D97D0E50C3;
+
+struct Delegate_t_marshaled_com;
+struct Delegate_t_marshaled_pinvoke;
+
+struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
+
+IL2CPP_EXTERN_C_BEGIN
+IL2CPP_EXTERN_C_END
+
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// PlayFab.SharedModels.PlayFabBaseModel
+struct PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E  : public RuntimeObject
+{
+};
+
+// System.ValueType
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F  : public RuntimeObject
+{
+};
+// Native definition for P/Invoke marshalling of System.ValueType
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
+{
+};
+// Native definition for COM marshalling of System.ValueType
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
+{
+};
+
+// System.Nullable`1<System.Boolean>
+struct Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	bool ___value_1;
+};
+
+// System.Nullable`1<PlayFab.ClientModels.ContinentCode>
+struct Nullable_1_t3EF9CF56AFA87C3A52854AA38643E7CAF92653D7 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	int32_t ___value_1;
+};
+
+// System.Nullable`1<PlayFab.ClientModels.CountryCode>
+struct Nullable_1_t4ADB38113D162809A54E1BC38F5271E2F1625085 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	int32_t ___value_1;
+};
+
+// System.Nullable`1<PlayFab.ClientModels.Currency>
+struct Nullable_1_t2B10F2EF519FFB12D492C998C113D6191D4B45A9 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	int32_t ___value_1;
+};
+
+// System.Nullable`1<System.Double>
+struct Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	double ___value_1;
+};
+
+// System.Nullable`1<PlayFab.ClientModels.ExternalFriendSources>
+struct Nullable_1_t495216DB9B044FF76C094DEF5D16122521A60226 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	int32_t ___value_1;
+};
+
+// System.Nullable`1<PlayFab.AuthenticationModels.IdentifiedDeviceType>
+struct Nullable_1_t9AD8E1438E05D5BA0F423DA1263AFC5941A801B1 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	int32_t ___value_1;
+};
+
+// System.Nullable`1<System.Int32>
+struct Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	int32_t ___value_1;
+};
+
+// System.Nullable`1<PlayFab.AuthenticationModels.LoginIdentityProvider>
+struct Nullable_1_t77AB991F23E03305B5C1448C8B16EAF99B4397F2 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	int32_t ___value_1;
+};
+
+// System.Nullable`1<PlayFab.ClientModels.LoginIdentityProvider>
+struct Nullable_1_t5B7C5B187DC2527C1C1515BC997DF756887BB15A 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	int32_t ___value_1;
+};
+
+// System.Nullable`1<PlayFab.ClientModels.MatchmakeStatus>
+struct Nullable_1_tE95F98B8CD3BFF42B3F003FB77543C34A4123434 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	int32_t ___value_1;
+};
+
+// System.Nullable`1<PlayFab.ClientModels.PushNotificationPlatform>
+struct Nullable_1_tE251DA79A8D0E93D6B7DAB2E248E2683339EA695 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	int32_t ___value_1;
+};
+
+// System.Nullable`1<PlayFab.ClientModels.Region>
+struct Nullable_1_tD6B346427FD9C455F0D4135CC5DAB0274DD97359 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	int32_t ___value_1;
+};
+
+// System.Nullable`1<PlayFab.ClientModels.SourceType>
+struct Nullable_1_tC6CEDEC6D14642AE9FB5A39F7B223AF7F619001D 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	int32_t ___value_1;
+};
+
+// System.Nullable`1<PlayFab.ClientModels.SubscriptionProviderStatus>
+struct Nullable_1_t1C6D81215466D9E73A526195FE2F06D6299CE58C 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	int32_t ___value_1;
+};
+
+// System.Nullable`1<PlayFab.ClientModels.TitleActivationStatus>
+struct Nullable_1_t2AB9F1C63256F190CF5CE9AB0ED2D44A4273FDB0 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	int32_t ___value_1;
+};
+
+// System.Nullable`1<PlayFab.ClientModels.TradeStatus>
+struct Nullable_1_tD232C455277E63717C41233FF7F6A699FA27AC33 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	int32_t ___value_1;
+};
+
+// System.Nullable`1<PlayFab.ClientModels.TransactionStatus>
+struct Nullable_1_t9E1F0EBFE9C6E268466ED4750DFB7BFA10FD8C07 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	int32_t ___value_1;
+};
+
+// System.Nullable`1<System.UInt32>
+struct Nullable_1_tD043F01310E483091D0E9A5526C3425F13EF2099 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	uint32_t ___value_1;
+};
+
+// System.Nullable`1<PlayFab.ClientModels.UserDataPermission>
+struct Nullable_1_t067499BB68589229FB737513FCF7C77D7952D5DB 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	int32_t ___value_1;
+};
+
+// System.Nullable`1<PlayFab.ClientModels.UserOrigination>
+struct Nullable_1_t2DC981AC3510FB5B419786ACD6FCAA9611918F93 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	int32_t ___value_1;
+};
+
+// System.DateTime
+struct DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D 
+{
+	// System.UInt64 System.DateTime::_dateData
+	uint64_t ____dateData_46;
+};
+
+// PlayFab.AuthenticationModels.EntityKey
+struct EntityKey_tFADF551D013525A30F2A6FB10A4FC4AF5F34278E  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.AuthenticationModels.EntityKey::Id
+	String_t* ___Id_0;
+	// System.String PlayFab.AuthenticationModels.EntityKey::Type
+	String_t* ___Type_1;
+};
+
+// PlayFab.AuthenticationModels.EntityLineage
+struct EntityLineage_tBB3BF8ABA70636A13AE3412CE723954A429EE67E  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.AuthenticationModels.EntityLineage::CharacterId
+	String_t* ___CharacterId_0;
+	// System.String PlayFab.AuthenticationModels.EntityLineage::GroupId
+	String_t* ___GroupId_1;
+	// System.String PlayFab.AuthenticationModels.EntityLineage::MasterPlayerAccountId
+	String_t* ___MasterPlayerAccountId_2;
+	// System.String PlayFab.AuthenticationModels.EntityLineage::NamespaceId
+	String_t* ___NamespaceId_3;
+	// System.String PlayFab.AuthenticationModels.EntityLineage::TitleId
+	String_t* ___TitleId_4;
+	// System.String PlayFab.AuthenticationModels.EntityLineage::TitlePlayerAccountId
+	String_t* ___TitlePlayerAccountId_5;
+};
+
+// PlayFab.ClientModels.GenericPlayFabIdPair
+struct GenericPlayFabIdPair_t1C9E09D926074E8C215C364655EDC29EC7D5AD40  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// PlayFab.ClientModels.GenericServiceId PlayFab.ClientModels.GenericPlayFabIdPair::GenericId
+	GenericServiceId_t845FFCE0230F5F2AC512688C09CB390784A40DCE* ___GenericId_0;
+	// System.String PlayFab.ClientModels.GenericPlayFabIdPair::PlayFabId
+	String_t* ___PlayFabId_1;
+};
+
+// PlayFab.ClientModels.GenericServiceId
+struct GenericServiceId_t845FFCE0230F5F2AC512688C09CB390784A40DCE  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.GenericServiceId::ServiceName
+	String_t* ___ServiceName_0;
+	// System.String PlayFab.ClientModels.GenericServiceId::UserId
+	String_t* ___UserId_1;
+};
+
+// PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams
+struct GetPlayerCombinedInfoRequestParams_t3917E84443A25D99911EAE3D92DD71B83391A370  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.Boolean PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams::GetCharacterInventories
+	bool ___GetCharacterInventories_0;
+	// System.Boolean PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams::GetCharacterList
+	bool ___GetCharacterList_1;
+	// System.Boolean PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams::GetPlayerProfile
+	bool ___GetPlayerProfile_2;
+	// System.Boolean PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams::GetPlayerStatistics
+	bool ___GetPlayerStatistics_3;
+	// System.Boolean PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams::GetTitleData
+	bool ___GetTitleData_4;
+	// System.Boolean PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams::GetUserAccountInfo
+	bool ___GetUserAccountInfo_5;
+	// System.Boolean PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams::GetUserData
+	bool ___GetUserData_6;
+	// System.Boolean PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams::GetUserInventory
+	bool ___GetUserInventory_7;
+	// System.Boolean PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams::GetUserReadOnlyData
+	bool ___GetUserReadOnlyData_8;
+	// System.Boolean PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams::GetUserVirtualCurrency
+	bool ___GetUserVirtualCurrency_9;
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams::PlayerStatisticNames
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___PlayerStatisticNames_10;
+	// PlayFab.ClientModels.PlayerProfileViewConstraints PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams::ProfileConstraints
+	PlayerProfileViewConstraints_t2D0216E216CDBEDAD806C569D17795B60FB7C550* ___ProfileConstraints_11;
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams::TitleDataKeys
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___TitleDataKeys_12;
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams::UserDataKeys
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___UserDataKeys_13;
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams::UserReadOnlyDataKeys
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___UserReadOnlyDataKeys_14;
+};
+
+// PlayFab.ClientModels.GetPlayerCombinedInfoResultPayload
+struct GetPlayerCombinedInfoResultPayload_t6323557A81B0FF04C6B66FC1F916864A4D738BCC  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// PlayFab.ClientModels.UserAccountInfo PlayFab.ClientModels.GetPlayerCombinedInfoResultPayload::AccountInfo
+	UserAccountInfo_t1BF8B02028A765033899EE9940C15383AEF2726A* ___AccountInfo_0;
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.CharacterInventory> PlayFab.ClientModels.GetPlayerCombinedInfoResultPayload::CharacterInventories
+	List_1_t1701865550109960DFAB6F38B2B293E04AD9947E* ___CharacterInventories_1;
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.CharacterResult> PlayFab.ClientModels.GetPlayerCombinedInfoResultPayload::CharacterList
+	List_1_tA848E8C0DB46B5FEF9D14E94E9501A6EDD685748* ___CharacterList_2;
+	// PlayFab.ClientModels.PlayerProfileModel PlayFab.ClientModels.GetPlayerCombinedInfoResultPayload::PlayerProfile
+	PlayerProfileModel_tEF2149D2652DD0B25B5250F8037A276739D1414A* ___PlayerProfile_3;
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.StatisticValue> PlayFab.ClientModels.GetPlayerCombinedInfoResultPayload::PlayerStatistics
+	List_1_tCDDF6F4596CECA134788D4BBE4D454B680279051* ___PlayerStatistics_4;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.GetPlayerCombinedInfoResultPayload::TitleData
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___TitleData_5;
+	// System.Collections.Generic.Dictionary`2<System.String,PlayFab.ClientModels.UserDataRecord> PlayFab.ClientModels.GetPlayerCombinedInfoResultPayload::UserData
+	Dictionary_2_tCCB825E12B065472E3DC7F9E132CF4B37C7226E2* ___UserData_6;
+	// System.UInt32 PlayFab.ClientModels.GetPlayerCombinedInfoResultPayload::UserDataVersion
+	uint32_t ___UserDataVersion_7;
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.ItemInstance> PlayFab.ClientModels.GetPlayerCombinedInfoResultPayload::UserInventory
+	List_1_t0EF5E12708A02CDDAB397230F7858B452CA3C264* ___UserInventory_8;
+	// System.Collections.Generic.Dictionary`2<System.String,PlayFab.ClientModels.UserDataRecord> PlayFab.ClientModels.GetPlayerCombinedInfoResultPayload::UserReadOnlyData
+	Dictionary_2_tCCB825E12B065472E3DC7F9E132CF4B37C7226E2* ___UserReadOnlyData_9;
+	// System.UInt32 PlayFab.ClientModels.GetPlayerCombinedInfoResultPayload::UserReadOnlyDataVersion
+	uint32_t ___UserReadOnlyDataVersion_10;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Int32> PlayFab.ClientModels.GetPlayerCombinedInfoResultPayload::UserVirtualCurrency
+	Dictionary_2_t5C8F46F5D57502270DD9E1DA8303B23C7FE85588* ___UserVirtualCurrency_11;
+	// System.Collections.Generic.Dictionary`2<System.String,PlayFab.ClientModels.VirtualCurrencyRechargeTime> PlayFab.ClientModels.GetPlayerCombinedInfoResultPayload::UserVirtualCurrencyRechargeTimes
+	Dictionary_2_t980250F79C95159BFB075EFB408C944A4C31F774* ___UserVirtualCurrencyRechargeTimes_12;
+};
+
+// PlayFab.ClientModels.GetSegmentResult
+struct GetSegmentResult_tEA5188B42B6E5B1F15926AB703BCEF9CEC9B9D81  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.GetSegmentResult::ABTestParent
+	String_t* ___ABTestParent_0;
+	// System.String PlayFab.ClientModels.GetSegmentResult::Id
+	String_t* ___Id_1;
+	// System.String PlayFab.ClientModels.GetSegmentResult::Name
+	String_t* ___Name_2;
+};
+
+// PlayFab.ClientModels.GooglePlayFabIdPair
+struct GooglePlayFabIdPair_t72F94EC86476E7F6EAFA33E558822FDC8BB09D6F  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.GooglePlayFabIdPair::GoogleId
+	String_t* ___GoogleId_0;
+	// System.String PlayFab.ClientModels.GooglePlayFabIdPair::PlayFabId
+	String_t* ___PlayFabId_1;
+};
+
+// PlayFab.ClientModels.GooglePlayGamesPlayFabIdPair
+struct GooglePlayGamesPlayFabIdPair_tF60353DDD4A5EF68B950127EDEE1C1F5BA55653A  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.GooglePlayGamesPlayFabIdPair::GooglePlayGamesPlayerId
+	String_t* ___GooglePlayGamesPlayerId_0;
+	// System.String PlayFab.ClientModels.GooglePlayGamesPlayFabIdPair::PlayFabId
+	String_t* ___PlayFabId_1;
+};
+
+// System.IntPtr
+struct IntPtr_t 
+{
+	// System.Void* System.IntPtr::m_value
+	void* ___m_value_0;
+};
+
+// PlayFab.ClientModels.ItemPurchaseRequest
+struct ItemPurchaseRequest_t92F81220686869A5DC3826889DB6091A48354C3B  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.ItemPurchaseRequest::Annotation
+	String_t* ___Annotation_0;
+	// System.String PlayFab.ClientModels.ItemPurchaseRequest::ItemId
+	String_t* ___ItemId_1;
+	// System.UInt32 PlayFab.ClientModels.ItemPurchaseRequest::Quantity
+	uint32_t ___Quantity_2;
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.ItemPurchaseRequest::UpgradeFromItems
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___UpgradeFromItems_3;
+};
+
+// PlayFab.ClientModels.KongregatePlayFabIdPair
+struct KongregatePlayFabIdPair_tC4BC594035C641891C2BDBFBF907F1E86DB0E75E  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.KongregatePlayFabIdPair::KongregateId
+	String_t* ___KongregateId_0;
+	// System.String PlayFab.ClientModels.KongregatePlayFabIdPair::PlayFabId
+	String_t* ___PlayFabId_1;
+};
+
+// PlayFab.ClientModels.LogStatement
+struct LogStatement_t1817F7333FB8B5A212EC3EE93C17A94A92FD4D1E  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.Object PlayFab.ClientModels.LogStatement::Data
+	RuntimeObject* ___Data_0;
+	// System.String PlayFab.ClientModels.LogStatement::Level
+	String_t* ___Level_1;
+	// System.String PlayFab.ClientModels.LogStatement::Message
+	String_t* ___Message_2;
+};
+
+// PlayFab.ClientModels.MicrosoftStorePayload
+struct MicrosoftStorePayload_t06065D771429807DA9B8ADEE81B6E2219795C25E  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.MicrosoftStorePayload::CollectionsMsIdKey
+	String_t* ___CollectionsMsIdKey_0;
+	// System.String PlayFab.ClientModels.MicrosoftStorePayload::UserId
+	String_t* ___UserId_1;
+	// System.String PlayFab.ClientModels.MicrosoftStorePayload::XboxToken
+	String_t* ___XboxToken_2;
+};
+
+// PlayFab.ClientModels.NameIdentifier
+struct NameIdentifier_tC463953295AF9517FB179D31BED70D412C5D144C  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.NameIdentifier::Id
+	String_t* ___Id_0;
+	// System.String PlayFab.ClientModels.NameIdentifier::Name
+	String_t* ___Name_1;
+};
+
+// PlayFab.ClientModels.NintendoServiceAccountPlayFabIdPair
+struct NintendoServiceAccountPlayFabIdPair_t31B8D8B6905F156B3F4B095613ADB0F1D4BCA0A9  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.NintendoServiceAccountPlayFabIdPair::NintendoServiceAccountId
+	String_t* ___NintendoServiceAccountId_0;
+	// System.String PlayFab.ClientModels.NintendoServiceAccountPlayFabIdPair::PlayFabId
+	String_t* ___PlayFabId_1;
+};
+
+// PlayFab.ClientModels.NintendoSwitchPlayFabIdPair
+struct NintendoSwitchPlayFabIdPair_t687B2A5829A336F37205F96BD81A5CA589CC1526  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.NintendoSwitchPlayFabIdPair::NintendoSwitchDeviceId
+	String_t* ___NintendoSwitchDeviceId_0;
+	// System.String PlayFab.ClientModels.NintendoSwitchPlayFabIdPair::PlayFabId
+	String_t* ___PlayFabId_1;
+};
+
+// PlayFab.ClientModels.PSNAccountPlayFabIdPair
+struct PSNAccountPlayFabIdPair_t5F266A64CD3768182B54DF5D9B1D5E058DF33865  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.PSNAccountPlayFabIdPair::PlayFabId
+	String_t* ___PlayFabId_0;
+	// System.String PlayFab.ClientModels.PSNAccountPlayFabIdPair::PSNAccountId
+	String_t* ___PSNAccountId_1;
+};
+
+// PlayFab.ClientModels.PaymentOption
+struct PaymentOption_t1D243751621312CFA26FA5E4B3D4AB9480938CDF  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.PaymentOption::Currency
+	String_t* ___Currency_0;
+	// System.UInt32 PlayFab.ClientModels.PaymentOption::Price
+	uint32_t ___Price_1;
+	// System.String PlayFab.ClientModels.PaymentOption::ProviderName
+	String_t* ___ProviderName_2;
+	// System.UInt32 PlayFab.ClientModels.PaymentOption::StoreCredit
+	uint32_t ___StoreCredit_3;
+};
+
+// PlayFab.SharedModels.PlayFabRequestCommon
+struct PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// PlayFab.PlayFabAuthenticationContext PlayFab.SharedModels.PlayFabRequestCommon::AuthenticationContext
+	PlayFabAuthenticationContext_t221B79722A7A90BF01896A080CB0488FC0A9971A* ___AuthenticationContext_0;
+};
+
+// PlayFab.SharedModels.PlayFabResultCommon
+struct PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// PlayFab.SharedModels.PlayFabRequestCommon PlayFab.SharedModels.PlayFabResultCommon::Request
+	PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D* ___Request_0;
+	// System.Object PlayFab.SharedModels.PlayFabResultCommon::CustomData
+	RuntimeObject* ___CustomData_1;
+};
+
+// PlayFab.ClientModels.PlayStation5Payload
+struct PlayStation5Payload_tAFC96038092FCE7BE6749D798C481EBDA45A174D  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.PlayStation5Payload::Ids
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___Ids_0;
+	// System.String PlayFab.ClientModels.PlayStation5Payload::ServiceLabel
+	String_t* ___ServiceLabel_1;
+};
+
+// PlayFab.ClientModels.PlayerLeaderboardEntry
+struct PlayerLeaderboardEntry_tCFF8F31BA39EE8CAD577AC4938DDE619E6EE66A9  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.PlayerLeaderboardEntry::DisplayName
+	String_t* ___DisplayName_0;
+	// System.String PlayFab.ClientModels.PlayerLeaderboardEntry::PlayFabId
+	String_t* ___PlayFabId_1;
+	// System.Int32 PlayFab.ClientModels.PlayerLeaderboardEntry::Position
+	int32_t ___Position_2;
+	// PlayFab.ClientModels.PlayerProfileModel PlayFab.ClientModels.PlayerLeaderboardEntry::Profile
+	PlayerProfileModel_tEF2149D2652DD0B25B5250F8037A276739D1414A* ___Profile_3;
+	// System.Int32 PlayFab.ClientModels.PlayerLeaderboardEntry::StatValue
+	int32_t ___StatValue_4;
+};
+
+// PlayFab.ClientModels.PlayerProfileViewConstraints
+struct PlayerProfileViewConstraints_t2D0216E216CDBEDAD806C569D17795B60FB7C550  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.Boolean PlayFab.ClientModels.PlayerProfileViewConstraints::ShowAvatarUrl
+	bool ___ShowAvatarUrl_0;
+	// System.Boolean PlayFab.ClientModels.PlayerProfileViewConstraints::ShowBannedUntil
+	bool ___ShowBannedUntil_1;
+	// System.Boolean PlayFab.ClientModels.PlayerProfileViewConstraints::ShowCampaignAttributions
+	bool ___ShowCampaignAttributions_2;
+	// System.Boolean PlayFab.ClientModels.PlayerProfileViewConstraints::ShowContactEmailAddresses
+	bool ___ShowContactEmailAddresses_3;
+	// System.Boolean PlayFab.ClientModels.PlayerProfileViewConstraints::ShowCreated
+	bool ___ShowCreated_4;
+	// System.Boolean PlayFab.ClientModels.PlayerProfileViewConstraints::ShowDisplayName
+	bool ___ShowDisplayName_5;
+	// System.Boolean PlayFab.ClientModels.PlayerProfileViewConstraints::ShowExperimentVariants
+	bool ___ShowExperimentVariants_6;
+	// System.Boolean PlayFab.ClientModels.PlayerProfileViewConstraints::ShowLastLogin
+	bool ___ShowLastLogin_7;
+	// System.Boolean PlayFab.ClientModels.PlayerProfileViewConstraints::ShowLinkedAccounts
+	bool ___ShowLinkedAccounts_8;
+	// System.Boolean PlayFab.ClientModels.PlayerProfileViewConstraints::ShowLocations
+	bool ___ShowLocations_9;
+	// System.Boolean PlayFab.ClientModels.PlayerProfileViewConstraints::ShowMemberships
+	bool ___ShowMemberships_10;
+	// System.Boolean PlayFab.ClientModels.PlayerProfileViewConstraints::ShowOrigination
+	bool ___ShowOrigination_11;
+	// System.Boolean PlayFab.ClientModels.PlayerProfileViewConstraints::ShowPushNotificationRegistrations
+	bool ___ShowPushNotificationRegistrations_12;
+	// System.Boolean PlayFab.ClientModels.PlayerProfileViewConstraints::ShowStatistics
+	bool ___ShowStatistics_13;
+	// System.Boolean PlayFab.ClientModels.PlayerProfileViewConstraints::ShowTags
+	bool ___ShowTags_14;
+	// System.Boolean PlayFab.ClientModels.PlayerProfileViewConstraints::ShowTotalValueToDateInUsd
+	bool ___ShowTotalValueToDateInUsd_15;
+	// System.Boolean PlayFab.ClientModels.PlayerProfileViewConstraints::ShowValuesToDate
+	bool ___ShowValuesToDate_16;
+};
+
+// PlayFab.ClientModels.ScriptExecutionError
+struct ScriptExecutionError_t15D016342B1D7DCF38FB8401037A2E748BF58785  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.ScriptExecutionError::Error
+	String_t* ___Error_0;
+	// System.String PlayFab.ClientModels.ScriptExecutionError::Message
+	String_t* ___Message_1;
+	// System.String PlayFab.ClientModels.ScriptExecutionError::StackTrace
+	String_t* ___StackTrace_2;
+};
+
+// PlayFab.ClientModels.StatisticModel
+struct StatisticModel_tB2ED71209F882A61E023E593485AC3CBE7354CBD  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.StatisticModel::Name
+	String_t* ___Name_0;
+	// System.Int32 PlayFab.ClientModels.StatisticModel::Value
+	int32_t ___Value_1;
+	// System.Int32 PlayFab.ClientModels.StatisticModel::Version
+	int32_t ___Version_2;
+};
+
+// PlayFab.ClientModels.StatisticNameVersion
+struct StatisticNameVersion_t6435F7DD4C0291DA496DE0389D2E5A4FC161BCDE  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.StatisticNameVersion::StatisticName
+	String_t* ___StatisticName_0;
+	// System.UInt32 PlayFab.ClientModels.StatisticNameVersion::Version
+	uint32_t ___Version_1;
+};
+
+// PlayFab.ClientModels.StatisticValue
+struct StatisticValue_t41732BCF004BE4378AE04A44F6410E992855FB24  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.StatisticValue::StatisticName
+	String_t* ___StatisticName_0;
+	// System.Int32 PlayFab.ClientModels.StatisticValue::Value
+	int32_t ___Value_1;
+	// System.UInt32 PlayFab.ClientModels.StatisticValue::Version
+	uint32_t ___Version_2;
+};
+
+// PlayFab.ClientModels.SteamPlayFabIdPair
+struct SteamPlayFabIdPair_tFECA16BBF2AA75081EC51F9BF796DB77F7522E18  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.SteamPlayFabIdPair::PlayFabId
+	String_t* ___PlayFabId_0;
+	// System.String PlayFab.ClientModels.SteamPlayFabIdPair::SteamStringId
+	String_t* ___SteamStringId_1;
+};
+
+// PlayFab.ClientModels.StoreMarketingModel
+struct StoreMarketingModel_t4AF761FD531E9A70AC9BF74380D0485A2F5DE95F  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.StoreMarketingModel::Description
+	String_t* ___Description_0;
+	// System.String PlayFab.ClientModels.StoreMarketingModel::DisplayName
+	String_t* ___DisplayName_1;
+	// System.Object PlayFab.ClientModels.StoreMarketingModel::Metadata
+	RuntimeObject* ___Metadata_2;
+};
+
+// PlayFab.ClientModels.TagModel
+struct TagModel_tA73EAC7F011DDE0C0433781A0E207DEFD3971740  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.TagModel::TagValue
+	String_t* ___TagValue_0;
+};
+
+// PlayFab.ClientModels.TreatmentAssignment
+struct TreatmentAssignment_t3AAA5D796B6551BDF72B95A132BE5FE93F1FD99A  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.Variable> PlayFab.ClientModels.TreatmentAssignment::Variables
+	List_1_t2C5D0E860CC178448C938DBE2DA7B5EB1A8B1541* ___Variables_0;
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.TreatmentAssignment::Variants
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___Variants_1;
+};
+
+// PlayFab.ClientModels.TwitchPlayFabIdPair
+struct TwitchPlayFabIdPair_tF6965786D5E8E95243A21420C5A3CAF7A1A50320  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.TwitchPlayFabIdPair::PlayFabId
+	String_t* ___PlayFabId_0;
+	// System.String PlayFab.ClientModels.TwitchPlayFabIdPair::TwitchId
+	String_t* ___TwitchId_1;
+};
+
+// PlayFab.ClientModels.UserAndroidDeviceInfo
+struct UserAndroidDeviceInfo_tF7DC5DEEEC9611A18C44C582A421C87EFAF143E7  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.UserAndroidDeviceInfo::AndroidDeviceId
+	String_t* ___AndroidDeviceId_0;
+};
+
+// PlayFab.ClientModels.UserAppleIdInfo
+struct UserAppleIdInfo_tC957F5FCFCA8C6C4EA5ABB763DF6EAE0A83A00B5  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.UserAppleIdInfo::AppleSubjectId
+	String_t* ___AppleSubjectId_0;
+};
+
+// PlayFab.ClientModels.UserCustomIdInfo
+struct UserCustomIdInfo_tF34BF320AEE125010D3D390BE3019CF6074D15AB  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.UserCustomIdInfo::CustomId
+	String_t* ___CustomId_0;
+};
+
+// PlayFab.ClientModels.UserFacebookInfo
+struct UserFacebookInfo_t25341AA794CE37708FF857832B3D40C31005F859  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.UserFacebookInfo::FacebookId
+	String_t* ___FacebookId_0;
+	// System.String PlayFab.ClientModels.UserFacebookInfo::FullName
+	String_t* ___FullName_1;
+};
+
+// PlayFab.ClientModels.UserFacebookInstantGamesIdInfo
+struct UserFacebookInstantGamesIdInfo_t4AA586B3DB010191CA46294964526B9C6BD0DEFA  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.UserFacebookInstantGamesIdInfo::FacebookInstantGamesId
+	String_t* ___FacebookInstantGamesId_0;
+};
+
+// PlayFab.ClientModels.UserGameCenterInfo
+struct UserGameCenterInfo_tF3E4DC8FCE46154B31494ABC83FF654AB1CE2C42  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.UserGameCenterInfo::GameCenterId
+	String_t* ___GameCenterId_0;
+};
+
+// PlayFab.ClientModels.UserGoogleInfo
+struct UserGoogleInfo_t375C252AF8732A3B29CC0ACA458788F57705CD16  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.UserGoogleInfo::GoogleEmail
+	String_t* ___GoogleEmail_0;
+	// System.String PlayFab.ClientModels.UserGoogleInfo::GoogleGender
+	String_t* ___GoogleGender_1;
+	// System.String PlayFab.ClientModels.UserGoogleInfo::GoogleId
+	String_t* ___GoogleId_2;
+	// System.String PlayFab.ClientModels.UserGoogleInfo::GoogleLocale
+	String_t* ___GoogleLocale_3;
+	// System.String PlayFab.ClientModels.UserGoogleInfo::GoogleName
+	String_t* ___GoogleName_4;
+};
+
+// PlayFab.ClientModels.UserGooglePlayGamesInfo
+struct UserGooglePlayGamesInfo_tF42B79157DF36B2D327573D632CFB3CD62B0BBB8  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.UserGooglePlayGamesInfo::GooglePlayGamesPlayerAvatarImageUrl
+	String_t* ___GooglePlayGamesPlayerAvatarImageUrl_0;
+	// System.String PlayFab.ClientModels.UserGooglePlayGamesInfo::GooglePlayGamesPlayerDisplayName
+	String_t* ___GooglePlayGamesPlayerDisplayName_1;
+	// System.String PlayFab.ClientModels.UserGooglePlayGamesInfo::GooglePlayGamesPlayerId
+	String_t* ___GooglePlayGamesPlayerId_2;
+};
+
+// PlayFab.ClientModels.UserIosDeviceInfo
+struct UserIosDeviceInfo_tB0E4BB1232D6B58F35B0BD7730E967E50B25ACDD  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.UserIosDeviceInfo::IosDeviceId
+	String_t* ___IosDeviceId_0;
+};
+
+// PlayFab.ClientModels.UserKongregateInfo
+struct UserKongregateInfo_t81FAC344B4B42B3689F7F42D355D8BE667E5B3BD  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.UserKongregateInfo::KongregateId
+	String_t* ___KongregateId_0;
+	// System.String PlayFab.ClientModels.UserKongregateInfo::KongregateName
+	String_t* ___KongregateName_1;
+};
+
+// PlayFab.ClientModels.UserNintendoSwitchAccountIdInfo
+struct UserNintendoSwitchAccountIdInfo_tBD867A24EE34BA9F1E516FC85B3D1E8BCC108F13  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.UserNintendoSwitchAccountIdInfo::NintendoSwitchAccountSubjectId
+	String_t* ___NintendoSwitchAccountSubjectId_0;
+};
+
+// PlayFab.ClientModels.UserNintendoSwitchDeviceIdInfo
+struct UserNintendoSwitchDeviceIdInfo_t53FA7FEB383F7C94C8DF61E423E3049ADF135388  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.UserNintendoSwitchDeviceIdInfo::NintendoSwitchDeviceId
+	String_t* ___NintendoSwitchDeviceId_0;
+};
+
+// PlayFab.ClientModels.UserOpenIdInfo
+struct UserOpenIdInfo_t1243706E2AA47FF74B9FEF1FF537454B0D48FFE3  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.UserOpenIdInfo::ConnectionId
+	String_t* ___ConnectionId_0;
+	// System.String PlayFab.ClientModels.UserOpenIdInfo::Issuer
+	String_t* ___Issuer_1;
+	// System.String PlayFab.ClientModels.UserOpenIdInfo::Subject
+	String_t* ___Subject_2;
+};
+
+// PlayFab.ClientModels.UserPrivateAccountInfo
+struct UserPrivateAccountInfo_t91F7AE36BB4FCCB4CC40C6B6027F6BFC034D50A2  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.UserPrivateAccountInfo::Email
+	String_t* ___Email_0;
+};
+
+// PlayFab.ClientModels.UserPsnInfo
+struct UserPsnInfo_t8A71B58419169BBDA2512C61AB4D75B25CE15EAB  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.UserPsnInfo::PsnAccountId
+	String_t* ___PsnAccountId_0;
+	// System.String PlayFab.ClientModels.UserPsnInfo::PsnOnlineId
+	String_t* ___PsnOnlineId_1;
+};
+
+// PlayFab.ClientModels.UserSettings
+struct UserSettings_t53FD23BFE7D67CB8C0FA3FFB5F2FC733DA2D22E0  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.Boolean PlayFab.ClientModels.UserSettings::GatherDeviceInfo
+	bool ___GatherDeviceInfo_0;
+	// System.Boolean PlayFab.ClientModels.UserSettings::GatherFocusInfo
+	bool ___GatherFocusInfo_1;
+	// System.Boolean PlayFab.ClientModels.UserSettings::NeedsAttribution
+	bool ___NeedsAttribution_2;
+};
+
+// PlayFab.ClientModels.UserTwitchInfo
+struct UserTwitchInfo_t4C6ECD3CCCCE4C62C7CB6F454D1ED64EDD3FE431  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.UserTwitchInfo::TwitchId
+	String_t* ___TwitchId_0;
+	// System.String PlayFab.ClientModels.UserTwitchInfo::TwitchUserName
+	String_t* ___TwitchUserName_1;
+};
+
+// PlayFab.ClientModels.UserXboxInfo
+struct UserXboxInfo_t43AC22B8C788C2E29748D1882F26FFFD82150C0D  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.UserXboxInfo::XboxUserId
+	String_t* ___XboxUserId_0;
+	// System.String PlayFab.ClientModels.UserXboxInfo::XboxUserSandbox
+	String_t* ___XboxUserSandbox_1;
+};
+
+// PlayFab.ClientModels.ValueToDateModel
+struct ValueToDateModel_t98B3C39B5FDB48BC22F6DFBE4839E6DFD03BB9FE  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.ValueToDateModel::Currency
+	String_t* ___Currency_0;
+	// System.UInt32 PlayFab.ClientModels.ValueToDateModel::TotalValue
+	uint32_t ___TotalValue_1;
+	// System.String PlayFab.ClientModels.ValueToDateModel::TotalValueAsDecimal
+	String_t* ___TotalValueAsDecimal_2;
+};
+
+// PlayFab.ClientModels.Variable
+struct Variable_tDCD6D1358DFF185712A375020E6EA7576EB437E7  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.Variable::Name
+	String_t* ___Name_0;
+	// System.String PlayFab.ClientModels.Variable::Value
+	String_t* ___Value_1;
+};
+
+// System.Void
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915 
+{
+	union
+	{
+		struct
+		{
+		};
+		uint8_t Void_t4861ACF8F4594C3437BB48B6E56783494B843915__padding[1];
+	};
+};
+
+// PlayFab.ClientModels.XboxLiveAccountPlayFabIdPair
+struct XboxLiveAccountPlayFabIdPair_t409FF6972AF23BC564AA53174AAEDDECAEC9F6DE  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.XboxLiveAccountPlayFabIdPair::PlayFabId
+	String_t* ___PlayFabId_0;
+	// System.String PlayFab.ClientModels.XboxLiveAccountPlayFabIdPair::XboxLiveAccountId
+	String_t* ___XboxLiveAccountId_1;
+};
+
+// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=14
+struct __StaticArrayInitTypeSizeU3D14_t9D86BCC3B9CF0C77C4379DDB6FFCD77CE5672D09 
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+			};
+		};
+		uint8_t __StaticArrayInitTypeSizeU3D14_t9D86BCC3B9CF0C77C4379DDB6FFCD77CE5672D09__padding[14];
+	};
+};
+
+// System.Nullable`1<System.DateTime>
+struct Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___value_1;
+};
+
+// <PrivateImplementationDetails>
+struct U3CPrivateImplementationDetailsU3E_t35799B8F9E549902A8DD862EADDCF7DD7887890D  : public RuntimeObject
+{
+};
+
+// PlayFab.AuthenticationModels.AuthenticateCustomIdRequest
+struct AuthenticateCustomIdRequest_tE91474227AC5EB717401D577941B21F995C8E5AC  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.AuthenticationModels.AuthenticateCustomIdRequest::CustomId
+	String_t* ___CustomId_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.AuthenticationModels.AuthenticateCustomIdRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+};
+
+// PlayFab.AuthenticationModels.AuthenticateCustomIdResult
+struct AuthenticateCustomIdResult_t4B35C3258C572E8DFCC590A16993C5BC3F934F36  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// PlayFab.AuthenticationModels.EntityTokenResponse PlayFab.AuthenticationModels.AuthenticateCustomIdResult::EntityToken
+	EntityTokenResponse_tCB7E0082B8ABD19A02403C6F9A438EF756D63E8B* ___EntityToken_2;
+	// System.Boolean PlayFab.AuthenticationModels.AuthenticateCustomIdResult::NewlyCreated
+	bool ___NewlyCreated_3;
+};
+
+// System.Delegate
+struct Delegate_t  : public RuntimeObject
+{
+	// System.IntPtr System.Delegate::method_ptr
+	Il2CppMethodPointer ___method_ptr_0;
+	// System.IntPtr System.Delegate::invoke_impl
+	intptr_t ___invoke_impl_1;
+	// System.Object System.Delegate::m_target
+	RuntimeObject* ___m_target_2;
+	// System.IntPtr System.Delegate::method
+	intptr_t ___method_3;
+	// System.IntPtr System.Delegate::delegate_trampoline
+	intptr_t ___delegate_trampoline_4;
+	// System.IntPtr System.Delegate::extra_arg
+	intptr_t ___extra_arg_5;
+	// System.IntPtr System.Delegate::method_code
+	intptr_t ___method_code_6;
+	// System.IntPtr System.Delegate::interp_method
+	intptr_t ___interp_method_7;
+	// System.IntPtr System.Delegate::interp_invoke_impl
+	intptr_t ___interp_invoke_impl_8;
+	// System.Reflection.MethodInfo System.Delegate::method_info
+	MethodInfo_t* ___method_info_9;
+	// System.Reflection.MethodInfo System.Delegate::original_method_info
+	MethodInfo_t* ___original_method_info_10;
+	// System.DelegateData System.Delegate::data
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data_11;
+	// System.Boolean System.Delegate::method_is_virtual
+	bool ___method_is_virtual_12;
+};
+// Native definition for P/Invoke marshalling of System.Delegate
+struct Delegate_t_marshaled_pinvoke
+{
+	intptr_t ___method_ptr_0;
+	intptr_t ___invoke_impl_1;
+	Il2CppIUnknown* ___m_target_2;
+	intptr_t ___method_3;
+	intptr_t ___delegate_trampoline_4;
+	intptr_t ___extra_arg_5;
+	intptr_t ___method_code_6;
+	intptr_t ___interp_method_7;
+	intptr_t ___interp_invoke_impl_8;
+	MethodInfo_t* ___method_info_9;
+	MethodInfo_t* ___original_method_info_10;
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data_11;
+	int32_t ___method_is_virtual_12;
+};
+// Native definition for COM marshalling of System.Delegate
+struct Delegate_t_marshaled_com
+{
+	intptr_t ___method_ptr_0;
+	intptr_t ___invoke_impl_1;
+	Il2CppIUnknown* ___m_target_2;
+	intptr_t ___method_3;
+	intptr_t ___delegate_trampoline_4;
+	intptr_t ___extra_arg_5;
+	intptr_t ___method_code_6;
+	intptr_t ___interp_method_7;
+	intptr_t ___interp_invoke_impl_8;
+	MethodInfo_t* ___method_info_9;
+	MethodInfo_t* ___original_method_info_10;
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data_11;
+	int32_t ___method_is_virtual_12;
+};
+
+// PlayFab.AuthenticationModels.DeleteRequest
+struct DeleteRequest_t0B9D2C009B483135923187736BB065BB74B2B1DE  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.AuthenticationModels.DeleteRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// PlayFab.AuthenticationModels.EntityKey PlayFab.AuthenticationModels.DeleteRequest::Entity
+	EntityKey_tFADF551D013525A30F2A6FB10A4FC4AF5F34278E* ___Entity_2;
+};
+
+// PlayFab.AuthenticationModels.EmptyResponse
+struct EmptyResponse_t5D64DF52A735AC35F2A14FC8A62D357FFFCA7652  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.GameServerRegionsRequest
+struct GameServerRegionsRequest_tE52E8B0933978E8BFBF9C35B02910A09FD660FA1  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.GameServerRegionsRequest::BuildVersion
+	String_t* ___BuildVersion_1;
+	// System.String PlayFab.ClientModels.GameServerRegionsRequest::TitleId
+	String_t* ___TitleId_2;
+};
+
+// PlayFab.ClientModels.GameServerRegionsResult
+struct GameServerRegionsResult_t5193C393CE87A74A84E4E22E9AEA0106931A5949  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.RegionInfo> PlayFab.ClientModels.GameServerRegionsResult::Regions
+	List_1_t7C8C73015E71402E06F497AA4626259BCA04D5D5* ___Regions_2;
+};
+
+// PlayFab.ClientModels.GetAccountInfoRequest
+struct GetAccountInfoRequest_tC0147A50F81DD6B6BCC3ABD921E2930F6F43EBD4  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.GetAccountInfoRequest::Email
+	String_t* ___Email_1;
+	// System.String PlayFab.ClientModels.GetAccountInfoRequest::PlayFabId
+	String_t* ___PlayFabId_2;
+	// System.String PlayFab.ClientModels.GetAccountInfoRequest::TitleDisplayName
+	String_t* ___TitleDisplayName_3;
+	// System.String PlayFab.ClientModels.GetAccountInfoRequest::Username
+	String_t* ___Username_4;
+};
+
+// PlayFab.ClientModels.GetAccountInfoResult
+struct GetAccountInfoResult_t3749F7FEB631D14EE484694B7953E1EEC0D4997C  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// PlayFab.ClientModels.UserAccountInfo PlayFab.ClientModels.GetAccountInfoResult::AccountInfo
+	UserAccountInfo_t1BF8B02028A765033899EE9940C15383AEF2726A* ___AccountInfo_2;
+};
+
+// PlayFab.ClientModels.GetAdPlacementsRequest
+struct GetAdPlacementsRequest_tE5AEC539C50FBCB69CDC269CCE806B7E12735FE1  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.GetAdPlacementsRequest::AppId
+	String_t* ___AppId_1;
+	// PlayFab.ClientModels.NameIdentifier PlayFab.ClientModels.GetAdPlacementsRequest::Identifier
+	NameIdentifier_tC463953295AF9517FB179D31BED70D412C5D144C* ___Identifier_2;
+};
+
+// PlayFab.ClientModels.GetAdPlacementsResult
+struct GetAdPlacementsResult_tBDBA84AFBE0E8DFAA39F68B11B6C2E0ACAF58637  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.AdPlacementDetails> PlayFab.ClientModels.GetAdPlacementsResult::AdPlacements
+	List_1_t352C6E0A448BDFB46B97AAFA229A67938AD7027B* ___AdPlacements_2;
+};
+
+// PlayFab.ClientModels.GetCatalogItemsRequest
+struct GetCatalogItemsRequest_tCB1333AAA1EAFC89DFA7E9317A5C527C9B985553  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.GetCatalogItemsRequest::CatalogVersion
+	String_t* ___CatalogVersion_1;
+};
+
+// PlayFab.ClientModels.GetCatalogItemsResult
+struct GetCatalogItemsResult_tB411483732EB649E2A5C87171A9A4A9DFB9F5B7A  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.CatalogItem> PlayFab.ClientModels.GetCatalogItemsResult::Catalog
+	List_1_t97F26C489AE12E90E2AE13099DFAEF9DED0B8F0C* ___Catalog_2;
+};
+
+// PlayFab.ClientModels.GetCharacterDataRequest
+struct GetCharacterDataRequest_t6C05771F13C702A9045DD3B899170E5445B1766B  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.GetCharacterDataRequest::CharacterId
+	String_t* ___CharacterId_1;
+	// System.Nullable`1<System.UInt32> PlayFab.ClientModels.GetCharacterDataRequest::IfChangedFromDataVersion
+	Nullable_1_tD043F01310E483091D0E9A5526C3425F13EF2099 ___IfChangedFromDataVersion_2;
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.GetCharacterDataRequest::Keys
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___Keys_3;
+	// System.String PlayFab.ClientModels.GetCharacterDataRequest::PlayFabId
+	String_t* ___PlayFabId_4;
+};
+
+// PlayFab.ClientModels.GetCharacterDataResult
+struct GetCharacterDataResult_tF0476467F5B9B17397185F7E4DAF671E2FE8F891  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.String PlayFab.ClientModels.GetCharacterDataResult::CharacterId
+	String_t* ___CharacterId_2;
+	// System.Collections.Generic.Dictionary`2<System.String,PlayFab.ClientModels.UserDataRecord> PlayFab.ClientModels.GetCharacterDataResult::Data
+	Dictionary_2_tCCB825E12B065472E3DC7F9E132CF4B37C7226E2* ___Data_3;
+	// System.UInt32 PlayFab.ClientModels.GetCharacterDataResult::DataVersion
+	uint32_t ___DataVersion_4;
+};
+
+// PlayFab.ClientModels.GetCharacterInventoryRequest
+struct GetCharacterInventoryRequest_t580ACC64D36255B5C5067A28C5CEF9EB0CF58CDD  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.GetCharacterInventoryRequest::CatalogVersion
+	String_t* ___CatalogVersion_1;
+	// System.String PlayFab.ClientModels.GetCharacterInventoryRequest::CharacterId
+	String_t* ___CharacterId_2;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.GetCharacterInventoryRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_3;
+};
+
+// PlayFab.ClientModels.GetCharacterInventoryResult
+struct GetCharacterInventoryResult_t3B8789B3A7CDD4FB2D5412AAF4CC984E24F4BAF6  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.String PlayFab.ClientModels.GetCharacterInventoryResult::CharacterId
+	String_t* ___CharacterId_2;
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.ItemInstance> PlayFab.ClientModels.GetCharacterInventoryResult::Inventory
+	List_1_t0EF5E12708A02CDDAB397230F7858B452CA3C264* ___Inventory_3;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Int32> PlayFab.ClientModels.GetCharacterInventoryResult::VirtualCurrency
+	Dictionary_2_t5C8F46F5D57502270DD9E1DA8303B23C7FE85588* ___VirtualCurrency_4;
+	// System.Collections.Generic.Dictionary`2<System.String,PlayFab.ClientModels.VirtualCurrencyRechargeTime> PlayFab.ClientModels.GetCharacterInventoryResult::VirtualCurrencyRechargeTimes
+	Dictionary_2_t980250F79C95159BFB075EFB408C944A4C31F774* ___VirtualCurrencyRechargeTimes_5;
+};
+
+// PlayFab.ClientModels.GetCharacterLeaderboardRequest
+struct GetCharacterLeaderboardRequest_tAFAFAB8549BCD8A8E150271072595B60F4F1F3D3  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Nullable`1<System.Int32> PlayFab.ClientModels.GetCharacterLeaderboardRequest::MaxResultsCount
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___MaxResultsCount_1;
+	// System.Int32 PlayFab.ClientModels.GetCharacterLeaderboardRequest::StartPosition
+	int32_t ___StartPosition_2;
+	// System.String PlayFab.ClientModels.GetCharacterLeaderboardRequest::StatisticName
+	String_t* ___StatisticName_3;
+};
+
+// PlayFab.ClientModels.GetCharacterLeaderboardResult
+struct GetCharacterLeaderboardResult_t751226AA8B78F4B976034B2AAC6C2D2F15FCE8EE  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.CharacterLeaderboardEntry> PlayFab.ClientModels.GetCharacterLeaderboardResult::Leaderboard
+	List_1_tF1AB119A40C4C4C0AD1C8B1D4896F87E4947DAF6* ___Leaderboard_2;
+};
+
+// PlayFab.ClientModels.GetCharacterStatisticsRequest
+struct GetCharacterStatisticsRequest_t267D464960AF2DC89F894ACF664AA6B643EA6C34  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.GetCharacterStatisticsRequest::CharacterId
+	String_t* ___CharacterId_1;
+};
+
+// PlayFab.ClientModels.GetCharacterStatisticsResult
+struct GetCharacterStatisticsResult_t113C2ECA7AC503ED97126C8B4AF186BBE421C865  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.Int32> PlayFab.ClientModels.GetCharacterStatisticsResult::CharacterStatistics
+	Dictionary_2_t5C8F46F5D57502270DD9E1DA8303B23C7FE85588* ___CharacterStatistics_2;
+};
+
+// PlayFab.ClientModels.GetContentDownloadUrlRequest
+struct GetContentDownloadUrlRequest_t51F47803DD20DD528B153AD2661EF0D7D4029654  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.GetContentDownloadUrlRequest::HttpMethod
+	String_t* ___HttpMethod_1;
+	// System.String PlayFab.ClientModels.GetContentDownloadUrlRequest::Key
+	String_t* ___Key_2;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.GetContentDownloadUrlRequest::ThruCDN
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___ThruCDN_3;
+};
+
+// PlayFab.ClientModels.GetContentDownloadUrlResult
+struct GetContentDownloadUrlResult_tAFD987CB2B47A5D205B9D6780153BAB37915903E  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.String PlayFab.ClientModels.GetContentDownloadUrlResult::URL
+	String_t* ___URL_2;
+};
+
+// PlayFab.AuthenticationModels.GetEntityTokenRequest
+struct GetEntityTokenRequest_t058F7E73EA27EED4A7E6A49B1FF0770354FF6E69  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.AuthenticationModels.GetEntityTokenRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// PlayFab.AuthenticationModels.EntityKey PlayFab.AuthenticationModels.GetEntityTokenRequest::Entity
+	EntityKey_tFADF551D013525A30F2A6FB10A4FC4AF5F34278E* ___Entity_2;
+};
+
+// PlayFab.ClientModels.GetFriendLeaderboardAroundPlayerRequest
+struct GetFriendLeaderboardAroundPlayerRequest_tBC527554F4EA5DC6C05BF33AB959977C4D3045B4  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.GetFriendLeaderboardAroundPlayerRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.Nullable`1<PlayFab.ClientModels.ExternalFriendSources> PlayFab.ClientModels.GetFriendLeaderboardAroundPlayerRequest::ExternalPlatformFriends
+	Nullable_1_t495216DB9B044FF76C094DEF5D16122521A60226 ___ExternalPlatformFriends_2;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.GetFriendLeaderboardAroundPlayerRequest::IncludeFacebookFriends
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___IncludeFacebookFriends_3;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.GetFriendLeaderboardAroundPlayerRequest::IncludeSteamFriends
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___IncludeSteamFriends_4;
+	// System.Nullable`1<System.Int32> PlayFab.ClientModels.GetFriendLeaderboardAroundPlayerRequest::MaxResultsCount
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___MaxResultsCount_5;
+	// System.String PlayFab.ClientModels.GetFriendLeaderboardAroundPlayerRequest::PlayFabId
+	String_t* ___PlayFabId_6;
+	// PlayFab.ClientModels.PlayerProfileViewConstraints PlayFab.ClientModels.GetFriendLeaderboardAroundPlayerRequest::ProfileConstraints
+	PlayerProfileViewConstraints_t2D0216E216CDBEDAD806C569D17795B60FB7C550* ___ProfileConstraints_7;
+	// System.String PlayFab.ClientModels.GetFriendLeaderboardAroundPlayerRequest::StatisticName
+	String_t* ___StatisticName_8;
+	// System.Nullable`1<System.Int32> PlayFab.ClientModels.GetFriendLeaderboardAroundPlayerRequest::Version
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___Version_9;
+	// System.String PlayFab.ClientModels.GetFriendLeaderboardAroundPlayerRequest::XboxToken
+	String_t* ___XboxToken_10;
+};
+
+// PlayFab.ClientModels.GetFriendLeaderboardRequest
+struct GetFriendLeaderboardRequest_tC24921FC75AEB6D31EBAC1298F69419AF0F000B6  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.GetFriendLeaderboardRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.Nullable`1<PlayFab.ClientModels.ExternalFriendSources> PlayFab.ClientModels.GetFriendLeaderboardRequest::ExternalPlatformFriends
+	Nullable_1_t495216DB9B044FF76C094DEF5D16122521A60226 ___ExternalPlatformFriends_2;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.GetFriendLeaderboardRequest::IncludeFacebookFriends
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___IncludeFacebookFriends_3;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.GetFriendLeaderboardRequest::IncludeSteamFriends
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___IncludeSteamFriends_4;
+	// System.Nullable`1<System.Int32> PlayFab.ClientModels.GetFriendLeaderboardRequest::MaxResultsCount
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___MaxResultsCount_5;
+	// PlayFab.ClientModels.PlayerProfileViewConstraints PlayFab.ClientModels.GetFriendLeaderboardRequest::ProfileConstraints
+	PlayerProfileViewConstraints_t2D0216E216CDBEDAD806C569D17795B60FB7C550* ___ProfileConstraints_6;
+	// System.Int32 PlayFab.ClientModels.GetFriendLeaderboardRequest::StartPosition
+	int32_t ___StartPosition_7;
+	// System.String PlayFab.ClientModels.GetFriendLeaderboardRequest::StatisticName
+	String_t* ___StatisticName_8;
+	// System.Nullable`1<System.Int32> PlayFab.ClientModels.GetFriendLeaderboardRequest::Version
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___Version_9;
+	// System.String PlayFab.ClientModels.GetFriendLeaderboardRequest::XboxToken
+	String_t* ___XboxToken_10;
+};
+
+// PlayFab.ClientModels.GetFriendsListRequest
+struct GetFriendsListRequest_tD095DC6CD5427ABC61B3F315FBB7204A75739444  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.GetFriendsListRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.Nullable`1<PlayFab.ClientModels.ExternalFriendSources> PlayFab.ClientModels.GetFriendsListRequest::ExternalPlatformFriends
+	Nullable_1_t495216DB9B044FF76C094DEF5D16122521A60226 ___ExternalPlatformFriends_2;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.GetFriendsListRequest::IncludeFacebookFriends
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___IncludeFacebookFriends_3;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.GetFriendsListRequest::IncludeSteamFriends
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___IncludeSteamFriends_4;
+	// PlayFab.ClientModels.PlayerProfileViewConstraints PlayFab.ClientModels.GetFriendsListRequest::ProfileConstraints
+	PlayerProfileViewConstraints_t2D0216E216CDBEDAD806C569D17795B60FB7C550* ___ProfileConstraints_5;
+	// System.String PlayFab.ClientModels.GetFriendsListRequest::XboxToken
+	String_t* ___XboxToken_6;
+};
+
+// PlayFab.ClientModels.GetFriendsListResult
+struct GetFriendsListResult_tD350BDB67572F168FA932E98CE7C34DB1CDC0E9A  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.FriendInfo> PlayFab.ClientModels.GetFriendsListResult::Friends
+	List_1_t6D8507218FAECCB535BB0160E5FF36043439BE65* ___Friends_2;
+};
+
+// PlayFab.ClientModels.GetLeaderboardAroundCharacterRequest
+struct GetLeaderboardAroundCharacterRequest_tA81520118D8CC8B9D66E62B5999227D3378336B0  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.GetLeaderboardAroundCharacterRequest::CharacterId
+	String_t* ___CharacterId_1;
+	// System.Nullable`1<System.Int32> PlayFab.ClientModels.GetLeaderboardAroundCharacterRequest::MaxResultsCount
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___MaxResultsCount_2;
+	// System.String PlayFab.ClientModels.GetLeaderboardAroundCharacterRequest::StatisticName
+	String_t* ___StatisticName_3;
+};
+
+// PlayFab.ClientModels.GetLeaderboardAroundCharacterResult
+struct GetLeaderboardAroundCharacterResult_t3033C56D162F38E42CA2C368C46DA2921A493E41  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.CharacterLeaderboardEntry> PlayFab.ClientModels.GetLeaderboardAroundCharacterResult::Leaderboard
+	List_1_tF1AB119A40C4C4C0AD1C8B1D4896F87E4947DAF6* ___Leaderboard_2;
+};
+
+// PlayFab.ClientModels.GetLeaderboardAroundPlayerRequest
+struct GetLeaderboardAroundPlayerRequest_tD1C22CFB0F1F778DB0B694C76C423419A476DCFC  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.GetLeaderboardAroundPlayerRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.Nullable`1<System.Int32> PlayFab.ClientModels.GetLeaderboardAroundPlayerRequest::MaxResultsCount
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___MaxResultsCount_2;
+	// System.String PlayFab.ClientModels.GetLeaderboardAroundPlayerRequest::PlayFabId
+	String_t* ___PlayFabId_3;
+	// PlayFab.ClientModels.PlayerProfileViewConstraints PlayFab.ClientModels.GetLeaderboardAroundPlayerRequest::ProfileConstraints
+	PlayerProfileViewConstraints_t2D0216E216CDBEDAD806C569D17795B60FB7C550* ___ProfileConstraints_4;
+	// System.String PlayFab.ClientModels.GetLeaderboardAroundPlayerRequest::StatisticName
+	String_t* ___StatisticName_5;
+	// System.Nullable`1<System.Int32> PlayFab.ClientModels.GetLeaderboardAroundPlayerRequest::Version
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___Version_6;
+};
+
+// PlayFab.ClientModels.GetLeaderboardForUsersCharactersRequest
+struct GetLeaderboardForUsersCharactersRequest_tEF2A6C42242BD951785B3C3D4F5D169DF8A25C3C  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.GetLeaderboardForUsersCharactersRequest::StatisticName
+	String_t* ___StatisticName_1;
+};
+
+// PlayFab.ClientModels.GetLeaderboardForUsersCharactersResult
+struct GetLeaderboardForUsersCharactersResult_tE67CF47DF6B0C0EC8124A217495687D0ADAB2E89  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.CharacterLeaderboardEntry> PlayFab.ClientModels.GetLeaderboardForUsersCharactersResult::Leaderboard
+	List_1_tF1AB119A40C4C4C0AD1C8B1D4896F87E4947DAF6* ___Leaderboard_2;
+};
+
+// PlayFab.ClientModels.GetLeaderboardRequest
+struct GetLeaderboardRequest_t6815CF68472AB22065418C21DDEB07C883A41193  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.GetLeaderboardRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.Nullable`1<System.Int32> PlayFab.ClientModels.GetLeaderboardRequest::MaxResultsCount
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___MaxResultsCount_2;
+	// PlayFab.ClientModels.PlayerProfileViewConstraints PlayFab.ClientModels.GetLeaderboardRequest::ProfileConstraints
+	PlayerProfileViewConstraints_t2D0216E216CDBEDAD806C569D17795B60FB7C550* ___ProfileConstraints_3;
+	// System.Int32 PlayFab.ClientModels.GetLeaderboardRequest::StartPosition
+	int32_t ___StartPosition_4;
+	// System.String PlayFab.ClientModels.GetLeaderboardRequest::StatisticName
+	String_t* ___StatisticName_5;
+	// System.Nullable`1<System.Int32> PlayFab.ClientModels.GetLeaderboardRequest::Version
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___Version_6;
+};
+
+// PlayFab.ClientModels.GetPaymentTokenRequest
+struct GetPaymentTokenRequest_t163B16A27CC6BE1E00893D7EC3368B2D245E00DC  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.GetPaymentTokenRequest::TokenProvider
+	String_t* ___TokenProvider_1;
+};
+
+// PlayFab.ClientModels.GetPaymentTokenResult
+struct GetPaymentTokenResult_t24602A341F685C823DA42D3B4ED51299A20133F3  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.String PlayFab.ClientModels.GetPaymentTokenResult::OrderId
+	String_t* ___OrderId_2;
+	// System.String PlayFab.ClientModels.GetPaymentTokenResult::ProviderToken
+	String_t* ___ProviderToken_3;
+};
+
+// PlayFab.ClientModels.GetPhotonAuthenticationTokenRequest
+struct GetPhotonAuthenticationTokenRequest_t9B058BB73A238036A56AAE722094C94037DEB1C5  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.GetPhotonAuthenticationTokenRequest::PhotonApplicationId
+	String_t* ___PhotonApplicationId_1;
+};
+
+// PlayFab.ClientModels.GetPhotonAuthenticationTokenResult
+struct GetPhotonAuthenticationTokenResult_t6A42DA77B0947BB88E9672ED8CBE52461CA65272  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.String PlayFab.ClientModels.GetPhotonAuthenticationTokenResult::PhotonCustomAuthenticationToken
+	String_t* ___PhotonCustomAuthenticationToken_2;
+};
+
+// PlayFab.ClientModels.GetPlayFabIDsFromFacebookIDsRequest
+struct GetPlayFabIDsFromFacebookIDsRequest_tB275AD11157BEDC861CAE56F8B8D86AC90E0051C  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.GetPlayFabIDsFromFacebookIDsRequest::FacebookIDs
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___FacebookIDs_1;
+};
+
+// PlayFab.ClientModels.GetPlayFabIDsFromFacebookIDsResult
+struct GetPlayFabIDsFromFacebookIDsResult_tAC717CC80C6863B47645241E22AAB0B5199A8FA1  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.FacebookPlayFabIdPair> PlayFab.ClientModels.GetPlayFabIDsFromFacebookIDsResult::Data
+	List_1_t176D4CCD5CE6E641270ED2C16AC0C08031525076* ___Data_2;
+};
+
+// PlayFab.ClientModels.GetPlayFabIDsFromFacebookInstantGamesIdsRequest
+struct GetPlayFabIDsFromFacebookInstantGamesIdsRequest_tA75CEA154F216D5BF2C011E9DAE9BC3F8FD4E521  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.GetPlayFabIDsFromFacebookInstantGamesIdsRequest::FacebookInstantGamesIds
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___FacebookInstantGamesIds_1;
+};
+
+// PlayFab.ClientModels.GetPlayFabIDsFromFacebookInstantGamesIdsResult
+struct GetPlayFabIDsFromFacebookInstantGamesIdsResult_tB8681765E88FD8D1405CA301744B4EB363A1C9FB  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.FacebookInstantGamesPlayFabIdPair> PlayFab.ClientModels.GetPlayFabIDsFromFacebookInstantGamesIdsResult::Data
+	List_1_t4FEA290778C8BA4594A23C022E14B6F3509259D4* ___Data_2;
+};
+
+// PlayFab.ClientModels.GetPlayFabIDsFromGameCenterIDsRequest
+struct GetPlayFabIDsFromGameCenterIDsRequest_t03B38A98E8957924A2A962D103A7E23CC68C6DD6  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.GetPlayFabIDsFromGameCenterIDsRequest::GameCenterIDs
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___GameCenterIDs_1;
+};
+
+// PlayFab.ClientModels.GetPlayFabIDsFromGameCenterIDsResult
+struct GetPlayFabIDsFromGameCenterIDsResult_tDDDD12C3F3725D9C09FF048B818E8E7B5CADFB45  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.GameCenterPlayFabIdPair> PlayFab.ClientModels.GetPlayFabIDsFromGameCenterIDsResult::Data
+	List_1_t90DF96744C9159EA1892F45C476475FD2924083D* ___Data_2;
+};
+
+// PlayFab.ClientModels.GetPlayFabIDsFromGenericIDsRequest
+struct GetPlayFabIDsFromGenericIDsRequest_t5A5E297DB35E0E92333069915B7156E47A89328E  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.GenericServiceId> PlayFab.ClientModels.GetPlayFabIDsFromGenericIDsRequest::GenericIDs
+	List_1_t9B91BE7A798D29A3000012C9037C15CFC12894DD* ___GenericIDs_1;
+};
+
+// PlayFab.ClientModels.GetPlayFabIDsFromGenericIDsResult
+struct GetPlayFabIDsFromGenericIDsResult_t4075E39127DC60513A34BD47FCD2EFD2220B5286  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.GenericPlayFabIdPair> PlayFab.ClientModels.GetPlayFabIDsFromGenericIDsResult::Data
+	List_1_t43564592808D45D3E17CBDEBAF931C84D4025DBE* ___Data_2;
+};
+
+// PlayFab.ClientModels.GetPlayFabIDsFromGoogleIDsRequest
+struct GetPlayFabIDsFromGoogleIDsRequest_t3CAF0AB06B25DF209219981B9B370760572F0804  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.GetPlayFabIDsFromGoogleIDsRequest::GoogleIDs
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___GoogleIDs_1;
+};
+
+// PlayFab.ClientModels.GetPlayFabIDsFromGoogleIDsResult
+struct GetPlayFabIDsFromGoogleIDsResult_t2B5CA8F7E79F8E066B817055C73B99DA89A42893  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.GooglePlayFabIdPair> PlayFab.ClientModels.GetPlayFabIDsFromGoogleIDsResult::Data
+	List_1_t71CE1D87B88DFBCA6EC3B86687C9672E590C83C7* ___Data_2;
+};
+
+// PlayFab.ClientModels.GetPlayFabIDsFromGooglePlayGamesPlayerIDsRequest
+struct GetPlayFabIDsFromGooglePlayGamesPlayerIDsRequest_t60FA7DD8AF722A7667CE69CECE1002EC1C5CAC6D  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.GetPlayFabIDsFromGooglePlayGamesPlayerIDsRequest::GooglePlayGamesPlayerIDs
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___GooglePlayGamesPlayerIDs_1;
+};
+
+// PlayFab.ClientModels.GetPlayFabIDsFromGooglePlayGamesPlayerIDsResult
+struct GetPlayFabIDsFromGooglePlayGamesPlayerIDsResult_t0DC2980392783DF85E0900285356738EBE3D7CDE  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.GooglePlayGamesPlayFabIdPair> PlayFab.ClientModels.GetPlayFabIDsFromGooglePlayGamesPlayerIDsResult::Data
+	List_1_t37A1FDC26F6C0D9AA6B851E977ED5AA7B2C284F4* ___Data_2;
+};
+
+// PlayFab.ClientModels.GetPlayFabIDsFromKongregateIDsRequest
+struct GetPlayFabIDsFromKongregateIDsRequest_t1C7F52700E5D3707F00FA27B987C6A9CDC69114D  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.GetPlayFabIDsFromKongregateIDsRequest::KongregateIDs
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___KongregateIDs_1;
+};
+
+// PlayFab.ClientModels.GetPlayFabIDsFromKongregateIDsResult
+struct GetPlayFabIDsFromKongregateIDsResult_t65A76AE8A7A25A3F7601EEA68688941873EAACF7  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.KongregatePlayFabIdPair> PlayFab.ClientModels.GetPlayFabIDsFromKongregateIDsResult::Data
+	List_1_t58E5A46A1013ABC842B46A744FB1A5B4E380256D* ___Data_2;
+};
+
+// PlayFab.ClientModels.GetPlayFabIDsFromNintendoServiceAccountIdsRequest
+struct GetPlayFabIDsFromNintendoServiceAccountIdsRequest_t257824B35205A9C99B0444960998E8A7E26B519A  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.GetPlayFabIDsFromNintendoServiceAccountIdsRequest::NintendoAccountIds
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___NintendoAccountIds_1;
+};
+
+// PlayFab.ClientModels.GetPlayFabIDsFromNintendoServiceAccountIdsResult
+struct GetPlayFabIDsFromNintendoServiceAccountIdsResult_tA4461DA79D669F1A17142350D6F021D1874497EF  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.NintendoServiceAccountPlayFabIdPair> PlayFab.ClientModels.GetPlayFabIDsFromNintendoServiceAccountIdsResult::Data
+	List_1_t347ED05405C8DA7325C059BEAD5AE9EC7DF2EF66* ___Data_2;
+};
+
+// PlayFab.ClientModels.GetPlayFabIDsFromNintendoSwitchDeviceIdsRequest
+struct GetPlayFabIDsFromNintendoSwitchDeviceIdsRequest_tC3BD96F79D674CE16C3ED9ECE716DF17D45FA96D  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.GetPlayFabIDsFromNintendoSwitchDeviceIdsRequest::NintendoSwitchDeviceIds
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___NintendoSwitchDeviceIds_1;
+};
+
+// PlayFab.ClientModels.GetPlayFabIDsFromNintendoSwitchDeviceIdsResult
+struct GetPlayFabIDsFromNintendoSwitchDeviceIdsResult_tECF140F80FED44DF111B51657BFED4823A4C4145  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.NintendoSwitchPlayFabIdPair> PlayFab.ClientModels.GetPlayFabIDsFromNintendoSwitchDeviceIdsResult::Data
+	List_1_t2AD2009467B994C24ED420428E83761FA7746200* ___Data_2;
+};
+
+// PlayFab.ClientModels.GetPlayFabIDsFromPSNAccountIDsRequest
+struct GetPlayFabIDsFromPSNAccountIDsRequest_t6215A503E62C27247574493608274CD9EAA56162  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Nullable`1<System.Int32> PlayFab.ClientModels.GetPlayFabIDsFromPSNAccountIDsRequest::IssuerId
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___IssuerId_1;
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.GetPlayFabIDsFromPSNAccountIDsRequest::PSNAccountIDs
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___PSNAccountIDs_2;
+};
+
+// PlayFab.ClientModels.GetPlayFabIDsFromPSNAccountIDsResult
+struct GetPlayFabIDsFromPSNAccountIDsResult_t24CA2B421532AC4D974235E8AB71F36C2257B35B  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.PSNAccountPlayFabIdPair> PlayFab.ClientModels.GetPlayFabIDsFromPSNAccountIDsResult::Data
+	List_1_tAE008C79A7DCEF28048C143C44B2C1BC73960E45* ___Data_2;
+};
+
+// PlayFab.ClientModels.GetPlayFabIDsFromSteamIDsRequest
+struct GetPlayFabIDsFromSteamIDsRequest_tC1E89AE77985DEA520133F183C582CDF312046F2  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.GetPlayFabIDsFromSteamIDsRequest::SteamStringIDs
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___SteamStringIDs_1;
+};
+
+// PlayFab.ClientModels.GetPlayFabIDsFromSteamIDsResult
+struct GetPlayFabIDsFromSteamIDsResult_t688E60B8A112A704F2262F596DC78A6E5BBB98C4  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.SteamPlayFabIdPair> PlayFab.ClientModels.GetPlayFabIDsFromSteamIDsResult::Data
+	List_1_t4DD7B6BF0DCD54F77005E9CB16B34AA3831649B5* ___Data_2;
+};
+
+// PlayFab.ClientModels.GetPlayFabIDsFromTwitchIDsRequest
+struct GetPlayFabIDsFromTwitchIDsRequest_t305BBF2368DEA56D8D8A39B2044CEB66BDE540A1  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.GetPlayFabIDsFromTwitchIDsRequest::TwitchIds
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___TwitchIds_1;
+};
+
+// PlayFab.ClientModels.GetPlayFabIDsFromTwitchIDsResult
+struct GetPlayFabIDsFromTwitchIDsResult_tBD52011CB3F0FF79DE2CFDA3AB748C3CCD6B011A  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.TwitchPlayFabIdPair> PlayFab.ClientModels.GetPlayFabIDsFromTwitchIDsResult::Data
+	List_1_t3E3414D8ECB90C7A51EB35E13889BD2FF0DC3D2B* ___Data_2;
+};
+
+// PlayFab.ClientModels.GetPlayFabIDsFromXboxLiveIDsRequest
+struct GetPlayFabIDsFromXboxLiveIDsRequest_t73ACCAC2D27CFBE633FAAC6723E9CC12DDB035C9  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.GetPlayFabIDsFromXboxLiveIDsRequest::Sandbox
+	String_t* ___Sandbox_1;
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.GetPlayFabIDsFromXboxLiveIDsRequest::XboxLiveAccountIDs
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___XboxLiveAccountIDs_2;
+};
+
+// PlayFab.ClientModels.GetPlayFabIDsFromXboxLiveIDsResult
+struct GetPlayFabIDsFromXboxLiveIDsResult_t9D66C97D6008F3ED67EDDEE9CAC2DEE09A8DB595  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.XboxLiveAccountPlayFabIdPair> PlayFab.ClientModels.GetPlayFabIDsFromXboxLiveIDsResult::Data
+	List_1_t5714EB5D583975242F3BCD3F610D00B5CAD397D2* ___Data_2;
+};
+
+// PlayFab.ClientModels.GetPlayerCombinedInfoRequest
+struct GetPlayerCombinedInfoRequest_tCF9E872A2AEAF953E4F96DCADD93C27B78D2DFE2  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.GetPlayerCombinedInfoRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams PlayFab.ClientModels.GetPlayerCombinedInfoRequest::InfoRequestParameters
+	GetPlayerCombinedInfoRequestParams_t3917E84443A25D99911EAE3D92DD71B83391A370* ___InfoRequestParameters_2;
+	// System.String PlayFab.ClientModels.GetPlayerCombinedInfoRequest::PlayFabId
+	String_t* ___PlayFabId_3;
+};
+
+// PlayFab.ClientModels.GetPlayerCombinedInfoResult
+struct GetPlayerCombinedInfoResult_t8FA02FB2B4EB7123C2BF5675C866BD6AA28AAB37  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// PlayFab.ClientModels.GetPlayerCombinedInfoResultPayload PlayFab.ClientModels.GetPlayerCombinedInfoResult::InfoResultPayload
+	GetPlayerCombinedInfoResultPayload_t6323557A81B0FF04C6B66FC1F916864A4D738BCC* ___InfoResultPayload_2;
+	// System.String PlayFab.ClientModels.GetPlayerCombinedInfoResult::PlayFabId
+	String_t* ___PlayFabId_3;
+};
+
+// PlayFab.ClientModels.GetPlayerProfileRequest
+struct GetPlayerProfileRequest_t96486783D0AF60EB25563E45CFE3605488A71B5F  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.GetPlayerProfileRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.String PlayFab.ClientModels.GetPlayerProfileRequest::PlayFabId
+	String_t* ___PlayFabId_2;
+	// PlayFab.ClientModels.PlayerProfileViewConstraints PlayFab.ClientModels.GetPlayerProfileRequest::ProfileConstraints
+	PlayerProfileViewConstraints_t2D0216E216CDBEDAD806C569D17795B60FB7C550* ___ProfileConstraints_3;
+};
+
+// PlayFab.ClientModels.GetPlayerProfileResult
+struct GetPlayerProfileResult_tC88B24D6F67E08246A094323793DFD03E7711447  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// PlayFab.ClientModels.PlayerProfileModel PlayFab.ClientModels.GetPlayerProfileResult::PlayerProfile
+	PlayerProfileModel_tEF2149D2652DD0B25B5250F8037A276739D1414A* ___PlayerProfile_2;
+};
+
+// PlayFab.ClientModels.GetPlayerSegmentsRequest
+struct GetPlayerSegmentsRequest_t369D70CC3064DDB76E33223576F4A803BF1373CF  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+};
+
+// PlayFab.ClientModels.GetPlayerSegmentsResult
+struct GetPlayerSegmentsResult_tBADE60D468AC3889608F56640D078B51F49C0B38  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.GetSegmentResult> PlayFab.ClientModels.GetPlayerSegmentsResult::Segments
+	List_1_t2006056A80F89FC3242936484F1B659BCBEC8941* ___Segments_2;
+};
+
+// PlayFab.ClientModels.GetPlayerStatisticVersionsRequest
+struct GetPlayerStatisticVersionsRequest_tC68F5AB538E6E36CC55F357CF12AE3352F238134  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.GetPlayerStatisticVersionsRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.String PlayFab.ClientModels.GetPlayerStatisticVersionsRequest::StatisticName
+	String_t* ___StatisticName_2;
+};
+
+// PlayFab.ClientModels.GetPlayerStatisticVersionsResult
+struct GetPlayerStatisticVersionsResult_tC31D18B33F7A932B27073E638072846BD2BCE501  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.PlayerStatisticVersion> PlayFab.ClientModels.GetPlayerStatisticVersionsResult::StatisticVersions
+	List_1_tA1DE21C9669CF4509EC1A140CD7AA1978F9D2342* ___StatisticVersions_2;
+};
+
+// PlayFab.ClientModels.GetPlayerStatisticsRequest
+struct GetPlayerStatisticsRequest_t84EB62C2DBFFD24EE3B200F275ACA9F38E456951  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.GetPlayerStatisticsRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.GetPlayerStatisticsRequest::StatisticNames
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___StatisticNames_2;
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.StatisticNameVersion> PlayFab.ClientModels.GetPlayerStatisticsRequest::StatisticNameVersions
+	List_1_tC357ECA6F83AF178994F568AC76734126E9270B4* ___StatisticNameVersions_3;
+};
+
+// PlayFab.ClientModels.GetPlayerStatisticsResult
+struct GetPlayerStatisticsResult_tFE1BD2E17D8A1BB108E7989512B4A16D59C2789A  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.StatisticValue> PlayFab.ClientModels.GetPlayerStatisticsResult::Statistics
+	List_1_tCDDF6F4596CECA134788D4BBE4D454B680279051* ___Statistics_2;
+};
+
+// PlayFab.ClientModels.GetPlayerTagsRequest
+struct GetPlayerTagsRequest_tE2D18BFAFA7A80E9BF9FFC44F9CBD97F5B68A9D5  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.GetPlayerTagsRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.String PlayFab.ClientModels.GetPlayerTagsRequest::Namespace
+	String_t* ___Namespace_2;
+	// System.String PlayFab.ClientModels.GetPlayerTagsRequest::PlayFabId
+	String_t* ___PlayFabId_3;
+};
+
+// PlayFab.ClientModels.GetPlayerTagsResult
+struct GetPlayerTagsResult_t14840C3B1B7D1D8D5F9886AE022D41B5EA972193  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.String PlayFab.ClientModels.GetPlayerTagsResult::PlayFabId
+	String_t* ___PlayFabId_2;
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.GetPlayerTagsResult::Tags
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___Tags_3;
+};
+
+// PlayFab.ClientModels.GetPlayerTradesRequest
+struct GetPlayerTradesRequest_t3935D3E0B3F425F04440E46D1C19045BB8C7F78E  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Nullable`1<PlayFab.ClientModels.TradeStatus> PlayFab.ClientModels.GetPlayerTradesRequest::StatusFilter
+	Nullable_1_tD232C455277E63717C41233FF7F6A699FA27AC33 ___StatusFilter_1;
+};
+
+// PlayFab.ClientModels.GetPlayerTradesResponse
+struct GetPlayerTradesResponse_tDB187D9030084374BA4CF7BE5DC2756D747C80EE  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.TradeInfo> PlayFab.ClientModels.GetPlayerTradesResponse::AcceptedTrades
+	List_1_t6A0E065076890870C4685CD54FFBA38E511AF6F8* ___AcceptedTrades_2;
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.TradeInfo> PlayFab.ClientModels.GetPlayerTradesResponse::OpenedTrades
+	List_1_t6A0E065076890870C4685CD54FFBA38E511AF6F8* ___OpenedTrades_3;
+};
+
+// PlayFab.ClientModels.GetPublisherDataRequest
+struct GetPublisherDataRequest_t6FE8DFD96382EDEB5A07C6E57847EC6DC71C7EC3  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.GetPublisherDataRequest::Keys
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___Keys_1;
+};
+
+// PlayFab.ClientModels.GetPublisherDataResult
+struct GetPublisherDataResult_t09A484540E7F707BAA87D645B1950167DFF2E381  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.GetPublisherDataResult::Data
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___Data_2;
+};
+
+// PlayFab.ClientModels.GetPurchaseRequest
+struct GetPurchaseRequest_t8AC38239A654F572F0D3C0850F48E1C2834AE1FF  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.GetPurchaseRequest::OrderId
+	String_t* ___OrderId_1;
+};
+
+// PlayFab.ClientModels.GetPurchaseResult
+struct GetPurchaseResult_t000F08A7E707E8866A377F417EAE58C12D11C772  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.String PlayFab.ClientModels.GetPurchaseResult::OrderId
+	String_t* ___OrderId_2;
+	// System.String PlayFab.ClientModels.GetPurchaseResult::PaymentProvider
+	String_t* ___PaymentProvider_3;
+	// System.DateTime PlayFab.ClientModels.GetPurchaseResult::PurchaseDate
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___PurchaseDate_4;
+	// System.String PlayFab.ClientModels.GetPurchaseResult::TransactionId
+	String_t* ___TransactionId_5;
+	// System.String PlayFab.ClientModels.GetPurchaseResult::TransactionStatus
+	String_t* ___TransactionStatus_6;
+};
+
+// PlayFab.ClientModels.GetSharedGroupDataRequest
+struct GetSharedGroupDataRequest_t9D365EF3CCF61A5BEAB96F7B6475A1750370E679  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.GetSharedGroupDataRequest::GetMembers
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___GetMembers_1;
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.GetSharedGroupDataRequest::Keys
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___Keys_2;
+	// System.String PlayFab.ClientModels.GetSharedGroupDataRequest::SharedGroupId
+	String_t* ___SharedGroupId_3;
+};
+
+// PlayFab.ClientModels.GetSharedGroupDataResult
+struct GetSharedGroupDataResult_tE10462618F98D4D72B4D2A80ED15DE51E586713F  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.Dictionary`2<System.String,PlayFab.ClientModels.SharedGroupDataRecord> PlayFab.ClientModels.GetSharedGroupDataResult::Data
+	Dictionary_2_t90F01328CE2DA3359FBE4ABC275E8A4A441F207E* ___Data_2;
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.GetSharedGroupDataResult::Members
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___Members_3;
+};
+
+// PlayFab.ClientModels.GetStoreItemsRequest
+struct GetStoreItemsRequest_t795B5ADF001B53C52F13BC0031B798CBDCA5273C  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.GetStoreItemsRequest::CatalogVersion
+	String_t* ___CatalogVersion_1;
+	// System.String PlayFab.ClientModels.GetStoreItemsRequest::StoreId
+	String_t* ___StoreId_2;
+};
+
+// PlayFab.ClientModels.GetStoreItemsResult
+struct GetStoreItemsResult_t91D6A5BE358AF54C064CE69074FB2AAF16B5975A  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.String PlayFab.ClientModels.GetStoreItemsResult::CatalogVersion
+	String_t* ___CatalogVersion_2;
+	// PlayFab.ClientModels.StoreMarketingModel PlayFab.ClientModels.GetStoreItemsResult::MarketingData
+	StoreMarketingModel_t4AF761FD531E9A70AC9BF74380D0485A2F5DE95F* ___MarketingData_3;
+	// System.Nullable`1<PlayFab.ClientModels.SourceType> PlayFab.ClientModels.GetStoreItemsResult::Source
+	Nullable_1_tC6CEDEC6D14642AE9FB5A39F7B223AF7F619001D ___Source_4;
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.StoreItem> PlayFab.ClientModels.GetStoreItemsResult::Store
+	List_1_tEA5BB14D850766BB1796E0FC9B1B68D0451A2710* ___Store_5;
+	// System.String PlayFab.ClientModels.GetStoreItemsResult::StoreId
+	String_t* ___StoreId_6;
+};
+
+// PlayFab.ClientModels.GetTimeRequest
+struct GetTimeRequest_tD244E02A36A259D9D162F39EF9850561A76D58F0  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+};
+
+// PlayFab.ClientModels.GetTimeResult
+struct GetTimeResult_tEB8D1A02D5AAC653D33C64187044F9EB2795E661  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.DateTime PlayFab.ClientModels.GetTimeResult::Time
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___Time_2;
+};
+
+// PlayFab.ClientModels.GetTitleDataRequest
+struct GetTitleDataRequest_t48B926031ABF3196C1C105A6AD3DF62FD3EE8B50  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.GetTitleDataRequest::Keys
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___Keys_1;
+	// System.String PlayFab.ClientModels.GetTitleDataRequest::OverrideLabel
+	String_t* ___OverrideLabel_2;
+};
+
+// PlayFab.ClientModels.GetTitleDataResult
+struct GetTitleDataResult_tBA9144A60C32E90FDDC5373F749CB2D21B6F7238  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.GetTitleDataResult::Data
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___Data_2;
+};
+
+// PlayFab.ClientModels.GetTitleNewsRequest
+struct GetTitleNewsRequest_tD0FFE3851DEFDE35C3762D52999D333ED47CA828  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Nullable`1<System.Int32> PlayFab.ClientModels.GetTitleNewsRequest::Count
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___Count_1;
+};
+
+// PlayFab.ClientModels.GetTitleNewsResult
+struct GetTitleNewsResult_t16E7083D187D4161DF3A0FA73BBA9569FC099DD4  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.TitleNewsItem> PlayFab.ClientModels.GetTitleNewsResult::News
+	List_1_tA1EA0E9437AE42314C4B00B909191D0B8ACDAE41* ___News_2;
+};
+
+// PlayFab.ClientModels.GetTitlePublicKeyRequest
+struct GetTitlePublicKeyRequest_tD55EB65A4BE9FE8BBA552A042E4D38D280AB0E3C  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.GetTitlePublicKeyRequest::TitleId
+	String_t* ___TitleId_1;
+	// System.String PlayFab.ClientModels.GetTitlePublicKeyRequest::TitleSharedSecret
+	String_t* ___TitleSharedSecret_2;
+};
+
+// PlayFab.ClientModels.GetTitlePublicKeyResult
+struct GetTitlePublicKeyResult_tB6D105C0270A7A373FF154F17FC5770C8F824392  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.String PlayFab.ClientModels.GetTitlePublicKeyResult::RSAPublicKey
+	String_t* ___RSAPublicKey_2;
+};
+
+// PlayFab.ClientModels.GetTradeStatusRequest
+struct GetTradeStatusRequest_t835601707B901582F75653879F3219C882F40F0B  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.GetTradeStatusRequest::OfferingPlayerId
+	String_t* ___OfferingPlayerId_1;
+	// System.String PlayFab.ClientModels.GetTradeStatusRequest::TradeId
+	String_t* ___TradeId_2;
+};
+
+// PlayFab.ClientModels.GetTradeStatusResponse
+struct GetTradeStatusResponse_t8F2A08C0A8E34CDD08950EAFC3AB65C4DA42FDAA  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// PlayFab.ClientModels.TradeInfo PlayFab.ClientModels.GetTradeStatusResponse::Trade
+	TradeInfo_tBE9088C4A58089296E230210566577FD2AEEEE07* ___Trade_2;
+};
+
+// PlayFab.ClientModels.GetUserDataRequest
+struct GetUserDataRequest_tCAF1E6FC4FE7E58BE0D3BDFE78230975CC08E501  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Nullable`1<System.UInt32> PlayFab.ClientModels.GetUserDataRequest::IfChangedFromDataVersion
+	Nullable_1_tD043F01310E483091D0E9A5526C3425F13EF2099 ___IfChangedFromDataVersion_1;
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.GetUserDataRequest::Keys
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___Keys_2;
+	// System.String PlayFab.ClientModels.GetUserDataRequest::PlayFabId
+	String_t* ___PlayFabId_3;
+};
+
+// PlayFab.ClientModels.GetUserDataResult
+struct GetUserDataResult_t68AF037F9916162542CE2C905DFF0B0C935FC48E  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.Dictionary`2<System.String,PlayFab.ClientModels.UserDataRecord> PlayFab.ClientModels.GetUserDataResult::Data
+	Dictionary_2_tCCB825E12B065472E3DC7F9E132CF4B37C7226E2* ___Data_2;
+	// System.UInt32 PlayFab.ClientModels.GetUserDataResult::DataVersion
+	uint32_t ___DataVersion_3;
+};
+
+// PlayFab.ClientModels.GetUserInventoryRequest
+struct GetUserInventoryRequest_t66955459A9F59280CDF3A98A5124052852A05BF2  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.GetUserInventoryRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+};
+
+// PlayFab.ClientModels.GetUserInventoryResult
+struct GetUserInventoryResult_t28E377BC480EF10C504D613456F8A7BE1F7E4B16  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.ItemInstance> PlayFab.ClientModels.GetUserInventoryResult::Inventory
+	List_1_t0EF5E12708A02CDDAB397230F7858B452CA3C264* ___Inventory_2;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Int32> PlayFab.ClientModels.GetUserInventoryResult::VirtualCurrency
+	Dictionary_2_t5C8F46F5D57502270DD9E1DA8303B23C7FE85588* ___VirtualCurrency_3;
+	// System.Collections.Generic.Dictionary`2<System.String,PlayFab.ClientModels.VirtualCurrencyRechargeTime> PlayFab.ClientModels.GetUserInventoryResult::VirtualCurrencyRechargeTimes
+	Dictionary_2_t980250F79C95159BFB075EFB408C944A4C31F774* ___VirtualCurrencyRechargeTimes_4;
+};
+
+// PlayFab.ClientModels.GrantCharacterToUserRequest
+struct GrantCharacterToUserRequest_tE6E4139743D537B38EB1AB3AD9255F8FBF795ADB  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.GrantCharacterToUserRequest::CatalogVersion
+	String_t* ___CatalogVersion_1;
+	// System.String PlayFab.ClientModels.GrantCharacterToUserRequest::CharacterName
+	String_t* ___CharacterName_2;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.GrantCharacterToUserRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_3;
+	// System.String PlayFab.ClientModels.GrantCharacterToUserRequest::ItemId
+	String_t* ___ItemId_4;
+};
+
+// PlayFab.ClientModels.GrantCharacterToUserResult
+struct GrantCharacterToUserResult_t995B7F5EBD2955C6EFE4CC4C94DC33615D359D07  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.String PlayFab.ClientModels.GrantCharacterToUserResult::CharacterId
+	String_t* ___CharacterId_2;
+	// System.String PlayFab.ClientModels.GrantCharacterToUserResult::CharacterType
+	String_t* ___CharacterType_3;
+	// System.Boolean PlayFab.ClientModels.GrantCharacterToUserResult::Result
+	bool ___Result_4;
+};
+
+// PlayFab.ClientModels.LinkAndroidDeviceIDRequest
+struct LinkAndroidDeviceIDRequest_tE370B4C43A2294AB1C93DB77F646956845E25F7D  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.LinkAndroidDeviceIDRequest::AndroidDevice
+	String_t* ___AndroidDevice_1;
+	// System.String PlayFab.ClientModels.LinkAndroidDeviceIDRequest::AndroidDeviceId
+	String_t* ___AndroidDeviceId_2;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LinkAndroidDeviceIDRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_3;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LinkAndroidDeviceIDRequest::ForceLink
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___ForceLink_4;
+	// System.String PlayFab.ClientModels.LinkAndroidDeviceIDRequest::OS
+	String_t* ___OS_5;
+};
+
+// PlayFab.ClientModels.LinkAndroidDeviceIDResult
+struct LinkAndroidDeviceIDResult_t4C5F04B8430158F23DC644214A8D337824619911  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.LinkAppleRequest
+struct LinkAppleRequest_tD84E9A0D6F6A8B62D3EE0CDA0B2796D05E91F5D1  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LinkAppleRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LinkAppleRequest::ForceLink
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___ForceLink_2;
+	// System.String PlayFab.ClientModels.LinkAppleRequest::IdentityToken
+	String_t* ___IdentityToken_3;
+};
+
+// PlayFab.ClientModels.LinkCustomIDRequest
+struct LinkCustomIDRequest_t05FE277ACC4DF9F596B9B1364C7A9495AE97C3B8  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.LinkCustomIDRequest::CustomId
+	String_t* ___CustomId_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LinkCustomIDRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LinkCustomIDRequest::ForceLink
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___ForceLink_3;
+};
+
+// PlayFab.ClientModels.LinkCustomIDResult
+struct LinkCustomIDResult_t39271A15418FC2562F54CEC9A5C4448BB210D866  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.LinkFacebookAccountRequest
+struct LinkFacebookAccountRequest_t88C4C375D233221A98D00DB50A9EFCD1B2D5478E  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.LinkFacebookAccountRequest::AccessToken
+	String_t* ___AccessToken_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LinkFacebookAccountRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LinkFacebookAccountRequest::ForceLink
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___ForceLink_3;
+};
+
+// PlayFab.ClientModels.LinkFacebookAccountResult
+struct LinkFacebookAccountResult_tF6DBE4CFEA793A6203945E018381F22047971081  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.LinkFacebookInstantGamesIdRequest
+struct LinkFacebookInstantGamesIdRequest_t94A3B57DBAFA66C5760F0058BC521BFE1FC6B5D0  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LinkFacebookInstantGamesIdRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.String PlayFab.ClientModels.LinkFacebookInstantGamesIdRequest::FacebookInstantGamesSignature
+	String_t* ___FacebookInstantGamesSignature_2;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LinkFacebookInstantGamesIdRequest::ForceLink
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___ForceLink_3;
+};
+
+// PlayFab.ClientModels.LinkFacebookInstantGamesIdResult
+struct LinkFacebookInstantGamesIdResult_t1AAC9421C0C5BC3891EF7EBFBE208AC625FCCA96  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.LinkGameCenterAccountRequest
+struct LinkGameCenterAccountRequest_tDBED4CD7330F5409D950EBEDF8FA2C8DDC546911  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LinkGameCenterAccountRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LinkGameCenterAccountRequest::ForceLink
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___ForceLink_2;
+	// System.String PlayFab.ClientModels.LinkGameCenterAccountRequest::GameCenterId
+	String_t* ___GameCenterId_3;
+	// System.String PlayFab.ClientModels.LinkGameCenterAccountRequest::PublicKeyUrl
+	String_t* ___PublicKeyUrl_4;
+	// System.String PlayFab.ClientModels.LinkGameCenterAccountRequest::Salt
+	String_t* ___Salt_5;
+	// System.String PlayFab.ClientModels.LinkGameCenterAccountRequest::Signature
+	String_t* ___Signature_6;
+	// System.String PlayFab.ClientModels.LinkGameCenterAccountRequest::Timestamp
+	String_t* ___Timestamp_7;
+};
+
+// PlayFab.ClientModels.LinkGameCenterAccountResult
+struct LinkGameCenterAccountResult_t647D19A9B79502ED157221910A1614E3F1D7D3BF  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.LinkGoogleAccountRequest
+struct LinkGoogleAccountRequest_tA5203EA33908B8A3D2394CE795AA88DB598574DB  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LinkGoogleAccountRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LinkGoogleAccountRequest::ForceLink
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___ForceLink_2;
+	// System.String PlayFab.ClientModels.LinkGoogleAccountRequest::ServerAuthCode
+	String_t* ___ServerAuthCode_3;
+};
+
+// PlayFab.ClientModels.LinkGoogleAccountResult
+struct LinkGoogleAccountResult_t596A08B9745E145CEFDADFA0E56063D3D00CBC78  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.LinkGooglePlayGamesServicesAccountRequest
+struct LinkGooglePlayGamesServicesAccountRequest_t4270383DFD5F35D6B2F64FD7A991FC688AE6526C  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LinkGooglePlayGamesServicesAccountRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LinkGooglePlayGamesServicesAccountRequest::ForceLink
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___ForceLink_2;
+	// System.String PlayFab.ClientModels.LinkGooglePlayGamesServicesAccountRequest::ServerAuthCode
+	String_t* ___ServerAuthCode_3;
+};
+
+// PlayFab.ClientModels.LinkGooglePlayGamesServicesAccountResult
+struct LinkGooglePlayGamesServicesAccountResult_tC37A276A9BFCA6363605956D660B3EE9632C3388  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.LinkIOSDeviceIDRequest
+struct LinkIOSDeviceIDRequest_t3AD9F66E46AEC025EC5A5BDB1498F79BBF019175  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LinkIOSDeviceIDRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.String PlayFab.ClientModels.LinkIOSDeviceIDRequest::DeviceId
+	String_t* ___DeviceId_2;
+	// System.String PlayFab.ClientModels.LinkIOSDeviceIDRequest::DeviceModel
+	String_t* ___DeviceModel_3;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LinkIOSDeviceIDRequest::ForceLink
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___ForceLink_4;
+	// System.String PlayFab.ClientModels.LinkIOSDeviceIDRequest::OS
+	String_t* ___OS_5;
+};
+
+// PlayFab.ClientModels.LinkIOSDeviceIDResult
+struct LinkIOSDeviceIDResult_tE942B412D48690F2CC586B2CC855EF661C95B4FC  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.LinkKongregateAccountRequest
+struct LinkKongregateAccountRequest_t7799A47E023C84C2A094468997A37F9ECB7BCEC7  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.LinkKongregateAccountRequest::AuthTicket
+	String_t* ___AuthTicket_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LinkKongregateAccountRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LinkKongregateAccountRequest::ForceLink
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___ForceLink_3;
+	// System.String PlayFab.ClientModels.LinkKongregateAccountRequest::KongregateId
+	String_t* ___KongregateId_4;
+};
+
+// PlayFab.ClientModels.LinkKongregateAccountResult
+struct LinkKongregateAccountResult_tAFE7D9B9BCC18083B4CDB5CFA61F960DAADD6BF8  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.LinkNintendoServiceAccountRequest
+struct LinkNintendoServiceAccountRequest_tABB5C3BEAA7E4BD9C66753EB8E55A5D3D684DB6E  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LinkNintendoServiceAccountRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LinkNintendoServiceAccountRequest::ForceLink
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___ForceLink_2;
+	// System.String PlayFab.ClientModels.LinkNintendoServiceAccountRequest::IdentityToken
+	String_t* ___IdentityToken_3;
+};
+
+// PlayFab.ClientModels.LinkNintendoSwitchDeviceIdRequest
+struct LinkNintendoSwitchDeviceIdRequest_t797A16D441BB21AFDE5341E54954A1D992D4AF4C  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LinkNintendoSwitchDeviceIdRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LinkNintendoSwitchDeviceIdRequest::ForceLink
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___ForceLink_2;
+	// System.String PlayFab.ClientModels.LinkNintendoSwitchDeviceIdRequest::NintendoSwitchDeviceId
+	String_t* ___NintendoSwitchDeviceId_3;
+};
+
+// PlayFab.ClientModels.LinkNintendoSwitchDeviceIdResult
+struct LinkNintendoSwitchDeviceIdResult_t0EB5797B85E01D6D7A5D8059F6D041D1F14E645D  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.LinkOpenIdConnectRequest
+struct LinkOpenIdConnectRequest_tF040FD89F84BACC7AC3E00A111457E05F413FC7C  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.LinkOpenIdConnectRequest::ConnectionId
+	String_t* ___ConnectionId_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LinkOpenIdConnectRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LinkOpenIdConnectRequest::ForceLink
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___ForceLink_3;
+	// System.String PlayFab.ClientModels.LinkOpenIdConnectRequest::IdToken
+	String_t* ___IdToken_4;
+};
+
+// PlayFab.ClientModels.LinkPSNAccountRequest
+struct LinkPSNAccountRequest_tAD86DDC09E0704F6AF0489B4EE66B335D505C2CF  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.LinkPSNAccountRequest::AuthCode
+	String_t* ___AuthCode_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LinkPSNAccountRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LinkPSNAccountRequest::ForceLink
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___ForceLink_3;
+	// System.Nullable`1<System.Int32> PlayFab.ClientModels.LinkPSNAccountRequest::IssuerId
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___IssuerId_4;
+	// System.String PlayFab.ClientModels.LinkPSNAccountRequest::RedirectUri
+	String_t* ___RedirectUri_5;
+};
+
+// PlayFab.ClientModels.LinkPSNAccountResult
+struct LinkPSNAccountResult_tD44785276C870B20241E65BFFA14D698BEC049D7  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.LinkSteamAccountRequest
+struct LinkSteamAccountRequest_tBB6665529569D87319DF664D7EB1E444CE2D89E4  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LinkSteamAccountRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LinkSteamAccountRequest::ForceLink
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___ForceLink_2;
+	// System.String PlayFab.ClientModels.LinkSteamAccountRequest::SteamTicket
+	String_t* ___SteamTicket_3;
+};
+
+// PlayFab.ClientModels.LinkSteamAccountResult
+struct LinkSteamAccountResult_tAFCB32B4FB5C004D500CA25655AE4AB3446277D5  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.LinkTwitchAccountRequest
+struct LinkTwitchAccountRequest_tDAAC83284F1560A202F78A1BADF487F9FD382A17  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.LinkTwitchAccountRequest::AccessToken
+	String_t* ___AccessToken_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LinkTwitchAccountRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LinkTwitchAccountRequest::ForceLink
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___ForceLink_3;
+};
+
+// PlayFab.ClientModels.LinkTwitchAccountResult
+struct LinkTwitchAccountResult_tC185948589359A8546F92AA06575DA6B24661EB8  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.LinkXboxAccountRequest
+struct LinkXboxAccountRequest_tFE99D5422A8736251BF9D92D53D93F3CEB3EAF8E  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LinkXboxAccountRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LinkXboxAccountRequest::ForceLink
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___ForceLink_2;
+	// System.String PlayFab.ClientModels.LinkXboxAccountRequest::XboxToken
+	String_t* ___XboxToken_3;
+};
+
+// PlayFab.ClientModels.LinkXboxAccountResult
+struct LinkXboxAccountResult_tD83C17194A9B9F7222DE65604C58DE3B9AA49FDF  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.LinkedPlatformAccountModel
+struct LinkedPlatformAccountModel_t1DA79542E08AB1A8DD40A2001C3A2A88CD136F25  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.LinkedPlatformAccountModel::Email
+	String_t* ___Email_0;
+	// System.Nullable`1<PlayFab.ClientModels.LoginIdentityProvider> PlayFab.ClientModels.LinkedPlatformAccountModel::Platform
+	Nullable_1_t5B7C5B187DC2527C1C1515BC997DF756887BB15A ___Platform_1;
+	// System.String PlayFab.ClientModels.LinkedPlatformAccountModel::PlatformUserId
+	String_t* ___PlatformUserId_2;
+	// System.String PlayFab.ClientModels.LinkedPlatformAccountModel::Username
+	String_t* ___Username_3;
+};
+
+// PlayFab.ClientModels.ListUsersCharactersRequest
+struct ListUsersCharactersRequest_tCF5408D5CA5D53886FC36DB99B07C82075EDCCD5  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.ListUsersCharactersRequest::PlayFabId
+	String_t* ___PlayFabId_1;
+};
+
+// PlayFab.ClientModels.ListUsersCharactersResult
+struct ListUsersCharactersResult_tCD7FD4A1E18258556F000EC213622028E1DE9AA3  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.CharacterResult> PlayFab.ClientModels.ListUsersCharactersResult::Characters
+	List_1_tA848E8C0DB46B5FEF9D14E94E9501A6EDD685748* ___Characters_2;
+};
+
+// PlayFab.ClientModels.LocationModel
+struct LocationModel_t1DFBA1A2A4966887BCE78D3536B90613C246595A  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.LocationModel::City
+	String_t* ___City_0;
+	// System.Nullable`1<PlayFab.ClientModels.ContinentCode> PlayFab.ClientModels.LocationModel::ContinentCode
+	Nullable_1_t3EF9CF56AFA87C3A52854AA38643E7CAF92653D7 ___ContinentCode_1;
+	// System.Nullable`1<PlayFab.ClientModels.CountryCode> PlayFab.ClientModels.LocationModel::CountryCode
+	Nullable_1_t4ADB38113D162809A54E1BC38F5271E2F1625085 ___CountryCode_2;
+	// System.Nullable`1<System.Double> PlayFab.ClientModels.LocationModel::Latitude
+	Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165 ___Latitude_3;
+	// System.Nullable`1<System.Double> PlayFab.ClientModels.LocationModel::Longitude
+	Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165 ___Longitude_4;
+};
+
+// PlayFab.ClientModels.LoginWithAndroidDeviceIDRequest
+struct LoginWithAndroidDeviceIDRequest_t3A4C3D2EEA546EC82D997D95542CE9B57F59023B  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.LoginWithAndroidDeviceIDRequest::AndroidDevice
+	String_t* ___AndroidDevice_1;
+	// System.String PlayFab.ClientModels.LoginWithAndroidDeviceIDRequest::AndroidDeviceId
+	String_t* ___AndroidDeviceId_2;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LoginWithAndroidDeviceIDRequest::CreateAccount
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___CreateAccount_3;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LoginWithAndroidDeviceIDRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_4;
+	// System.String PlayFab.ClientModels.LoginWithAndroidDeviceIDRequest::EncryptedRequest
+	String_t* ___EncryptedRequest_5;
+	// PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams PlayFab.ClientModels.LoginWithAndroidDeviceIDRequest::InfoRequestParameters
+	GetPlayerCombinedInfoRequestParams_t3917E84443A25D99911EAE3D92DD71B83391A370* ___InfoRequestParameters_6;
+	// System.String PlayFab.ClientModels.LoginWithAndroidDeviceIDRequest::OS
+	String_t* ___OS_7;
+	// System.String PlayFab.ClientModels.LoginWithAndroidDeviceIDRequest::PlayerSecret
+	String_t* ___PlayerSecret_8;
+	// System.String PlayFab.ClientModels.LoginWithAndroidDeviceIDRequest::TitleId
+	String_t* ___TitleId_9;
+};
+
+// PlayFab.ClientModels.LoginWithAppleRequest
+struct LoginWithAppleRequest_t432803D69AD4E022823FD67331F9E6725929F600  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LoginWithAppleRequest::CreateAccount
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___CreateAccount_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LoginWithAppleRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+	// System.String PlayFab.ClientModels.LoginWithAppleRequest::EncryptedRequest
+	String_t* ___EncryptedRequest_3;
+	// System.String PlayFab.ClientModels.LoginWithAppleRequest::IdentityToken
+	String_t* ___IdentityToken_4;
+	// PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams PlayFab.ClientModels.LoginWithAppleRequest::InfoRequestParameters
+	GetPlayerCombinedInfoRequestParams_t3917E84443A25D99911EAE3D92DD71B83391A370* ___InfoRequestParameters_5;
+	// System.String PlayFab.ClientModels.LoginWithAppleRequest::PlayerSecret
+	String_t* ___PlayerSecret_6;
+	// System.String PlayFab.ClientModels.LoginWithAppleRequest::TitleId
+	String_t* ___TitleId_7;
+};
+
+// PlayFab.ClientModels.LoginWithCustomIDRequest
+struct LoginWithCustomIDRequest_t9E1E078798737A8AD48B46EC9C0AA65092C8B05B  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LoginWithCustomIDRequest::CreateAccount
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___CreateAccount_1;
+	// System.String PlayFab.ClientModels.LoginWithCustomIDRequest::CustomId
+	String_t* ___CustomId_2;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LoginWithCustomIDRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_3;
+	// System.String PlayFab.ClientModels.LoginWithCustomIDRequest::EncryptedRequest
+	String_t* ___EncryptedRequest_4;
+	// PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams PlayFab.ClientModels.LoginWithCustomIDRequest::InfoRequestParameters
+	GetPlayerCombinedInfoRequestParams_t3917E84443A25D99911EAE3D92DD71B83391A370* ___InfoRequestParameters_5;
+	// System.String PlayFab.ClientModels.LoginWithCustomIDRequest::PlayerSecret
+	String_t* ___PlayerSecret_6;
+	// System.String PlayFab.ClientModels.LoginWithCustomIDRequest::TitleId
+	String_t* ___TitleId_7;
+};
+
+// PlayFab.ClientModels.LoginWithEmailAddressRequest
+struct LoginWithEmailAddressRequest_t0D4A01BAE6DE0702B2BF796303B84ABDF575AD49  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LoginWithEmailAddressRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.String PlayFab.ClientModels.LoginWithEmailAddressRequest::Email
+	String_t* ___Email_2;
+	// PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams PlayFab.ClientModels.LoginWithEmailAddressRequest::InfoRequestParameters
+	GetPlayerCombinedInfoRequestParams_t3917E84443A25D99911EAE3D92DD71B83391A370* ___InfoRequestParameters_3;
+	// System.String PlayFab.ClientModels.LoginWithEmailAddressRequest::Password
+	String_t* ___Password_4;
+	// System.String PlayFab.ClientModels.LoginWithEmailAddressRequest::TitleId
+	String_t* ___TitleId_5;
+};
+
+// PlayFab.ClientModels.LoginWithFacebookInstantGamesIdRequest
+struct LoginWithFacebookInstantGamesIdRequest_t61431BD47D89224A04BD0D9D83D8641A7A605703  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LoginWithFacebookInstantGamesIdRequest::CreateAccount
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___CreateAccount_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LoginWithFacebookInstantGamesIdRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+	// System.String PlayFab.ClientModels.LoginWithFacebookInstantGamesIdRequest::EncryptedRequest
+	String_t* ___EncryptedRequest_3;
+	// System.String PlayFab.ClientModels.LoginWithFacebookInstantGamesIdRequest::FacebookInstantGamesSignature
+	String_t* ___FacebookInstantGamesSignature_4;
+	// PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams PlayFab.ClientModels.LoginWithFacebookInstantGamesIdRequest::InfoRequestParameters
+	GetPlayerCombinedInfoRequestParams_t3917E84443A25D99911EAE3D92DD71B83391A370* ___InfoRequestParameters_5;
+	// System.String PlayFab.ClientModels.LoginWithFacebookInstantGamesIdRequest::PlayerSecret
+	String_t* ___PlayerSecret_6;
+	// System.String PlayFab.ClientModels.LoginWithFacebookInstantGamesIdRequest::TitleId
+	String_t* ___TitleId_7;
+};
+
+// PlayFab.ClientModels.LoginWithFacebookRequest
+struct LoginWithFacebookRequest_t9CA5170513098AA9DF2E2EE80A70D55C156DF5A3  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.LoginWithFacebookRequest::AccessToken
+	String_t* ___AccessToken_1;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LoginWithFacebookRequest::CreateAccount
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___CreateAccount_2;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LoginWithFacebookRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_3;
+	// System.String PlayFab.ClientModels.LoginWithFacebookRequest::EncryptedRequest
+	String_t* ___EncryptedRequest_4;
+	// PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams PlayFab.ClientModels.LoginWithFacebookRequest::InfoRequestParameters
+	GetPlayerCombinedInfoRequestParams_t3917E84443A25D99911EAE3D92DD71B83391A370* ___InfoRequestParameters_5;
+	// System.String PlayFab.ClientModels.LoginWithFacebookRequest::PlayerSecret
+	String_t* ___PlayerSecret_6;
+	// System.String PlayFab.ClientModels.LoginWithFacebookRequest::TitleId
+	String_t* ___TitleId_7;
+};
+
+// PlayFab.ClientModels.LoginWithGameCenterRequest
+struct LoginWithGameCenterRequest_t47DCB198B2366A518C7480ED1BEBF1306BBAD543  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LoginWithGameCenterRequest::CreateAccount
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___CreateAccount_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LoginWithGameCenterRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+	// System.String PlayFab.ClientModels.LoginWithGameCenterRequest::EncryptedRequest
+	String_t* ___EncryptedRequest_3;
+	// PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams PlayFab.ClientModels.LoginWithGameCenterRequest::InfoRequestParameters
+	GetPlayerCombinedInfoRequestParams_t3917E84443A25D99911EAE3D92DD71B83391A370* ___InfoRequestParameters_4;
+	// System.String PlayFab.ClientModels.LoginWithGameCenterRequest::PlayerId
+	String_t* ___PlayerId_5;
+	// System.String PlayFab.ClientModels.LoginWithGameCenterRequest::PlayerSecret
+	String_t* ___PlayerSecret_6;
+	// System.String PlayFab.ClientModels.LoginWithGameCenterRequest::PublicKeyUrl
+	String_t* ___PublicKeyUrl_7;
+	// System.String PlayFab.ClientModels.LoginWithGameCenterRequest::Salt
+	String_t* ___Salt_8;
+	// System.String PlayFab.ClientModels.LoginWithGameCenterRequest::Signature
+	String_t* ___Signature_9;
+	// System.String PlayFab.ClientModels.LoginWithGameCenterRequest::Timestamp
+	String_t* ___Timestamp_10;
+	// System.String PlayFab.ClientModels.LoginWithGameCenterRequest::TitleId
+	String_t* ___TitleId_11;
+};
+
+// PlayFab.ClientModels.LoginWithGoogleAccountRequest
+struct LoginWithGoogleAccountRequest_tF51EDE37EB36FFA7B25883424A588876FE031120  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LoginWithGoogleAccountRequest::CreateAccount
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___CreateAccount_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LoginWithGoogleAccountRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+	// System.String PlayFab.ClientModels.LoginWithGoogleAccountRequest::EncryptedRequest
+	String_t* ___EncryptedRequest_3;
+	// PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams PlayFab.ClientModels.LoginWithGoogleAccountRequest::InfoRequestParameters
+	GetPlayerCombinedInfoRequestParams_t3917E84443A25D99911EAE3D92DD71B83391A370* ___InfoRequestParameters_4;
+	// System.String PlayFab.ClientModels.LoginWithGoogleAccountRequest::PlayerSecret
+	String_t* ___PlayerSecret_5;
+	// System.String PlayFab.ClientModels.LoginWithGoogleAccountRequest::ServerAuthCode
+	String_t* ___ServerAuthCode_6;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LoginWithGoogleAccountRequest::SetEmail
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___SetEmail_7;
+	// System.String PlayFab.ClientModels.LoginWithGoogleAccountRequest::TitleId
+	String_t* ___TitleId_8;
+};
+
+// PlayFab.ClientModels.LoginWithGooglePlayGamesServicesRequest
+struct LoginWithGooglePlayGamesServicesRequest_t10AFE0373B76927851BE9A1025302FD2CF44E0DA  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LoginWithGooglePlayGamesServicesRequest::CreateAccount
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___CreateAccount_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LoginWithGooglePlayGamesServicesRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+	// System.String PlayFab.ClientModels.LoginWithGooglePlayGamesServicesRequest::EncryptedRequest
+	String_t* ___EncryptedRequest_3;
+	// PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams PlayFab.ClientModels.LoginWithGooglePlayGamesServicesRequest::InfoRequestParameters
+	GetPlayerCombinedInfoRequestParams_t3917E84443A25D99911EAE3D92DD71B83391A370* ___InfoRequestParameters_4;
+	// System.String PlayFab.ClientModels.LoginWithGooglePlayGamesServicesRequest::PlayerSecret
+	String_t* ___PlayerSecret_5;
+	// System.String PlayFab.ClientModels.LoginWithGooglePlayGamesServicesRequest::ServerAuthCode
+	String_t* ___ServerAuthCode_6;
+	// System.String PlayFab.ClientModels.LoginWithGooglePlayGamesServicesRequest::TitleId
+	String_t* ___TitleId_7;
+};
+
+// PlayFab.ClientModels.LoginWithIOSDeviceIDRequest
+struct LoginWithIOSDeviceIDRequest_tF8F87A2ED958950DD3929AB8ECFC6E7667F29A4F  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LoginWithIOSDeviceIDRequest::CreateAccount
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___CreateAccount_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LoginWithIOSDeviceIDRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+	// System.String PlayFab.ClientModels.LoginWithIOSDeviceIDRequest::DeviceId
+	String_t* ___DeviceId_3;
+	// System.String PlayFab.ClientModels.LoginWithIOSDeviceIDRequest::DeviceModel
+	String_t* ___DeviceModel_4;
+	// System.String PlayFab.ClientModels.LoginWithIOSDeviceIDRequest::EncryptedRequest
+	String_t* ___EncryptedRequest_5;
+	// PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams PlayFab.ClientModels.LoginWithIOSDeviceIDRequest::InfoRequestParameters
+	GetPlayerCombinedInfoRequestParams_t3917E84443A25D99911EAE3D92DD71B83391A370* ___InfoRequestParameters_6;
+	// System.String PlayFab.ClientModels.LoginWithIOSDeviceIDRequest::OS
+	String_t* ___OS_7;
+	// System.String PlayFab.ClientModels.LoginWithIOSDeviceIDRequest::PlayerSecret
+	String_t* ___PlayerSecret_8;
+	// System.String PlayFab.ClientModels.LoginWithIOSDeviceIDRequest::TitleId
+	String_t* ___TitleId_9;
+};
+
+// PlayFab.ClientModels.LoginWithKongregateRequest
+struct LoginWithKongregateRequest_t4AE23CFD1182E89A0CA8E547BB38E4ADA57B0FA5  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.LoginWithKongregateRequest::AuthTicket
+	String_t* ___AuthTicket_1;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LoginWithKongregateRequest::CreateAccount
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___CreateAccount_2;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LoginWithKongregateRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_3;
+	// System.String PlayFab.ClientModels.LoginWithKongregateRequest::EncryptedRequest
+	String_t* ___EncryptedRequest_4;
+	// PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams PlayFab.ClientModels.LoginWithKongregateRequest::InfoRequestParameters
+	GetPlayerCombinedInfoRequestParams_t3917E84443A25D99911EAE3D92DD71B83391A370* ___InfoRequestParameters_5;
+	// System.String PlayFab.ClientModels.LoginWithKongregateRequest::KongregateId
+	String_t* ___KongregateId_6;
+	// System.String PlayFab.ClientModels.LoginWithKongregateRequest::PlayerSecret
+	String_t* ___PlayerSecret_7;
+	// System.String PlayFab.ClientModels.LoginWithKongregateRequest::TitleId
+	String_t* ___TitleId_8;
+};
+
+// PlayFab.ClientModels.LoginWithNintendoServiceAccountRequest
+struct LoginWithNintendoServiceAccountRequest_tFA98602742349FC8F68FA91185CCCB322668DFB5  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LoginWithNintendoServiceAccountRequest::CreateAccount
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___CreateAccount_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LoginWithNintendoServiceAccountRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+	// System.String PlayFab.ClientModels.LoginWithNintendoServiceAccountRequest::EncryptedRequest
+	String_t* ___EncryptedRequest_3;
+	// System.String PlayFab.ClientModels.LoginWithNintendoServiceAccountRequest::IdentityToken
+	String_t* ___IdentityToken_4;
+	// PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams PlayFab.ClientModels.LoginWithNintendoServiceAccountRequest::InfoRequestParameters
+	GetPlayerCombinedInfoRequestParams_t3917E84443A25D99911EAE3D92DD71B83391A370* ___InfoRequestParameters_5;
+	// System.String PlayFab.ClientModels.LoginWithNintendoServiceAccountRequest::PlayerSecret
+	String_t* ___PlayerSecret_6;
+	// System.String PlayFab.ClientModels.LoginWithNintendoServiceAccountRequest::TitleId
+	String_t* ___TitleId_7;
+};
+
+// PlayFab.ClientModels.LoginWithNintendoSwitchDeviceIdRequest
+struct LoginWithNintendoSwitchDeviceIdRequest_t7D332789DC3FA24808B86CCB9C41A4400FD50C17  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LoginWithNintendoSwitchDeviceIdRequest::CreateAccount
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___CreateAccount_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LoginWithNintendoSwitchDeviceIdRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+	// System.String PlayFab.ClientModels.LoginWithNintendoSwitchDeviceIdRequest::EncryptedRequest
+	String_t* ___EncryptedRequest_3;
+	// PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams PlayFab.ClientModels.LoginWithNintendoSwitchDeviceIdRequest::InfoRequestParameters
+	GetPlayerCombinedInfoRequestParams_t3917E84443A25D99911EAE3D92DD71B83391A370* ___InfoRequestParameters_4;
+	// System.String PlayFab.ClientModels.LoginWithNintendoSwitchDeviceIdRequest::NintendoSwitchDeviceId
+	String_t* ___NintendoSwitchDeviceId_5;
+	// System.String PlayFab.ClientModels.LoginWithNintendoSwitchDeviceIdRequest::PlayerSecret
+	String_t* ___PlayerSecret_6;
+	// System.String PlayFab.ClientModels.LoginWithNintendoSwitchDeviceIdRequest::TitleId
+	String_t* ___TitleId_7;
+};
+
+// PlayFab.ClientModels.LoginWithOpenIdConnectRequest
+struct LoginWithOpenIdConnectRequest_tA8725EDACB83059224A03B9091ADC186E9DF2BBE  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.LoginWithOpenIdConnectRequest::ConnectionId
+	String_t* ___ConnectionId_1;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LoginWithOpenIdConnectRequest::CreateAccount
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___CreateAccount_2;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LoginWithOpenIdConnectRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_3;
+	// System.String PlayFab.ClientModels.LoginWithOpenIdConnectRequest::EncryptedRequest
+	String_t* ___EncryptedRequest_4;
+	// System.String PlayFab.ClientModels.LoginWithOpenIdConnectRequest::IdToken
+	String_t* ___IdToken_5;
+	// PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams PlayFab.ClientModels.LoginWithOpenIdConnectRequest::InfoRequestParameters
+	GetPlayerCombinedInfoRequestParams_t3917E84443A25D99911EAE3D92DD71B83391A370* ___InfoRequestParameters_6;
+	// System.String PlayFab.ClientModels.LoginWithOpenIdConnectRequest::PlayerSecret
+	String_t* ___PlayerSecret_7;
+	// System.String PlayFab.ClientModels.LoginWithOpenIdConnectRequest::TitleId
+	String_t* ___TitleId_8;
+};
+
+// PlayFab.ClientModels.LoginWithPSNRequest
+struct LoginWithPSNRequest_tB200DF6D65ABEF9B55227AFC0648EA145B54012C  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.LoginWithPSNRequest::AuthCode
+	String_t* ___AuthCode_1;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LoginWithPSNRequest::CreateAccount
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___CreateAccount_2;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LoginWithPSNRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_3;
+	// System.String PlayFab.ClientModels.LoginWithPSNRequest::EncryptedRequest
+	String_t* ___EncryptedRequest_4;
+	// PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams PlayFab.ClientModels.LoginWithPSNRequest::InfoRequestParameters
+	GetPlayerCombinedInfoRequestParams_t3917E84443A25D99911EAE3D92DD71B83391A370* ___InfoRequestParameters_5;
+	// System.Nullable`1<System.Int32> PlayFab.ClientModels.LoginWithPSNRequest::IssuerId
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___IssuerId_6;
+	// System.String PlayFab.ClientModels.LoginWithPSNRequest::PlayerSecret
+	String_t* ___PlayerSecret_7;
+	// System.String PlayFab.ClientModels.LoginWithPSNRequest::RedirectUri
+	String_t* ___RedirectUri_8;
+	// System.String PlayFab.ClientModels.LoginWithPSNRequest::TitleId
+	String_t* ___TitleId_9;
+};
+
+// PlayFab.ClientModels.LoginWithPlayFabRequest
+struct LoginWithPlayFabRequest_t40758FC97BA27124A414398D558989E3ADC1BEDB  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LoginWithPlayFabRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams PlayFab.ClientModels.LoginWithPlayFabRequest::InfoRequestParameters
+	GetPlayerCombinedInfoRequestParams_t3917E84443A25D99911EAE3D92DD71B83391A370* ___InfoRequestParameters_2;
+	// System.String PlayFab.ClientModels.LoginWithPlayFabRequest::Password
+	String_t* ___Password_3;
+	// System.String PlayFab.ClientModels.LoginWithPlayFabRequest::TitleId
+	String_t* ___TitleId_4;
+	// System.String PlayFab.ClientModels.LoginWithPlayFabRequest::Username
+	String_t* ___Username_5;
+};
+
+// PlayFab.ClientModels.LoginWithSteamRequest
+struct LoginWithSteamRequest_t394F4FD07286ED05DDAB471F812FB6A471BF86C2  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LoginWithSteamRequest::CreateAccount
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___CreateAccount_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LoginWithSteamRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+	// System.String PlayFab.ClientModels.LoginWithSteamRequest::EncryptedRequest
+	String_t* ___EncryptedRequest_3;
+	// PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams PlayFab.ClientModels.LoginWithSteamRequest::InfoRequestParameters
+	GetPlayerCombinedInfoRequestParams_t3917E84443A25D99911EAE3D92DD71B83391A370* ___InfoRequestParameters_4;
+	// System.String PlayFab.ClientModels.LoginWithSteamRequest::PlayerSecret
+	String_t* ___PlayerSecret_5;
+	// System.String PlayFab.ClientModels.LoginWithSteamRequest::SteamTicket
+	String_t* ___SteamTicket_6;
+	// System.String PlayFab.ClientModels.LoginWithSteamRequest::TitleId
+	String_t* ___TitleId_7;
+};
+
+// PlayFab.ClientModels.LoginWithTwitchRequest
+struct LoginWithTwitchRequest_t015A772F0B539E3986E1DD2B0CA61F420BF436F1  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.LoginWithTwitchRequest::AccessToken
+	String_t* ___AccessToken_1;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LoginWithTwitchRequest::CreateAccount
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___CreateAccount_2;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LoginWithTwitchRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_3;
+	// System.String PlayFab.ClientModels.LoginWithTwitchRequest::EncryptedRequest
+	String_t* ___EncryptedRequest_4;
+	// PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams PlayFab.ClientModels.LoginWithTwitchRequest::InfoRequestParameters
+	GetPlayerCombinedInfoRequestParams_t3917E84443A25D99911EAE3D92DD71B83391A370* ___InfoRequestParameters_5;
+	// System.String PlayFab.ClientModels.LoginWithTwitchRequest::PlayerSecret
+	String_t* ___PlayerSecret_6;
+	// System.String PlayFab.ClientModels.LoginWithTwitchRequest::TitleId
+	String_t* ___TitleId_7;
+};
+
+// PlayFab.ClientModels.LoginWithXboxRequest
+struct LoginWithXboxRequest_tE59BFE96922B056F69FC761526E8EEFD9588D179  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.LoginWithXboxRequest::CreateAccount
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___CreateAccount_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.LoginWithXboxRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+	// System.String PlayFab.ClientModels.LoginWithXboxRequest::EncryptedRequest
+	String_t* ___EncryptedRequest_3;
+	// PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams PlayFab.ClientModels.LoginWithXboxRequest::InfoRequestParameters
+	GetPlayerCombinedInfoRequestParams_t3917E84443A25D99911EAE3D92DD71B83391A370* ___InfoRequestParameters_4;
+	// System.String PlayFab.ClientModels.LoginWithXboxRequest::PlayerSecret
+	String_t* ___PlayerSecret_5;
+	// System.String PlayFab.ClientModels.LoginWithXboxRequest::TitleId
+	String_t* ___TitleId_6;
+	// System.String PlayFab.ClientModels.LoginWithXboxRequest::XboxToken
+	String_t* ___XboxToken_7;
+};
+
+// PlayFab.ClientModels.MatchmakeRequest
+struct MatchmakeRequest_t5DF656F1E5EDDFEDAFBB4F95B4E6EB09BB209681  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.MatchmakeRequest::BuildVersion
+	String_t* ___BuildVersion_1;
+	// System.String PlayFab.ClientModels.MatchmakeRequest::CharacterId
+	String_t* ___CharacterId_2;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.MatchmakeRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_3;
+	// System.String PlayFab.ClientModels.MatchmakeRequest::GameMode
+	String_t* ___GameMode_4;
+	// System.String PlayFab.ClientModels.MatchmakeRequest::LobbyId
+	String_t* ___LobbyId_5;
+	// System.Nullable`1<PlayFab.ClientModels.Region> PlayFab.ClientModels.MatchmakeRequest::Region
+	Nullable_1_tD6B346427FD9C455F0D4135CC5DAB0274DD97359 ___Region_6;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.MatchmakeRequest::StartNewIfNoneFound
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___StartNewIfNoneFound_7;
+	// System.String PlayFab.ClientModels.MatchmakeRequest::StatisticName
+	String_t* ___StatisticName_8;
+	// PlayFab.ClientModels.CollectionFilter PlayFab.ClientModels.MatchmakeRequest::TagFilter
+	CollectionFilter_t7CCEA28D3D380C695200F3E7739551F70D1611BF* ___TagFilter_9;
+};
+
+// PlayFab.ClientModels.MatchmakeResult
+struct MatchmakeResult_t91A455F1630FADD17929926ADFF7FDF7649DF3F2  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.String PlayFab.ClientModels.MatchmakeResult::Expires
+	String_t* ___Expires_2;
+	// System.String PlayFab.ClientModels.MatchmakeResult::LobbyID
+	String_t* ___LobbyID_3;
+	// System.Nullable`1<System.Int32> PlayFab.ClientModels.MatchmakeResult::PollWaitTimeMS
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___PollWaitTimeMS_4;
+	// System.String PlayFab.ClientModels.MatchmakeResult::ServerIPV4Address
+	String_t* ___ServerIPV4Address_5;
+	// System.String PlayFab.ClientModels.MatchmakeResult::ServerIPV6Address
+	String_t* ___ServerIPV6Address_6;
+	// System.Nullable`1<System.Int32> PlayFab.ClientModels.MatchmakeResult::ServerPort
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___ServerPort_7;
+	// System.String PlayFab.ClientModels.MatchmakeResult::ServerPublicDNSName
+	String_t* ___ServerPublicDNSName_8;
+	// System.Nullable`1<PlayFab.ClientModels.MatchmakeStatus> PlayFab.ClientModels.MatchmakeResult::Status
+	Nullable_1_tE95F98B8CD3BFF42B3F003FB77543C34A4123434 ___Status_9;
+	// System.String PlayFab.ClientModels.MatchmakeResult::Ticket
+	String_t* ___Ticket_10;
+};
+
+// PlayFab.ClientModels.ModifyUserVirtualCurrencyResult
+struct ModifyUserVirtualCurrencyResult_tF894EC7B9796D1FAF729AFE3B51659784FDE7EF1  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Int32 PlayFab.ClientModels.ModifyUserVirtualCurrencyResult::Balance
+	int32_t ___Balance_2;
+	// System.Int32 PlayFab.ClientModels.ModifyUserVirtualCurrencyResult::BalanceChange
+	int32_t ___BalanceChange_3;
+	// System.String PlayFab.ClientModels.ModifyUserVirtualCurrencyResult::PlayFabId
+	String_t* ___PlayFabId_4;
+	// System.String PlayFab.ClientModels.ModifyUserVirtualCurrencyResult::VirtualCurrency
+	String_t* ___VirtualCurrency_5;
+};
+
+// PlayFab.ClientModels.OpenTradeRequest
+struct OpenTradeRequest_tA7910CAAFB97AB8643D279093230157EEA5CC4EE  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.OpenTradeRequest::AllowedPlayerIds
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___AllowedPlayerIds_1;
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.OpenTradeRequest::OfferedInventoryInstanceIds
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___OfferedInventoryInstanceIds_2;
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.OpenTradeRequest::RequestedCatalogItemIds
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___RequestedCatalogItemIds_3;
+};
+
+// PlayFab.ClientModels.OpenTradeResponse
+struct OpenTradeResponse_t2CE0A33BD5DC0C64A948DFF6D5A513FAC50C1037  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// PlayFab.ClientModels.TradeInfo PlayFab.ClientModels.OpenTradeResponse::Trade
+	TradeInfo_tBE9088C4A58089296E230210566577FD2AEEEE07* ___Trade_2;
+};
+
+// PlayFab.ClientModels.PayForPurchaseRequest
+struct PayForPurchaseRequest_t5BFF248C9CB1FF6730145725A875A8328B4FB1A6  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.PayForPurchaseRequest::Currency
+	String_t* ___Currency_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.PayForPurchaseRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+	// System.String PlayFab.ClientModels.PayForPurchaseRequest::OrderId
+	String_t* ___OrderId_3;
+	// System.String PlayFab.ClientModels.PayForPurchaseRequest::ProviderName
+	String_t* ___ProviderName_4;
+	// System.String PlayFab.ClientModels.PayForPurchaseRequest::ProviderTransactionId
+	String_t* ___ProviderTransactionId_5;
+};
+
+// PlayFab.ClientModels.PayForPurchaseResult
+struct PayForPurchaseResult_t5E1B46A891BDD3D780DC2009E8922EA88BD69FFD  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.UInt32 PlayFab.ClientModels.PayForPurchaseResult::CreditApplied
+	uint32_t ___CreditApplied_2;
+	// System.String PlayFab.ClientModels.PayForPurchaseResult::OrderId
+	String_t* ___OrderId_3;
+	// System.String PlayFab.ClientModels.PayForPurchaseResult::ProviderData
+	String_t* ___ProviderData_4;
+	// System.String PlayFab.ClientModels.PayForPurchaseResult::ProviderToken
+	String_t* ___ProviderToken_5;
+	// System.String PlayFab.ClientModels.PayForPurchaseResult::PurchaseConfirmationPageURL
+	String_t* ___PurchaseConfirmationPageURL_6;
+	// System.String PlayFab.ClientModels.PayForPurchaseResult::PurchaseCurrency
+	String_t* ___PurchaseCurrency_7;
+	// System.UInt32 PlayFab.ClientModels.PayForPurchaseResult::PurchasePrice
+	uint32_t ___PurchasePrice_8;
+	// System.Nullable`1<PlayFab.ClientModels.TransactionStatus> PlayFab.ClientModels.PayForPurchaseResult::Status
+	Nullable_1_t9E1F0EBFE9C6E268466ED4750DFB7BFA10FD8C07 ___Status_9;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Int32> PlayFab.ClientModels.PayForPurchaseResult::VCAmount
+	Dictionary_2_t5C8F46F5D57502270DD9E1DA8303B23C7FE85588* ___VCAmount_10;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Int32> PlayFab.ClientModels.PayForPurchaseResult::VirtualCurrency
+	Dictionary_2_t5C8F46F5D57502270DD9E1DA8303B23C7FE85588* ___VirtualCurrency_11;
+};
+
+// PlayFab.PlayFabError
+struct PlayFabError_t085A18640C2631872C3888388E2BC667C7B09C23  : public RuntimeObject
+{
+	// System.String PlayFab.PlayFabError::ApiEndpoint
+	String_t* ___ApiEndpoint_0;
+	// System.Int32 PlayFab.PlayFabError::HttpCode
+	int32_t ___HttpCode_1;
+	// System.String PlayFab.PlayFabError::HttpStatus
+	String_t* ___HttpStatus_2;
+	// PlayFab.PlayFabErrorCode PlayFab.PlayFabError::Error
+	int32_t ___Error_3;
+	// System.String PlayFab.PlayFabError::ErrorMessage
+	String_t* ___ErrorMessage_4;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Collections.Generic.List`1<System.String>> PlayFab.PlayFabError::ErrorDetails
+	Dictionary_2_t79BA378F246EFA4AD0AFFA017D788423CACA8638* ___ErrorDetails_5;
+	// System.Object PlayFab.PlayFabError::CustomData
+	RuntimeObject* ___CustomData_6;
+	// System.Nullable`1<System.UInt32> PlayFab.PlayFabError::RetryAfterSeconds
+	Nullable_1_tD043F01310E483091D0E9A5526C3425F13EF2099 ___RetryAfterSeconds_7;
+};
+
+// PlayFab.SharedModels.PlayFabLoginResultCommon
+struct PlayFabLoginResultCommon_t564463F743BE39995D6BBD360F222C16FB74AA47  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// PlayFab.PlayFabAuthenticationContext PlayFab.SharedModels.PlayFabLoginResultCommon::AuthenticationContext
+	PlayFabAuthenticationContext_t221B79722A7A90BF01896A080CB0488FC0A9971A* ___AuthenticationContext_2;
+};
+
+// PlayFab.ClientModels.PurchaseItemRequest
+struct PurchaseItemRequest_tE070606E4EAD464357558E48126C4734D2F7C506  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.PurchaseItemRequest::CatalogVersion
+	String_t* ___CatalogVersion_1;
+	// System.String PlayFab.ClientModels.PurchaseItemRequest::CharacterId
+	String_t* ___CharacterId_2;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.PurchaseItemRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_3;
+	// System.String PlayFab.ClientModels.PurchaseItemRequest::ItemId
+	String_t* ___ItemId_4;
+	// System.Int32 PlayFab.ClientModels.PurchaseItemRequest::Price
+	int32_t ___Price_5;
+	// System.String PlayFab.ClientModels.PurchaseItemRequest::StoreId
+	String_t* ___StoreId_6;
+	// System.String PlayFab.ClientModels.PurchaseItemRequest::VirtualCurrency
+	String_t* ___VirtualCurrency_7;
+};
+
+// PlayFab.ClientModels.PurchaseItemResult
+struct PurchaseItemResult_t0F98838DD4B9DD95771031D96FD60D88597D764D  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.ItemInstance> PlayFab.ClientModels.PurchaseItemResult::Items
+	List_1_t0EF5E12708A02CDDAB397230F7858B452CA3C264* ___Items_2;
+};
+
+// PlayFab.ClientModels.PurchaseReceiptFulfillment
+struct PurchaseReceiptFulfillment_t186B9940CFED13815A2AEAC5253A2C9D4F9E6B50  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.ItemInstance> PlayFab.ClientModels.PurchaseReceiptFulfillment::FulfilledItems
+	List_1_t0EF5E12708A02CDDAB397230F7858B452CA3C264* ___FulfilledItems_0;
+	// System.String PlayFab.ClientModels.PurchaseReceiptFulfillment::RecordedPriceSource
+	String_t* ___RecordedPriceSource_1;
+	// System.String PlayFab.ClientModels.PurchaseReceiptFulfillment::RecordedTransactionCurrency
+	String_t* ___RecordedTransactionCurrency_2;
+	// System.Nullable`1<System.UInt32> PlayFab.ClientModels.PurchaseReceiptFulfillment::RecordedTransactionTotal
+	Nullable_1_tD043F01310E483091D0E9A5526C3425F13EF2099 ___RecordedTransactionTotal_3;
+};
+
+// PlayFab.ClientModels.PushNotificationRegistrationModel
+struct PushNotificationRegistrationModel_t35ACE788D79DDE73C44F51819BBAC6214F267B26  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.PushNotificationRegistrationModel::NotificationEndpointARN
+	String_t* ___NotificationEndpointARN_0;
+	// System.Nullable`1<PlayFab.ClientModels.PushNotificationPlatform> PlayFab.ClientModels.PushNotificationRegistrationModel::Platform
+	Nullable_1_tE251DA79A8D0E93D6B7DAB2E248E2683339EA695 ___Platform_1;
+};
+
+// PlayFab.ClientModels.RedeemCouponRequest
+struct RedeemCouponRequest_t5675549F914957105DF0F1092BF4D9B9C2C8D1F2  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.RedeemCouponRequest::CatalogVersion
+	String_t* ___CatalogVersion_1;
+	// System.String PlayFab.ClientModels.RedeemCouponRequest::CharacterId
+	String_t* ___CharacterId_2;
+	// System.String PlayFab.ClientModels.RedeemCouponRequest::CouponCode
+	String_t* ___CouponCode_3;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.RedeemCouponRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_4;
+};
+
+// PlayFab.ClientModels.RedeemCouponResult
+struct RedeemCouponResult_tF194CA6CCFDD39047866D5A32510C64B4F1C45E7  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.ItemInstance> PlayFab.ClientModels.RedeemCouponResult::GrantedItems
+	List_1_t0EF5E12708A02CDDAB397230F7858B452CA3C264* ___GrantedItems_2;
+};
+
+// PlayFab.ClientModels.RefreshPSNAuthTokenRequest
+struct RefreshPSNAuthTokenRequest_tAF960E83D3F69FFE09A341DF66DE48E0DE3D47A9  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.RefreshPSNAuthTokenRequest::AuthCode
+	String_t* ___AuthCode_1;
+	// System.Nullable`1<System.Int32> PlayFab.ClientModels.RefreshPSNAuthTokenRequest::IssuerId
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___IssuerId_2;
+	// System.String PlayFab.ClientModels.RefreshPSNAuthTokenRequest::RedirectUri
+	String_t* ___RedirectUri_3;
+};
+
+// PlayFab.ClientModels.RegionInfo
+struct RegionInfo_t742920284384CB9F5B77AA896624869218F923F8  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.Boolean PlayFab.ClientModels.RegionInfo::Available
+	bool ___Available_0;
+	// System.String PlayFab.ClientModels.RegionInfo::Name
+	String_t* ___Name_1;
+	// System.String PlayFab.ClientModels.RegionInfo::PingUrl
+	String_t* ___PingUrl_2;
+	// System.Nullable`1<PlayFab.ClientModels.Region> PlayFab.ClientModels.RegionInfo::Region
+	Nullable_1_tD6B346427FD9C455F0D4135CC5DAB0274DD97359 ___Region_3;
+};
+
+// PlayFab.ClientModels.RegisterForIOSPushNotificationRequest
+struct RegisterForIOSPushNotificationRequest_tAE58EB678D907A970C184A4A2FD2E9E75B3BE391  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.RegisterForIOSPushNotificationRequest::ConfirmationMessage
+	String_t* ___ConfirmationMessage_1;
+	// System.String PlayFab.ClientModels.RegisterForIOSPushNotificationRequest::DeviceToken
+	String_t* ___DeviceToken_2;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.RegisterForIOSPushNotificationRequest::SendPushNotificationConfirmation
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___SendPushNotificationConfirmation_3;
+};
+
+// PlayFab.ClientModels.RegisterForIOSPushNotificationResult
+struct RegisterForIOSPushNotificationResult_t3590642F3B094B5C4E1D094CBBC71D264CF28A8C  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.RegisterPlayFabUserRequest
+struct RegisterPlayFabUserRequest_t9CCD4AA2142B94AA94D4F809486BB925E4EBEC4D  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.RegisterPlayFabUserRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.String PlayFab.ClientModels.RegisterPlayFabUserRequest::DisplayName
+	String_t* ___DisplayName_2;
+	// System.String PlayFab.ClientModels.RegisterPlayFabUserRequest::Email
+	String_t* ___Email_3;
+	// System.String PlayFab.ClientModels.RegisterPlayFabUserRequest::EncryptedRequest
+	String_t* ___EncryptedRequest_4;
+	// PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams PlayFab.ClientModels.RegisterPlayFabUserRequest::InfoRequestParameters
+	GetPlayerCombinedInfoRequestParams_t3917E84443A25D99911EAE3D92DD71B83391A370* ___InfoRequestParameters_5;
+	// System.String PlayFab.ClientModels.RegisterPlayFabUserRequest::Password
+	String_t* ___Password_6;
+	// System.String PlayFab.ClientModels.RegisterPlayFabUserRequest::PlayerSecret
+	String_t* ___PlayerSecret_7;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.RegisterPlayFabUserRequest::RequireBothUsernameAndEmail
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___RequireBothUsernameAndEmail_8;
+	// System.String PlayFab.ClientModels.RegisterPlayFabUserRequest::TitleId
+	String_t* ___TitleId_9;
+	// System.String PlayFab.ClientModels.RegisterPlayFabUserRequest::Username
+	String_t* ___Username_10;
+};
+
+// PlayFab.ClientModels.RemoveContactEmailRequest
+struct RemoveContactEmailRequest_tE33A6A7E8163B419221F72305702BE6A72B5D058  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.RemoveContactEmailRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+};
+
+// PlayFab.ClientModels.RemoveContactEmailResult
+struct RemoveContactEmailResult_t47A953EF532A4E6723358B699AD09F5B209280AE  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.RemoveFriendRequest
+struct RemoveFriendRequest_t65DE6114B83F043B5D00AA3EADA456C1A640ED0C  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.RemoveFriendRequest::FriendPlayFabId
+	String_t* ___FriendPlayFabId_1;
+};
+
+// PlayFab.ClientModels.RemoveFriendResult
+struct RemoveFriendResult_t4D4C4DC05B609FF8C9F5758656C3ED678646A4A8  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.RemoveGenericIDRequest
+struct RemoveGenericIDRequest_t334BD9293954FD10CECEF754B959B6CB03873601  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// PlayFab.ClientModels.GenericServiceId PlayFab.ClientModels.RemoveGenericIDRequest::GenericId
+	GenericServiceId_t845FFCE0230F5F2AC512688C09CB390784A40DCE* ___GenericId_1;
+};
+
+// PlayFab.ClientModels.RemoveGenericIDResult
+struct RemoveGenericIDResult_tEE02A4C18E83ACE22323711023D49D1EEDC93D02  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.RemoveSharedGroupMembersRequest
+struct RemoveSharedGroupMembersRequest_t672B79755C84F7963F0197AC7F649DFB47BE62D4  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.RemoveSharedGroupMembersRequest::PlayFabIds
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___PlayFabIds_1;
+	// System.String PlayFab.ClientModels.RemoveSharedGroupMembersRequest::SharedGroupId
+	String_t* ___SharedGroupId_2;
+};
+
+// PlayFab.ClientModels.RemoveSharedGroupMembersResult
+struct RemoveSharedGroupMembersResult_t9F15AE0E2590B802799C461D364AEC2F41C87EF3  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.ReportAdActivityRequest
+struct ReportAdActivityRequest_tF280F9F16376E09CA24C97A15524A57355362D19  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// PlayFab.ClientModels.AdActivity PlayFab.ClientModels.ReportAdActivityRequest::Activity
+	int32_t ___Activity_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.ReportAdActivityRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+	// System.String PlayFab.ClientModels.ReportAdActivityRequest::PlacementId
+	String_t* ___PlacementId_3;
+	// System.String PlayFab.ClientModels.ReportAdActivityRequest::RewardId
+	String_t* ___RewardId_4;
+};
+
+// PlayFab.ClientModels.ReportAdActivityResult
+struct ReportAdActivityResult_t1C560F4635F86A0C40F5325FE39CB7FBE1DE1F9A  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.ReportPlayerClientRequest
+struct ReportPlayerClientRequest_t85D945417F8AD84B449F05E00BAE283608DDBDA4  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.ReportPlayerClientRequest::Comment
+	String_t* ___Comment_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.ReportPlayerClientRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+	// System.String PlayFab.ClientModels.ReportPlayerClientRequest::ReporteeId
+	String_t* ___ReporteeId_3;
+};
+
+// PlayFab.ClientModels.ReportPlayerClientResult
+struct ReportPlayerClientResult_t241E6D96E47D8719B56EFC690FD0F6CB76205BF8  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Int32 PlayFab.ClientModels.ReportPlayerClientResult::SubmissionsRemaining
+	int32_t ___SubmissionsRemaining_2;
+};
+
+// PlayFab.ClientModels.RestoreIOSPurchasesRequest
+struct RestoreIOSPurchasesRequest_t000097A3FD2F14C3F4F4DEBA527033F0BD3EF56E  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.RestoreIOSPurchasesRequest::CatalogVersion
+	String_t* ___CatalogVersion_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.RestoreIOSPurchasesRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+	// System.String PlayFab.ClientModels.RestoreIOSPurchasesRequest::ReceiptData
+	String_t* ___ReceiptData_3;
+};
+
+// PlayFab.ClientModels.RestoreIOSPurchasesResult
+struct RestoreIOSPurchasesResult_tEA0A385A03BA6A9080C82D126B97BB62C9C22375  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.PurchaseReceiptFulfillment> PlayFab.ClientModels.RestoreIOSPurchasesResult::Fulfillments
+	List_1_t50A44D8AB20157819C0C38F1E5363424ACC9C999* ___Fulfillments_2;
+};
+
+// PlayFab.ClientModels.RewardAdActivityRequest
+struct RewardAdActivityRequest_tE9341F9C11C66589454A65BB945DD2E86C078BB7  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.RewardAdActivityRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.String PlayFab.ClientModels.RewardAdActivityRequest::PlacementId
+	String_t* ___PlacementId_2;
+	// System.String PlayFab.ClientModels.RewardAdActivityRequest::RewardId
+	String_t* ___RewardId_3;
+};
+
+// PlayFab.ClientModels.RewardAdActivityResult
+struct RewardAdActivityResult_t94A00EAF9EE41752255A4673EF0E25B45E51117A  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.String PlayFab.ClientModels.RewardAdActivityResult::AdActivityEventId
+	String_t* ___AdActivityEventId_2;
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.RewardAdActivityResult::DebugResults
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___DebugResults_3;
+	// System.String PlayFab.ClientModels.RewardAdActivityResult::PlacementId
+	String_t* ___PlacementId_4;
+	// System.String PlayFab.ClientModels.RewardAdActivityResult::PlacementName
+	String_t* ___PlacementName_5;
+	// System.Nullable`1<System.Int32> PlayFab.ClientModels.RewardAdActivityResult::PlacementViewsRemaining
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___PlacementViewsRemaining_6;
+	// System.Nullable`1<System.Double> PlayFab.ClientModels.RewardAdActivityResult::PlacementViewsResetMinutes
+	Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165 ___PlacementViewsResetMinutes_7;
+	// PlayFab.ClientModels.AdRewardResults PlayFab.ClientModels.RewardAdActivityResult::RewardResults
+	AdRewardResults_tCD3953C86B90682A93AB255F40D1B37AC745D82D* ___RewardResults_8;
+};
+
+// PlayFab.ClientModels.SendAccountRecoveryEmailRequest
+struct SendAccountRecoveryEmailRequest_t175EB9B99FA2F2D019EA567249BBAA92033021B1  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.SendAccountRecoveryEmailRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.String PlayFab.ClientModels.SendAccountRecoveryEmailRequest::Email
+	String_t* ___Email_2;
+	// System.String PlayFab.ClientModels.SendAccountRecoveryEmailRequest::EmailTemplateId
+	String_t* ___EmailTemplateId_3;
+	// System.String PlayFab.ClientModels.SendAccountRecoveryEmailRequest::TitleId
+	String_t* ___TitleId_4;
+};
+
+// PlayFab.ClientModels.SendAccountRecoveryEmailResult
+struct SendAccountRecoveryEmailResult_tD397DE2B4C711854DDCC6CD65878726990E83350  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.SetFriendTagsRequest
+struct SetFriendTagsRequest_tB1697AECA1FFB648EF0E49EE1E32A8DFF64F1172  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.SetFriendTagsRequest::FriendPlayFabId
+	String_t* ___FriendPlayFabId_1;
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.SetFriendTagsRequest::Tags
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___Tags_2;
+};
+
+// PlayFab.ClientModels.SetFriendTagsResult
+struct SetFriendTagsResult_t3FB32FF008D7F79F4468EA6DA4C920327F49E13F  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.SetPlayerSecretRequest
+struct SetPlayerSecretRequest_t155B28C6752FE84EE84726EECAB2789B76F80CFE  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.SetPlayerSecretRequest::EncryptedRequest
+	String_t* ___EncryptedRequest_1;
+	// System.String PlayFab.ClientModels.SetPlayerSecretRequest::PlayerSecret
+	String_t* ___PlayerSecret_2;
+};
+
+// PlayFab.ClientModels.SetPlayerSecretResult
+struct SetPlayerSecretResult_t0F0A2B0A39F5311D0B7DB58A08704B54D5E78F8C  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.SharedGroupDataRecord
+struct SharedGroupDataRecord_t6EABB17CCB23C3B14A9F2A29E1C0B06308DE22EB  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.DateTime PlayFab.ClientModels.SharedGroupDataRecord::LastUpdated
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___LastUpdated_0;
+	// System.String PlayFab.ClientModels.SharedGroupDataRecord::LastUpdatedBy
+	String_t* ___LastUpdatedBy_1;
+	// System.Nullable`1<PlayFab.ClientModels.UserDataPermission> PlayFab.ClientModels.SharedGroupDataRecord::Permission
+	Nullable_1_t067499BB68589229FB737513FCF7C77D7952D5DB ___Permission_2;
+	// System.String PlayFab.ClientModels.SharedGroupDataRecord::Value
+	String_t* ___Value_3;
+};
+
+// PlayFab.ClientModels.StartPurchaseRequest
+struct StartPurchaseRequest_tC40028ED224835E5869E8741528AFD27A5B3B497  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.StartPurchaseRequest::CatalogVersion
+	String_t* ___CatalogVersion_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.StartPurchaseRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.ItemPurchaseRequest> PlayFab.ClientModels.StartPurchaseRequest::Items
+	List_1_t5E9A608270FE195066167121D49A36F80B9E22D5* ___Items_3;
+	// System.String PlayFab.ClientModels.StartPurchaseRequest::StoreId
+	String_t* ___StoreId_4;
+};
+
+// PlayFab.ClientModels.StartPurchaseResult
+struct StartPurchaseResult_t5AE695449ACBCC8CA93186640E203802B1E0B70F  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.CartItem> PlayFab.ClientModels.StartPurchaseResult::Contents
+	List_1_t07127EA14CA4D7E27B02EC1D9D7EB878FB216E51* ___Contents_2;
+	// System.String PlayFab.ClientModels.StartPurchaseResult::OrderId
+	String_t* ___OrderId_3;
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.PaymentOption> PlayFab.ClientModels.StartPurchaseResult::PaymentOptions
+	List_1_t75868E13E47CE7F4CD6523D1277CFCA7E6390685* ___PaymentOptions_4;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Int32> PlayFab.ClientModels.StartPurchaseResult::VirtualCurrencyBalances
+	Dictionary_2_t5C8F46F5D57502270DD9E1DA8303B23C7FE85588* ___VirtualCurrencyBalances_5;
+};
+
+// PlayFab.ClientModels.StatisticUpdate
+struct StatisticUpdate_tFF1ABF7B0BF17840014AAC48D4470605441B5D34  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.StatisticUpdate::StatisticName
+	String_t* ___StatisticName_0;
+	// System.Int32 PlayFab.ClientModels.StatisticUpdate::Value
+	int32_t ___Value_1;
+	// System.Nullable`1<System.UInt32> PlayFab.ClientModels.StatisticUpdate::Version
+	Nullable_1_tD043F01310E483091D0E9A5526C3425F13EF2099 ___Version_2;
+};
+
+// PlayFab.ClientModels.StoreItem
+struct StoreItem_tADBFD4037B803EBC8EC6E38BA1FC7229FB63E71F  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.Object PlayFab.ClientModels.StoreItem::CustomData
+	RuntimeObject* ___CustomData_0;
+	// System.Nullable`1<System.UInt32> PlayFab.ClientModels.StoreItem::DisplayPosition
+	Nullable_1_tD043F01310E483091D0E9A5526C3425F13EF2099 ___DisplayPosition_1;
+	// System.String PlayFab.ClientModels.StoreItem::ItemId
+	String_t* ___ItemId_2;
+	// System.Collections.Generic.Dictionary`2<System.String,System.UInt32> PlayFab.ClientModels.StoreItem::RealCurrencyPrices
+	Dictionary_2_t3530A61C502BFE07F3ED20F8D9B10D762DB0F1D3* ___RealCurrencyPrices_3;
+	// System.Collections.Generic.Dictionary`2<System.String,System.UInt32> PlayFab.ClientModels.StoreItem::VirtualCurrencyPrices
+	Dictionary_2_t3530A61C502BFE07F3ED20F8D9B10D762DB0F1D3* ___VirtualCurrencyPrices_4;
+};
+
+// PlayFab.ClientModels.SubscriptionModel
+struct SubscriptionModel_tE2460B7EA43E4F7761842C8E495DA045317FE5FF  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.DateTime PlayFab.ClientModels.SubscriptionModel::Expiration
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___Expiration_0;
+	// System.DateTime PlayFab.ClientModels.SubscriptionModel::InitialSubscriptionTime
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___InitialSubscriptionTime_1;
+	// System.Boolean PlayFab.ClientModels.SubscriptionModel::IsActive
+	bool ___IsActive_2;
+	// System.Nullable`1<PlayFab.ClientModels.SubscriptionProviderStatus> PlayFab.ClientModels.SubscriptionModel::Status
+	Nullable_1_t1C6D81215466D9E73A526195FE2F06D6299CE58C ___Status_3;
+	// System.String PlayFab.ClientModels.SubscriptionModel::SubscriptionId
+	String_t* ___SubscriptionId_4;
+	// System.String PlayFab.ClientModels.SubscriptionModel::SubscriptionItemId
+	String_t* ___SubscriptionItemId_5;
+	// System.String PlayFab.ClientModels.SubscriptionModel::SubscriptionProvider
+	String_t* ___SubscriptionProvider_6;
+};
+
+// PlayFab.ClientModels.SubtractUserVirtualCurrencyRequest
+struct SubtractUserVirtualCurrencyRequest_t9EF5A4F8756E1C85E4DC210B659F064376422BD5  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Int32 PlayFab.ClientModels.SubtractUserVirtualCurrencyRequest::Amount
+	int32_t ___Amount_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.SubtractUserVirtualCurrencyRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+	// System.String PlayFab.ClientModels.SubtractUserVirtualCurrencyRequest::VirtualCurrency
+	String_t* ___VirtualCurrency_3;
+};
+
+// PlayFab.ClientModels.TitleNewsItem
+struct TitleNewsItem_t3FF911671D0CBBBC29FE3B156BD2CBFAA8E0E5B7  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.TitleNewsItem::Body
+	String_t* ___Body_0;
+	// System.String PlayFab.ClientModels.TitleNewsItem::NewsId
+	String_t* ___NewsId_1;
+	// System.DateTime PlayFab.ClientModels.TitleNewsItem::Timestamp
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___Timestamp_2;
+	// System.String PlayFab.ClientModels.TitleNewsItem::Title
+	String_t* ___Title_3;
+};
+
+// PlayFab.ClientModels.UnlinkAndroidDeviceIDRequest
+struct UnlinkAndroidDeviceIDRequest_tDEB5EEAC89390106CECE2C514E3B9FF6F9F72D9E  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.UnlinkAndroidDeviceIDRequest::AndroidDeviceId
+	String_t* ___AndroidDeviceId_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.UnlinkAndroidDeviceIDRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+};
+
+// PlayFab.ClientModels.UnlinkAndroidDeviceIDResult
+struct UnlinkAndroidDeviceIDResult_t1A883DF782BD48500607B480852AA2537F4F3327  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.UnlinkAppleRequest
+struct UnlinkAppleRequest_t92C5AB52E8736CCA3D8DE4841B1BDB8F7FB83222  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.UnlinkAppleRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+};
+
+// PlayFab.ClientModels.UnlinkCustomIDRequest
+struct UnlinkCustomIDRequest_t46E020211057E7653AFE02D26F44F9E130D30521  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.UnlinkCustomIDRequest::CustomId
+	String_t* ___CustomId_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.UnlinkCustomIDRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+};
+
+// PlayFab.ClientModels.UnlinkCustomIDResult
+struct UnlinkCustomIDResult_t233F6432A9B50B2D68E3C568F574F4FA2D7BB60C  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.UnlinkFacebookAccountRequest
+struct UnlinkFacebookAccountRequest_tA7E318BFED129D19D58FA04FD6FBF6B7ADF85928  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.UnlinkFacebookAccountRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+};
+
+// PlayFab.ClientModels.UnlinkFacebookAccountResult
+struct UnlinkFacebookAccountResult_t64890736BCF70AA84E14FBABA25758E9554324B1  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.UnlinkFacebookInstantGamesIdRequest
+struct UnlinkFacebookInstantGamesIdRequest_t4B257DB75AFEEF708F6D5AC2C3BB1D09740F6C9C  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.UnlinkFacebookInstantGamesIdRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.String PlayFab.ClientModels.UnlinkFacebookInstantGamesIdRequest::FacebookInstantGamesId
+	String_t* ___FacebookInstantGamesId_2;
+};
+
+// PlayFab.ClientModels.UnlinkFacebookInstantGamesIdResult
+struct UnlinkFacebookInstantGamesIdResult_tA3C0ECA8433D6677C4BB580C8589346222E32D43  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.UnlinkGameCenterAccountRequest
+struct UnlinkGameCenterAccountRequest_t9596E9FC71D85C48FFF699F2AD829A3D0DEA901A  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.UnlinkGameCenterAccountRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+};
+
+// PlayFab.ClientModels.UnlinkGameCenterAccountResult
+struct UnlinkGameCenterAccountResult_t6F0C5BCEB35453E4CA8E05A31D654A782BC5E95F  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.UnlinkGoogleAccountRequest
+struct UnlinkGoogleAccountRequest_t67E73532283D56ED37F1E9F1289FDE4BE84967CC  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.UnlinkGoogleAccountRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+};
+
+// PlayFab.ClientModels.UnlinkGoogleAccountResult
+struct UnlinkGoogleAccountResult_t6622EFB999584E5DEC5DEB93D2935D979FBE846C  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.UnlinkGooglePlayGamesServicesAccountRequest
+struct UnlinkGooglePlayGamesServicesAccountRequest_t2F717932AF82E7668AA9724038C2A9F2229F7872  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.UnlinkGooglePlayGamesServicesAccountRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+};
+
+// PlayFab.ClientModels.UnlinkGooglePlayGamesServicesAccountResult
+struct UnlinkGooglePlayGamesServicesAccountResult_t5C6E7A2299B43C75BA9B8680100BF966FCE31270  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.UnlinkIOSDeviceIDRequest
+struct UnlinkIOSDeviceIDRequest_t1EE4B2AFE9CE7D0849D68EF258CADFB476EA53CA  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.UnlinkIOSDeviceIDRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.String PlayFab.ClientModels.UnlinkIOSDeviceIDRequest::DeviceId
+	String_t* ___DeviceId_2;
+};
+
+// PlayFab.ClientModels.UnlinkIOSDeviceIDResult
+struct UnlinkIOSDeviceIDResult_t4596D43010D9025839A9679C5DB058CBBF794AE9  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.UnlinkKongregateAccountRequest
+struct UnlinkKongregateAccountRequest_t2FEFF816F15AEF0C241926B63004694A5FC6FD87  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.UnlinkKongregateAccountRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+};
+
+// PlayFab.ClientModels.UnlinkKongregateAccountResult
+struct UnlinkKongregateAccountResult_tAB392A5AFFF5D1FDF901F514F11D3AD3B6021CC8  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.UnlinkNintendoServiceAccountRequest
+struct UnlinkNintendoServiceAccountRequest_t06B51402344303DA405A305B5B1F9A54C9145C84  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.UnlinkNintendoServiceAccountRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+};
+
+// PlayFab.ClientModels.UnlinkNintendoSwitchDeviceIdRequest
+struct UnlinkNintendoSwitchDeviceIdRequest_t35F44CBF87CFC802E5C568E898E4E203B3659A11  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.UnlinkNintendoSwitchDeviceIdRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.String PlayFab.ClientModels.UnlinkNintendoSwitchDeviceIdRequest::NintendoSwitchDeviceId
+	String_t* ___NintendoSwitchDeviceId_2;
+};
+
+// PlayFab.ClientModels.UnlinkNintendoSwitchDeviceIdResult
+struct UnlinkNintendoSwitchDeviceIdResult_tC9E5AD9A628AFDDD3DC1E3A2463C9A53307DFCD8  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.UnlinkOpenIdConnectRequest
+struct UnlinkOpenIdConnectRequest_t307BC82317C8730161E40EFDED957CF2A68E0799  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.UnlinkOpenIdConnectRequest::ConnectionId
+	String_t* ___ConnectionId_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.UnlinkOpenIdConnectRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+};
+
+// PlayFab.ClientModels.UnlinkPSNAccountRequest
+struct UnlinkPSNAccountRequest_t1060A17C5A70C60683D7F133E1ABBC8408A63EE3  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.UnlinkPSNAccountRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+};
+
+// PlayFab.ClientModels.UnlinkPSNAccountResult
+struct UnlinkPSNAccountResult_t72E4629A6FCA43E0C5BAA9E2EE059A5E756096E7  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.UnlinkSteamAccountRequest
+struct UnlinkSteamAccountRequest_t2876EA45B25D6F400BBB61DE5AC76A15EBAF02AA  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.UnlinkSteamAccountRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+};
+
+// PlayFab.ClientModels.UnlinkSteamAccountResult
+struct UnlinkSteamAccountResult_t0B0222CF28C08B53406C9B62FBA815C7C3AEE74E  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.UnlinkTwitchAccountRequest
+struct UnlinkTwitchAccountRequest_tE5BE128D46C7D5CCEE7B97DEEEC5CA2526CFCCE2  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.UnlinkTwitchAccountRequest::AccessToken
+	String_t* ___AccessToken_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.UnlinkTwitchAccountRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+};
+
+// PlayFab.ClientModels.UnlinkTwitchAccountResult
+struct UnlinkTwitchAccountResult_tD82751FFBDC681DE0BB88D43A2C9298CCF0D8AA4  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.UnlinkXboxAccountRequest
+struct UnlinkXboxAccountRequest_t8E27CE0799DF36ECD984F4ED8DE17ED3657AE57E  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.UnlinkXboxAccountRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+};
+
+// PlayFab.ClientModels.UnlinkXboxAccountResult
+struct UnlinkXboxAccountResult_tE2D65912D4AB4D5E32CA3561994FF8654DE07F7E  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.UnlockContainerInstanceRequest
+struct UnlockContainerInstanceRequest_tB7E4282214EEE56EF6DDA6CC5C4C8780F8C0FC94  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.UnlockContainerInstanceRequest::CatalogVersion
+	String_t* ___CatalogVersion_1;
+	// System.String PlayFab.ClientModels.UnlockContainerInstanceRequest::CharacterId
+	String_t* ___CharacterId_2;
+	// System.String PlayFab.ClientModels.UnlockContainerInstanceRequest::ContainerItemInstanceId
+	String_t* ___ContainerItemInstanceId_3;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.UnlockContainerInstanceRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_4;
+	// System.String PlayFab.ClientModels.UnlockContainerInstanceRequest::KeyItemInstanceId
+	String_t* ___KeyItemInstanceId_5;
+};
+
+// PlayFab.ClientModels.UnlockContainerItemRequest
+struct UnlockContainerItemRequest_t820D81CB38D610CB71E1F56DC332E45B4B518ABC  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.UnlockContainerItemRequest::CatalogVersion
+	String_t* ___CatalogVersion_1;
+	// System.String PlayFab.ClientModels.UnlockContainerItemRequest::CharacterId
+	String_t* ___CharacterId_2;
+	// System.String PlayFab.ClientModels.UnlockContainerItemRequest::ContainerItemId
+	String_t* ___ContainerItemId_3;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.UnlockContainerItemRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_4;
+};
+
+// PlayFab.ClientModels.UnlockContainerItemResult
+struct UnlockContainerItemResult_t35CFBDF59A70BE18F28D78CCF1E3FBFC0878ECF7  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.ItemInstance> PlayFab.ClientModels.UnlockContainerItemResult::GrantedItems
+	List_1_t0EF5E12708A02CDDAB397230F7858B452CA3C264* ___GrantedItems_2;
+	// System.String PlayFab.ClientModels.UnlockContainerItemResult::UnlockedItemInstanceId
+	String_t* ___UnlockedItemInstanceId_3;
+	// System.String PlayFab.ClientModels.UnlockContainerItemResult::UnlockedWithItemInstanceId
+	String_t* ___UnlockedWithItemInstanceId_4;
+	// System.Collections.Generic.Dictionary`2<System.String,System.UInt32> PlayFab.ClientModels.UnlockContainerItemResult::VirtualCurrency
+	Dictionary_2_t3530A61C502BFE07F3ED20F8D9B10D762DB0F1D3* ___VirtualCurrency_5;
+};
+
+// PlayFab.ClientModels.UpdateAvatarUrlRequest
+struct UpdateAvatarUrlRequest_t72A827E07538C3CD5BA65A04CDAFE440BFE37040  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.UpdateAvatarUrlRequest::ImageUrl
+	String_t* ___ImageUrl_1;
+};
+
+// PlayFab.ClientModels.UpdateCharacterDataRequest
+struct UpdateCharacterDataRequest_t1A476F394AE1FFF66454B7F95C6530097CDF706A  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.UpdateCharacterDataRequest::CharacterId
+	String_t* ___CharacterId_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.UpdateCharacterDataRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.UpdateCharacterDataRequest::Data
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___Data_3;
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.UpdateCharacterDataRequest::KeysToRemove
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___KeysToRemove_4;
+	// System.Nullable`1<PlayFab.ClientModels.UserDataPermission> PlayFab.ClientModels.UpdateCharacterDataRequest::Permission
+	Nullable_1_t067499BB68589229FB737513FCF7C77D7952D5DB ___Permission_5;
+};
+
+// PlayFab.ClientModels.UpdateCharacterDataResult
+struct UpdateCharacterDataResult_tAB9AAEEA9FE8658FC10180393C742EA1E50401BE  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.UInt32 PlayFab.ClientModels.UpdateCharacterDataResult::DataVersion
+	uint32_t ___DataVersion_2;
+};
+
+// PlayFab.ClientModels.UpdateCharacterStatisticsRequest
+struct UpdateCharacterStatisticsRequest_tE19059CA8705B365B5C50F31FCD9EF302D50F02F  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.UpdateCharacterStatisticsRequest::CharacterId
+	String_t* ___CharacterId_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Int32> PlayFab.ClientModels.UpdateCharacterStatisticsRequest::CharacterStatistics
+	Dictionary_2_t5C8F46F5D57502270DD9E1DA8303B23C7FE85588* ___CharacterStatistics_2;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.UpdateCharacterStatisticsRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_3;
+};
+
+// PlayFab.ClientModels.UpdateCharacterStatisticsResult
+struct UpdateCharacterStatisticsResult_t3F6EF334C142A8BC10FBA7320DDB57FA6BB0952A  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.UpdatePlayerStatisticsRequest
+struct UpdatePlayerStatisticsRequest_t5B474D977EE17B8842BF33DF9E60B09281F2A496  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.UpdatePlayerStatisticsRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.StatisticUpdate> PlayFab.ClientModels.UpdatePlayerStatisticsRequest::Statistics
+	List_1_t2BE2D151E3E6356A8F0DE6FDF222CFE019C3EE15* ___Statistics_2;
+};
+
+// PlayFab.ClientModels.UpdatePlayerStatisticsResult
+struct UpdatePlayerStatisticsResult_tF1D48A2D96A003AFCDDE4DB38B179461B3E63E09  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.UpdateSharedGroupDataRequest
+struct UpdateSharedGroupDataRequest_t770268D7040E97EEF614E28201FBA15B27F07ABC  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.UpdateSharedGroupDataRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.UpdateSharedGroupDataRequest::Data
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___Data_2;
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.UpdateSharedGroupDataRequest::KeysToRemove
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___KeysToRemove_3;
+	// System.Nullable`1<PlayFab.ClientModels.UserDataPermission> PlayFab.ClientModels.UpdateSharedGroupDataRequest::Permission
+	Nullable_1_t067499BB68589229FB737513FCF7C77D7952D5DB ___Permission_4;
+	// System.String PlayFab.ClientModels.UpdateSharedGroupDataRequest::SharedGroupId
+	String_t* ___SharedGroupId_5;
+};
+
+// PlayFab.ClientModels.UpdateSharedGroupDataResult
+struct UpdateSharedGroupDataResult_tC2A0B472A61723265334227D8BA7EE580C3D7DD9  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+};
+
+// PlayFab.ClientModels.UpdateUserDataRequest
+struct UpdateUserDataRequest_t00F2203E748C9D0B33E3CC673EAB649EB2B5662A  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.UpdateUserDataRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.UpdateUserDataRequest::Data
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___Data_2;
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.UpdateUserDataRequest::KeysToRemove
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___KeysToRemove_3;
+	// System.Nullable`1<PlayFab.ClientModels.UserDataPermission> PlayFab.ClientModels.UpdateUserDataRequest::Permission
+	Nullable_1_t067499BB68589229FB737513FCF7C77D7952D5DB ___Permission_4;
+};
+
+// PlayFab.ClientModels.UpdateUserDataResult
+struct UpdateUserDataResult_t23060B0433CB78E7CECEDFC3F7D63B91E051A74B  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.UInt32 PlayFab.ClientModels.UpdateUserDataResult::DataVersion
+	uint32_t ___DataVersion_2;
+};
+
+// PlayFab.ClientModels.UpdateUserTitleDisplayNameRequest
+struct UpdateUserTitleDisplayNameRequest_t7A00322DBF953F51971F85914E1F5B8B75CC8E1C  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.UpdateUserTitleDisplayNameRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.String PlayFab.ClientModels.UpdateUserTitleDisplayNameRequest::DisplayName
+	String_t* ___DisplayName_2;
+};
+
+// PlayFab.ClientModels.UpdateUserTitleDisplayNameResult
+struct UpdateUserTitleDisplayNameResult_t624047AEE8BB730C8B15D244261478F5A65DF950  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.String PlayFab.ClientModels.UpdateUserTitleDisplayNameResult::DisplayName
+	String_t* ___DisplayName_2;
+};
+
+// PlayFab.ClientModels.UserAccountInfo
+struct UserAccountInfo_t1BF8B02028A765033899EE9940C15383AEF2726A  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// PlayFab.ClientModels.UserAndroidDeviceInfo PlayFab.ClientModels.UserAccountInfo::AndroidDeviceInfo
+	UserAndroidDeviceInfo_tF7DC5DEEEC9611A18C44C582A421C87EFAF143E7* ___AndroidDeviceInfo_0;
+	// PlayFab.ClientModels.UserAppleIdInfo PlayFab.ClientModels.UserAccountInfo::AppleAccountInfo
+	UserAppleIdInfo_tC957F5FCFCA8C6C4EA5ABB763DF6EAE0A83A00B5* ___AppleAccountInfo_1;
+	// System.DateTime PlayFab.ClientModels.UserAccountInfo::Created
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___Created_2;
+	// PlayFab.ClientModels.UserCustomIdInfo PlayFab.ClientModels.UserAccountInfo::CustomIdInfo
+	UserCustomIdInfo_tF34BF320AEE125010D3D390BE3019CF6074D15AB* ___CustomIdInfo_3;
+	// PlayFab.ClientModels.UserFacebookInfo PlayFab.ClientModels.UserAccountInfo::FacebookInfo
+	UserFacebookInfo_t25341AA794CE37708FF857832B3D40C31005F859* ___FacebookInfo_4;
+	// PlayFab.ClientModels.UserFacebookInstantGamesIdInfo PlayFab.ClientModels.UserAccountInfo::FacebookInstantGamesIdInfo
+	UserFacebookInstantGamesIdInfo_t4AA586B3DB010191CA46294964526B9C6BD0DEFA* ___FacebookInstantGamesIdInfo_5;
+	// PlayFab.ClientModels.UserGameCenterInfo PlayFab.ClientModels.UserAccountInfo::GameCenterInfo
+	UserGameCenterInfo_tF3E4DC8FCE46154B31494ABC83FF654AB1CE2C42* ___GameCenterInfo_6;
+	// PlayFab.ClientModels.UserGoogleInfo PlayFab.ClientModels.UserAccountInfo::GoogleInfo
+	UserGoogleInfo_t375C252AF8732A3B29CC0ACA458788F57705CD16* ___GoogleInfo_7;
+	// PlayFab.ClientModels.UserGooglePlayGamesInfo PlayFab.ClientModels.UserAccountInfo::GooglePlayGamesInfo
+	UserGooglePlayGamesInfo_tF42B79157DF36B2D327573D632CFB3CD62B0BBB8* ___GooglePlayGamesInfo_8;
+	// PlayFab.ClientModels.UserIosDeviceInfo PlayFab.ClientModels.UserAccountInfo::IosDeviceInfo
+	UserIosDeviceInfo_tB0E4BB1232D6B58F35B0BD7730E967E50B25ACDD* ___IosDeviceInfo_9;
+	// PlayFab.ClientModels.UserKongregateInfo PlayFab.ClientModels.UserAccountInfo::KongregateInfo
+	UserKongregateInfo_t81FAC344B4B42B3689F7F42D355D8BE667E5B3BD* ___KongregateInfo_10;
+	// PlayFab.ClientModels.UserNintendoSwitchAccountIdInfo PlayFab.ClientModels.UserAccountInfo::NintendoSwitchAccountInfo
+	UserNintendoSwitchAccountIdInfo_tBD867A24EE34BA9F1E516FC85B3D1E8BCC108F13* ___NintendoSwitchAccountInfo_11;
+	// PlayFab.ClientModels.UserNintendoSwitchDeviceIdInfo PlayFab.ClientModels.UserAccountInfo::NintendoSwitchDeviceIdInfo
+	UserNintendoSwitchDeviceIdInfo_t53FA7FEB383F7C94C8DF61E423E3049ADF135388* ___NintendoSwitchDeviceIdInfo_12;
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.UserOpenIdInfo> PlayFab.ClientModels.UserAccountInfo::OpenIdInfo
+	List_1_t36DD8E0BEC48B5AC224AC1F197CE5342EE4C6D62* ___OpenIdInfo_13;
+	// System.String PlayFab.ClientModels.UserAccountInfo::PlayFabId
+	String_t* ___PlayFabId_14;
+	// PlayFab.ClientModels.UserPrivateAccountInfo PlayFab.ClientModels.UserAccountInfo::PrivateInfo
+	UserPrivateAccountInfo_t91F7AE36BB4FCCB4CC40C6B6027F6BFC034D50A2* ___PrivateInfo_15;
+	// PlayFab.ClientModels.UserPsnInfo PlayFab.ClientModels.UserAccountInfo::PsnInfo
+	UserPsnInfo_t8A71B58419169BBDA2512C61AB4D75B25CE15EAB* ___PsnInfo_16;
+	// PlayFab.ClientModels.UserSteamInfo PlayFab.ClientModels.UserAccountInfo::SteamInfo
+	UserSteamInfo_t9683A2E6234656912ED104E9AC9C9C6857CE23EA* ___SteamInfo_17;
+	// PlayFab.ClientModels.UserTitleInfo PlayFab.ClientModels.UserAccountInfo::TitleInfo
+	UserTitleInfo_tB92EBF892AF2FE961FBA3C279C86C5A4E6E17821* ___TitleInfo_18;
+	// PlayFab.ClientModels.UserTwitchInfo PlayFab.ClientModels.UserAccountInfo::TwitchInfo
+	UserTwitchInfo_t4C6ECD3CCCCE4C62C7CB6F454D1ED64EDD3FE431* ___TwitchInfo_19;
+	// System.String PlayFab.ClientModels.UserAccountInfo::Username
+	String_t* ___Username_20;
+	// PlayFab.ClientModels.UserXboxInfo PlayFab.ClientModels.UserAccountInfo::XboxInfo
+	UserXboxInfo_t43AC22B8C788C2E29748D1882F26FFFD82150C0D* ___XboxInfo_21;
+};
+
+// PlayFab.ClientModels.UserDataRecord
+struct UserDataRecord_tE7E165155A91F4CDC8FA7068664F554198EE0F45  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.DateTime PlayFab.ClientModels.UserDataRecord::LastUpdated
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___LastUpdated_0;
+	// System.Nullable`1<PlayFab.ClientModels.UserDataPermission> PlayFab.ClientModels.UserDataRecord::Permission
+	Nullable_1_t067499BB68589229FB737513FCF7C77D7952D5DB ___Permission_1;
+	// System.String PlayFab.ClientModels.UserDataRecord::Value
+	String_t* ___Value_2;
+};
+
+// PlayFab.ClientModels.UserSteamInfo
+struct UserSteamInfo_t9683A2E6234656912ED104E9AC9C9C6857CE23EA  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.Nullable`1<PlayFab.ClientModels.TitleActivationStatus> PlayFab.ClientModels.UserSteamInfo::SteamActivationStatus
+	Nullable_1_t2AB9F1C63256F190CF5CE9AB0ED2D44A4273FDB0 ___SteamActivationStatus_0;
+	// System.String PlayFab.ClientModels.UserSteamInfo::SteamCountry
+	String_t* ___SteamCountry_1;
+	// System.Nullable`1<PlayFab.ClientModels.Currency> PlayFab.ClientModels.UserSteamInfo::SteamCurrency
+	Nullable_1_t2B10F2EF519FFB12D492C998C113D6191D4B45A9 ___SteamCurrency_2;
+	// System.String PlayFab.ClientModels.UserSteamInfo::SteamId
+	String_t* ___SteamId_3;
+	// System.String PlayFab.ClientModels.UserSteamInfo::SteamName
+	String_t* ___SteamName_4;
+};
+
+// PlayFab.ClientModels.ValidateAmazonReceiptRequest
+struct ValidateAmazonReceiptRequest_t02C6A572352CCE41AE720F9A8BE4FD47A4F30243  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.ValidateAmazonReceiptRequest::CatalogVersion
+	String_t* ___CatalogVersion_1;
+	// System.String PlayFab.ClientModels.ValidateAmazonReceiptRequest::CurrencyCode
+	String_t* ___CurrencyCode_2;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.ValidateAmazonReceiptRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_3;
+	// System.Int32 PlayFab.ClientModels.ValidateAmazonReceiptRequest::PurchasePrice
+	int32_t ___PurchasePrice_4;
+	// System.String PlayFab.ClientModels.ValidateAmazonReceiptRequest::ReceiptId
+	String_t* ___ReceiptId_5;
+	// System.String PlayFab.ClientModels.ValidateAmazonReceiptRequest::UserId
+	String_t* ___UserId_6;
+};
+
+// PlayFab.ClientModels.ValidateAmazonReceiptResult
+struct ValidateAmazonReceiptResult_tBDAAEA70544881D3EC12AB8B21812EAF164F25CF  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.PurchaseReceiptFulfillment> PlayFab.ClientModels.ValidateAmazonReceiptResult::Fulfillments
+	List_1_t50A44D8AB20157819C0C38F1E5363424ACC9C999* ___Fulfillments_2;
+};
+
+// PlayFab.AuthenticationModels.ValidateEntityTokenRequest
+struct ValidateEntityTokenRequest_t208B61B7A774BBC7B3CD46D9296ED0BC848DEA3B  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.AuthenticationModels.ValidateEntityTokenRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_1;
+	// System.String PlayFab.AuthenticationModels.ValidateEntityTokenRequest::EntityToken
+	String_t* ___EntityToken_2;
+};
+
+// PlayFab.AuthenticationModels.ValidateEntityTokenResponse
+struct ValidateEntityTokenResponse_t3BF0DD16B7B0A2D37AF6A38E77CE63119EFCF7AE  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// PlayFab.AuthenticationModels.EntityKey PlayFab.AuthenticationModels.ValidateEntityTokenResponse::Entity
+	EntityKey_tFADF551D013525A30F2A6FB10A4FC4AF5F34278E* ___Entity_2;
+	// System.Nullable`1<PlayFab.AuthenticationModels.IdentifiedDeviceType> PlayFab.AuthenticationModels.ValidateEntityTokenResponse::IdentifiedDeviceType
+	Nullable_1_t9AD8E1438E05D5BA0F423DA1263AFC5941A801B1 ___IdentifiedDeviceType_3;
+	// System.Nullable`1<PlayFab.AuthenticationModels.LoginIdentityProvider> PlayFab.AuthenticationModels.ValidateEntityTokenResponse::IdentityProvider
+	Nullable_1_t77AB991F23E03305B5C1448C8B16EAF99B4397F2 ___IdentityProvider_4;
+	// System.String PlayFab.AuthenticationModels.ValidateEntityTokenResponse::IdentityProviderIssuedId
+	String_t* ___IdentityProviderIssuedId_5;
+	// PlayFab.AuthenticationModels.EntityLineage PlayFab.AuthenticationModels.ValidateEntityTokenResponse::Lineage
+	EntityLineage_tBB3BF8ABA70636A13AE3412CE723954A429EE67E* ___Lineage_6;
+};
+
+// PlayFab.ClientModels.ValidateGooglePlayPurchaseRequest
+struct ValidateGooglePlayPurchaseRequest_t19A3C53B5E1DE3BB7A655D929A41D5BED28AA50C  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.ValidateGooglePlayPurchaseRequest::CatalogVersion
+	String_t* ___CatalogVersion_1;
+	// System.String PlayFab.ClientModels.ValidateGooglePlayPurchaseRequest::CurrencyCode
+	String_t* ___CurrencyCode_2;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.ValidateGooglePlayPurchaseRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_3;
+	// System.Nullable`1<System.UInt32> PlayFab.ClientModels.ValidateGooglePlayPurchaseRequest::PurchasePrice
+	Nullable_1_tD043F01310E483091D0E9A5526C3425F13EF2099 ___PurchasePrice_4;
+	// System.String PlayFab.ClientModels.ValidateGooglePlayPurchaseRequest::ReceiptJson
+	String_t* ___ReceiptJson_5;
+	// System.String PlayFab.ClientModels.ValidateGooglePlayPurchaseRequest::Signature
+	String_t* ___Signature_6;
+};
+
+// PlayFab.ClientModels.ValidateGooglePlayPurchaseResult
+struct ValidateGooglePlayPurchaseResult_t94C27521EBF7C2B9547D9157FE0BAACBAA9FFB6C  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.PurchaseReceiptFulfillment> PlayFab.ClientModels.ValidateGooglePlayPurchaseResult::Fulfillments
+	List_1_t50A44D8AB20157819C0C38F1E5363424ACC9C999* ___Fulfillments_2;
+};
+
+// PlayFab.ClientModels.ValidateIOSReceiptRequest
+struct ValidateIOSReceiptRequest_t0FF3109216309862E61A7EC51269B623E98507F4  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.ValidateIOSReceiptRequest::CatalogVersion
+	String_t* ___CatalogVersion_1;
+	// System.String PlayFab.ClientModels.ValidateIOSReceiptRequest::CurrencyCode
+	String_t* ___CurrencyCode_2;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.ValidateIOSReceiptRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_3;
+	// System.Int32 PlayFab.ClientModels.ValidateIOSReceiptRequest::PurchasePrice
+	int32_t ___PurchasePrice_4;
+	// System.String PlayFab.ClientModels.ValidateIOSReceiptRequest::ReceiptData
+	String_t* ___ReceiptData_5;
+};
+
+// PlayFab.ClientModels.ValidateIOSReceiptResult
+struct ValidateIOSReceiptResult_t7B8E9C32E11CF69C0F1644A9E70227BED479112C  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.PurchaseReceiptFulfillment> PlayFab.ClientModels.ValidateIOSReceiptResult::Fulfillments
+	List_1_t50A44D8AB20157819C0C38F1E5363424ACC9C999* ___Fulfillments_2;
+};
+
+// PlayFab.ClientModels.ValidateWindowsReceiptRequest
+struct ValidateWindowsReceiptRequest_t1925F0B1023AD2B5E54130D6903DB577AEC6D4C7  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.String PlayFab.ClientModels.ValidateWindowsReceiptRequest::CatalogVersion
+	String_t* ___CatalogVersion_1;
+	// System.String PlayFab.ClientModels.ValidateWindowsReceiptRequest::CurrencyCode
+	String_t* ___CurrencyCode_2;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.ValidateWindowsReceiptRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_3;
+	// System.UInt32 PlayFab.ClientModels.ValidateWindowsReceiptRequest::PurchasePrice
+	uint32_t ___PurchasePrice_4;
+	// System.String PlayFab.ClientModels.ValidateWindowsReceiptRequest::Receipt
+	String_t* ___Receipt_5;
+};
+
+// PlayFab.ClientModels.ValidateWindowsReceiptResult
+struct ValidateWindowsReceiptResult_t5DFEC0D218EF949D252DFBC431EB81917AA436BC  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.PurchaseReceiptFulfillment> PlayFab.ClientModels.ValidateWindowsReceiptResult::Fulfillments
+	List_1_t50A44D8AB20157819C0C38F1E5363424ACC9C999* ___Fulfillments_2;
+};
+
+// PlayFab.ClientModels.VirtualCurrencyRechargeTime
+struct VirtualCurrencyRechargeTime_tD4B80CB3526B0CD22262886E3372D8A023D6CAA2  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.Int32 PlayFab.ClientModels.VirtualCurrencyRechargeTime::RechargeMax
+	int32_t ___RechargeMax_0;
+	// System.DateTime PlayFab.ClientModels.VirtualCurrencyRechargeTime::RechargeTime
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___RechargeTime_1;
+	// System.Int32 PlayFab.ClientModels.VirtualCurrencyRechargeTime::SecondsToRecharge
+	int32_t ___SecondsToRecharge_2;
+};
+
+// PlayFab.ClientModels.WriteEventResponse
+struct WriteEventResponse_tCF2011905F8F5EFF4360597D91EDAF4C4AA3F116  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.String PlayFab.ClientModels.WriteEventResponse::EventId
+	String_t* ___EventId_2;
+};
+
+// PlayFab.AuthenticationModels.EntityTokenResponse
+struct EntityTokenResponse_tCB7E0082B8ABD19A02403C6F9A438EF756D63E8B  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// PlayFab.AuthenticationModels.EntityKey PlayFab.AuthenticationModels.EntityTokenResponse::Entity
+	EntityKey_tFADF551D013525A30F2A6FB10A4FC4AF5F34278E* ___Entity_0;
+	// System.String PlayFab.AuthenticationModels.EntityTokenResponse::EntityToken
+	String_t* ___EntityToken_1;
+	// System.Nullable`1<System.DateTime> PlayFab.AuthenticationModels.EntityTokenResponse::TokenExpiration
+	Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC ___TokenExpiration_2;
+};
+
+// PlayFab.AuthenticationModels.GetEntityTokenResponse
+struct GetEntityTokenResponse_tD3A2F286A2716332E695130B0DDE7F9E2E0DABAC  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// PlayFab.AuthenticationModels.EntityKey PlayFab.AuthenticationModels.GetEntityTokenResponse::Entity
+	EntityKey_tFADF551D013525A30F2A6FB10A4FC4AF5F34278E* ___Entity_2;
+	// System.String PlayFab.AuthenticationModels.GetEntityTokenResponse::EntityToken
+	String_t* ___EntityToken_3;
+	// System.Nullable`1<System.DateTime> PlayFab.AuthenticationModels.GetEntityTokenResponse::TokenExpiration
+	Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC ___TokenExpiration_4;
+};
+
+// PlayFab.ClientModels.GetFriendLeaderboardAroundPlayerResult
+struct GetFriendLeaderboardAroundPlayerResult_t08E0989E5BB790AD662A7223F4C8E46218A66129  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.PlayerLeaderboardEntry> PlayFab.ClientModels.GetFriendLeaderboardAroundPlayerResult::Leaderboard
+	List_1_tCBCB02FC07BD251869097197A968F8730C15CC46* ___Leaderboard_2;
+	// System.Nullable`1<System.DateTime> PlayFab.ClientModels.GetFriendLeaderboardAroundPlayerResult::NextReset
+	Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC ___NextReset_3;
+	// System.Int32 PlayFab.ClientModels.GetFriendLeaderboardAroundPlayerResult::Version
+	int32_t ___Version_4;
+};
+
+// PlayFab.ClientModels.GetLeaderboardAroundPlayerResult
+struct GetLeaderboardAroundPlayerResult_tEC5343CE1F5409AC4FC072C15C5E0667D5AE763A  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.PlayerLeaderboardEntry> PlayFab.ClientModels.GetLeaderboardAroundPlayerResult::Leaderboard
+	List_1_tCBCB02FC07BD251869097197A968F8730C15CC46* ___Leaderboard_2;
+	// System.Nullable`1<System.DateTime> PlayFab.ClientModels.GetLeaderboardAroundPlayerResult::NextReset
+	Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC ___NextReset_3;
+	// System.Int32 PlayFab.ClientModels.GetLeaderboardAroundPlayerResult::Version
+	int32_t ___Version_4;
+};
+
+// PlayFab.ClientModels.GetLeaderboardResult
+struct GetLeaderboardResult_t03D04CF6DED866003050A495D94A7D8497AD492C  : public PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.PlayerLeaderboardEntry> PlayFab.ClientModels.GetLeaderboardResult::Leaderboard
+	List_1_tCBCB02FC07BD251869097197A968F8730C15CC46* ___Leaderboard_2;
+	// System.Nullable`1<System.DateTime> PlayFab.ClientModels.GetLeaderboardResult::NextReset
+	Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC ___NextReset_3;
+	// System.Int32 PlayFab.ClientModels.GetLeaderboardResult::Version
+	int32_t ___Version_4;
+};
+
+// PlayFab.ClientModels.ItemInstance
+struct ItemInstance_tC84FDC49100051713F8BA4C6359C4DB48B3D0341  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.ItemInstance::Annotation
+	String_t* ___Annotation_0;
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.ItemInstance::BundleContents
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___BundleContents_1;
+	// System.String PlayFab.ClientModels.ItemInstance::BundleParent
+	String_t* ___BundleParent_2;
+	// System.String PlayFab.ClientModels.ItemInstance::CatalogVersion
+	String_t* ___CatalogVersion_3;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.ItemInstance::CustomData
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomData_4;
+	// System.String PlayFab.ClientModels.ItemInstance::DisplayName
+	String_t* ___DisplayName_5;
+	// System.Nullable`1<System.DateTime> PlayFab.ClientModels.ItemInstance::Expiration
+	Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC ___Expiration_6;
+	// System.String PlayFab.ClientModels.ItemInstance::ItemClass
+	String_t* ___ItemClass_7;
+	// System.String PlayFab.ClientModels.ItemInstance::ItemId
+	String_t* ___ItemId_8;
+	// System.String PlayFab.ClientModels.ItemInstance::ItemInstanceId
+	String_t* ___ItemInstanceId_9;
+	// System.Nullable`1<System.DateTime> PlayFab.ClientModels.ItemInstance::PurchaseDate
+	Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC ___PurchaseDate_10;
+	// System.Nullable`1<System.Int32> PlayFab.ClientModels.ItemInstance::RemainingUses
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___RemainingUses_11;
+	// System.String PlayFab.ClientModels.ItemInstance::UnitCurrency
+	String_t* ___UnitCurrency_12;
+	// System.UInt32 PlayFab.ClientModels.ItemInstance::UnitPrice
+	uint32_t ___UnitPrice_13;
+	// System.Nullable`1<System.Int32> PlayFab.ClientModels.ItemInstance::UsesIncrementedBy
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___UsesIncrementedBy_14;
+};
+
+// PlayFab.ClientModels.LoginResult
+struct LoginResult_tA8FAC976BB9AC98F055FB1BFFE740D450A957A8C  : public PlayFabLoginResultCommon_t564463F743BE39995D6BBD360F222C16FB74AA47
+{
+	// PlayFab.ClientModels.EntityTokenResponse PlayFab.ClientModels.LoginResult::EntityToken
+	EntityTokenResponse_tF62536B9F1B793EB4711A8394CE36934B5200D1B* ___EntityToken_3;
+	// PlayFab.ClientModels.GetPlayerCombinedInfoResultPayload PlayFab.ClientModels.LoginResult::InfoResultPayload
+	GetPlayerCombinedInfoResultPayload_t6323557A81B0FF04C6B66FC1F916864A4D738BCC* ___InfoResultPayload_4;
+	// System.Nullable`1<System.DateTime> PlayFab.ClientModels.LoginResult::LastLoginTime
+	Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC ___LastLoginTime_5;
+	// System.Boolean PlayFab.ClientModels.LoginResult::NewlyCreated
+	bool ___NewlyCreated_6;
+	// System.String PlayFab.ClientModels.LoginResult::PlayFabId
+	String_t* ___PlayFabId_7;
+	// System.String PlayFab.ClientModels.LoginResult::SessionTicket
+	String_t* ___SessionTicket_8;
+	// PlayFab.ClientModels.UserSettings PlayFab.ClientModels.LoginResult::SettingsForUser
+	UserSettings_t53FD23BFE7D67CB8C0FA3FFB5F2FC733DA2D22E0* ___SettingsForUser_9;
+	// PlayFab.ClientModels.TreatmentAssignment PlayFab.ClientModels.LoginResult::TreatmentAssignment
+	TreatmentAssignment_t3AAA5D796B6551BDF72B95A132BE5FE93F1FD99A* ___TreatmentAssignment_10;
+};
+
+// PlayFab.ClientModels.MembershipModel
+struct MembershipModel_t3C7C2B88E0688100FF4FE3F8DAF8D90E3D2FCEF2  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.Boolean PlayFab.ClientModels.MembershipModel::IsActive
+	bool ___IsActive_0;
+	// System.DateTime PlayFab.ClientModels.MembershipModel::MembershipExpiration
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___MembershipExpiration_1;
+	// System.String PlayFab.ClientModels.MembershipModel::MembershipId
+	String_t* ___MembershipId_2;
+	// System.Nullable`1<System.DateTime> PlayFab.ClientModels.MembershipModel::OverrideExpiration
+	Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC ___OverrideExpiration_3;
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.SubscriptionModel> PlayFab.ClientModels.MembershipModel::Subscriptions
+	List_1_tE2B26FDEA1B16DEED1A7B1FC67EB449D05CBF115* ___Subscriptions_4;
+};
+
+// System.MulticastDelegate
+struct MulticastDelegate_t  : public Delegate_t
+{
+	// System.Delegate[] System.MulticastDelegate::delegates
+	DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771* ___delegates_13;
+};
+// Native definition for P/Invoke marshalling of System.MulticastDelegate
+struct MulticastDelegate_t_marshaled_pinvoke : public Delegate_t_marshaled_pinvoke
+{
+	Delegate_t_marshaled_pinvoke** ___delegates_13;
+};
+// Native definition for COM marshalling of System.MulticastDelegate
+struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
+{
+	Delegate_t_marshaled_com** ___delegates_13;
+};
+
+// PlayFab.ClientModels.PlayerProfileModel
+struct PlayerProfileModel_tEF2149D2652DD0B25B5250F8037A276739D1414A  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.AdCampaignAttributionModel> PlayFab.ClientModels.PlayerProfileModel::AdCampaignAttributions
+	List_1_t84130783142757DD09A9C5474E78F0BBC3DA5B12* ___AdCampaignAttributions_0;
+	// System.String PlayFab.ClientModels.PlayerProfileModel::AvatarUrl
+	String_t* ___AvatarUrl_1;
+	// System.Nullable`1<System.DateTime> PlayFab.ClientModels.PlayerProfileModel::BannedUntil
+	Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC ___BannedUntil_2;
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.ContactEmailInfoModel> PlayFab.ClientModels.PlayerProfileModel::ContactEmailAddresses
+	List_1_t3FE536429219911F92FD1C8652AC167ABC868CF9* ___ContactEmailAddresses_3;
+	// System.Nullable`1<System.DateTime> PlayFab.ClientModels.PlayerProfileModel::Created
+	Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC ___Created_4;
+	// System.String PlayFab.ClientModels.PlayerProfileModel::DisplayName
+	String_t* ___DisplayName_5;
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.PlayerProfileModel::ExperimentVariants
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___ExperimentVariants_6;
+	// System.Nullable`1<System.DateTime> PlayFab.ClientModels.PlayerProfileModel::LastLogin
+	Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC ___LastLogin_7;
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.LinkedPlatformAccountModel> PlayFab.ClientModels.PlayerProfileModel::LinkedAccounts
+	List_1_tE7EF529EDDDCFD9F25DC0ED76CA7446AC80E5231* ___LinkedAccounts_8;
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.LocationModel> PlayFab.ClientModels.PlayerProfileModel::Locations
+	List_1_t12CC81EA2CBCF5532AB9BEB0511D5085C5A3909E* ___Locations_9;
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.MembershipModel> PlayFab.ClientModels.PlayerProfileModel::Memberships
+	List_1_t4EAB2E936C3F5B2D0448CA03435BC4E92EF19E70* ___Memberships_10;
+	// System.Nullable`1<PlayFab.ClientModels.LoginIdentityProvider> PlayFab.ClientModels.PlayerProfileModel::Origination
+	Nullable_1_t5B7C5B187DC2527C1C1515BC997DF756887BB15A ___Origination_11;
+	// System.String PlayFab.ClientModels.PlayerProfileModel::PlayerId
+	String_t* ___PlayerId_12;
+	// System.String PlayFab.ClientModels.PlayerProfileModel::PublisherId
+	String_t* ___PublisherId_13;
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.PushNotificationRegistrationModel> PlayFab.ClientModels.PlayerProfileModel::PushNotificationRegistrations
+	List_1_t79717EC342FB9A91B12676776A0CC67F0602D5E2* ___PushNotificationRegistrations_14;
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.StatisticModel> PlayFab.ClientModels.PlayerProfileModel::Statistics
+	List_1_t2D0759B3AF00A2641D8E5A4B894928F0F87F3C90* ___Statistics_15;
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.TagModel> PlayFab.ClientModels.PlayerProfileModel::Tags
+	List_1_tA5C145CD860B7F495BAF017713B038BB84303E81* ___Tags_16;
+	// System.String PlayFab.ClientModels.PlayerProfileModel::TitleId
+	String_t* ___TitleId_17;
+	// System.Nullable`1<System.UInt32> PlayFab.ClientModels.PlayerProfileModel::TotalValueToDateInUSD
+	Nullable_1_tD043F01310E483091D0E9A5526C3425F13EF2099 ___TotalValueToDateInUSD_18;
+	// System.Collections.Generic.List`1<PlayFab.ClientModels.ValueToDateModel> PlayFab.ClientModels.PlayerProfileModel::ValuesToDate
+	List_1_tA64A2C995850039E2DEA13FA8E06681F0F36E4FE* ___ValuesToDate_19;
+};
+
+// PlayFab.ClientModels.PlayerStatisticVersion
+struct PlayerStatisticVersion_tC0C529357C21A063B8C3F4FBBC5D412EAA3C7372  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.DateTime PlayFab.ClientModels.PlayerStatisticVersion::ActivationTime
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___ActivationTime_0;
+	// System.Nullable`1<System.DateTime> PlayFab.ClientModels.PlayerStatisticVersion::DeactivationTime
+	Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC ___DeactivationTime_1;
+	// System.Nullable`1<System.DateTime> PlayFab.ClientModels.PlayerStatisticVersion::ScheduledActivationTime
+	Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC ___ScheduledActivationTime_2;
+	// System.Nullable`1<System.DateTime> PlayFab.ClientModels.PlayerStatisticVersion::ScheduledDeactivationTime
+	Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC ___ScheduledDeactivationTime_3;
+	// System.String PlayFab.ClientModels.PlayerStatisticVersion::StatisticName
+	String_t* ___StatisticName_4;
+	// System.UInt32 PlayFab.ClientModels.PlayerStatisticVersion::Version
+	uint32_t ___Version_5;
+};
+
+// PlayFab.ClientModels.RegisterPlayFabUserResult
+struct RegisterPlayFabUserResult_t9F7AF721561FB1E6C2D0F04CF3E38EB80F39300E  : public PlayFabLoginResultCommon_t564463F743BE39995D6BBD360F222C16FB74AA47
+{
+	// PlayFab.ClientModels.EntityTokenResponse PlayFab.ClientModels.RegisterPlayFabUserResult::EntityToken
+	EntityTokenResponse_tF62536B9F1B793EB4711A8394CE36934B5200D1B* ___EntityToken_3;
+	// System.String PlayFab.ClientModels.RegisterPlayFabUserResult::PlayFabId
+	String_t* ___PlayFabId_4;
+	// System.String PlayFab.ClientModels.RegisterPlayFabUserResult::SessionTicket
+	String_t* ___SessionTicket_5;
+	// PlayFab.ClientModels.UserSettings PlayFab.ClientModels.RegisterPlayFabUserResult::SettingsForUser
+	UserSettings_t53FD23BFE7D67CB8C0FA3FFB5F2FC733DA2D22E0* ___SettingsForUser_6;
+	// System.String PlayFab.ClientModels.RegisterPlayFabUserResult::Username
+	String_t* ___Username_7;
+};
+
+// PlayFab.ClientModels.TradeInfo
+struct TradeInfo_tBE9088C4A58089296E230210566577FD2AEEEE07  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.TradeInfo::AcceptedInventoryInstanceIds
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___AcceptedInventoryInstanceIds_0;
+	// System.String PlayFab.ClientModels.TradeInfo::AcceptedPlayerId
+	String_t* ___AcceptedPlayerId_1;
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.TradeInfo::AllowedPlayerIds
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___AllowedPlayerIds_2;
+	// System.Nullable`1<System.DateTime> PlayFab.ClientModels.TradeInfo::CancelledAt
+	Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC ___CancelledAt_3;
+	// System.Nullable`1<System.DateTime> PlayFab.ClientModels.TradeInfo::FilledAt
+	Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC ___FilledAt_4;
+	// System.Nullable`1<System.DateTime> PlayFab.ClientModels.TradeInfo::InvalidatedAt
+	Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC ___InvalidatedAt_5;
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.TradeInfo::OfferedCatalogItemIds
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___OfferedCatalogItemIds_6;
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.TradeInfo::OfferedInventoryInstanceIds
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___OfferedInventoryInstanceIds_7;
+	// System.String PlayFab.ClientModels.TradeInfo::OfferingPlayerId
+	String_t* ___OfferingPlayerId_8;
+	// System.Nullable`1<System.DateTime> PlayFab.ClientModels.TradeInfo::OpenedAt
+	Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC ___OpenedAt_9;
+	// System.Collections.Generic.List`1<System.String> PlayFab.ClientModels.TradeInfo::RequestedCatalogItemIds
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___RequestedCatalogItemIds_10;
+	// System.Nullable`1<PlayFab.ClientModels.TradeStatus> PlayFab.ClientModels.TradeInfo::Status
+	Nullable_1_tD232C455277E63717C41233FF7F6A699FA27AC33 ___Status_11;
+	// System.String PlayFab.ClientModels.TradeInfo::TradeId
+	String_t* ___TradeId_12;
+};
+
+// PlayFab.ClientModels.UserTitleInfo
+struct UserTitleInfo_tB92EBF892AF2FE961FBA3C279C86C5A4E6E17821  : public PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E
+{
+	// System.String PlayFab.ClientModels.UserTitleInfo::AvatarUrl
+	String_t* ___AvatarUrl_0;
+	// System.DateTime PlayFab.ClientModels.UserTitleInfo::Created
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___Created_1;
+	// System.String PlayFab.ClientModels.UserTitleInfo::DisplayName
+	String_t* ___DisplayName_2;
+	// System.Nullable`1<System.DateTime> PlayFab.ClientModels.UserTitleInfo::FirstLogin
+	Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC ___FirstLogin_3;
+	// System.Nullable`1<System.Boolean> PlayFab.ClientModels.UserTitleInfo::isBanned
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___isBanned_4;
+	// System.Nullable`1<System.DateTime> PlayFab.ClientModels.UserTitleInfo::LastLogin
+	Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC ___LastLogin_5;
+	// System.Nullable`1<PlayFab.ClientModels.UserOrigination> PlayFab.ClientModels.UserTitleInfo::Origination
+	Nullable_1_t2DC981AC3510FB5B419786ACD6FCAA9611918F93 ___Origination_6;
+	// PlayFab.ClientModels.EntityKey PlayFab.ClientModels.UserTitleInfo::TitlePlayerAccount
+	EntityKey_t3E92C74E390ABBE2C7066FD9D20C7E3DC948CC9C* ___TitlePlayerAccount_7;
+};
+
+// PlayFab.ClientModels.WriteClientCharacterEventRequest
+struct WriteClientCharacterEventRequest_t4B18CB6D5C5242AFA1B48ADFF7593381C1335ED3  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.Object> PlayFab.ClientModels.WriteClientCharacterEventRequest::Body
+	Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* ___Body_1;
+	// System.String PlayFab.ClientModels.WriteClientCharacterEventRequest::CharacterId
+	String_t* ___CharacterId_2;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.WriteClientCharacterEventRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_3;
+	// System.String PlayFab.ClientModels.WriteClientCharacterEventRequest::EventName
+	String_t* ___EventName_4;
+	// System.Nullable`1<System.DateTime> PlayFab.ClientModels.WriteClientCharacterEventRequest::Timestamp
+	Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC ___Timestamp_5;
+};
+
+// PlayFab.ClientModels.WriteClientPlayerEventRequest
+struct WriteClientPlayerEventRequest_tA95320423AC8066CD76C9C400278514D14E856DA  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.Object> PlayFab.ClientModels.WriteClientPlayerEventRequest::Body
+	Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* ___Body_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.WriteClientPlayerEventRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+	// System.String PlayFab.ClientModels.WriteClientPlayerEventRequest::EventName
+	String_t* ___EventName_3;
+	// System.Nullable`1<System.DateTime> PlayFab.ClientModels.WriteClientPlayerEventRequest::Timestamp
+	Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC ___Timestamp_4;
+};
+
+// PlayFab.ClientModels.WriteTitleEventRequest
+struct WriteTitleEventRequest_t8F544A3D1AC64FE08CD1E18FF967FC84FBEFE4A3  : public PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.Object> PlayFab.ClientModels.WriteTitleEventRequest::Body
+	Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* ___Body_1;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> PlayFab.ClientModels.WriteTitleEventRequest::CustomTags
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___CustomTags_2;
+	// System.String PlayFab.ClientModels.WriteTitleEventRequest::EventName
+	String_t* ___EventName_3;
+	// System.Nullable`1<System.DateTime> PlayFab.ClientModels.WriteTitleEventRequest::Timestamp
+	Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC ___Timestamp_4;
+};
+
+// System.AsyncCallback
+struct AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C  : public MulticastDelegate_t
+{
+};
+
+// PlayFab.Events.PlayFabEvents/PlayFabErrorEvent
+struct PlayFabErrorEvent_t32269E6C8CF3C5FF597C169C1CACE3D97D0E50C3  : public MulticastDelegate_t
+{
+};
+
+// PlayFab.SharedModels.PlayFabBaseModel
+
+// PlayFab.SharedModels.PlayFabBaseModel
+
+// PlayFab.AuthenticationModels.EntityKey
+
+// PlayFab.AuthenticationModels.EntityKey
+
+// PlayFab.AuthenticationModels.EntityLineage
+
+// PlayFab.AuthenticationModels.EntityLineage
+
+// PlayFab.ClientModels.GenericPlayFabIdPair
+
+// PlayFab.ClientModels.GenericPlayFabIdPair
+
+// PlayFab.ClientModels.GenericServiceId
+
+// PlayFab.ClientModels.GenericServiceId
+
+// PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams
+
+// PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams
+
+// PlayFab.ClientModels.GetPlayerCombinedInfoResultPayload
+
+// PlayFab.ClientModels.GetPlayerCombinedInfoResultPayload
+
+// PlayFab.ClientModels.GetSegmentResult
+
+// PlayFab.ClientModels.GetSegmentResult
+
+// PlayFab.ClientModels.GooglePlayFabIdPair
+
+// PlayFab.ClientModels.GooglePlayFabIdPair
+
+// PlayFab.ClientModels.GooglePlayGamesPlayFabIdPair
+
+// PlayFab.ClientModels.GooglePlayGamesPlayFabIdPair
+
+// System.IntPtr
+struct IntPtr_t_StaticFields
+{
+	// System.IntPtr System.IntPtr::Zero
+	intptr_t ___Zero_1;
+};
+
+// System.IntPtr
+
+// PlayFab.ClientModels.ItemPurchaseRequest
+
+// PlayFab.ClientModels.ItemPurchaseRequest
+
+// PlayFab.ClientModels.KongregatePlayFabIdPair
+
+// PlayFab.ClientModels.KongregatePlayFabIdPair
+
+// PlayFab.ClientModels.LogStatement
+
+// PlayFab.ClientModels.LogStatement
+
+// PlayFab.ClientModels.MicrosoftStorePayload
+
+// PlayFab.ClientModels.MicrosoftStorePayload
+
+// PlayFab.ClientModels.NameIdentifier
+
+// PlayFab.ClientModels.NameIdentifier
+
+// PlayFab.ClientModels.NintendoServiceAccountPlayFabIdPair
+
+// PlayFab.ClientModels.NintendoServiceAccountPlayFabIdPair
+
+// PlayFab.ClientModels.NintendoSwitchPlayFabIdPair
+
+// PlayFab.ClientModels.NintendoSwitchPlayFabIdPair
+
+// PlayFab.ClientModels.PSNAccountPlayFabIdPair
+
+// PlayFab.ClientModels.PSNAccountPlayFabIdPair
+
+// PlayFab.ClientModels.PaymentOption
+
+// PlayFab.ClientModels.PaymentOption
+
+// PlayFab.SharedModels.PlayFabRequestCommon
+
+// PlayFab.SharedModels.PlayFabRequestCommon
+
+// PlayFab.SharedModels.PlayFabResultCommon
+
+// PlayFab.SharedModels.PlayFabResultCommon
+
+// PlayFab.ClientModels.PlayStation5Payload
+
+// PlayFab.ClientModels.PlayStation5Payload
+
+// PlayFab.ClientModels.PlayerLeaderboardEntry
+
+// PlayFab.ClientModels.PlayerLeaderboardEntry
+
+// PlayFab.ClientModels.PlayerProfileViewConstraints
+
+// PlayFab.ClientModels.PlayerProfileViewConstraints
+
+// PlayFab.ClientModels.ScriptExecutionError
+
+// PlayFab.ClientModels.ScriptExecutionError
+
+// PlayFab.ClientModels.StatisticModel
+
+// PlayFab.ClientModels.StatisticModel
+
+// PlayFab.ClientModels.StatisticNameVersion
+
+// PlayFab.ClientModels.StatisticNameVersion
+
+// PlayFab.ClientModels.StatisticValue
+
+// PlayFab.ClientModels.StatisticValue
+
+// PlayFab.ClientModels.SteamPlayFabIdPair
+
+// PlayFab.ClientModels.SteamPlayFabIdPair
+
+// PlayFab.ClientModels.StoreMarketingModel
+
+// PlayFab.ClientModels.StoreMarketingModel
+
+// PlayFab.ClientModels.TagModel
+
+// PlayFab.ClientModels.TagModel
+
+// PlayFab.ClientModels.TreatmentAssignment
+
+// PlayFab.ClientModels.TreatmentAssignment
+
+// PlayFab.ClientModels.TwitchPlayFabIdPair
+
+// PlayFab.ClientModels.TwitchPlayFabIdPair
+
+// PlayFab.ClientModels.UserAndroidDeviceInfo
+
+// PlayFab.ClientModels.UserAndroidDeviceInfo
+
+// PlayFab.ClientModels.UserAppleIdInfo
+
+// PlayFab.ClientModels.UserAppleIdInfo
+
+// PlayFab.ClientModels.UserCustomIdInfo
+
+// PlayFab.ClientModels.UserCustomIdInfo
+
+// PlayFab.ClientModels.UserFacebookInfo
+
+// PlayFab.ClientModels.UserFacebookInfo
+
+// PlayFab.ClientModels.UserFacebookInstantGamesIdInfo
+
+// PlayFab.ClientModels.UserFacebookInstantGamesIdInfo
+
+// PlayFab.ClientModels.UserGameCenterInfo
+
+// PlayFab.ClientModels.UserGameCenterInfo
+
+// PlayFab.ClientModels.UserGoogleInfo
+
+// PlayFab.ClientModels.UserGoogleInfo
+
+// PlayFab.ClientModels.UserGooglePlayGamesInfo
+
+// PlayFab.ClientModels.UserGooglePlayGamesInfo
+
+// PlayFab.ClientModels.UserIosDeviceInfo
+
+// PlayFab.ClientModels.UserIosDeviceInfo
+
+// PlayFab.ClientModels.UserKongregateInfo
+
+// PlayFab.ClientModels.UserKongregateInfo
+
+// PlayFab.ClientModels.UserNintendoSwitchAccountIdInfo
+
+// PlayFab.ClientModels.UserNintendoSwitchAccountIdInfo
+
+// PlayFab.ClientModels.UserNintendoSwitchDeviceIdInfo
+
+// PlayFab.ClientModels.UserNintendoSwitchDeviceIdInfo
+
+// PlayFab.ClientModels.UserOpenIdInfo
+
+// PlayFab.ClientModels.UserOpenIdInfo
+
+// PlayFab.ClientModels.UserPrivateAccountInfo
+
+// PlayFab.ClientModels.UserPrivateAccountInfo
+
+// PlayFab.ClientModels.UserPsnInfo
+
+// PlayFab.ClientModels.UserPsnInfo
+
+// PlayFab.ClientModels.UserSettings
+
+// PlayFab.ClientModels.UserSettings
+
+// PlayFab.ClientModels.UserTwitchInfo
+
+// PlayFab.ClientModels.UserTwitchInfo
+
+// PlayFab.ClientModels.UserXboxInfo
+
+// PlayFab.ClientModels.UserXboxInfo
+
+// PlayFab.ClientModels.ValueToDateModel
+
+// PlayFab.ClientModels.ValueToDateModel
+
+// PlayFab.ClientModels.Variable
+
+// PlayFab.ClientModels.Variable
+
+// System.Void
+
+// System.Void
+
+// PlayFab.ClientModels.XboxLiveAccountPlayFabIdPair
+
+// PlayFab.ClientModels.XboxLiveAccountPlayFabIdPair
+
+// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=14
+
+// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=14
+
+// <PrivateImplementationDetails>
+struct U3CPrivateImplementationDetailsU3E_t35799B8F9E549902A8DD862EADDCF7DD7887890D_StaticFields
+{
+	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=14 <PrivateImplementationDetails>::F69AE5FA1B0683C4BF3EFAA06507D1A30F94E8AE3F1E87D87982A7BF7AF2CA9D
+	__StaticArrayInitTypeSizeU3D14_t9D86BCC3B9CF0C77C4379DDB6FFCD77CE5672D09 ___F69AE5FA1B0683C4BF3EFAA06507D1A30F94E8AE3F1E87D87982A7BF7AF2CA9D_0;
+};
+
+// <PrivateImplementationDetails>
+
+// PlayFab.AuthenticationModels.AuthenticateCustomIdRequest
+
+// PlayFab.AuthenticationModels.AuthenticateCustomIdRequest
+
+// PlayFab.AuthenticationModels.AuthenticateCustomIdResult
+
+// PlayFab.AuthenticationModels.AuthenticateCustomIdResult
+
+// System.Delegate
+
+// System.Delegate
+
+// PlayFab.AuthenticationModels.DeleteRequest
+
+// PlayFab.AuthenticationModels.DeleteRequest
+
+// PlayFab.AuthenticationModels.EmptyResponse
+
+// PlayFab.AuthenticationModels.EmptyResponse
+
+// PlayFab.ClientModels.GameServerRegionsRequest
+
+// PlayFab.ClientModels.GameServerRegionsRequest
+
+// PlayFab.ClientModels.GameServerRegionsResult
+
+// PlayFab.ClientModels.GameServerRegionsResult
+
+// PlayFab.ClientModels.GetAccountInfoRequest
+
+// PlayFab.ClientModels.GetAccountInfoRequest
+
+// PlayFab.ClientModels.GetAccountInfoResult
+
+// PlayFab.ClientModels.GetAccountInfoResult
+
+// PlayFab.ClientModels.GetAdPlacementsRequest
+
+// PlayFab.ClientModels.GetAdPlacementsRequest
+
+// PlayFab.ClientModels.GetAdPlacementsResult
+
+// PlayFab.ClientModels.GetAdPlacementsResult
+
+// PlayFab.ClientModels.GetCatalogItemsRequest
+
+// PlayFab.ClientModels.GetCatalogItemsRequest
+
+// PlayFab.ClientModels.GetCatalogItemsResult
+
+// PlayFab.ClientModels.GetCatalogItemsResult
+
+// PlayFab.ClientModels.GetCharacterDataRequest
+
+// PlayFab.ClientModels.GetCharacterDataRequest
+
+// PlayFab.ClientModels.GetCharacterDataResult
+
+// PlayFab.ClientModels.GetCharacterDataResult
+
+// PlayFab.ClientModels.GetCharacterInventoryRequest
+
+// PlayFab.ClientModels.GetCharacterInventoryRequest
+
+// PlayFab.ClientModels.GetCharacterInventoryResult
+
+// PlayFab.ClientModels.GetCharacterInventoryResult
+
+// PlayFab.ClientModels.GetCharacterLeaderboardRequest
+
+// PlayFab.ClientModels.GetCharacterLeaderboardRequest
+
+// PlayFab.ClientModels.GetCharacterLeaderboardResult
+
+// PlayFab.ClientModels.GetCharacterLeaderboardResult
+
+// PlayFab.ClientModels.GetCharacterStatisticsRequest
+
+// PlayFab.ClientModels.GetCharacterStatisticsRequest
+
+// PlayFab.ClientModels.GetCharacterStatisticsResult
+
+// PlayFab.ClientModels.GetCharacterStatisticsResult
+
+// PlayFab.ClientModels.GetContentDownloadUrlRequest
+
+// PlayFab.ClientModels.GetContentDownloadUrlRequest
+
+// PlayFab.ClientModels.GetContentDownloadUrlResult
+
+// PlayFab.ClientModels.GetContentDownloadUrlResult
+
+// PlayFab.AuthenticationModels.GetEntityTokenRequest
+
+// PlayFab.AuthenticationModels.GetEntityTokenRequest
+
+// PlayFab.ClientModels.GetFriendLeaderboardAroundPlayerRequest
+
+// PlayFab.ClientModels.GetFriendLeaderboardAroundPlayerRequest
+
+// PlayFab.ClientModels.GetFriendLeaderboardRequest
+
+// PlayFab.ClientModels.GetFriendLeaderboardRequest
+
+// PlayFab.ClientModels.GetFriendsListRequest
+
+// PlayFab.ClientModels.GetFriendsListRequest
+
+// PlayFab.ClientModels.GetFriendsListResult
+
+// PlayFab.ClientModels.GetFriendsListResult
+
+// PlayFab.ClientModels.GetLeaderboardAroundCharacterRequest
+
+// PlayFab.ClientModels.GetLeaderboardAroundCharacterRequest
+
+// PlayFab.ClientModels.GetLeaderboardAroundCharacterResult
+
+// PlayFab.ClientModels.GetLeaderboardAroundCharacterResult
+
+// PlayFab.ClientModels.GetLeaderboardAroundPlayerRequest
+
+// PlayFab.ClientModels.GetLeaderboardAroundPlayerRequest
+
+// PlayFab.ClientModels.GetLeaderboardForUsersCharactersRequest
+
+// PlayFab.ClientModels.GetLeaderboardForUsersCharactersRequest
+
+// PlayFab.ClientModels.GetLeaderboardForUsersCharactersResult
+
+// PlayFab.ClientModels.GetLeaderboardForUsersCharactersResult
+
+// PlayFab.ClientModels.GetLeaderboardRequest
+
+// PlayFab.ClientModels.GetLeaderboardRequest
+
+// PlayFab.ClientModels.GetPaymentTokenRequest
+
+// PlayFab.ClientModels.GetPaymentTokenRequest
+
+// PlayFab.ClientModels.GetPaymentTokenResult
+
+// PlayFab.ClientModels.GetPaymentTokenResult
+
+// PlayFab.ClientModels.GetPhotonAuthenticationTokenRequest
+
+// PlayFab.ClientModels.GetPhotonAuthenticationTokenRequest
+
+// PlayFab.ClientModels.GetPhotonAuthenticationTokenResult
+
+// PlayFab.ClientModels.GetPhotonAuthenticationTokenResult
+
+// PlayFab.ClientModels.GetPlayFabIDsFromFacebookIDsRequest
+
+// PlayFab.ClientModels.GetPlayFabIDsFromFacebookIDsRequest
+
+// PlayFab.ClientModels.GetPlayFabIDsFromFacebookIDsResult
+
+// PlayFab.ClientModels.GetPlayFabIDsFromFacebookIDsResult
+
+// PlayFab.ClientModels.GetPlayFabIDsFromFacebookInstantGamesIdsRequest
+
+// PlayFab.ClientModels.GetPlayFabIDsFromFacebookInstantGamesIdsRequest
+
+// PlayFab.ClientModels.GetPlayFabIDsFromFacebookInstantGamesIdsResult
+
+// PlayFab.ClientModels.GetPlayFabIDsFromFacebookInstantGamesIdsResult
+
+// PlayFab.ClientModels.GetPlayFabIDsFromGameCenterIDsRequest
+
+// PlayFab.ClientModels.GetPlayFabIDsFromGameCenterIDsRequest
+
+// PlayFab.ClientModels.GetPlayFabIDsFromGameCenterIDsResult
+
+// PlayFab.ClientModels.GetPlayFabIDsFromGameCenterIDsResult
+
+// PlayFab.ClientModels.GetPlayFabIDsFromGenericIDsRequest
+
+// PlayFab.ClientModels.GetPlayFabIDsFromGenericIDsRequest
+
+// PlayFab.ClientModels.GetPlayFabIDsFromGenericIDsResult
+
+// PlayFab.ClientModels.GetPlayFabIDsFromGenericIDsResult
+
+// PlayFab.ClientModels.GetPlayFabIDsFromGoogleIDsRequest
+
+// PlayFab.ClientModels.GetPlayFabIDsFromGoogleIDsRequest
+
+// PlayFab.ClientModels.GetPlayFabIDsFromGoogleIDsResult
+
+// PlayFab.ClientModels.GetPlayFabIDsFromGoogleIDsResult
+
+// PlayFab.ClientModels.GetPlayFabIDsFromGooglePlayGamesPlayerIDsRequest
+
+// PlayFab.ClientModels.GetPlayFabIDsFromGooglePlayGamesPlayerIDsRequest
+
+// PlayFab.ClientModels.GetPlayFabIDsFromGooglePlayGamesPlayerIDsResult
+
+// PlayFab.ClientModels.GetPlayFabIDsFromGooglePlayGamesPlayerIDsResult
+
+// PlayFab.ClientModels.GetPlayFabIDsFromKongregateIDsRequest
+
+// PlayFab.ClientModels.GetPlayFabIDsFromKongregateIDsRequest
+
+// PlayFab.ClientModels.GetPlayFabIDsFromKongregateIDsResult
+
+// PlayFab.ClientModels.GetPlayFabIDsFromKongregateIDsResult
+
+// PlayFab.ClientModels.GetPlayFabIDsFromNintendoServiceAccountIdsRequest
+
+// PlayFab.ClientModels.GetPlayFabIDsFromNintendoServiceAccountIdsRequest
+
+// PlayFab.ClientModels.GetPlayFabIDsFromNintendoServiceAccountIdsResult
+
+// PlayFab.ClientModels.GetPlayFabIDsFromNintendoServiceAccountIdsResult
+
+// PlayFab.ClientModels.GetPlayFabIDsFromNintendoSwitchDeviceIdsRequest
+
+// PlayFab.ClientModels.GetPlayFabIDsFromNintendoSwitchDeviceIdsRequest
+
+// PlayFab.ClientModels.GetPlayFabIDsFromNintendoSwitchDeviceIdsResult
+
+// PlayFab.ClientModels.GetPlayFabIDsFromNintendoSwitchDeviceIdsResult
+
+// PlayFab.ClientModels.GetPlayFabIDsFromPSNAccountIDsRequest
+
+// PlayFab.ClientModels.GetPlayFabIDsFromPSNAccountIDsRequest
+
+// PlayFab.ClientModels.GetPlayFabIDsFromPSNAccountIDsResult
+
+// PlayFab.ClientModels.GetPlayFabIDsFromPSNAccountIDsResult
+
+// PlayFab.ClientModels.GetPlayFabIDsFromSteamIDsRequest
+
+// PlayFab.ClientModels.GetPlayFabIDsFromSteamIDsRequest
+
+// PlayFab.ClientModels.GetPlayFabIDsFromSteamIDsResult
+
+// PlayFab.ClientModels.GetPlayFabIDsFromSteamIDsResult
+
+// PlayFab.ClientModels.GetPlayFabIDsFromTwitchIDsRequest
+
+// PlayFab.ClientModels.GetPlayFabIDsFromTwitchIDsRequest
+
+// PlayFab.ClientModels.GetPlayFabIDsFromTwitchIDsResult
+
+// PlayFab.ClientModels.GetPlayFabIDsFromTwitchIDsResult
+
+// PlayFab.ClientModels.GetPlayFabIDsFromXboxLiveIDsRequest
+
+// PlayFab.ClientModels.GetPlayFabIDsFromXboxLiveIDsRequest
+
+// PlayFab.ClientModels.GetPlayFabIDsFromXboxLiveIDsResult
+
+// PlayFab.ClientModels.GetPlayFabIDsFromXboxLiveIDsResult
+
+// PlayFab.ClientModels.GetPlayerCombinedInfoRequest
+
+// PlayFab.ClientModels.GetPlayerCombinedInfoRequest
+
+// PlayFab.ClientModels.GetPlayerCombinedInfoResult
+
+// PlayFab.ClientModels.GetPlayerCombinedInfoResult
+
+// PlayFab.ClientModels.GetPlayerProfileRequest
+
+// PlayFab.ClientModels.GetPlayerProfileRequest
+
+// PlayFab.ClientModels.GetPlayerProfileResult
+
+// PlayFab.ClientModels.GetPlayerProfileResult
+
+// PlayFab.ClientModels.GetPlayerSegmentsRequest
+
+// PlayFab.ClientModels.GetPlayerSegmentsRequest
+
+// PlayFab.ClientModels.GetPlayerSegmentsResult
+
+// PlayFab.ClientModels.GetPlayerSegmentsResult
+
+// PlayFab.ClientModels.GetPlayerStatisticVersionsRequest
+
+// PlayFab.ClientModels.GetPlayerStatisticVersionsRequest
+
+// PlayFab.ClientModels.GetPlayerStatisticVersionsResult
+
+// PlayFab.ClientModels.GetPlayerStatisticVersionsResult
+
+// PlayFab.ClientModels.GetPlayerStatisticsRequest
+
+// PlayFab.ClientModels.GetPlayerStatisticsRequest
+
+// PlayFab.ClientModels.GetPlayerStatisticsResult
+
+// PlayFab.ClientModels.GetPlayerStatisticsResult
+
+// PlayFab.ClientModels.GetPlayerTagsRequest
+
+// PlayFab.ClientModels.GetPlayerTagsRequest
+
+// PlayFab.ClientModels.GetPlayerTagsResult
+
+// PlayFab.ClientModels.GetPlayerTagsResult
+
+// PlayFab.ClientModels.GetPlayerTradesRequest
+
+// PlayFab.ClientModels.GetPlayerTradesRequest
+
+// PlayFab.ClientModels.GetPlayerTradesResponse
+
+// PlayFab.ClientModels.GetPlayerTradesResponse
+
+// PlayFab.ClientModels.GetPublisherDataRequest
+
+// PlayFab.ClientModels.GetPublisherDataRequest
+
+// PlayFab.ClientModels.GetPublisherDataResult
+
+// PlayFab.ClientModels.GetPublisherDataResult
+
+// PlayFab.ClientModels.GetPurchaseRequest
+
+// PlayFab.ClientModels.GetPurchaseRequest
+
+// PlayFab.ClientModels.GetPurchaseResult
+
+// PlayFab.ClientModels.GetPurchaseResult
+
+// PlayFab.ClientModels.GetSharedGroupDataRequest
+
+// PlayFab.ClientModels.GetSharedGroupDataRequest
+
+// PlayFab.ClientModels.GetSharedGroupDataResult
+
+// PlayFab.ClientModels.GetSharedGroupDataResult
+
+// PlayFab.ClientModels.GetStoreItemsRequest
+
+// PlayFab.ClientModels.GetStoreItemsRequest
+
+// PlayFab.ClientModels.GetStoreItemsResult
+
+// PlayFab.ClientModels.GetStoreItemsResult
+
+// PlayFab.ClientModels.GetTimeRequest
+
+// PlayFab.ClientModels.GetTimeRequest
+
+// PlayFab.ClientModels.GetTimeResult
+
+// PlayFab.ClientModels.GetTimeResult
+
+// PlayFab.ClientModels.GetTitleDataRequest
+
+// PlayFab.ClientModels.GetTitleDataRequest
+
+// PlayFab.ClientModels.GetTitleDataResult
+
+// PlayFab.ClientModels.GetTitleDataResult
+
+// PlayFab.ClientModels.GetTitleNewsRequest
+
+// PlayFab.ClientModels.GetTitleNewsRequest
+
+// PlayFab.ClientModels.GetTitleNewsResult
+
+// PlayFab.ClientModels.GetTitleNewsResult
+
+// PlayFab.ClientModels.GetTitlePublicKeyRequest
+
+// PlayFab.ClientModels.GetTitlePublicKeyRequest
+
+// PlayFab.ClientModels.GetTitlePublicKeyResult
+
+// PlayFab.ClientModels.GetTitlePublicKeyResult
+
+// PlayFab.ClientModels.GetTradeStatusRequest
+
+// PlayFab.ClientModels.GetTradeStatusRequest
+
+// PlayFab.ClientModels.GetTradeStatusResponse
+
+// PlayFab.ClientModels.GetTradeStatusResponse
+
+// PlayFab.ClientModels.GetUserDataRequest
+
+// PlayFab.ClientModels.GetUserDataRequest
+
+// PlayFab.ClientModels.GetUserDataResult
+
+// PlayFab.ClientModels.GetUserDataResult
+
+// PlayFab.ClientModels.GetUserInventoryRequest
+
+// PlayFab.ClientModels.GetUserInventoryRequest
+
+// PlayFab.ClientModels.GetUserInventoryResult
+
+// PlayFab.ClientModels.GetUserInventoryResult
+
+// PlayFab.ClientModels.GrantCharacterToUserRequest
+
+// PlayFab.ClientModels.GrantCharacterToUserRequest
+
+// PlayFab.ClientModels.GrantCharacterToUserResult
+
+// PlayFab.ClientModels.GrantCharacterToUserResult
+
+// PlayFab.ClientModels.LinkAndroidDeviceIDRequest
+
+// PlayFab.ClientModels.LinkAndroidDeviceIDRequest
+
+// PlayFab.ClientModels.LinkAndroidDeviceIDResult
+
+// PlayFab.ClientModels.LinkAndroidDeviceIDResult
+
+// PlayFab.ClientModels.LinkAppleRequest
+
+// PlayFab.ClientModels.LinkAppleRequest
+
+// PlayFab.ClientModels.LinkCustomIDRequest
+
+// PlayFab.ClientModels.LinkCustomIDRequest
+
+// PlayFab.ClientModels.LinkCustomIDResult
+
+// PlayFab.ClientModels.LinkCustomIDResult
+
+// PlayFab.ClientModels.LinkFacebookAccountRequest
+
+// PlayFab.ClientModels.LinkFacebookAccountRequest
+
+// PlayFab.ClientModels.LinkFacebookAccountResult
+
+// PlayFab.ClientModels.LinkFacebookAccountResult
+
+// PlayFab.ClientModels.LinkFacebookInstantGamesIdRequest
+
+// PlayFab.ClientModels.LinkFacebookInstantGamesIdRequest
+
+// PlayFab.ClientModels.LinkFacebookInstantGamesIdResult
+
+// PlayFab.ClientModels.LinkFacebookInstantGamesIdResult
+
+// PlayFab.ClientModels.LinkGameCenterAccountRequest
+
+// PlayFab.ClientModels.LinkGameCenterAccountRequest
+
+// PlayFab.ClientModels.LinkGameCenterAccountResult
+
+// PlayFab.ClientModels.LinkGameCenterAccountResult
+
+// PlayFab.ClientModels.LinkGoogleAccountRequest
+
+// PlayFab.ClientModels.LinkGoogleAccountRequest
+
+// PlayFab.ClientModels.LinkGoogleAccountResult
+
+// PlayFab.ClientModels.LinkGoogleAccountResult
+
+// PlayFab.ClientModels.LinkGooglePlayGamesServicesAccountRequest
+
+// PlayFab.ClientModels.LinkGooglePlayGamesServicesAccountRequest
+
+// PlayFab.ClientModels.LinkGooglePlayGamesServicesAccountResult
+
+// PlayFab.ClientModels.LinkGooglePlayGamesServicesAccountResult
+
+// PlayFab.ClientModels.LinkIOSDeviceIDRequest
+
+// PlayFab.ClientModels.LinkIOSDeviceIDRequest
+
+// PlayFab.ClientModels.LinkIOSDeviceIDResult
+
+// PlayFab.ClientModels.LinkIOSDeviceIDResult
+
+// PlayFab.ClientModels.LinkKongregateAccountRequest
+
+// PlayFab.ClientModels.LinkKongregateAccountRequest
+
+// PlayFab.ClientModels.LinkKongregateAccountResult
+
+// PlayFab.ClientModels.LinkKongregateAccountResult
+
+// PlayFab.ClientModels.LinkNintendoServiceAccountRequest
+
+// PlayFab.ClientModels.LinkNintendoServiceAccountRequest
+
+// PlayFab.ClientModels.LinkNintendoSwitchDeviceIdRequest
+
+// PlayFab.ClientModels.LinkNintendoSwitchDeviceIdRequest
+
+// PlayFab.ClientModels.LinkNintendoSwitchDeviceIdResult
+
+// PlayFab.ClientModels.LinkNintendoSwitchDeviceIdResult
+
+// PlayFab.ClientModels.LinkOpenIdConnectRequest
+
+// PlayFab.ClientModels.LinkOpenIdConnectRequest
+
+// PlayFab.ClientModels.LinkPSNAccountRequest
+
+// PlayFab.ClientModels.LinkPSNAccountRequest
+
+// PlayFab.ClientModels.LinkPSNAccountResult
+
+// PlayFab.ClientModels.LinkPSNAccountResult
+
+// PlayFab.ClientModels.LinkSteamAccountRequest
+
+// PlayFab.ClientModels.LinkSteamAccountRequest
+
+// PlayFab.ClientModels.LinkSteamAccountResult
+
+// PlayFab.ClientModels.LinkSteamAccountResult
+
+// PlayFab.ClientModels.LinkTwitchAccountRequest
+
+// PlayFab.ClientModels.LinkTwitchAccountRequest
+
+// PlayFab.ClientModels.LinkTwitchAccountResult
+
+// PlayFab.ClientModels.LinkTwitchAccountResult
+
+// PlayFab.ClientModels.LinkXboxAccountRequest
+
+// PlayFab.ClientModels.LinkXboxAccountRequest
+
+// PlayFab.ClientModels.LinkXboxAccountResult
+
+// PlayFab.ClientModels.LinkXboxAccountResult
+
+// PlayFab.ClientModels.LinkedPlatformAccountModel
+
+// PlayFab.ClientModels.LinkedPlatformAccountModel
+
+// PlayFab.ClientModels.ListUsersCharactersRequest
+
+// PlayFab.ClientModels.ListUsersCharactersRequest
+
+// PlayFab.ClientModels.ListUsersCharactersResult
+
+// PlayFab.ClientModels.ListUsersCharactersResult
+
+// PlayFab.ClientModels.LocationModel
+
+// PlayFab.ClientModels.LocationModel
+
+// PlayFab.ClientModels.LoginWithAndroidDeviceIDRequest
+
+// PlayFab.ClientModels.LoginWithAndroidDeviceIDRequest
+
+// PlayFab.ClientModels.LoginWithAppleRequest
+
+// PlayFab.ClientModels.LoginWithAppleRequest
+
+// PlayFab.ClientModels.LoginWithCustomIDRequest
+
+// PlayFab.ClientModels.LoginWithCustomIDRequest
+
+// PlayFab.ClientModels.LoginWithEmailAddressRequest
+
+// PlayFab.ClientModels.LoginWithEmailAddressRequest
+
+// PlayFab.ClientModels.LoginWithFacebookInstantGamesIdRequest
+
+// PlayFab.ClientModels.LoginWithFacebookInstantGamesIdRequest
+
+// PlayFab.ClientModels.LoginWithFacebookRequest
+
+// PlayFab.ClientModels.LoginWithFacebookRequest
+
+// PlayFab.ClientModels.LoginWithGameCenterRequest
+
+// PlayFab.ClientModels.LoginWithGameCenterRequest
+
+// PlayFab.ClientModels.LoginWithGoogleAccountRequest
+
+// PlayFab.ClientModels.LoginWithGoogleAccountRequest
+
+// PlayFab.ClientModels.LoginWithGooglePlayGamesServicesRequest
+
+// PlayFab.ClientModels.LoginWithGooglePlayGamesServicesRequest
+
+// PlayFab.ClientModels.LoginWithIOSDeviceIDRequest
+
+// PlayFab.ClientModels.LoginWithIOSDeviceIDRequest
+
+// PlayFab.ClientModels.LoginWithKongregateRequest
+
+// PlayFab.ClientModels.LoginWithKongregateRequest
+
+// PlayFab.ClientModels.LoginWithNintendoServiceAccountRequest
+
+// PlayFab.ClientModels.LoginWithNintendoServiceAccountRequest
+
+// PlayFab.ClientModels.LoginWithNintendoSwitchDeviceIdRequest
+
+// PlayFab.ClientModels.LoginWithNintendoSwitchDeviceIdRequest
+
+// PlayFab.ClientModels.LoginWithOpenIdConnectRequest
+
+// PlayFab.ClientModels.LoginWithOpenIdConnectRequest
+
+// PlayFab.ClientModels.LoginWithPSNRequest
+
+// PlayFab.ClientModels.LoginWithPSNRequest
+
+// PlayFab.ClientModels.LoginWithPlayFabRequest
+
+// PlayFab.ClientModels.LoginWithPlayFabRequest
+
+// PlayFab.ClientModels.LoginWithSteamRequest
+
+// PlayFab.ClientModels.LoginWithSteamRequest
+
+// PlayFab.ClientModels.LoginWithTwitchRequest
+
+// PlayFab.ClientModels.LoginWithTwitchRequest
+
+// PlayFab.ClientModels.LoginWithXboxRequest
+
+// PlayFab.ClientModels.LoginWithXboxRequest
+
+// PlayFab.ClientModels.MatchmakeRequest
+
+// PlayFab.ClientModels.MatchmakeRequest
+
+// PlayFab.ClientModels.MatchmakeResult
+
+// PlayFab.ClientModels.MatchmakeResult
+
+// PlayFab.ClientModels.ModifyUserVirtualCurrencyResult
+
+// PlayFab.ClientModels.ModifyUserVirtualCurrencyResult
+
+// PlayFab.ClientModels.OpenTradeRequest
+
+// PlayFab.ClientModels.OpenTradeRequest
+
+// PlayFab.ClientModels.OpenTradeResponse
+
+// PlayFab.ClientModels.OpenTradeResponse
+
+// PlayFab.ClientModels.PayForPurchaseRequest
+
+// PlayFab.ClientModels.PayForPurchaseRequest
+
+// PlayFab.ClientModels.PayForPurchaseResult
+
+// PlayFab.ClientModels.PayForPurchaseResult
+
+// PlayFab.PlayFabError
+
+// PlayFab.PlayFabError
+struct PlayFabError_t085A18640C2631872C3888388E2BC667C7B09C23_ThreadStaticFields
+{
+	// System.Text.StringBuilder PlayFab.PlayFabError::_tempSb
+	StringBuilder_t* ____tempSb_8;
+};
+
+// PlayFab.SharedModels.PlayFabLoginResultCommon
+
+// PlayFab.SharedModels.PlayFabLoginResultCommon
+
+// PlayFab.ClientModels.PurchaseItemRequest
+
+// PlayFab.ClientModels.PurchaseItemRequest
+
+// PlayFab.ClientModels.PurchaseItemResult
+
+// PlayFab.ClientModels.PurchaseItemResult
+
+// PlayFab.ClientModels.PurchaseReceiptFulfillment
+
+// PlayFab.ClientModels.PurchaseReceiptFulfillment
+
+// PlayFab.ClientModels.PushNotificationRegistrationModel
+
+// PlayFab.ClientModels.PushNotificationRegistrationModel
+
+// PlayFab.ClientModels.RedeemCouponRequest
+
+// PlayFab.ClientModels.RedeemCouponRequest
+
+// PlayFab.ClientModels.RedeemCouponResult
+
+// PlayFab.ClientModels.RedeemCouponResult
+
+// PlayFab.ClientModels.RefreshPSNAuthTokenRequest
+
+// PlayFab.ClientModels.RefreshPSNAuthTokenRequest
+
+// PlayFab.ClientModels.RegionInfo
+
+// PlayFab.ClientModels.RegionInfo
+
+// PlayFab.ClientModels.RegisterForIOSPushNotificationRequest
+
+// PlayFab.ClientModels.RegisterForIOSPushNotificationRequest
+
+// PlayFab.ClientModels.RegisterForIOSPushNotificationResult
+
+// PlayFab.ClientModels.RegisterForIOSPushNotificationResult
+
+// PlayFab.ClientModels.RegisterPlayFabUserRequest
+
+// PlayFab.ClientModels.RegisterPlayFabUserRequest
+
+// PlayFab.ClientModels.RemoveContactEmailRequest
+
+// PlayFab.ClientModels.RemoveContactEmailRequest
+
+// PlayFab.ClientModels.RemoveContactEmailResult
+
+// PlayFab.ClientModels.RemoveContactEmailResult
+
+// PlayFab.ClientModels.RemoveFriendRequest
+
+// PlayFab.ClientModels.RemoveFriendRequest
+
+// PlayFab.ClientModels.RemoveFriendResult
+
+// PlayFab.ClientModels.RemoveFriendResult
+
+// PlayFab.ClientModels.RemoveGenericIDRequest
+
+// PlayFab.ClientModels.RemoveGenericIDRequest
+
+// PlayFab.ClientModels.RemoveGenericIDResult
+
+// PlayFab.ClientModels.RemoveGenericIDResult
+
+// PlayFab.ClientModels.RemoveSharedGroupMembersRequest
+
+// PlayFab.ClientModels.RemoveSharedGroupMembersRequest
+
+// PlayFab.ClientModels.RemoveSharedGroupMembersResult
+
+// PlayFab.ClientModels.RemoveSharedGroupMembersResult
+
+// PlayFab.ClientModels.ReportAdActivityRequest
+
+// PlayFab.ClientModels.ReportAdActivityRequest
+
+// PlayFab.ClientModels.ReportAdActivityResult
+
+// PlayFab.ClientModels.ReportAdActivityResult
+
+// PlayFab.ClientModels.ReportPlayerClientRequest
+
+// PlayFab.ClientModels.ReportPlayerClientRequest
+
+// PlayFab.ClientModels.ReportPlayerClientResult
+
+// PlayFab.ClientModels.ReportPlayerClientResult
+
+// PlayFab.ClientModels.RestoreIOSPurchasesRequest
+
+// PlayFab.ClientModels.RestoreIOSPurchasesRequest
+
+// PlayFab.ClientModels.RestoreIOSPurchasesResult
+
+// PlayFab.ClientModels.RestoreIOSPurchasesResult
+
+// PlayFab.ClientModels.RewardAdActivityRequest
+
+// PlayFab.ClientModels.RewardAdActivityRequest
+
+// PlayFab.ClientModels.RewardAdActivityResult
+
+// PlayFab.ClientModels.RewardAdActivityResult
+
+// PlayFab.ClientModels.SendAccountRecoveryEmailRequest
+
+// PlayFab.ClientModels.SendAccountRecoveryEmailRequest
+
+// PlayFab.ClientModels.SendAccountRecoveryEmailResult
+
+// PlayFab.ClientModels.SendAccountRecoveryEmailResult
+
+// PlayFab.ClientModels.SetFriendTagsRequest
+
+// PlayFab.ClientModels.SetFriendTagsRequest
+
+// PlayFab.ClientModels.SetFriendTagsResult
+
+// PlayFab.ClientModels.SetFriendTagsResult
+
+// PlayFab.ClientModels.SetPlayerSecretRequest
+
+// PlayFab.ClientModels.SetPlayerSecretRequest
+
+// PlayFab.ClientModels.SetPlayerSecretResult
+
+// PlayFab.ClientModels.SetPlayerSecretResult
+
+// PlayFab.ClientModels.SharedGroupDataRecord
+
+// PlayFab.ClientModels.SharedGroupDataRecord
+
+// PlayFab.ClientModels.StartPurchaseRequest
+
+// PlayFab.ClientModels.StartPurchaseRequest
+
+// PlayFab.ClientModels.StartPurchaseResult
+
+// PlayFab.ClientModels.StartPurchaseResult
+
+// PlayFab.ClientModels.StatisticUpdate
+
+// PlayFab.ClientModels.StatisticUpdate
+
+// PlayFab.ClientModels.StoreItem
+
+// PlayFab.ClientModels.StoreItem
+
+// PlayFab.ClientModels.SubscriptionModel
+
+// PlayFab.ClientModels.SubscriptionModel
+
+// PlayFab.ClientModels.SubtractUserVirtualCurrencyRequest
+
+// PlayFab.ClientModels.SubtractUserVirtualCurrencyRequest
+
+// PlayFab.ClientModels.TitleNewsItem
+
+// PlayFab.ClientModels.TitleNewsItem
+
+// PlayFab.ClientModels.UnlinkAndroidDeviceIDRequest
+
+// PlayFab.ClientModels.UnlinkAndroidDeviceIDRequest
+
+// PlayFab.ClientModels.UnlinkAndroidDeviceIDResult
+
+// PlayFab.ClientModels.UnlinkAndroidDeviceIDResult
+
+// PlayFab.ClientModels.UnlinkAppleRequest
+
+// PlayFab.ClientModels.UnlinkAppleRequest
+
+// PlayFab.ClientModels.UnlinkCustomIDRequest
+
+// PlayFab.ClientModels.UnlinkCustomIDRequest
+
+// PlayFab.ClientModels.UnlinkCustomIDResult
+
+// PlayFab.ClientModels.UnlinkCustomIDResult
+
+// PlayFab.ClientModels.UnlinkFacebookAccountRequest
+
+// PlayFab.ClientModels.UnlinkFacebookAccountRequest
+
+// PlayFab.ClientModels.UnlinkFacebookAccountResult
+
+// PlayFab.ClientModels.UnlinkFacebookAccountResult
+
+// PlayFab.ClientModels.UnlinkFacebookInstantGamesIdRequest
+
+// PlayFab.ClientModels.UnlinkFacebookInstantGamesIdRequest
+
+// PlayFab.ClientModels.UnlinkFacebookInstantGamesIdResult
+
+// PlayFab.ClientModels.UnlinkFacebookInstantGamesIdResult
+
+// PlayFab.ClientModels.UnlinkGameCenterAccountRequest
+
+// PlayFab.ClientModels.UnlinkGameCenterAccountRequest
+
+// PlayFab.ClientModels.UnlinkGameCenterAccountResult
+
+// PlayFab.ClientModels.UnlinkGameCenterAccountResult
+
+// PlayFab.ClientModels.UnlinkGoogleAccountRequest
+
+// PlayFab.ClientModels.UnlinkGoogleAccountRequest
+
+// PlayFab.ClientModels.UnlinkGoogleAccountResult
+
+// PlayFab.ClientModels.UnlinkGoogleAccountResult
+
+// PlayFab.ClientModels.UnlinkGooglePlayGamesServicesAccountRequest
+
+// PlayFab.ClientModels.UnlinkGooglePlayGamesServicesAccountRequest
+
+// PlayFab.ClientModels.UnlinkGooglePlayGamesServicesAccountResult
+
+// PlayFab.ClientModels.UnlinkGooglePlayGamesServicesAccountResult
+
+// PlayFab.ClientModels.UnlinkIOSDeviceIDRequest
+
+// PlayFab.ClientModels.UnlinkIOSDeviceIDRequest
+
+// PlayFab.ClientModels.UnlinkIOSDeviceIDResult
+
+// PlayFab.ClientModels.UnlinkIOSDeviceIDResult
+
+// PlayFab.ClientModels.UnlinkKongregateAccountRequest
+
+// PlayFab.ClientModels.UnlinkKongregateAccountRequest
+
+// PlayFab.ClientModels.UnlinkKongregateAccountResult
+
+// PlayFab.ClientModels.UnlinkKongregateAccountResult
+
+// PlayFab.ClientModels.UnlinkNintendoServiceAccountRequest
+
+// PlayFab.ClientModels.UnlinkNintendoServiceAccountRequest
+
+// PlayFab.ClientModels.UnlinkNintendoSwitchDeviceIdRequest
+
+// PlayFab.ClientModels.UnlinkNintendoSwitchDeviceIdRequest
+
+// PlayFab.ClientModels.UnlinkNintendoSwitchDeviceIdResult
+
+// PlayFab.ClientModels.UnlinkNintendoSwitchDeviceIdResult
+
+// PlayFab.ClientModels.UnlinkOpenIdConnectRequest
+
+// PlayFab.ClientModels.UnlinkOpenIdConnectRequest
+
+// PlayFab.ClientModels.UnlinkPSNAccountRequest
+
+// PlayFab.ClientModels.UnlinkPSNAccountRequest
+
+// PlayFab.ClientModels.UnlinkPSNAccountResult
+
+// PlayFab.ClientModels.UnlinkPSNAccountResult
+
+// PlayFab.ClientModels.UnlinkSteamAccountRequest
+
+// PlayFab.ClientModels.UnlinkSteamAccountRequest
+
+// PlayFab.ClientModels.UnlinkSteamAccountResult
+
+// PlayFab.ClientModels.UnlinkSteamAccountResult
+
+// PlayFab.ClientModels.UnlinkTwitchAccountRequest
+
+// PlayFab.ClientModels.UnlinkTwitchAccountRequest
+
+// PlayFab.ClientModels.UnlinkTwitchAccountResult
+
+// PlayFab.ClientModels.UnlinkTwitchAccountResult
+
+// PlayFab.ClientModels.UnlinkXboxAccountRequest
+
+// PlayFab.ClientModels.UnlinkXboxAccountRequest
+
+// PlayFab.ClientModels.UnlinkXboxAccountResult
+
+// PlayFab.ClientModels.UnlinkXboxAccountResult
+
+// PlayFab.ClientModels.UnlockContainerInstanceRequest
+
+// PlayFab.ClientModels.UnlockContainerInstanceRequest
+
+// PlayFab.ClientModels.UnlockContainerItemRequest
+
+// PlayFab.ClientModels.UnlockContainerItemRequest
+
+// PlayFab.ClientModels.UnlockContainerItemResult
+
+// PlayFab.ClientModels.UnlockContainerItemResult
+
+// PlayFab.ClientModels.UpdateAvatarUrlRequest
+
+// PlayFab.ClientModels.UpdateAvatarUrlRequest
+
+// PlayFab.ClientModels.UpdateCharacterDataRequest
+
+// PlayFab.ClientModels.UpdateCharacterDataRequest
+
+// PlayFab.ClientModels.UpdateCharacterDataResult
+
+// PlayFab.ClientModels.UpdateCharacterDataResult
+
+// PlayFab.ClientModels.UpdateCharacterStatisticsRequest
+
+// PlayFab.ClientModels.UpdateCharacterStatisticsRequest
+
+// PlayFab.ClientModels.UpdateCharacterStatisticsResult
+
+// PlayFab.ClientModels.UpdateCharacterStatisticsResult
+
+// PlayFab.ClientModels.UpdatePlayerStatisticsRequest
+
+// PlayFab.ClientModels.UpdatePlayerStatisticsRequest
+
+// PlayFab.ClientModels.UpdatePlayerStatisticsResult
+
+// PlayFab.ClientModels.UpdatePlayerStatisticsResult
+
+// PlayFab.ClientModels.UpdateSharedGroupDataRequest
+
+// PlayFab.ClientModels.UpdateSharedGroupDataRequest
+
+// PlayFab.ClientModels.UpdateSharedGroupDataResult
+
+// PlayFab.ClientModels.UpdateSharedGroupDataResult
+
+// PlayFab.ClientModels.UpdateUserDataRequest
+
+// PlayFab.ClientModels.UpdateUserDataRequest
+
+// PlayFab.ClientModels.UpdateUserDataResult
+
+// PlayFab.ClientModels.UpdateUserDataResult
+
+// PlayFab.ClientModels.UpdateUserTitleDisplayNameRequest
+
+// PlayFab.ClientModels.UpdateUserTitleDisplayNameRequest
+
+// PlayFab.ClientModels.UpdateUserTitleDisplayNameResult
+
+// PlayFab.ClientModels.UpdateUserTitleDisplayNameResult
+
+// PlayFab.ClientModels.UserAccountInfo
+
+// PlayFab.ClientModels.UserAccountInfo
+
+// PlayFab.ClientModels.UserDataRecord
+
+// PlayFab.ClientModels.UserDataRecord
+
+// PlayFab.ClientModels.UserSteamInfo
+
+// PlayFab.ClientModels.UserSteamInfo
+
+// PlayFab.ClientModels.ValidateAmazonReceiptRequest
+
+// PlayFab.ClientModels.ValidateAmazonReceiptRequest
+
+// PlayFab.ClientModels.ValidateAmazonReceiptResult
+
+// PlayFab.ClientModels.ValidateAmazonReceiptResult
+
+// PlayFab.AuthenticationModels.ValidateEntityTokenRequest
+
+// PlayFab.AuthenticationModels.ValidateEntityTokenRequest
+
+// PlayFab.AuthenticationModels.ValidateEntityTokenResponse
+
+// PlayFab.AuthenticationModels.ValidateEntityTokenResponse
+
+// PlayFab.ClientModels.ValidateGooglePlayPurchaseRequest
+
+// PlayFab.ClientModels.ValidateGooglePlayPurchaseRequest
+
+// PlayFab.ClientModels.ValidateGooglePlayPurchaseResult
+
+// PlayFab.ClientModels.ValidateGooglePlayPurchaseResult
+
+// PlayFab.ClientModels.ValidateIOSReceiptRequest
+
+// PlayFab.ClientModels.ValidateIOSReceiptRequest
+
+// PlayFab.ClientModels.ValidateIOSReceiptResult
+
+// PlayFab.ClientModels.ValidateIOSReceiptResult
+
+// PlayFab.ClientModels.ValidateWindowsReceiptRequest
+
+// PlayFab.ClientModels.ValidateWindowsReceiptRequest
+
+// PlayFab.ClientModels.ValidateWindowsReceiptResult
+
+// PlayFab.ClientModels.ValidateWindowsReceiptResult
+
+// PlayFab.ClientModels.VirtualCurrencyRechargeTime
+
+// PlayFab.ClientModels.VirtualCurrencyRechargeTime
+
+// PlayFab.ClientModels.WriteEventResponse
+
+// PlayFab.ClientModels.WriteEventResponse
+
+// PlayFab.AuthenticationModels.EntityTokenResponse
+
+// PlayFab.AuthenticationModels.EntityTokenResponse
+
+// PlayFab.AuthenticationModels.GetEntityTokenResponse
+
+// PlayFab.AuthenticationModels.GetEntityTokenResponse
+
+// PlayFab.ClientModels.GetFriendLeaderboardAroundPlayerResult
+
+// PlayFab.ClientModels.GetFriendLeaderboardAroundPlayerResult
+
+// PlayFab.ClientModels.GetLeaderboardAroundPlayerResult
+
+// PlayFab.ClientModels.GetLeaderboardAroundPlayerResult
+
+// PlayFab.ClientModels.GetLeaderboardResult
+
+// PlayFab.ClientModels.GetLeaderboardResult
+
+// PlayFab.ClientModels.ItemInstance
+
+// PlayFab.ClientModels.ItemInstance
+
+// PlayFab.ClientModels.LoginResult
+
+// PlayFab.ClientModels.LoginResult
+
+// PlayFab.ClientModels.MembershipModel
+
+// PlayFab.ClientModels.MembershipModel
+
+// PlayFab.ClientModels.PlayerProfileModel
+
+// PlayFab.ClientModels.PlayerProfileModel
+
+// PlayFab.ClientModels.PlayerStatisticVersion
+
+// PlayFab.ClientModels.PlayerStatisticVersion
+
+// PlayFab.ClientModels.RegisterPlayFabUserResult
+
+// PlayFab.ClientModels.RegisterPlayFabUserResult
+
+// PlayFab.ClientModels.TradeInfo
+
+// PlayFab.ClientModels.TradeInfo
+
+// PlayFab.ClientModels.UserTitleInfo
+
+// PlayFab.ClientModels.UserTitleInfo
+
+// PlayFab.ClientModels.WriteClientCharacterEventRequest
+
+// PlayFab.ClientModels.WriteClientCharacterEventRequest
+
+// PlayFab.ClientModels.WriteClientPlayerEventRequest
+
+// PlayFab.ClientModels.WriteClientPlayerEventRequest
+
+// PlayFab.ClientModels.WriteTitleEventRequest
+
+// PlayFab.ClientModels.WriteTitleEventRequest
+
+// System.AsyncCallback
+
+// System.AsyncCallback
+
+// PlayFab.Events.PlayFabEvents/PlayFabErrorEvent
+
+// PlayFab.Events.PlayFabEvents/PlayFabErrorEvent
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+// System.Delegate[]
+struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771  : public RuntimeArray
+{
+	ALIGN_FIELD (8) Delegate_t* m_Items[1];
+
+	inline Delegate_t* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Delegate_t** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Delegate_t* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline Delegate_t* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Delegate_t** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Delegate_t* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+
+
+
+// System.Void PlayFab.SharedModels.PlayFabRequestCommon::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17 (PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D* __this, const RuntimeMethod* method) ;
+// System.Void PlayFab.SharedModels.PlayFabResultCommon::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46 (PlayFabResultCommon_t021FCFD75D498AB8A802ECE543435DCBFC333F40* __this, const RuntimeMethod* method) ;
+// System.Void PlayFab.SharedModels.PlayFabBaseModel::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E (PlayFabBaseModel_t8A6DEC14EE30C2F52F3DDB7513B352300DC0EA0E* __this, const RuntimeMethod* method) ;
+// System.Void PlayFab.SharedModels.PlayFabLoginResultCommon::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayFabLoginResultCommon__ctor_m9A54D6B9CCE858788C0C02085321998C461E1477 (PlayFabLoginResultCommon_t564463F743BE39995D6BBD360F222C16FB74AA47* __this, const RuntimeMethod* method) ;
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GameServerRegionsRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameServerRegionsRequest__ctor_m788D6FC211986FA8514AB933F7F1F915BC279275 (GameServerRegionsRequest_tE52E8B0933978E8BFBF9C35B02910A09FD660FA1* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GameServerRegionsResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameServerRegionsResult__ctor_m141E520C73575BB61A91A311CDB075564EBC1C0A (GameServerRegionsResult_t5193C393CE87A74A84E4E22E9AEA0106931A5949* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GenericPlayFabIdPair::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GenericPlayFabIdPair__ctor_mA39BFB3256F3CA67366CB786815C6A76258D83C1 (GenericPlayFabIdPair_t1C9E09D926074E8C215C364655EDC29EC7D5AD40* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GenericServiceId::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GenericServiceId__ctor_m857349581CF691AE7E0EBE050925EBBB24DF3270 (GenericServiceId_t845FFCE0230F5F2AC512688C09CB390784A40DCE* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetAccountInfoRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetAccountInfoRequest__ctor_mA07826B9FC60B44767A25BB09A3C5A3BBB8AED0C (GetAccountInfoRequest_tC0147A50F81DD6B6BCC3ABD921E2930F6F43EBD4* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetAccountInfoResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetAccountInfoResult__ctor_mAD6CD90A81729134F59F19730C68B1F4F9DEA861 (GetAccountInfoResult_t3749F7FEB631D14EE484694B7953E1EEC0D4997C* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetAdPlacementsRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetAdPlacementsRequest__ctor_m1CA458DD48FDBEB1A62081C6A29F144FAFAA39CA (GetAdPlacementsRequest_tE5AEC539C50FBCB69CDC269CCE806B7E12735FE1* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetAdPlacementsResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetAdPlacementsResult__ctor_mA9E3F75CAD31637897EF4AF24EB83355BFD9386D (GetAdPlacementsResult_tBDBA84AFBE0E8DFAA39F68B11B6C2E0ACAF58637* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetCatalogItemsRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetCatalogItemsRequest__ctor_m3D1E1795F1C4446593F562EE24D41D60D4046968 (GetCatalogItemsRequest_tCB1333AAA1EAFC89DFA7E9317A5C527C9B985553* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetCatalogItemsResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetCatalogItemsResult__ctor_m8CC1500D6C301AD4FF8A00208A143949FD16A3DB (GetCatalogItemsResult_tB411483732EB649E2A5C87171A9A4A9DFB9F5B7A* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetCharacterDataRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetCharacterDataRequest__ctor_mA5B74ECFE699C87AA0F94057DDB21F49DDF31511 (GetCharacterDataRequest_t6C05771F13C702A9045DD3B899170E5445B1766B* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetCharacterDataResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetCharacterDataResult__ctor_m474D605DDDC9BF87BF584842FD8CB230AE90A752 (GetCharacterDataResult_tF0476467F5B9B17397185F7E4DAF671E2FE8F891* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetCharacterInventoryRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetCharacterInventoryRequest__ctor_mB6039830D82216B84DE772FFF94B43173A164AFC (GetCharacterInventoryRequest_t580ACC64D36255B5C5067A28C5CEF9EB0CF58CDD* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetCharacterInventoryResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetCharacterInventoryResult__ctor_mB0E2516B78FF08F710DE44945CB3124DA4D89666 (GetCharacterInventoryResult_t3B8789B3A7CDD4FB2D5412AAF4CC984E24F4BAF6* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetCharacterLeaderboardRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetCharacterLeaderboardRequest__ctor_m4F62286B7F4DC8E0C919E7A16722671148078CFB (GetCharacterLeaderboardRequest_tAFAFAB8549BCD8A8E150271072595B60F4F1F3D3* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetCharacterLeaderboardResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetCharacterLeaderboardResult__ctor_m8083688DD7B3BC044C99D79AFAC3671B2275C026 (GetCharacterLeaderboardResult_t751226AA8B78F4B976034B2AAC6C2D2F15FCE8EE* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetCharacterStatisticsRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetCharacterStatisticsRequest__ctor_mA8427D3BB231D4403FD913FE95683661BD2B7446 (GetCharacterStatisticsRequest_t267D464960AF2DC89F894ACF664AA6B643EA6C34* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetCharacterStatisticsResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetCharacterStatisticsResult__ctor_m5CEA086F738756677FD8B4FF0D01C0133AB37699 (GetCharacterStatisticsResult_t113C2ECA7AC503ED97126C8B4AF186BBE421C865* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetContentDownloadUrlRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetContentDownloadUrlRequest__ctor_mF112647E1F95FA5DEF0D1428D1746BAEF219A76A (GetContentDownloadUrlRequest_t51F47803DD20DD528B153AD2661EF0D7D4029654* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetContentDownloadUrlResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetContentDownloadUrlResult__ctor_mA89D87DCCE6CF11CA6BCDA644CC2243FECFE18BE (GetContentDownloadUrlResult_tAFD987CB2B47A5D205B9D6780153BAB37915903E* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetFriendLeaderboardAroundPlayerRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetFriendLeaderboardAroundPlayerRequest__ctor_m28FD4548308710B5FB2A374478AF238E5144773D (GetFriendLeaderboardAroundPlayerRequest_tBC527554F4EA5DC6C05BF33AB959977C4D3045B4* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetFriendLeaderboardAroundPlayerResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetFriendLeaderboardAroundPlayerResult__ctor_m9EA6D0AB74D8C65CF9C4C6835B1A5ED341814E4F (GetFriendLeaderboardAroundPlayerResult_t08E0989E5BB790AD662A7223F4C8E46218A66129* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetFriendLeaderboardRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetFriendLeaderboardRequest__ctor_m8ECEEBC6BA6184FB020A5D324A28D4204EB4EE48 (GetFriendLeaderboardRequest_tC24921FC75AEB6D31EBAC1298F69419AF0F000B6* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetFriendsListRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetFriendsListRequest__ctor_m293AC778544FB3BF9B63D601D0310A4034EB5DE5 (GetFriendsListRequest_tD095DC6CD5427ABC61B3F315FBB7204A75739444* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetFriendsListResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetFriendsListResult__ctor_mFB3289FB9B6281B9DC68F26F7EDB3AB88D7CD8BA (GetFriendsListResult_tD350BDB67572F168FA932E98CE7C34DB1CDC0E9A* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetLeaderboardAroundCharacterRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetLeaderboardAroundCharacterRequest__ctor_m0F6069FC82E3BA5A2BD33AA217A18FB1CA436023 (GetLeaderboardAroundCharacterRequest_tA81520118D8CC8B9D66E62B5999227D3378336B0* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetLeaderboardAroundCharacterResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetLeaderboardAroundCharacterResult__ctor_mE3E6DF16FF49E0527D2832C6F793246A5F14F10F (GetLeaderboardAroundCharacterResult_t3033C56D162F38E42CA2C368C46DA2921A493E41* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetLeaderboardAroundPlayerRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetLeaderboardAroundPlayerRequest__ctor_mBA0BD0B62AD2480A1FD3D7E96D7BCB787057AC67 (GetLeaderboardAroundPlayerRequest_tD1C22CFB0F1F778DB0B694C76C423419A476DCFC* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetLeaderboardAroundPlayerResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetLeaderboardAroundPlayerResult__ctor_m1504A4FBE985C8C0B3C0E4A6825BE9C9FD61715C (GetLeaderboardAroundPlayerResult_tEC5343CE1F5409AC4FC072C15C5E0667D5AE763A* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetLeaderboardForUsersCharactersRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetLeaderboardForUsersCharactersRequest__ctor_mC98D6F18EBB74B12E6DF03792E19A33E2F60B566 (GetLeaderboardForUsersCharactersRequest_tEF2A6C42242BD951785B3C3D4F5D169DF8A25C3C* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetLeaderboardForUsersCharactersResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetLeaderboardForUsersCharactersResult__ctor_m474B066F8ABB8523DA5A97CF7574E6B41397A1F1 (GetLeaderboardForUsersCharactersResult_tE67CF47DF6B0C0EC8124A217495687D0ADAB2E89* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetLeaderboardRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetLeaderboardRequest__ctor_mCDA23C21FAD1DF7018B2B96F167F93A00A6AC6F5 (GetLeaderboardRequest_t6815CF68472AB22065418C21DDEB07C883A41193* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetLeaderboardResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetLeaderboardResult__ctor_m8EF96BF506855E3ABE06F99F1002414008B37F1B (GetLeaderboardResult_t03D04CF6DED866003050A495D94A7D8497AD492C* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPaymentTokenRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPaymentTokenRequest__ctor_m1183ADD223A94551079E0A10DF8DB377107EF80D (GetPaymentTokenRequest_t163B16A27CC6BE1E00893D7EC3368B2D245E00DC* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPaymentTokenResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPaymentTokenResult__ctor_mE2E93F088315DA9D849EEC8D8C97EAC5C17737C3 (GetPaymentTokenResult_t24602A341F685C823DA42D3B4ED51299A20133F3* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPhotonAuthenticationTokenRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPhotonAuthenticationTokenRequest__ctor_m5BFCDE1952A5042DBB7A3ECEA83A51977BB8430C (GetPhotonAuthenticationTokenRequest_t9B058BB73A238036A56AAE722094C94037DEB1C5* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPhotonAuthenticationTokenResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPhotonAuthenticationTokenResult__ctor_mCAB44791AF590BC4199129B5AC76DAC851A6AA5D (GetPhotonAuthenticationTokenResult_t6A42DA77B0947BB88E9672ED8CBE52461CA65272* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayerCombinedInfoRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayerCombinedInfoRequest__ctor_mC593F4E424E330F77007A444364BCAE9D9D4ED0D (GetPlayerCombinedInfoRequest_tCF9E872A2AEAF953E4F96DCADD93C27B78D2DFE2* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayerCombinedInfoRequestParams::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayerCombinedInfoRequestParams__ctor_m1CEE643F87D90B72C0265CA9E0574FF6DC8EC05C (GetPlayerCombinedInfoRequestParams_t3917E84443A25D99911EAE3D92DD71B83391A370* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayerCombinedInfoResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayerCombinedInfoResult__ctor_mC024443C26AA38F1C2BD91B1E07D3848015F40ED (GetPlayerCombinedInfoResult_t8FA02FB2B4EB7123C2BF5675C866BD6AA28AAB37* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayerCombinedInfoResultPayload::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayerCombinedInfoResultPayload__ctor_mDB3DD2E9EE9F4D7D344361AB4875E6BDA593D065 (GetPlayerCombinedInfoResultPayload_t6323557A81B0FF04C6B66FC1F916864A4D738BCC* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayerProfileRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayerProfileRequest__ctor_mF2C3854F0C03BCE0EB401B0B4269EC807AE575F8 (GetPlayerProfileRequest_t96486783D0AF60EB25563E45CFE3605488A71B5F* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayerProfileResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayerProfileResult__ctor_m6578103393A683BB7603BCF243A337326D7699A2 (GetPlayerProfileResult_tC88B24D6F67E08246A094323793DFD03E7711447* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayerSegmentsRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayerSegmentsRequest__ctor_m0835DE0FE34B6277B474CC6FB0CF827723BF7DC8 (GetPlayerSegmentsRequest_t369D70CC3064DDB76E33223576F4A803BF1373CF* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayerSegmentsResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayerSegmentsResult__ctor_mC4A0D2D1E8F6C87432AA3D28BB5274A0D78C5C43 (GetPlayerSegmentsResult_tBADE60D468AC3889608F56640D078B51F49C0B38* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayerStatisticsRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayerStatisticsRequest__ctor_mF9CFB3675C756EDEFB3FF813BE30D31D46AFBAA0 (GetPlayerStatisticsRequest_t84EB62C2DBFFD24EE3B200F275ACA9F38E456951* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayerStatisticsResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayerStatisticsResult__ctor_m22A58C4C85F18C22758393D75BC470557A4A5A17 (GetPlayerStatisticsResult_tFE1BD2E17D8A1BB108E7989512B4A16D59C2789A* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayerStatisticVersionsRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayerStatisticVersionsRequest__ctor_m72DDD9E560031388FAD070FED8B607E4F3DA7F4D (GetPlayerStatisticVersionsRequest_tC68F5AB538E6E36CC55F357CF12AE3352F238134* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayerStatisticVersionsResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayerStatisticVersionsResult__ctor_m688F1201688748B4C87BDA5845933617F68DD95F (GetPlayerStatisticVersionsResult_tC31D18B33F7A932B27073E638072846BD2BCE501* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayerTagsRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayerTagsRequest__ctor_m45E90246C5A68BD59469278581BF9EF876714B96 (GetPlayerTagsRequest_tE2D18BFAFA7A80E9BF9FFC44F9CBD97F5B68A9D5* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayerTagsResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayerTagsResult__ctor_mC38EF1280A352E58E519E6FF553654E2B5B09246 (GetPlayerTagsResult_t14840C3B1B7D1D8D5F9886AE022D41B5EA972193* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayerTradesRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayerTradesRequest__ctor_m558AC87C313D64D89808067FCF8D5BE69DAAD11F (GetPlayerTradesRequest_t3935D3E0B3F425F04440E46D1C19045BB8C7F78E* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayerTradesResponse::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayerTradesResponse__ctor_m18427ACCAE4A7DA40C6E27A035889965D7BF2D7A (GetPlayerTradesResponse_tDB187D9030084374BA4CF7BE5DC2756D747C80EE* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayFabIDsFromFacebookIDsRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayFabIDsFromFacebookIDsRequest__ctor_mEEBEE0DAF070715BCED4214278D74DD7DE7AC044 (GetPlayFabIDsFromFacebookIDsRequest_tB275AD11157BEDC861CAE56F8B8D86AC90E0051C* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayFabIDsFromFacebookIDsResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayFabIDsFromFacebookIDsResult__ctor_m9E40B5945398B205CBC012671B65740837E17501 (GetPlayFabIDsFromFacebookIDsResult_tAC717CC80C6863B47645241E22AAB0B5199A8FA1* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayFabIDsFromFacebookInstantGamesIdsRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayFabIDsFromFacebookInstantGamesIdsRequest__ctor_m2E9DA2EEDC352BD201EEEF848CD819D037DC849B (GetPlayFabIDsFromFacebookInstantGamesIdsRequest_tA75CEA154F216D5BF2C011E9DAE9BC3F8FD4E521* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayFabIDsFromFacebookInstantGamesIdsResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayFabIDsFromFacebookInstantGamesIdsResult__ctor_m8CB67D3D394EAEDD16EF5308768E677982F9D5BD (GetPlayFabIDsFromFacebookInstantGamesIdsResult_tB8681765E88FD8D1405CA301744B4EB363A1C9FB* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayFabIDsFromGameCenterIDsRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayFabIDsFromGameCenterIDsRequest__ctor_m350A40F2D8A8A1EDBAED461B6EFC7DBAB50885AC (GetPlayFabIDsFromGameCenterIDsRequest_t03B38A98E8957924A2A962D103A7E23CC68C6DD6* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayFabIDsFromGameCenterIDsResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayFabIDsFromGameCenterIDsResult__ctor_m9EBE4BD6B9FF98741627EBBF4E780B17746E1304 (GetPlayFabIDsFromGameCenterIDsResult_tDDDD12C3F3725D9C09FF048B818E8E7B5CADFB45* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayFabIDsFromGenericIDsRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayFabIDsFromGenericIDsRequest__ctor_m383636DBD14D644B4D5A0EA3EDCADF86308ED69C (GetPlayFabIDsFromGenericIDsRequest_t5A5E297DB35E0E92333069915B7156E47A89328E* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayFabIDsFromGenericIDsResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayFabIDsFromGenericIDsResult__ctor_mCD5D447851CC49EADA1B0FFE190D038170D2C172 (GetPlayFabIDsFromGenericIDsResult_t4075E39127DC60513A34BD47FCD2EFD2220B5286* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayFabIDsFromGoogleIDsRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayFabIDsFromGoogleIDsRequest__ctor_mEEE07F9E6263FF7FE515878517B589EEE444EADB (GetPlayFabIDsFromGoogleIDsRequest_t3CAF0AB06B25DF209219981B9B370760572F0804* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayFabIDsFromGoogleIDsResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayFabIDsFromGoogleIDsResult__ctor_m3DCCA76DDD0B207847FF614190BB87C518ED845E (GetPlayFabIDsFromGoogleIDsResult_t2B5CA8F7E79F8E066B817055C73B99DA89A42893* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayFabIDsFromGooglePlayGamesPlayerIDsRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayFabIDsFromGooglePlayGamesPlayerIDsRequest__ctor_m49880202E4200C73AA55778E131325861382F788 (GetPlayFabIDsFromGooglePlayGamesPlayerIDsRequest_t60FA7DD8AF722A7667CE69CECE1002EC1C5CAC6D* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayFabIDsFromGooglePlayGamesPlayerIDsResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayFabIDsFromGooglePlayGamesPlayerIDsResult__ctor_mA00D00A0ADAB4641E7C05236DE9335463CF37DD9 (GetPlayFabIDsFromGooglePlayGamesPlayerIDsResult_t0DC2980392783DF85E0900285356738EBE3D7CDE* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayFabIDsFromKongregateIDsRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayFabIDsFromKongregateIDsRequest__ctor_m7847E247045EBCA2A1B88637EE4458D2F8C137F4 (GetPlayFabIDsFromKongregateIDsRequest_t1C7F52700E5D3707F00FA27B987C6A9CDC69114D* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayFabIDsFromKongregateIDsResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayFabIDsFromKongregateIDsResult__ctor_m2C60B625BB808A4A3B564DB7E147311C1C85B7C4 (GetPlayFabIDsFromKongregateIDsResult_t65A76AE8A7A25A3F7601EEA68688941873EAACF7* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayFabIDsFromNintendoServiceAccountIdsRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayFabIDsFromNintendoServiceAccountIdsRequest__ctor_mB83D2B1BC49957760EE1C29D7BE148711F3A017E (GetPlayFabIDsFromNintendoServiceAccountIdsRequest_t257824B35205A9C99B0444960998E8A7E26B519A* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayFabIDsFromNintendoServiceAccountIdsResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayFabIDsFromNintendoServiceAccountIdsResult__ctor_m308002B6EA74BAF1B5488F7E5B00D9EA7FC9EAB1 (GetPlayFabIDsFromNintendoServiceAccountIdsResult_tA4461DA79D669F1A17142350D6F021D1874497EF* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayFabIDsFromNintendoSwitchDeviceIdsRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayFabIDsFromNintendoSwitchDeviceIdsRequest__ctor_m1D2948E0B145C1A5FB6738FDF2C2AA388F7FF9C5 (GetPlayFabIDsFromNintendoSwitchDeviceIdsRequest_tC3BD96F79D674CE16C3ED9ECE716DF17D45FA96D* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayFabIDsFromNintendoSwitchDeviceIdsResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayFabIDsFromNintendoSwitchDeviceIdsResult__ctor_mD714B06431897C5AD48CA5D9AEE33CDA3A36CDFA (GetPlayFabIDsFromNintendoSwitchDeviceIdsResult_tECF140F80FED44DF111B51657BFED4823A4C4145* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayFabIDsFromPSNAccountIDsRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayFabIDsFromPSNAccountIDsRequest__ctor_mBADCE82D5B51ED7D3A37FF6413FF558CA7610701 (GetPlayFabIDsFromPSNAccountIDsRequest_t6215A503E62C27247574493608274CD9EAA56162* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayFabIDsFromPSNAccountIDsResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayFabIDsFromPSNAccountIDsResult__ctor_m6BD587445076348B709798133AB20F4604ACFE61 (GetPlayFabIDsFromPSNAccountIDsResult_t24CA2B421532AC4D974235E8AB71F36C2257B35B* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayFabIDsFromSteamIDsRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayFabIDsFromSteamIDsRequest__ctor_m59147CF8D6D90C0E46907A8A7422B81A6C1311AE (GetPlayFabIDsFromSteamIDsRequest_tC1E89AE77985DEA520133F183C582CDF312046F2* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayFabIDsFromSteamIDsResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayFabIDsFromSteamIDsResult__ctor_mC3141EF474C3F11597E2B85EED45D6CC52FE5DEC (GetPlayFabIDsFromSteamIDsResult_t688E60B8A112A704F2262F596DC78A6E5BBB98C4* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayFabIDsFromTwitchIDsRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayFabIDsFromTwitchIDsRequest__ctor_m86F882818F98ABAA7C687B9FE62F4AF7BFACDB1A (GetPlayFabIDsFromTwitchIDsRequest_t305BBF2368DEA56D8D8A39B2044CEB66BDE540A1* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayFabIDsFromTwitchIDsResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayFabIDsFromTwitchIDsResult__ctor_m235BFE959A3B1F9F44F4BB9A431F620D78CA5C74 (GetPlayFabIDsFromTwitchIDsResult_tBD52011CB3F0FF79DE2CFDA3AB748C3CCD6B011A* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayFabIDsFromXboxLiveIDsRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayFabIDsFromXboxLiveIDsRequest__ctor_m9470DE62980627E4377E282C403202D11D7530C2 (GetPlayFabIDsFromXboxLiveIDsRequest_t73ACCAC2D27CFBE633FAAC6723E9CC12DDB035C9* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPlayFabIDsFromXboxLiveIDsResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPlayFabIDsFromXboxLiveIDsResult__ctor_mB2C2114A16615CCA9FE26814868E61F6F7F3ACA3 (GetPlayFabIDsFromXboxLiveIDsResult_t9D66C97D6008F3ED67EDDEE9CAC2DEE09A8DB595* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPublisherDataRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPublisherDataRequest__ctor_mB31B6AD48B4C7D685D37B6B3CEFDA1C0371D2C3E (GetPublisherDataRequest_t6FE8DFD96382EDEB5A07C6E57847EC6DC71C7EC3* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPublisherDataResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPublisherDataResult__ctor_m5855B92CF56CAF91EA9521A36369E1B7BDE63E72 (GetPublisherDataResult_t09A484540E7F707BAA87D645B1950167DFF2E381* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPurchaseRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPurchaseRequest__ctor_m9F89BEE8946F208370AD59E4140C0F38C1904249 (GetPurchaseRequest_t8AC38239A654F572F0D3C0850F48E1C2834AE1FF* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetPurchaseResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetPurchaseResult__ctor_mC7DAC7D3B0A8D9C8D40E55CD89F3E89F6357B8D0 (GetPurchaseResult_t000F08A7E707E8866A377F417EAE58C12D11C772* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetSegmentResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetSegmentResult__ctor_m657288D598FFA901564D5D7E21A16AC24EB38797 (GetSegmentResult_tEA5188B42B6E5B1F15926AB703BCEF9CEC9B9D81* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetSharedGroupDataRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetSharedGroupDataRequest__ctor_mD38C0918B9FD764DC6569DA224D7C47D0F0C5A1E (GetSharedGroupDataRequest_t9D365EF3CCF61A5BEAB96F7B6475A1750370E679* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetSharedGroupDataResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetSharedGroupDataResult__ctor_mC9F82575AC2984EED979129944F187FB745C4FA5 (GetSharedGroupDataResult_tE10462618F98D4D72B4D2A80ED15DE51E586713F* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetStoreItemsRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetStoreItemsRequest__ctor_m064372D47BF987014A77095EABFE690B61BC35BA (GetStoreItemsRequest_t795B5ADF001B53C52F13BC0031B798CBDCA5273C* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetStoreItemsResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetStoreItemsResult__ctor_mD3AC4D0ED432957223D872D3EDE12D363D1292E6 (GetStoreItemsResult_t91D6A5BE358AF54C064CE69074FB2AAF16B5975A* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetTimeRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTimeRequest__ctor_m844B807C1FD10846D083F4B155BC33C1DC90A225 (GetTimeRequest_tD244E02A36A259D9D162F39EF9850561A76D58F0* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetTimeResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTimeResult__ctor_m42C4B495E82BC0565FA500C664DC26DED1181A86 (GetTimeResult_tEB8D1A02D5AAC653D33C64187044F9EB2795E661* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetTitleDataRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTitleDataRequest__ctor_m3B3965A2E760B42C2F100B412E52CB5E788F596C (GetTitleDataRequest_t48B926031ABF3196C1C105A6AD3DF62FD3EE8B50* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetTitleDataResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTitleDataResult__ctor_m1B3BB88E9FCCDDBB8C26B602ED0ED31BCC6363AE (GetTitleDataResult_tBA9144A60C32E90FDDC5373F749CB2D21B6F7238* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetTitleNewsRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTitleNewsRequest__ctor_mA6B46E817A379A82BB97CA9E7CE78B6EDD9D3E92 (GetTitleNewsRequest_tD0FFE3851DEFDE35C3762D52999D333ED47CA828* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetTitleNewsResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTitleNewsResult__ctor_m7C19FF7CA4FE9DC6FB0028DC857154C7ECABD043 (GetTitleNewsResult_t16E7083D187D4161DF3A0FA73BBA9569FC099DD4* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetTitlePublicKeyRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTitlePublicKeyRequest__ctor_m82AD314A35843678D3E6E7654B5A719968C6AF4B (GetTitlePublicKeyRequest_tD55EB65A4BE9FE8BBA552A042E4D38D280AB0E3C* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetTitlePublicKeyResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTitlePublicKeyResult__ctor_mF8CBCB2C3F74B57EEF1DD835A3C8931B7543EE90 (GetTitlePublicKeyResult_tB6D105C0270A7A373FF154F17FC5770C8F824392* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetTradeStatusRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTradeStatusRequest__ctor_mD1296CF40A9710CCD1B1F54340799A3BCECFC6B7 (GetTradeStatusRequest_t835601707B901582F75653879F3219C882F40F0B* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetTradeStatusResponse::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetTradeStatusResponse__ctor_mB083279E2DBAC39B12DFF04617C22BBF3754FE94 (GetTradeStatusResponse_t8F2A08C0A8E34CDD08950EAFC3AB65C4DA42FDAA* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetUserDataRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetUserDataRequest__ctor_m523EBE281F8FFDC1ADDC0FAC37DD923D5E669EE8 (GetUserDataRequest_tCAF1E6FC4FE7E58BE0D3BDFE78230975CC08E501* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetUserDataResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetUserDataResult__ctor_m5FA60FF8C375ECFC8B1B39E41312F3C49F101537 (GetUserDataResult_t68AF037F9916162542CE2C905DFF0B0C935FC48E* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetUserInventoryRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetUserInventoryRequest__ctor_m3F0054135931BD01D2C21AAAF06E39A95C24B164 (GetUserInventoryRequest_t66955459A9F59280CDF3A98A5124052852A05BF2* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GetUserInventoryResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetUserInventoryResult__ctor_mCFD82F99ED7BEB0E9914BA38520B9284CEF0BFD3 (GetUserInventoryResult_t28E377BC480EF10C504D613456F8A7BE1F7E4B16* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GooglePlayFabIdPair::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GooglePlayFabIdPair__ctor_m9E614264B3437B3063D3F2323BE168D055486060 (GooglePlayFabIdPair_t72F94EC86476E7F6EAFA33E558822FDC8BB09D6F* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GooglePlayGamesPlayFabIdPair::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GooglePlayGamesPlayFabIdPair__ctor_mF91C7D472CEF4ACBEFB49E32BF23EE0062474E73 (GooglePlayGamesPlayFabIdPair_tF60353DDD4A5EF68B950127EDEE1C1F5BA55653A* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GrantCharacterToUserRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrantCharacterToUserRequest__ctor_mBDE6942538450BC5DC01E7BBF4268866EB4D365C (GrantCharacterToUserRequest_tE6E4139743D537B38EB1AB3AD9255F8FBF795ADB* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.GrantCharacterToUserResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrantCharacterToUserResult__ctor_m532FB4140978FD0CD868F631D9CCD1B0C3DB6ABA (GrantCharacterToUserResult_t995B7F5EBD2955C6EFE4CC4C94DC33615D359D07* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.ItemInstance::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ItemInstance__ctor_m630482BF8023429C4B680DD0242540E5E0200A50 (ItemInstance_tC84FDC49100051713F8BA4C6359C4DB48B3D0341* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.ItemPurchaseRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ItemPurchaseRequest__ctor_m392A162E1335538B1237A54CCF17F1B754096F55 (ItemPurchaseRequest_t92F81220686869A5DC3826889DB6091A48354C3B* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.KongregatePlayFabIdPair::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KongregatePlayFabIdPair__ctor_mF4087146F21B4E680EAED89734DAE23EB59EF03B (KongregatePlayFabIdPair_tC4BC594035C641891C2BDBFBF907F1E86DB0E75E* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkAndroidDeviceIDRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkAndroidDeviceIDRequest__ctor_m4891778C0C526866F25701B353946DA546FDC17C (LinkAndroidDeviceIDRequest_tE370B4C43A2294AB1C93DB77F646956845E25F7D* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkAndroidDeviceIDResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkAndroidDeviceIDResult__ctor_mD0E7615EFEEE31A3FA3C72230D5F55E29CFC2BF9 (LinkAndroidDeviceIDResult_t4C5F04B8430158F23DC644214A8D337824619911* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkAppleRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkAppleRequest__ctor_m07B19477F1F7AEF34389048BC76A1C1C04D15F3C (LinkAppleRequest_tD84E9A0D6F6A8B62D3EE0CDA0B2796D05E91F5D1* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkCustomIDRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkCustomIDRequest__ctor_m9BD1999944C2ED09C1A6C6BCB7D33FB03F53CBD1 (LinkCustomIDRequest_t05FE277ACC4DF9F596B9B1364C7A9495AE97C3B8* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkCustomIDResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkCustomIDResult__ctor_m6E0BCFB212958C6DB0EBD335FF06944E960C5033 (LinkCustomIDResult_t39271A15418FC2562F54CEC9A5C4448BB210D866* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkedPlatformAccountModel::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkedPlatformAccountModel__ctor_mD1D2CF1FD3FB116FEE5468961A4F709A94C0CF40 (LinkedPlatformAccountModel_t1DA79542E08AB1A8DD40A2001C3A2A88CD136F25* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkFacebookAccountRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkFacebookAccountRequest__ctor_m623BB701FF51D502C2717571FE120ED91F14F0E5 (LinkFacebookAccountRequest_t88C4C375D233221A98D00DB50A9EFCD1B2D5478E* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkFacebookAccountResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkFacebookAccountResult__ctor_mAF81D1E4F8EF4E644900C6C26FA102E464215A8D (LinkFacebookAccountResult_tF6DBE4CFEA793A6203945E018381F22047971081* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkFacebookInstantGamesIdRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkFacebookInstantGamesIdRequest__ctor_m3BC1F47F1D886FA30E3F71A8FB4DE3004987421E (LinkFacebookInstantGamesIdRequest_t94A3B57DBAFA66C5760F0058BC521BFE1FC6B5D0* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkFacebookInstantGamesIdResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkFacebookInstantGamesIdResult__ctor_m5412CFFB5B86EDA02C63E42C24E29B6F89CF0E61 (LinkFacebookInstantGamesIdResult_t1AAC9421C0C5BC3891EF7EBFBE208AC625FCCA96* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkGameCenterAccountRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkGameCenterAccountRequest__ctor_mDC2B66B40E1E996FBDB4113FEF52C6C08500C2A4 (LinkGameCenterAccountRequest_tDBED4CD7330F5409D950EBEDF8FA2C8DDC546911* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkGameCenterAccountResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkGameCenterAccountResult__ctor_m6DF755A9447A0175D24BA523227D5FDA24148CC8 (LinkGameCenterAccountResult_t647D19A9B79502ED157221910A1614E3F1D7D3BF* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkGoogleAccountRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkGoogleAccountRequest__ctor_m3ECDF324222C6B60F754F3B0CADD56113A30EDE6 (LinkGoogleAccountRequest_tA5203EA33908B8A3D2394CE795AA88DB598574DB* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkGoogleAccountResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkGoogleAccountResult__ctor_m61A44A4D24AB6B5499787EF2F336C6BFF67883B3 (LinkGoogleAccountResult_t596A08B9745E145CEFDADFA0E56063D3D00CBC78* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkGooglePlayGamesServicesAccountRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkGooglePlayGamesServicesAccountRequest__ctor_mBF95873CC3F5E11241D5B1FB0C75CA2B400CD29A (LinkGooglePlayGamesServicesAccountRequest_t4270383DFD5F35D6B2F64FD7A991FC688AE6526C* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkGooglePlayGamesServicesAccountResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkGooglePlayGamesServicesAccountResult__ctor_mD28155E6602E81A4EB982E0E5FDC23CA780CD1A3 (LinkGooglePlayGamesServicesAccountResult_tC37A276A9BFCA6363605956D660B3EE9632C3388* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkIOSDeviceIDRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkIOSDeviceIDRequest__ctor_m176BC27475D91B4B7EA9931715C308A5F06BF9EC (LinkIOSDeviceIDRequest_t3AD9F66E46AEC025EC5A5BDB1498F79BBF019175* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkIOSDeviceIDResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkIOSDeviceIDResult__ctor_mE0A419B97872CC87B58D2B730590B11B1291FF14 (LinkIOSDeviceIDResult_tE942B412D48690F2CC586B2CC855EF661C95B4FC* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkKongregateAccountRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkKongregateAccountRequest__ctor_m5EF74B08D1700002A72243627A885346577506D8 (LinkKongregateAccountRequest_t7799A47E023C84C2A094468997A37F9ECB7BCEC7* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkKongregateAccountResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkKongregateAccountResult__ctor_m598FE134F71B5ED3B2F76EDE565E8D0F6D427BFB (LinkKongregateAccountResult_tAFE7D9B9BCC18083B4CDB5CFA61F960DAADD6BF8* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkNintendoServiceAccountRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkNintendoServiceAccountRequest__ctor_m5948AE4A691A41EBCB53BF803F8E58261810943A (LinkNintendoServiceAccountRequest_tABB5C3BEAA7E4BD9C66753EB8E55A5D3D684DB6E* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkNintendoSwitchDeviceIdRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkNintendoSwitchDeviceIdRequest__ctor_m2430AFE4B2A69FEB5005981EC522014D0E5A7652 (LinkNintendoSwitchDeviceIdRequest_t797A16D441BB21AFDE5341E54954A1D992D4AF4C* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkNintendoSwitchDeviceIdResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkNintendoSwitchDeviceIdResult__ctor_mBAA7A0A5C22775754B9A9628C3DD6E5B756478A4 (LinkNintendoSwitchDeviceIdResult_t0EB5797B85E01D6D7A5D8059F6D041D1F14E645D* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkOpenIdConnectRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkOpenIdConnectRequest__ctor_m63FE39CEF7217407D462E65FA60C4FBC00F7CDD2 (LinkOpenIdConnectRequest_tF040FD89F84BACC7AC3E00A111457E05F413FC7C* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkPSNAccountRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkPSNAccountRequest__ctor_m3FC0C8C1D8370177707C6DA479A957F6EFF23C0F (LinkPSNAccountRequest_tAD86DDC09E0704F6AF0489B4EE66B335D505C2CF* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkPSNAccountResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkPSNAccountResult__ctor_m2C389C7079D6F89F16487AC54424691A7B23D562 (LinkPSNAccountResult_tD44785276C870B20241E65BFFA14D698BEC049D7* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkSteamAccountRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkSteamAccountRequest__ctor_m40D0869EFB283F5AAC96DF692F948C11A6118903 (LinkSteamAccountRequest_tBB6665529569D87319DF664D7EB1E444CE2D89E4* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkSteamAccountResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkSteamAccountResult__ctor_mF1F0E58888B1C19506FD24F57A3B9D8D5D2A6EB0 (LinkSteamAccountResult_tAFCB32B4FB5C004D500CA25655AE4AB3446277D5* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkTwitchAccountRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkTwitchAccountRequest__ctor_m8B6F4381ED69FC0DC789B840FD57A90DD5313360 (LinkTwitchAccountRequest_tDAAC83284F1560A202F78A1BADF487F9FD382A17* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkTwitchAccountResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkTwitchAccountResult__ctor_m7B5F42C8627C5CA17B051C2036F89C76F95C6BD8 (LinkTwitchAccountResult_tC185948589359A8546F92AA06575DA6B24661EB8* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkXboxAccountRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkXboxAccountRequest__ctor_m4AE668E4B4B5B57730063627B1739ED17B792393 (LinkXboxAccountRequest_tFE99D5422A8736251BF9D92D53D93F3CEB3EAF8E* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LinkXboxAccountResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkXboxAccountResult__ctor_m64ADB6D729BD4B76BA07BC1FD0C089C180AC82BB (LinkXboxAccountResult_tD83C17194A9B9F7222DE65604C58DE3B9AA49FDF* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.ListUsersCharactersRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ListUsersCharactersRequest__ctor_m45F9A6E8F2F7F48B9A5D2C2C7A74D1873794822D (ListUsersCharactersRequest_tCF5408D5CA5D53886FC36DB99B07C82075EDCCD5* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.ListUsersCharactersResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ListUsersCharactersResult__ctor_m1E8FDC6A272141B38F5C0AD9D32718F72725B577 (ListUsersCharactersResult_tCD7FD4A1E18258556F000EC213622028E1DE9AA3* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LocationModel::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationModel__ctor_m9EFD36F0F576F4915CDE647C1C516D9A41FC7E97 (LocationModel_t1DFBA1A2A4966887BCE78D3536B90613C246595A* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LoginResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoginResult__ctor_mD4444F0A839BC3C6E88101036863E105C872A0E5 (LoginResult_tA8FAC976BB9AC98F055FB1BFFE740D450A957A8C* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabLoginResultCommon__ctor_m9A54D6B9CCE858788C0C02085321998C461E1477(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LoginWithAndroidDeviceIDRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoginWithAndroidDeviceIDRequest__ctor_mFE2308334DF3C99B1053DD4065756C20B7F493E3 (LoginWithAndroidDeviceIDRequest_t3A4C3D2EEA546EC82D997D95542CE9B57F59023B* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LoginWithAppleRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoginWithAppleRequest__ctor_mDC09B1A72827EB143320454754A5A324A30B2266 (LoginWithAppleRequest_t432803D69AD4E022823FD67331F9E6725929F600* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LoginWithCustomIDRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoginWithCustomIDRequest__ctor_mD6F575CB5E9042497CE69DFD2AFBB6E99B925CC1 (LoginWithCustomIDRequest_t9E1E078798737A8AD48B46EC9C0AA65092C8B05B* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LoginWithEmailAddressRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoginWithEmailAddressRequest__ctor_m0BE12FBAE323BC60E2F400BCD6F1DF3F02FF7D53 (LoginWithEmailAddressRequest_t0D4A01BAE6DE0702B2BF796303B84ABDF575AD49* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LoginWithFacebookInstantGamesIdRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoginWithFacebookInstantGamesIdRequest__ctor_mAD42720D02A53E54501641997051934C70284556 (LoginWithFacebookInstantGamesIdRequest_t61431BD47D89224A04BD0D9D83D8641A7A605703* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LoginWithFacebookRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoginWithFacebookRequest__ctor_mC595E2EDA882BA6DD19EAE0112A19A3A74E296CB (LoginWithFacebookRequest_t9CA5170513098AA9DF2E2EE80A70D55C156DF5A3* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LoginWithGameCenterRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoginWithGameCenterRequest__ctor_mE2281480E3DEF97C986D4E9A55E630C5571577F1 (LoginWithGameCenterRequest_t47DCB198B2366A518C7480ED1BEBF1306BBAD543* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LoginWithGoogleAccountRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoginWithGoogleAccountRequest__ctor_mA5E440F0374A7255AA6F1EA4D6E40141469181D2 (LoginWithGoogleAccountRequest_tF51EDE37EB36FFA7B25883424A588876FE031120* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LoginWithGooglePlayGamesServicesRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoginWithGooglePlayGamesServicesRequest__ctor_m5DA363CF04C38F77D5239910495A3A211710136B (LoginWithGooglePlayGamesServicesRequest_t10AFE0373B76927851BE9A1025302FD2CF44E0DA* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LoginWithIOSDeviceIDRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoginWithIOSDeviceIDRequest__ctor_mB0F6EED283D08283EB8A3339FFE464594DAA1C2D (LoginWithIOSDeviceIDRequest_tF8F87A2ED958950DD3929AB8ECFC6E7667F29A4F* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LoginWithKongregateRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoginWithKongregateRequest__ctor_m31DF104EF2A34674A1F03343E147822B47635B2C (LoginWithKongregateRequest_t4AE23CFD1182E89A0CA8E547BB38E4ADA57B0FA5* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LoginWithNintendoServiceAccountRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoginWithNintendoServiceAccountRequest__ctor_mD0ADF39268664E65D3E3D8336906EC3AE2B07091 (LoginWithNintendoServiceAccountRequest_tFA98602742349FC8F68FA91185CCCB322668DFB5* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LoginWithNintendoSwitchDeviceIdRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoginWithNintendoSwitchDeviceIdRequest__ctor_mBC6935FFAD192AC83B45F18FFD8445D522F9547F (LoginWithNintendoSwitchDeviceIdRequest_t7D332789DC3FA24808B86CCB9C41A4400FD50C17* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LoginWithOpenIdConnectRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoginWithOpenIdConnectRequest__ctor_m4F83BE5BA82E3DAB94FA097DAD033C796341702C (LoginWithOpenIdConnectRequest_tA8725EDACB83059224A03B9091ADC186E9DF2BBE* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LoginWithPlayFabRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoginWithPlayFabRequest__ctor_m54AFE531DAE5145AC92EF76DA905BCB9B0D8CD47 (LoginWithPlayFabRequest_t40758FC97BA27124A414398D558989E3ADC1BEDB* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LoginWithPSNRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoginWithPSNRequest__ctor_mCE36B6FE9A310744113DA25F6C3D884D2F20762F (LoginWithPSNRequest_tB200DF6D65ABEF9B55227AFC0648EA145B54012C* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LoginWithSteamRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoginWithSteamRequest__ctor_mB345B27AACED8114E4162C877FB5072EEAE2CE98 (LoginWithSteamRequest_t394F4FD07286ED05DDAB471F812FB6A471BF86C2* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LoginWithTwitchRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoginWithTwitchRequest__ctor_mCF4232F6A2BEC512F0F932D4A51A0CCED4B546B4 (LoginWithTwitchRequest_t015A772F0B539E3986E1DD2B0CA61F420BF436F1* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LoginWithXboxRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoginWithXboxRequest__ctor_m2F67570AC66D65977AE7DA9A6E9F18A37B273A0C (LoginWithXboxRequest_tE59BFE96922B056F69FC761526E8EEFD9588D179* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.LogStatement::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LogStatement__ctor_m01C5C15403CDF2FBA55BAE50878C1BE68A3E5B58 (LogStatement_t1817F7333FB8B5A212EC3EE93C17A94A92FD4D1E* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.MatchmakeRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MatchmakeRequest__ctor_m5EBB09EB10D55C35B8EA6241070913D31FBADCC5 (MatchmakeRequest_t5DF656F1E5EDDFEDAFBB4F95B4E6EB09BB209681* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.MatchmakeResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MatchmakeResult__ctor_m48610B25D0D9ECC9259290CB4EDD939389AF2F47 (MatchmakeResult_t91A455F1630FADD17929926ADFF7FDF7649DF3F2* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.MembershipModel::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MembershipModel__ctor_mA18D54C9891458CEBA71000ACBAFA84CB1275505 (MembershipModel_t3C7C2B88E0688100FF4FE3F8DAF8D90E3D2FCEF2* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.MicrosoftStorePayload::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrosoftStorePayload__ctor_mAC159460E9AFE3A87ECE18D91A542C1A9ADE3F27 (MicrosoftStorePayload_t06065D771429807DA9B8ADEE81B6E2219795C25E* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.ModifyUserVirtualCurrencyResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModifyUserVirtualCurrencyResult__ctor_mA5E3C4C599F48EF57D1E9FFAC6B0FFDAC94C9BE1 (ModifyUserVirtualCurrencyResult_tF894EC7B9796D1FAF729AFE3B51659784FDE7EF1* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.NameIdentifier::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NameIdentifier__ctor_mA67A61EA25CFC9A237720D43458D5CA8E69D5156 (NameIdentifier_tC463953295AF9517FB179D31BED70D412C5D144C* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.NintendoServiceAccountPlayFabIdPair::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NintendoServiceAccountPlayFabIdPair__ctor_mFB68CD107580B65D30A6481FA89D994ECBFC5DB3 (NintendoServiceAccountPlayFabIdPair_t31B8D8B6905F156B3F4B095613ADB0F1D4BCA0A9* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.NintendoSwitchPlayFabIdPair::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NintendoSwitchPlayFabIdPair__ctor_m4AF937A990596920B48CFDE3DA12A730E34931C3 (NintendoSwitchPlayFabIdPair_t687B2A5829A336F37205F96BD81A5CA589CC1526* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.OpenTradeRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenTradeRequest__ctor_m9D031103EC6DCCA3DDF8DF19EB8572AA641CE616 (OpenTradeRequest_tA7910CAAFB97AB8643D279093230157EEA5CC4EE* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.OpenTradeResponse::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenTradeResponse__ctor_m4ED25918AC9BBC79B93E7DA31EAD0E4735C22234 (OpenTradeResponse_t2CE0A33BD5DC0C64A948DFF6D5A513FAC50C1037* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.PayForPurchaseRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PayForPurchaseRequest__ctor_m2B7B5B56BCEC5F29CBE4F9AF61F9331367EAA008 (PayForPurchaseRequest_t5BFF248C9CB1FF6730145725A875A8328B4FB1A6* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.PayForPurchaseResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PayForPurchaseResult__ctor_mEF4D18EDC39016F994DB4CF10F82F32C22299946 (PayForPurchaseResult_t5E1B46A891BDD3D780DC2009E8922EA88BD69FFD* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.PaymentOption::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PaymentOption__ctor_m25D4D0DAC2EC82144A345065C0AF6A6ECCD8E2A6 (PaymentOption_t1D243751621312CFA26FA5E4B3D4AB9480938CDF* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.PlayerLeaderboardEntry::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerLeaderboardEntry__ctor_mE6BEEAB4753F40F01EAE3304158D9476911CC0CF (PlayerLeaderboardEntry_tCFF8F31BA39EE8CAD577AC4938DDE619E6EE66A9* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.PlayerProfileModel::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerProfileModel__ctor_m97F355B852C3E2F06806E950F3FD939182F08E2A (PlayerProfileModel_tEF2149D2652DD0B25B5250F8037A276739D1414A* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.PlayerProfileViewConstraints::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerProfileViewConstraints__ctor_mA4EB082CF10584A6E29FA990926CA09EF7F2A6FF (PlayerProfileViewConstraints_t2D0216E216CDBEDAD806C569D17795B60FB7C550* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.PlayerStatisticVersion::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerStatisticVersion__ctor_mBC36D60C59C5C3A76D7C5CBA98556DF3993C817A (PlayerStatisticVersion_tC0C529357C21A063B8C3F4FBBC5D412EAA3C7372* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.PlayStation5Payload::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayStation5Payload__ctor_m3718BC7C388971744E034F287F82610DC9353D52 (PlayStation5Payload_tAFC96038092FCE7BE6749D798C481EBDA45A174D* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.PSNAccountPlayFabIdPair::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PSNAccountPlayFabIdPair__ctor_m8AFD4DECC7A8E4064B3DBD2EA62329C7E038FAAD (PSNAccountPlayFabIdPair_t5F266A64CD3768182B54DF5D9B1D5E058DF33865* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.PurchaseItemRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchaseItemRequest__ctor_mEEA2ED32DB88D1AE8C925BE36A63A76F615B33CD (PurchaseItemRequest_tE070606E4EAD464357558E48126C4734D2F7C506* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.PurchaseItemResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchaseItemResult__ctor_m4469D6A900AD7CFE52616DA474380DD350EB5429 (PurchaseItemResult_t0F98838DD4B9DD95771031D96FD60D88597D764D* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.PurchaseReceiptFulfillment::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchaseReceiptFulfillment__ctor_m1B7EED0E8160139BA176F64FF653E4E9EFB9DF7C (PurchaseReceiptFulfillment_t186B9940CFED13815A2AEAC5253A2C9D4F9E6B50* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.PushNotificationRegistrationModel::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PushNotificationRegistrationModel__ctor_mA690D34B4C195B3D2ED7234D4CF19FDB8B01E957 (PushNotificationRegistrationModel_t35ACE788D79DDE73C44F51819BBAC6214F267B26* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.RedeemCouponRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RedeemCouponRequest__ctor_mF7214963650D1ABDFC548247B521370553FBE918 (RedeemCouponRequest_t5675549F914957105DF0F1092BF4D9B9C2C8D1F2* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.RedeemCouponResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RedeemCouponResult__ctor_m6E9F82C38A36CAB7075E97A989F4195434D73FF4 (RedeemCouponResult_tF194CA6CCFDD39047866D5A32510C64B4F1C45E7* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.RefreshPSNAuthTokenRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RefreshPSNAuthTokenRequest__ctor_mAE43284404C83882CE752CE0C672EDFA4DB124EB (RefreshPSNAuthTokenRequest_tAF960E83D3F69FFE09A341DF66DE48E0DE3D47A9* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.RegionInfo::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RegionInfo__ctor_m9A7BD7854FE39FB8E822C4F747D9304377B76C11 (RegionInfo_t742920284384CB9F5B77AA896624869218F923F8* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.RegisterForIOSPushNotificationRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RegisterForIOSPushNotificationRequest__ctor_m02AA7BC4C6B4DA2E339C613C9EC8CFC14CDEBD83 (RegisterForIOSPushNotificationRequest_tAE58EB678D907A970C184A4A2FD2E9E75B3BE391* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.RegisterForIOSPushNotificationResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RegisterForIOSPushNotificationResult__ctor_m3DEEF4420121DE83B53EBD0116E0D63E8A64CAA6 (RegisterForIOSPushNotificationResult_t3590642F3B094B5C4E1D094CBBC71D264CF28A8C* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.RegisterPlayFabUserRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RegisterPlayFabUserRequest__ctor_m684C435F469ECF47F66FBD782DBDBC2EC77E6F22 (RegisterPlayFabUserRequest_t9CCD4AA2142B94AA94D4F809486BB925E4EBEC4D* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.RegisterPlayFabUserResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RegisterPlayFabUserResult__ctor_mB76A2B07320AD75CF6DE485C94D465CF3E9229B9 (RegisterPlayFabUserResult_t9F7AF721561FB1E6C2D0F04CF3E38EB80F39300E* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabLoginResultCommon__ctor_m9A54D6B9CCE858788C0C02085321998C461E1477(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.RemoveContactEmailRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoveContactEmailRequest__ctor_mC71A611A54227E542BB4FA92D8D7FCDC78FD4DEB (RemoveContactEmailRequest_tE33A6A7E8163B419221F72305702BE6A72B5D058* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.RemoveContactEmailResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoveContactEmailResult__ctor_m2F54A9919769ADE45AA510D2BF1AAFCBFE30DD4B (RemoveContactEmailResult_t47A953EF532A4E6723358B699AD09F5B209280AE* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.RemoveFriendRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoveFriendRequest__ctor_m0F4DACE902E805AFC4CDA298EA2BD01D260475E6 (RemoveFriendRequest_t65DE6114B83F043B5D00AA3EADA456C1A640ED0C* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.RemoveFriendResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoveFriendResult__ctor_m03595BA34FC11F88864DB5CB46C4C811D08ABF1C (RemoveFriendResult_t4D4C4DC05B609FF8C9F5758656C3ED678646A4A8* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.RemoveGenericIDRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoveGenericIDRequest__ctor_m673CFE74364B82CFDD69F5D284849A1251FC66B5 (RemoveGenericIDRequest_t334BD9293954FD10CECEF754B959B6CB03873601* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.RemoveGenericIDResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoveGenericIDResult__ctor_mDB7E333E844635681F65FE2325CE93F60EC3123A (RemoveGenericIDResult_tEE02A4C18E83ACE22323711023D49D1EEDC93D02* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.RemoveSharedGroupMembersRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoveSharedGroupMembersRequest__ctor_m8ECBB7AE5D5C11BD455EE0C7B6B2D67393EA3674 (RemoveSharedGroupMembersRequest_t672B79755C84F7963F0197AC7F649DFB47BE62D4* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.RemoveSharedGroupMembersResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoveSharedGroupMembersResult__ctor_m7835BD028222B7F7FE8862E6CB3EE76BC97C49D1 (RemoveSharedGroupMembersResult_t9F15AE0E2590B802799C461D364AEC2F41C87EF3* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.ReportAdActivityRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReportAdActivityRequest__ctor_m0751B0DF04AA96AC08652E2D96B63F29142BE990 (ReportAdActivityRequest_tF280F9F16376E09CA24C97A15524A57355362D19* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.ReportAdActivityResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReportAdActivityResult__ctor_m72A5A4EAA5F93FFCB6E0B49ADBD2EB68C6E18FEE (ReportAdActivityResult_t1C560F4635F86A0C40F5325FE39CB7FBE1DE1F9A* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.ReportPlayerClientRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReportPlayerClientRequest__ctor_m82B0236613C98CBDA927BC138F8B6AFC515E4791 (ReportPlayerClientRequest_t85D945417F8AD84B449F05E00BAE283608DDBDA4* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.ReportPlayerClientResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReportPlayerClientResult__ctor_m0598E8817AC25D0E7876A0CD34AD7648606D6016 (ReportPlayerClientResult_t241E6D96E47D8719B56EFC690FD0F6CB76205BF8* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.RestoreIOSPurchasesRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RestoreIOSPurchasesRequest__ctor_m1EE071208FD152F98D71E6434103759031979D6D (RestoreIOSPurchasesRequest_t000097A3FD2F14C3F4F4DEBA527033F0BD3EF56E* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.RestoreIOSPurchasesResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RestoreIOSPurchasesResult__ctor_mB7FB01E42586A6F30ADC0DA572C57344ACF01EA7 (RestoreIOSPurchasesResult_tEA0A385A03BA6A9080C82D126B97BB62C9C22375* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.RewardAdActivityRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RewardAdActivityRequest__ctor_m25CA11A566C65AA52DE90450A217F5C908FEBC83 (RewardAdActivityRequest_tE9341F9C11C66589454A65BB945DD2E86C078BB7* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.RewardAdActivityResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RewardAdActivityResult__ctor_mD3AD1EAEB57A121966561730D3D6263ABD39EDF9 (RewardAdActivityResult_t94A00EAF9EE41752255A4673EF0E25B45E51117A* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.ScriptExecutionError::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScriptExecutionError__ctor_m650BBD8DA9882877220E6931F33D0E9D41CABF2E (ScriptExecutionError_t15D016342B1D7DCF38FB8401037A2E748BF58785* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.SendAccountRecoveryEmailRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SendAccountRecoveryEmailRequest__ctor_m1C453E0E87AE30BE12B24EC992376E111FCA8A88 (SendAccountRecoveryEmailRequest_t175EB9B99FA2F2D019EA567249BBAA92033021B1* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.SendAccountRecoveryEmailResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SendAccountRecoveryEmailResult__ctor_m0AEF6BD6BA146ABCF1AFA6C87D9AB47BFBD7CD34 (SendAccountRecoveryEmailResult_tD397DE2B4C711854DDCC6CD65878726990E83350* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.SetFriendTagsRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetFriendTagsRequest__ctor_mA269C17C67F09B2009E4C708DA180AF1D7F51FD0 (SetFriendTagsRequest_tB1697AECA1FFB648EF0E49EE1E32A8DFF64F1172* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.SetFriendTagsResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetFriendTagsResult__ctor_m96DD30CAB4F468F27DAF97EC119355C78CE35686 (SetFriendTagsResult_t3FB32FF008D7F79F4468EA6DA4C920327F49E13F* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.SetPlayerSecretRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetPlayerSecretRequest__ctor_m4C28539675A872CE032DBB8402523E99B53F2CD1 (SetPlayerSecretRequest_t155B28C6752FE84EE84726EECAB2789B76F80CFE* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.SetPlayerSecretResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetPlayerSecretResult__ctor_mFFA4F557F95C1151923885D0E11D029FC6B3BCCB (SetPlayerSecretResult_t0F0A2B0A39F5311D0B7DB58A08704B54D5E78F8C* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.SharedGroupDataRecord::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SharedGroupDataRecord__ctor_m4A651B9DFBB7770A696115DB0A3BBBE72117DE08 (SharedGroupDataRecord_t6EABB17CCB23C3B14A9F2A29E1C0B06308DE22EB* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.StartPurchaseRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StartPurchaseRequest__ctor_m06C1B1CD01DEF1B1C60315E4AC64DEBCFC23A061 (StartPurchaseRequest_tC40028ED224835E5869E8741528AFD27A5B3B497* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.StartPurchaseResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StartPurchaseResult__ctor_mF0670304BC063F73DE23B620DFD12519AE9AE8D6 (StartPurchaseResult_t5AE695449ACBCC8CA93186640E203802B1E0B70F* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.StatisticModel::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StatisticModel__ctor_mF50713C2077057DEC1EA0948F207DF7F276E5AF9 (StatisticModel_tB2ED71209F882A61E023E593485AC3CBE7354CBD* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.StatisticNameVersion::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StatisticNameVersion__ctor_mD660317DE9DF95EC1C5ED1938CB8F557631D33A9 (StatisticNameVersion_t6435F7DD4C0291DA496DE0389D2E5A4FC161BCDE* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.StatisticUpdate::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StatisticUpdate__ctor_m276A0FBB6D1EEFF2AB4BF8A7CDCB8A3173363F2A (StatisticUpdate_tFF1ABF7B0BF17840014AAC48D4470605441B5D34* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.StatisticValue::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StatisticValue__ctor_m142A38741280A1DB57A880CE7E46F6A513D0E086 (StatisticValue_t41732BCF004BE4378AE04A44F6410E992855FB24* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.SteamPlayFabIdPair::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SteamPlayFabIdPair__ctor_m637BD6AF7C4CBF9790B9952B66993A13A8BFD0EB (SteamPlayFabIdPair_tFECA16BBF2AA75081EC51F9BF796DB77F7522E18* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.StoreItem::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StoreItem__ctor_mE691C23E8360F1C44D43CF5B55AE7C70E181C1D0 (StoreItem_tADBFD4037B803EBC8EC6E38BA1FC7229FB63E71F* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.StoreMarketingModel::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StoreMarketingModel__ctor_m66614AB7791F3F983AABD417B0C5C67279903F63 (StoreMarketingModel_t4AF761FD531E9A70AC9BF74380D0485A2F5DE95F* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.SubscriptionModel::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubscriptionModel__ctor_m123D33CA869091913C461039A1768AF084D708D9 (SubscriptionModel_tE2460B7EA43E4F7761842C8E495DA045317FE5FF* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.SubtractUserVirtualCurrencyRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubtractUserVirtualCurrencyRequest__ctor_m2C242BD4972BD12682DDB616D4F959F4E84E4CEA (SubtractUserVirtualCurrencyRequest_t9EF5A4F8756E1C85E4DC210B659F064376422BD5* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.TagModel::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TagModel__ctor_m1EAFB213D2EA2D19744F1F70675FC4A4B63F2B5C (TagModel_tA73EAC7F011DDE0C0433781A0E207DEFD3971740* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.TitleNewsItem::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TitleNewsItem__ctor_m210939D4C373FC94E2AB042CC1F2C7220CE7939D (TitleNewsItem_t3FF911671D0CBBBC29FE3B156BD2CBFAA8E0E5B7* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.TradeInfo::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TradeInfo__ctor_m995169E7704F00FEC8133703CA19F32B80727E24 (TradeInfo_tBE9088C4A58089296E230210566577FD2AEEEE07* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.TreatmentAssignment::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TreatmentAssignment__ctor_m373FA22DF7CD33955020A63D1AA3C757B6B9E05E (TreatmentAssignment_t3AAA5D796B6551BDF72B95A132BE5FE93F1FD99A* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.TwitchPlayFabIdPair::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TwitchPlayFabIdPair__ctor_m452F6BA6C8CE283327808BFAE29F0791F5630F68 (TwitchPlayFabIdPair_tF6965786D5E8E95243A21420C5A3CAF7A1A50320* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkAndroidDeviceIDRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkAndroidDeviceIDRequest__ctor_m6124243729475A094D74F68FD3F316EAEC4AC30D (UnlinkAndroidDeviceIDRequest_tDEB5EEAC89390106CECE2C514E3B9FF6F9F72D9E* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkAndroidDeviceIDResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkAndroidDeviceIDResult__ctor_m11C51DA7039069E53BCABCA1AD13980E8C614671 (UnlinkAndroidDeviceIDResult_t1A883DF782BD48500607B480852AA2537F4F3327* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkAppleRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkAppleRequest__ctor_mC803BC53311640A011BBA2293455ED8405347F6F (UnlinkAppleRequest_t92C5AB52E8736CCA3D8DE4841B1BDB8F7FB83222* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkCustomIDRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkCustomIDRequest__ctor_mE9BA5D10A61DDD555C8D8ECA0ABFE4F72C576D7D (UnlinkCustomIDRequest_t46E020211057E7653AFE02D26F44F9E130D30521* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkCustomIDResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkCustomIDResult__ctor_m4596A1F0D18E7DB9B4BBFD61072CBA7560DBCA9B (UnlinkCustomIDResult_t233F6432A9B50B2D68E3C568F574F4FA2D7BB60C* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkFacebookAccountRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkFacebookAccountRequest__ctor_mC082FCEEA441EDC42D8549BDED8510E58E12DCAD (UnlinkFacebookAccountRequest_tA7E318BFED129D19D58FA04FD6FBF6B7ADF85928* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkFacebookAccountResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkFacebookAccountResult__ctor_mA3E3717C358D89C8E374F8B6F3C63C73A1C4317E (UnlinkFacebookAccountResult_t64890736BCF70AA84E14FBABA25758E9554324B1* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkFacebookInstantGamesIdRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkFacebookInstantGamesIdRequest__ctor_m235F7F3F5E8F50F96197732A111D0B2BB1AB51B3 (UnlinkFacebookInstantGamesIdRequest_t4B257DB75AFEEF708F6D5AC2C3BB1D09740F6C9C* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkFacebookInstantGamesIdResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkFacebookInstantGamesIdResult__ctor_mA12963AB317820BB381122015BD52DF47C00590E (UnlinkFacebookInstantGamesIdResult_tA3C0ECA8433D6677C4BB580C8589346222E32D43* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkGameCenterAccountRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkGameCenterAccountRequest__ctor_m8760DFEEC72B67F5AF88607B98C1C39CF537754D (UnlinkGameCenterAccountRequest_t9596E9FC71D85C48FFF699F2AD829A3D0DEA901A* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkGameCenterAccountResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkGameCenterAccountResult__ctor_m8B11C61E764C993A207189C40ED65E51AC6F37F0 (UnlinkGameCenterAccountResult_t6F0C5BCEB35453E4CA8E05A31D654A782BC5E95F* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkGoogleAccountRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkGoogleAccountRequest__ctor_m4A1AE9BD05C61833C3A8BCAEDFFCC660EECC4DAD (UnlinkGoogleAccountRequest_t67E73532283D56ED37F1E9F1289FDE4BE84967CC* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkGoogleAccountResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkGoogleAccountResult__ctor_m3389D61AB21387FCC876533E0BD0F5C8F936C6D5 (UnlinkGoogleAccountResult_t6622EFB999584E5DEC5DEB93D2935D979FBE846C* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkGooglePlayGamesServicesAccountRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkGooglePlayGamesServicesAccountRequest__ctor_m68A3EAD6B41C1FB6A392F68355B6990222D06EC7 (UnlinkGooglePlayGamesServicesAccountRequest_t2F717932AF82E7668AA9724038C2A9F2229F7872* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkGooglePlayGamesServicesAccountResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkGooglePlayGamesServicesAccountResult__ctor_mB02AF361B02D5485F3420ABADAED9F5E806E9229 (UnlinkGooglePlayGamesServicesAccountResult_t5C6E7A2299B43C75BA9B8680100BF966FCE31270* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkIOSDeviceIDRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkIOSDeviceIDRequest__ctor_m8EA6CE7E1E720F2E7491C9CCD45C3C5996BFCB0E (UnlinkIOSDeviceIDRequest_t1EE4B2AFE9CE7D0849D68EF258CADFB476EA53CA* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkIOSDeviceIDResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkIOSDeviceIDResult__ctor_m70E2FC3BEFEAD6AC2B31718459042FEDCBADE9E4 (UnlinkIOSDeviceIDResult_t4596D43010D9025839A9679C5DB058CBBF794AE9* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkKongregateAccountRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkKongregateAccountRequest__ctor_mC945F2020A214D74F94EFB2302F014A5D6536C5C (UnlinkKongregateAccountRequest_t2FEFF816F15AEF0C241926B63004694A5FC6FD87* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkKongregateAccountResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkKongregateAccountResult__ctor_m4E1A80355E69E187A6B97E64B37D0BF1EBEB68A6 (UnlinkKongregateAccountResult_tAB392A5AFFF5D1FDF901F514F11D3AD3B6021CC8* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkNintendoServiceAccountRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkNintendoServiceAccountRequest__ctor_mFD50F1D931974C8A19C9AF63CF869C0E497AA7D3 (UnlinkNintendoServiceAccountRequest_t06B51402344303DA405A305B5B1F9A54C9145C84* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkNintendoSwitchDeviceIdRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkNintendoSwitchDeviceIdRequest__ctor_m2C89B21D625689C749AE6A893ADBBC685E37380D (UnlinkNintendoSwitchDeviceIdRequest_t35F44CBF87CFC802E5C568E898E4E203B3659A11* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkNintendoSwitchDeviceIdResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkNintendoSwitchDeviceIdResult__ctor_m20CCC5D5BBDB5E46ECB4FC0DB15E96C138D6B687 (UnlinkNintendoSwitchDeviceIdResult_tC9E5AD9A628AFDDD3DC1E3A2463C9A53307DFCD8* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkOpenIdConnectRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkOpenIdConnectRequest__ctor_mFFA25C1F5AA6F1D6E709AC737E2103EC5289732F (UnlinkOpenIdConnectRequest_t307BC82317C8730161E40EFDED957CF2A68E0799* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkPSNAccountRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkPSNAccountRequest__ctor_mCCEC7950880E55CD76E9A30FEAEA8199EFFF3854 (UnlinkPSNAccountRequest_t1060A17C5A70C60683D7F133E1ABBC8408A63EE3* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkPSNAccountResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkPSNAccountResult__ctor_mA9EC0D60D56DFA2E71F32D0BB9491F7B6DA8897C (UnlinkPSNAccountResult_t72E4629A6FCA43E0C5BAA9E2EE059A5E756096E7* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkSteamAccountRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkSteamAccountRequest__ctor_m076F68CDC6081666AB9BE196898B8E35C88387AE (UnlinkSteamAccountRequest_t2876EA45B25D6F400BBB61DE5AC76A15EBAF02AA* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkSteamAccountResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkSteamAccountResult__ctor_mAF0BDB775D7A16C3C741772CF94B78BB16E90EE7 (UnlinkSteamAccountResult_t0B0222CF28C08B53406C9B62FBA815C7C3AEE74E* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkTwitchAccountRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkTwitchAccountRequest__ctor_m6A5DCDEEA50FE3A2A19EC37694944AC67BA8FFCC (UnlinkTwitchAccountRequest_tE5BE128D46C7D5CCEE7B97DEEEC5CA2526CFCCE2* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkTwitchAccountResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkTwitchAccountResult__ctor_mC4C5593C7C3BAD16A607664688E0887F70C266A0 (UnlinkTwitchAccountResult_tD82751FFBDC681DE0BB88D43A2C9298CCF0D8AA4* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkXboxAccountRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkXboxAccountRequest__ctor_mE581A4A7F5D2CD84F9611262F2427C6D41977560 (UnlinkXboxAccountRequest_t8E27CE0799DF36ECD984F4ED8DE17ED3657AE57E* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlinkXboxAccountResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlinkXboxAccountResult__ctor_mB727896FD2068BE0D54D622DED1928B2ED02B580 (UnlinkXboxAccountResult_tE2D65912D4AB4D5E32CA3561994FF8654DE07F7E* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlockContainerInstanceRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlockContainerInstanceRequest__ctor_mB555569594FB7C11F851871170C58A7B416E4211 (UnlockContainerInstanceRequest_tB7E4282214EEE56EF6DDA6CC5C4C8780F8C0FC94* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlockContainerItemRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlockContainerItemRequest__ctor_m19C5F8B37FD3800A467EB15953FC0720A806E310 (UnlockContainerItemRequest_t820D81CB38D610CB71E1F56DC332E45B4B518ABC* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UnlockContainerItemResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnlockContainerItemResult__ctor_mB6F5C9670AFD68AEBBB4BAA2FE03E138FFDE33CE (UnlockContainerItemResult_t35CFBDF59A70BE18F28D78CCF1E3FBFC0878ECF7* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UpdateAvatarUrlRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UpdateAvatarUrlRequest__ctor_mC4E7E59145437CC1BE741B811B5F6F560F145EDE (UpdateAvatarUrlRequest_t72A827E07538C3CD5BA65A04CDAFE440BFE37040* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UpdateCharacterDataRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UpdateCharacterDataRequest__ctor_mC4DB763A213A3418B8CF34C196DADF2BA66BA809 (UpdateCharacterDataRequest_t1A476F394AE1FFF66454B7F95C6530097CDF706A* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UpdateCharacterDataResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UpdateCharacterDataResult__ctor_mED78D33DB6A819C3A2C0730895AD8B74C3C57011 (UpdateCharacterDataResult_tAB9AAEEA9FE8658FC10180393C742EA1E50401BE* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UpdateCharacterStatisticsRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UpdateCharacterStatisticsRequest__ctor_mB6C840EF7AC92BC0990DAADCB927ED048EC598DE (UpdateCharacterStatisticsRequest_tE19059CA8705B365B5C50F31FCD9EF302D50F02F* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UpdateCharacterStatisticsResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UpdateCharacterStatisticsResult__ctor_m02FB1ABECC0512066F08755FD54DC75DCA382390 (UpdateCharacterStatisticsResult_t3F6EF334C142A8BC10FBA7320DDB57FA6BB0952A* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UpdatePlayerStatisticsRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UpdatePlayerStatisticsRequest__ctor_m326E4C9B3C6A96A9C6CC01D4236C11C4EC4F21CC (UpdatePlayerStatisticsRequest_t5B474D977EE17B8842BF33DF9E60B09281F2A496* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UpdatePlayerStatisticsResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UpdatePlayerStatisticsResult__ctor_mC266BDAFF941B48C0A0EFF7226F13A15DD61C591 (UpdatePlayerStatisticsResult_tF1D48A2D96A003AFCDDE4DB38B179461B3E63E09* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UpdateSharedGroupDataRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UpdateSharedGroupDataRequest__ctor_m77BD7FDB8EE5606C20D5038B4A8358D932943D9E (UpdateSharedGroupDataRequest_t770268D7040E97EEF614E28201FBA15B27F07ABC* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UpdateSharedGroupDataResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UpdateSharedGroupDataResult__ctor_m88A330E4112DF044511F338AA43FC135E99C0652 (UpdateSharedGroupDataResult_tC2A0B472A61723265334227D8BA7EE580C3D7DD9* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UpdateUserDataRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UpdateUserDataRequest__ctor_m085241A7619C2B3BB47F59688FFB0C9E9863D5FA (UpdateUserDataRequest_t00F2203E748C9D0B33E3CC673EAB649EB2B5662A* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UpdateUserDataResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UpdateUserDataResult__ctor_m543F1445487363400B36394770594B3CC9D2EDE6 (UpdateUserDataResult_t23060B0433CB78E7CECEDFC3F7D63B91E051A74B* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UpdateUserTitleDisplayNameRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UpdateUserTitleDisplayNameRequest__ctor_m1478E7F1AAA82AD3925FEB80E35E8342DE16B1A8 (UpdateUserTitleDisplayNameRequest_t7A00322DBF953F51971F85914E1F5B8B75CC8E1C* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UpdateUserTitleDisplayNameResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UpdateUserTitleDisplayNameResult__ctor_m28C736ECD3C9418DA49798092E135BFDCEF5367F (UpdateUserTitleDisplayNameResult_t624047AEE8BB730C8B15D244261478F5A65DF950* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UserAccountInfo::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserAccountInfo__ctor_m0B101309D1CABA57AF6A40D9021847ED6A5DC192 (UserAccountInfo_t1BF8B02028A765033899EE9940C15383AEF2726A* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UserAndroidDeviceInfo::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserAndroidDeviceInfo__ctor_m0CBE751E65D69225F87E352AFC3418FDB357A75D (UserAndroidDeviceInfo_tF7DC5DEEEC9611A18C44C582A421C87EFAF143E7* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UserAppleIdInfo::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserAppleIdInfo__ctor_mBB61EC4F66DC73F95187915EE5DBA752B2E9FDC0 (UserAppleIdInfo_tC957F5FCFCA8C6C4EA5ABB763DF6EAE0A83A00B5* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UserCustomIdInfo::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserCustomIdInfo__ctor_mD0D0B1FB5618E29A23E08ED515C46A4A324CA13B (UserCustomIdInfo_tF34BF320AEE125010D3D390BE3019CF6074D15AB* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UserDataRecord::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserDataRecord__ctor_mD36706010FDEC77CE6C613DB2FBF13AD5628F43B (UserDataRecord_tE7E165155A91F4CDC8FA7068664F554198EE0F45* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UserFacebookInfo::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserFacebookInfo__ctor_m8088182553413588575958F763323BDD8CE8DC62 (UserFacebookInfo_t25341AA794CE37708FF857832B3D40C31005F859* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UserFacebookInstantGamesIdInfo::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserFacebookInstantGamesIdInfo__ctor_m7558C1724FEE9C8BD87F6CDF814B225C82CD8AFB (UserFacebookInstantGamesIdInfo_t4AA586B3DB010191CA46294964526B9C6BD0DEFA* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UserGameCenterInfo::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserGameCenterInfo__ctor_m5E267CB2A1F28BF14DF6FF819614186358958038 (UserGameCenterInfo_tF3E4DC8FCE46154B31494ABC83FF654AB1CE2C42* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UserGoogleInfo::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserGoogleInfo__ctor_m841CB7D609183A3B7BA6563962831D1BCF3EEA2F (UserGoogleInfo_t375C252AF8732A3B29CC0ACA458788F57705CD16* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UserGooglePlayGamesInfo::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserGooglePlayGamesInfo__ctor_m42B8B90F22791D05791F8B115FB84DA859B8BE06 (UserGooglePlayGamesInfo_tF42B79157DF36B2D327573D632CFB3CD62B0BBB8* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UserIosDeviceInfo::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserIosDeviceInfo__ctor_mF0AE23B65482E1A01377BD8C3E24A78F64FF2219 (UserIosDeviceInfo_tB0E4BB1232D6B58F35B0BD7730E967E50B25ACDD* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UserKongregateInfo::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserKongregateInfo__ctor_m6B1B8DC96F524DE11D4E6CB3B9F2AA7E52F64456 (UserKongregateInfo_t81FAC344B4B42B3689F7F42D355D8BE667E5B3BD* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UserNintendoSwitchAccountIdInfo::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserNintendoSwitchAccountIdInfo__ctor_m687CEE384339DBFF35C51E461340C5C1853B917D (UserNintendoSwitchAccountIdInfo_tBD867A24EE34BA9F1E516FC85B3D1E8BCC108F13* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UserNintendoSwitchDeviceIdInfo::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserNintendoSwitchDeviceIdInfo__ctor_m72CEE298DDE0196934B865F114A5880A8912881F (UserNintendoSwitchDeviceIdInfo_t53FA7FEB383F7C94C8DF61E423E3049ADF135388* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UserOpenIdInfo::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserOpenIdInfo__ctor_m81CD93B4BD545F7DD9FAA9D2E7D981BDE2E49D33 (UserOpenIdInfo_t1243706E2AA47FF74B9FEF1FF537454B0D48FFE3* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UserPrivateAccountInfo::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserPrivateAccountInfo__ctor_m96BDB211833B281F90EE345C9E6D4150C8DA94D4 (UserPrivateAccountInfo_t91F7AE36BB4FCCB4CC40C6B6027F6BFC034D50A2* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UserPsnInfo::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserPsnInfo__ctor_m9721FBFFAB8524D0B415C35E08213B2FF9EBF6C5 (UserPsnInfo_t8A71B58419169BBDA2512C61AB4D75B25CE15EAB* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UserSettings::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserSettings__ctor_m5CD297D6D681F0A7820BC031BECF6B26C8C5DF90 (UserSettings_t53FD23BFE7D67CB8C0FA3FFB5F2FC733DA2D22E0* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UserSteamInfo::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserSteamInfo__ctor_m1C646BD4BC50F8054CD22FFAD1B043FBDBA303A0 (UserSteamInfo_t9683A2E6234656912ED104E9AC9C9C6857CE23EA* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UserTitleInfo::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserTitleInfo__ctor_m686B56A734ADD2EB81D1B9CA12B9803F99F48A5E (UserTitleInfo_tB92EBF892AF2FE961FBA3C279C86C5A4E6E17821* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UserTwitchInfo::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserTwitchInfo__ctor_m436A9460A8818E31C3FD3BE881E0E60796E15040 (UserTwitchInfo_t4C6ECD3CCCCE4C62C7CB6F454D1ED64EDD3FE431* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.UserXboxInfo::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserXboxInfo__ctor_m6C5742944DB685AA37434E89518F6C8CF243E85E (UserXboxInfo_t43AC22B8C788C2E29748D1882F26FFFD82150C0D* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.ValidateAmazonReceiptRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValidateAmazonReceiptRequest__ctor_m94D38D123ECACC4D9F59830AB731F61D3E10979A (ValidateAmazonReceiptRequest_t02C6A572352CCE41AE720F9A8BE4FD47A4F30243* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.ValidateAmazonReceiptResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValidateAmazonReceiptResult__ctor_m3F8288B791553EF9989F128D61541E6694D4D181 (ValidateAmazonReceiptResult_tBDAAEA70544881D3EC12AB8B21812EAF164F25CF* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.ValidateGooglePlayPurchaseRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValidateGooglePlayPurchaseRequest__ctor_m99AED4344A996A93531EACFDC27984FBB28FF431 (ValidateGooglePlayPurchaseRequest_t19A3C53B5E1DE3BB7A655D929A41D5BED28AA50C* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.ValidateGooglePlayPurchaseResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValidateGooglePlayPurchaseResult__ctor_m8D2EC8BAD3C1EA53F7E250E7BC9996B5A425CEAF (ValidateGooglePlayPurchaseResult_t94C27521EBF7C2B9547D9157FE0BAACBAA9FFB6C* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.ValidateIOSReceiptRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValidateIOSReceiptRequest__ctor_m6190DD618DE881A3A818945B1D8C7954E8BB2962 (ValidateIOSReceiptRequest_t0FF3109216309862E61A7EC51269B623E98507F4* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.ValidateIOSReceiptResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValidateIOSReceiptResult__ctor_m289B9D4776BBC332F8A49709C6B4485EB5EB4276 (ValidateIOSReceiptResult_t7B8E9C32E11CF69C0F1644A9E70227BED479112C* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.ValidateWindowsReceiptRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValidateWindowsReceiptRequest__ctor_m9E16DB14A77715AEA6C9AFA30A3B7F240CEB3F0C (ValidateWindowsReceiptRequest_t1925F0B1023AD2B5E54130D6903DB577AEC6D4C7* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.ValidateWindowsReceiptResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValidateWindowsReceiptResult__ctor_m10BA354E7F8C095414A678ED51E60CA207673B1E (ValidateWindowsReceiptResult_t5DFEC0D218EF949D252DFBC431EB81917AA436BC* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.ValueToDateModel::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValueToDateModel__ctor_m2D0D5B7604B3F32FB72185AC2C3369063BDB6056 (ValueToDateModel_t98B3C39B5FDB48BC22F6DFBE4839E6DFD03BB9FE* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.Variable::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Variable__ctor_mD9A6B40479B285102BAAD6ABAE2515B799AF7810 (Variable_tDCD6D1358DFF185712A375020E6EA7576EB437E7* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.VirtualCurrencyRechargeTime::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VirtualCurrencyRechargeTime__ctor_mC239AB1CAD6DCF93CBC1CBF2803A4880ECCC328E (VirtualCurrencyRechargeTime_tD4B80CB3526B0CD22262886E3372D8A023D6CAA2* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.WriteClientCharacterEventRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WriteClientCharacterEventRequest__ctor_m34164D5DAA1D00210F6582A7AD00BE63C693BE8F (WriteClientCharacterEventRequest_t4B18CB6D5C5242AFA1B48ADFF7593381C1335ED3* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.WriteClientPlayerEventRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WriteClientPlayerEventRequest__ctor_m5A05D817566CE4E7DEE3428988B304AB7FD06E1C (WriteClientPlayerEventRequest_tA95320423AC8066CD76C9C400278514D14E856DA* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.WriteEventResponse::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WriteEventResponse__ctor_mEFDA7F16257A454FBA7E16D4FFC9330FDF9F841D (WriteEventResponse_tCF2011905F8F5EFF4360597D91EDAF4C4AA3F116* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.WriteTitleEventRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WriteTitleEventRequest__ctor_m7D1E54B4350C95D9E610267268D047CFC24EE20B (WriteTitleEventRequest_t8F544A3D1AC64FE08CD1E18FF967FC84FBEFE4A3* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.ClientModels.XboxLiveAccountPlayFabIdPair::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XboxLiveAccountPlayFabIdPair__ctor_m1A7DDAF0E16AC6F189C72A75F8012AB1B40A9662 (XboxLiveAccountPlayFabIdPair_t409FF6972AF23BC564AA53174AAEDDECAEC9F6DE* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+void PlayFabErrorEvent_Invoke_mC72A34EB21591A0DAA34836E22A89E7DA238D038_Multicast(PlayFabErrorEvent_t32269E6C8CF3C5FF597C169C1CACE3D97D0E50C3* __this, PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D* ___0_request, PlayFabError_t085A18640C2631872C3888388E2BC667C7B09C23* ___1_error, const RuntimeMethod* method)
+{
+	il2cpp_array_size_t length = __this->___delegates_13->max_length;
+	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
+	for (il2cpp_array_size_t i = 0; i < length; i++)
+	{
+		PlayFabErrorEvent_t32269E6C8CF3C5FF597C169C1CACE3D97D0E50C3* currentDelegate = reinterpret_cast<PlayFabErrorEvent_t32269E6C8CF3C5FF597C169C1CACE3D97D0E50C3*>(delegatesToInvoke[i]);
+		typedef void (*FunctionPointerType) (RuntimeObject*, PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D*, PlayFabError_t085A18640C2631872C3888388E2BC667C7B09C23*, const RuntimeMethod*);
+		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___0_request, ___1_error, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
+	}
+}
+void PlayFabErrorEvent_Invoke_mC72A34EB21591A0DAA34836E22A89E7DA238D038_OpenInst(PlayFabErrorEvent_t32269E6C8CF3C5FF597C169C1CACE3D97D0E50C3* __this, PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D* ___0_request, PlayFabError_t085A18640C2631872C3888388E2BC667C7B09C23* ___1_error, const RuntimeMethod* method)
+{
+	NullCheck(___0_request);
+	typedef void (*FunctionPointerType) (PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D*, PlayFabError_t085A18640C2631872C3888388E2BC667C7B09C23*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___0_request, ___1_error, method);
+}
+void PlayFabErrorEvent_Invoke_mC72A34EB21591A0DAA34836E22A89E7DA238D038_OpenStatic(PlayFabErrorEvent_t32269E6C8CF3C5FF597C169C1CACE3D97D0E50C3* __this, PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D* ___0_request, PlayFabError_t085A18640C2631872C3888388E2BC667C7B09C23* ___1_error, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D*, PlayFabError_t085A18640C2631872C3888388E2BC667C7B09C23*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___0_request, ___1_error, method);
+}
+void PlayFabErrorEvent_Invoke_mC72A34EB21591A0DAA34836E22A89E7DA238D038_OpenStaticInvoker(PlayFabErrorEvent_t32269E6C8CF3C5FF597C169C1CACE3D97D0E50C3* __this, PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D* ___0_request, PlayFabError_t085A18640C2631872C3888388E2BC667C7B09C23* ___1_error, const RuntimeMethod* method)
+{
+	InvokerActionInvoker2< PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D*, PlayFabError_t085A18640C2631872C3888388E2BC667C7B09C23* >::Invoke(__this->___method_ptr_0, method, NULL, ___0_request, ___1_error);
+}
+void PlayFabErrorEvent_Invoke_mC72A34EB21591A0DAA34836E22A89E7DA238D038_ClosedStaticInvoker(PlayFabErrorEvent_t32269E6C8CF3C5FF597C169C1CACE3D97D0E50C3* __this, PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D* ___0_request, PlayFabError_t085A18640C2631872C3888388E2BC667C7B09C23* ___1_error, const RuntimeMethod* method)
+{
+	InvokerActionInvoker3< RuntimeObject*, PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D*, PlayFabError_t085A18640C2631872C3888388E2BC667C7B09C23* >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___0_request, ___1_error);
+}
+void PlayFabErrorEvent_Invoke_mC72A34EB21591A0DAA34836E22A89E7DA238D038_OpenVirtual(PlayFabErrorEvent_t32269E6C8CF3C5FF597C169C1CACE3D97D0E50C3* __this, PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D* ___0_request, PlayFabError_t085A18640C2631872C3888388E2BC667C7B09C23* ___1_error, const RuntimeMethod* method)
+{
+	NullCheck(___0_request);
+	VirtualActionInvoker1< PlayFabError_t085A18640C2631872C3888388E2BC667C7B09C23* >::Invoke(il2cpp_codegen_method_get_slot(method), ___0_request, ___1_error);
+}
+void PlayFabErrorEvent_Invoke_mC72A34EB21591A0DAA34836E22A89E7DA238D038_OpenInterface(PlayFabErrorEvent_t32269E6C8CF3C5FF597C169C1CACE3D97D0E50C3* __this, PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D* ___0_request, PlayFabError_t085A18640C2631872C3888388E2BC667C7B09C23* ___1_error, const RuntimeMethod* method)
+{
+	NullCheck(___0_request);
+	InterfaceActionInvoker1< PlayFabError_t085A18640C2631872C3888388E2BC667C7B09C23* >::Invoke(il2cpp_codegen_method_get_slot(method), il2cpp_codegen_method_get_declaring_type(method), ___0_request, ___1_error);
+}
+void PlayFabErrorEvent_Invoke_mC72A34EB21591A0DAA34836E22A89E7DA238D038_OpenGenericVirtual(PlayFabErrorEvent_t32269E6C8CF3C5FF597C169C1CACE3D97D0E50C3* __this, PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D* ___0_request, PlayFabError_t085A18640C2631872C3888388E2BC667C7B09C23* ___1_error, const RuntimeMethod* method)
+{
+	NullCheck(___0_request);
+	GenericVirtualActionInvoker1< PlayFabError_t085A18640C2631872C3888388E2BC667C7B09C23* >::Invoke(method, ___0_request, ___1_error);
+}
+void PlayFabErrorEvent_Invoke_mC72A34EB21591A0DAA34836E22A89E7DA238D038_OpenGenericInterface(PlayFabErrorEvent_t32269E6C8CF3C5FF597C169C1CACE3D97D0E50C3* __this, PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D* ___0_request, PlayFabError_t085A18640C2631872C3888388E2BC667C7B09C23* ___1_error, const RuntimeMethod* method)
+{
+	NullCheck(___0_request);
+	GenericInterfaceActionInvoker1< PlayFabError_t085A18640C2631872C3888388E2BC667C7B09C23* >::Invoke(method, ___0_request, ___1_error);
+}
+// System.Void PlayFab.Events.PlayFabEvents/PlayFabErrorEvent::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayFabErrorEvent__ctor_m2A7788530C700396124CAE117A7B8A8D830EE99B (PlayFabErrorEvent_t32269E6C8CF3C5FF597C169C1CACE3D97D0E50C3* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) 
+{
+	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___1_method);
+	__this->___method_3 = ___1_method;
+	__this->___m_target_2 = ___0_object;
+	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___0_object);
+	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___1_method);
+	__this->___method_code_6 = (intptr_t)__this;
+	if (MethodIsStatic((RuntimeMethod*)___1_method))
+	{
+		bool isOpen = parameterCount == 2;
+		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___1_method))
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&PlayFabErrorEvent_Invoke_mC72A34EB21591A0DAA34836E22A89E7DA238D038_OpenStaticInvoker;
+			else
+				__this->___invoke_impl_1 = (intptr_t)&PlayFabErrorEvent_Invoke_mC72A34EB21591A0DAA34836E22A89E7DA238D038_ClosedStaticInvoker;
+		else
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&PlayFabErrorEvent_Invoke_mC72A34EB21591A0DAA34836E22A89E7DA238D038_OpenStatic;
+			else
+				{
+					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+				}
+	}
+	else
+	{
+		bool isOpen = parameterCount == 1;
+		if (isOpen)
+		{
+			if (__this->___method_is_virtual_12)
+			{
+				if (il2cpp_codegen_method_is_generic_instance_method((RuntimeMethod*)___1_method))
+					if (il2cpp_codegen_method_is_interface_method((RuntimeMethod*)___1_method))
+						__this->___invoke_impl_1 = (intptr_t)&PlayFabErrorEvent_Invoke_mC72A34EB21591A0DAA34836E22A89E7DA238D038_OpenGenericInterface;
+					else
+						__this->___invoke_impl_1 = (intptr_t)&PlayFabErrorEvent_Invoke_mC72A34EB21591A0DAA34836E22A89E7DA238D038_OpenGenericVirtual;
+				else
+					if (il2cpp_codegen_method_is_interface_method((RuntimeMethod*)___1_method))
+						__this->___invoke_impl_1 = (intptr_t)&PlayFabErrorEvent_Invoke_mC72A34EB21591A0DAA34836E22A89E7DA238D038_OpenInterface;
+					else
+						__this->___invoke_impl_1 = (intptr_t)&PlayFabErrorEvent_Invoke_mC72A34EB21591A0DAA34836E22A89E7DA238D038_OpenVirtual;
+			}
+			else
+			{
+				__this->___invoke_impl_1 = (intptr_t)&PlayFabErrorEvent_Invoke_mC72A34EB21591A0DAA34836E22A89E7DA238D038_OpenInst;
+			}
+		}
+		else
+		{
+			if (___0_object == NULL)
+				il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
+			__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+		}
+	}
+	__this->___extra_arg_5 = (intptr_t)&PlayFabErrorEvent_Invoke_mC72A34EB21591A0DAA34836E22A89E7DA238D038_Multicast;
+}
+// System.Void PlayFab.Events.PlayFabEvents/PlayFabErrorEvent::Invoke(PlayFab.SharedModels.PlayFabRequestCommon,PlayFab.PlayFabError)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayFabErrorEvent_Invoke_mC72A34EB21591A0DAA34836E22A89E7DA238D038 (PlayFabErrorEvent_t32269E6C8CF3C5FF597C169C1CACE3D97D0E50C3* __this, PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D* ___0_request, PlayFabError_t085A18640C2631872C3888388E2BC667C7B09C23* ___1_error, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D*, PlayFabError_t085A18640C2631872C3888388E2BC667C7B09C23*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___0_request, ___1_error, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+// System.IAsyncResult PlayFab.Events.PlayFabEvents/PlayFabErrorEvent::BeginInvoke(PlayFab.SharedModels.PlayFabRequestCommon,PlayFab.PlayFabError,System.AsyncCallback,System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* PlayFabErrorEvent_BeginInvoke_mD33FA45553968F664B9C7FA6DBF5ABF91F5D656C (PlayFabErrorEvent_t32269E6C8CF3C5FF597C169C1CACE3D97D0E50C3* __this, PlayFabRequestCommon_t42B97E9F405CF1969D1CB265129566E2657A654D* ___0_request, PlayFabError_t085A18640C2631872C3888388E2BC667C7B09C23* ___1_error, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___2_callback, RuntimeObject* ___3_object, const RuntimeMethod* method) 
+{
+	void *__d_args[3] = {0};
+	__d_args[0] = ___0_request;
+	__d_args[1] = ___1_error;
+	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___2_callback, (RuntimeObject*)___3_object);
+}
+// System.Void PlayFab.Events.PlayFabEvents/PlayFabErrorEvent::EndInvoke(System.IAsyncResult)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayFabErrorEvent_EndInvoke_m25BF1B023D9883283109BA5E5F2BA6215F10308A (PlayFabErrorEvent_t32269E6C8CF3C5FF597C169C1CACE3D97D0E50C3* __this, RuntimeObject* ___0_result, const RuntimeMethod* method) 
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___0_result, 0);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.AuthenticationModels.AuthenticateCustomIdRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticateCustomIdRequest__ctor_mE2DE31774E0AAC2FC4E4D7EF46252E4982FB682B (AuthenticateCustomIdRequest_tE91474227AC5EB717401D577941B21F995C8E5AC* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.AuthenticationModels.AuthenticateCustomIdResult::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticateCustomIdResult__ctor_mB31FE721D84441531E67BA7B78289762A4978D1C (AuthenticateCustomIdResult_t4B35C3258C572E8DFCC590A16993C5BC3F934F36* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.AuthenticationModels.DeleteRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeleteRequest__ctor_m19B72561A7CB91D6AE810DC516C12B92E14B3E44 (DeleteRequest_t0B9D2C009B483135923187736BB065BB74B2B1DE* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.AuthenticationModels.EmptyResponse::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EmptyResponse__ctor_m5D4B24E9EBCADB3AB9CFD0E4B6D673C38B2BE199 (EmptyResponse_t5D64DF52A735AC35F2A14FC8A62D357FFFCA7652* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.AuthenticationModels.EntityKey::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EntityKey__ctor_mB1488235600DA953B7B9CC3FEA6BD0B581CDBABD (EntityKey_tFADF551D013525A30F2A6FB10A4FC4AF5F34278E* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.AuthenticationModels.EntityLineage::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EntityLineage__ctor_m702D59D688842FBEEA0556ADA6FF027B4C632DC3 (EntityLineage_tBB3BF8ABA70636A13AE3412CE723954A429EE67E* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.AuthenticationModels.EntityTokenResponse::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EntityTokenResponse__ctor_m23020BA7DE7C57ED4B1E7DB8A6E91E3C01E703B7 (EntityTokenResponse_tCB7E0082B8ABD19A02403C6F9A438EF756D63E8B* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabBaseModel__ctor_mEB7DCE98193DC376F3422B1011C0DC17B2795E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.AuthenticationModels.GetEntityTokenRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetEntityTokenRequest__ctor_m9B22427D71006B07D4EF7EE46CB3D3DEEC0B6CE9 (GetEntityTokenRequest_t058F7E73EA27EED4A7E6A49B1FF0770354FF6E69* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.AuthenticationModels.GetEntityTokenResponse::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetEntityTokenResponse__ctor_m005FA6D3219909B9145CCA811B9EF14B76CC1D41 (GetEntityTokenResponse_tD3A2F286A2716332E695130B0DDE7F9E2E0DABAC* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.AuthenticationModels.ValidateEntityTokenRequest::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValidateEntityTokenRequest__ctor_m1CC2F8D79AD059413023EC9D83F2ECA04DF1AECA (ValidateEntityTokenRequest_t208B61B7A774BBC7B3CD46D9296ED0BC848DEA3B* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabRequestCommon__ctor_m6A3F4FFAFCC90E4D69D376813DA32F302FB35C17(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void PlayFab.AuthenticationModels.ValidateEntityTokenResponse::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValidateEntityTokenResponse__ctor_m84808164C3ADB884CEB8B2E27FF7B2E206A37729 (ValidateEntityTokenResponse_t3BF0DD16B7B0A2D37AF6A38E77CE63119EFCF7AE* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayFabResultCommon__ctor_m045283BC3AF921586DC332AF1F5B96CBF85C3A46(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif

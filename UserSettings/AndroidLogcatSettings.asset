@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "3385700f",
         "name": "com.vulnbuster.insecuregame",
-        "processId": 28367,
+        "processId": 19603,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -11,103 +11,37 @@
         {
             "deviceId": "3385700f",
             "name": "com.vulnbuster.insecuregame",
-            "processId": 17458,
+            "processId": 28367,
             "exited": true
         },
         {
             "deviceId": "3385700f",
             "name": "com.vulnbuster.insecuregame",
-            "processId": 30200,
+            "processId": 25458,
             "exited": true
         },
         {
             "deviceId": "3385700f",
             "name": "com.vulnbuster.insecuregame",
-            "processId": 30559,
+            "processId": 32709,
             "exited": true
         },
         {
             "deviceId": "3385700f",
             "name": "com.vulnbuster.insecuregame",
-            "processId": 31353,
+            "processId": 5253,
             "exited": true
         },
         {
             "deviceId": "3385700f",
             "name": "com.miui.home",
-            "processId": 2821,
+            "processId": 2863,
             "exited": false
         },
         {
             "deviceId": "3385700f",
             "name": "com.vulnbuster.insecuregame",
-            "processId": 31959,
-            "exited": false
-        },
-        {
-            "deviceId": "3385700f",
-            "name": "com.vulnbuster.insecuregame",
-            "processId": 32272,
-            "exited": false
-        },
-        {
-            "deviceId": "3385700f",
-            "name": "com.vulnbuster.insecuregame",
-            "processId": 32557,
-            "exited": false
-        },
-        {
-            "deviceId": "3385700f",
-            "name": "com.vulnbuster.insecuregame",
-            "processId": 1455,
-            "exited": false
-        },
-        {
-            "deviceId": "3385700f",
-            "name": "com.vulnbuster.insecuregame",
-            "processId": 3290,
-            "exited": false
-        },
-        {
-            "deviceId": "3385700f",
-            "name": "com.vulnbuster.insecuregame",
-            "processId": 13444,
-            "exited": false
-        },
-        {
-            "deviceId": "3385700f",
-            "name": "com.vulnbuster.insecuregame",
-            "processId": 15439,
-            "exited": false
-        },
-        {
-            "deviceId": "3385700f",
-            "name": "com.vulnbuster.insecuregame",
-            "processId": 19150,
-            "exited": false
-        },
-        {
-            "deviceId": "3385700f",
-            "name": "com.vulnbuster.insecuregame",
-            "processId": 23349,
-            "exited": false
-        },
-        {
-            "deviceId": "3385700f",
-            "name": "com.vulnbuster.insecuregame",
-            "processId": 24355,
-            "exited": false
-        },
-        {
-            "deviceId": "3385700f",
-            "name": "com.vulnbuster.insecuregame",
-            "processId": 25536,
-            "exited": false
-        },
-        {
-            "deviceId": "3385700f",
-            "name": "com.vulnbuster.insecuregame",
-            "processId": 28367,
+            "processId": 19603,
             "exited": false
         }
     ],

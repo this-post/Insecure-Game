@@ -5,6 +5,7 @@ using PlayFab;
 
 using Security;
 using Constant;
+using Util;
 
 using System.Threading;
 
@@ -14,34 +15,46 @@ namespace UnAuth
     {
         void Start()
         {
-            if(isSecureEnv() && preloadPublicKey() == 1)
+            if(isSecureEnv())
             {
-                // https://learn.microsoft.com/en-us/gaming/playfab/release-notes/2018#unitysdk-specific-changes-1
-                PlayFab.Internal.PlayFabWebRequest.CustomCertValidationHook = PublicKeyPinning.PublicKeyCheck;
+                #if UNITY_EDITOR // to delete the existing keypair, and enforcing KeyExchange
+                PlayerPrefs.DeleteAll();
+                #endif
+                if(!KeyAgreement.IsKeyPairExists())
+                {
+                    KeyAgreement.CreateKeyPair();
+                    // Debug.Log(PlayerPrefs.GetString("pubKey"));
+                    // Debug.Log(PlayerPrefs.GetString("privKey"));
+                    KeyAgreement.KeyExchange();
+                }
+                try
+                {
+                    CertPinning.UpdateFingerprints();
+                }
+                catch(PlayerPrefsItemNotFoundException ex)
+                {
+                    #if DEBUG
+                    Debug.Log(ex);
+                    #endif
+                    QuitGame();
+                }
                 // PlayFab.Internal.PlayFabWebRequest.SkipCertificateValidation();
                 SceneManager.LoadScene(Const.LoginScene);
             }
             else
             {
-                #if DEBUG
-                Debug.Log("The App could not be launched");
-                #endif
-                #if UNITY_EDITOR
-                UnityEditor.EditorApplication.isPlaying = false;
-                #else
-                Application.Quit();
-                #endif
+                QuitGame();
             }
         }
 
-        public static bool isSecureEnv()
+        private static bool isSecureEnv()
         {
             if(CheckEnv.isRootOrJailbroken() || CheckEnv.hasHackingToolInstalled())
             {
                 return false;
             }
-            #if UNITY_ANDROID
-            if(CheckEnv.isOnEnulator())
+            #if UNITY_ANDROID && !UNITY_EDITOR
+            if(CheckEnv.isOnEmulator())
             {
                 return false;
             }
@@ -49,9 +62,16 @@ namespace UnAuth
             return true;
         }
 
-        public static int preloadPublicKey()
+        private static void QuitGame()
         {
-            return PublicKeyPinning.UpdatePublicKey();
+            #if DEBUG
+            Debug.Log("The App could not be launched");
+            #endif
+            #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+            #else
+            Application.Quit();
+            #endif
         }
     }
 }

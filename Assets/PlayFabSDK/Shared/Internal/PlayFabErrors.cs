@@ -689,6 +689,7 @@ namespace PlayFab
         AsyncExportNotInFlight = 10011,
         AsyncExportNotFound = 10012,
         AsyncExportRateLimitExceeded = 10013,
+        AnalyticsSegmentCountOverLimit = 10014,
         SnapshotNotFound = 11000,
         InventoryApiNotImplemented = 12000,
         LobbyDoesNotExist = 13000,
@@ -712,6 +713,8 @@ namespace PlayFab
         TelemetryKeyAlreadyExists = 14202,
         TelemetryKeyInvalid = 14203,
         TelemetryKeyCountOverLimit = 14204,
+        TelemetryKeyDeactivated = 14205,
+        TelemetryKeyLongInsightsRetentionNotAllowed = 14206,
         EventSinkConnectionInvalid = 15000,
         EventSinkConnectionUnauthorized = 15001,
         EventSinkRegionInvalid = 15002,
@@ -726,7 +729,17 @@ namespace PlayFab
         EventSinkDatabaseNotFound = 15011,
         OperationCanceled = 16000,
         InvalidDisplayNameRandomSuffixLength = 17000,
-        AllowNonUniquePlayerDisplayNamesDisableNotAllowed = 17001
+        AllowNonUniquePlayerDisplayNamesDisableNotAllowed = 17001,
+        PartitionedEventInvalid = 18000,
+        PartitionedEventCountOverLimit = 18001,
+        PlayerCustomPropertiesPropertyNameTooLong = 19000,
+        PlayerCustomPropertiesPropertyNameIsInvalid = 19001,
+        PlayerCustomPropertiesStringPropertyValueTooLong = 19002,
+        PlayerCustomPropertiesValueIsInvalidType = 19003,
+        PlayerCustomPropertiesVersionMismatch = 19004,
+        PlayerCustomPropertiesPropertyCountTooHigh = 19005,
+        PlayerCustomPropertiesDuplicatePropertyName = 19006,
+        PlayerCustomPropertiesPropertyDoesNotExist = 19007
     }
 
     public class PlayFabError

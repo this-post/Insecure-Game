@@ -10,7 +10,6 @@ namespace UnAuth {
         public Button ResetPasswordBtn;
         public TMP_InputField EmailField;
         public TMP_Text ResultTxt;
-        public string PlayFabTitleId = "CC95C";
 
         public void ForgotPassword()
         {
@@ -18,7 +17,7 @@ namespace UnAuth {
 
             var resetPwdReq = new SendAccountRecoveryEmailRequest{
                 Email = EmailField.text,
-                TitleId = PlayFabTitleId
+                TitleId = PlayFabSettings.TitleId.ToLower()
             };
 
             PlayFabClientAPI.SendAccountRecoveryEmail(resetPwdReq, OnSuccess, OnError);

@@ -15,7 +15,7 @@ MonoBehaviour:
   TitleId: CC95C
   DeveloperSecretKey: 8N6N494PQUTD7Z73EABF1J5EX8RJYM6C7XNHUFI3H3M4WDB6SK
   ProductionEnvironmentUrl: 
-  RequestType: 0
+  RequestType: 1
   DisableDeviceInfo: 0
   DisableFocusTimeCollection: 0
   RequestTimeout: 2000

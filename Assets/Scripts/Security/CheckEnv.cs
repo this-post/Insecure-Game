@@ -16,7 +16,7 @@ namespace Security
         public static bool isRootOrJailbroken()
         {   
             bool flag = false;
-            #if UNITY_IOS || UNITY_ANDROID // work
+            #if UNITY_IOS || UNITY_ANDROID // work, uncomment to enforce
             // foreach(var path in Suspicious.Paths)
             // {
             //     try
@@ -77,7 +77,7 @@ namespace Security
                     flag = false;
                 }
             }
-            #if UNITY_ANDROID // won't work, some of packages won't be listed e.g. com.topjohnwu.magisk etc.
+            #if UNITY_ANDROID && !UNITY_EDITOR // won't work, some of packages won't be listed e.g. com.topjohnwu.magisk etc.
             GetAndroidInstalledPackage getInstalledPackage = new GetAndroidInstalledPackage();
             List<String> installedPackages = getInstalledPackage.InstalledPackages;
             foreach(var package in installedPackages)
@@ -96,8 +96,8 @@ namespace Security
         }
 
         // https://github.com/lhamed/Unity-Android-Root-Build-Status-Checker
-        #if UNITY_ANDROID
-        public static bool isOnEnulator()
+        #if UNITY_ANDROID && !UNITY_EDITOR
+        public static bool isOnEmulator()
         {
             AndroidJavaClass osBuild = new AndroidJavaClass(Const.OSBuild);
             string fingerPrint = osBuild.GetStatic<string>("FINGERPRINT");

@@ -1,8 +1,16 @@
+using System;
+
 using UnityEngine;
 using PlayFab;
 using PlayFab.ClientModels;
 using UnityEngine.UI;
 using TMPro;
+
+using Security;
+using HttpManager;
+using Constant;
+
+using Newtonsoft.Json;
 
 namespace UnAuth {
     public class Registration : MonoBehaviour
@@ -16,32 +24,60 @@ namespace UnAuth {
         {
             if(PasswordField.text.Length < 6)
             {
-                ResultTxt.text = "Password too short";
+                ResultTxt.text = ErrorMessage.PwdTooShort;
                 return;
             }
-
-            RegisterBtn.interactable = false;
-
-            var regisReq = new RegisterPlayFabUserRequest
+            if(String.IsNullOrEmpty(EmailField.text))
             {
+                ResultTxt.text = ErrorMessage.EmptyUserOrPassword;
+                return;
+            }
+            RegisterBtn.interactable = false;
+            RegisterPlayFabUserRequest playFabRegisterDto = new RegisterPlayFabUserRequest(){
                 Email = EmailField.text,
                 Password = PasswordField.text,
                 RequireBothUsernameAndEmail = false
             };
-
-            PlayFabClientAPI.RegisterPlayFabUser(regisReq, OnRegisterSuccess, OnRegisterError);
+            String serializedRegisterDto = JsonConvert.SerializeObject(E2eePayload.PreparedRequest(playFabRegisterDto));
+            #if TEST
+            var (headers, jsonResponseText) = RequestHandler.Post(String.Format("{0}{1}", ClientConfigs.WhiteListDomainNames["Test"], ClientConfigs.AzureURIs["Register"]), null, false, serializedRegisterDto);
+            #else
+            var (headers, jsonResponseText) = RequestHandler.Post(String.Format("{0}{1}", ClientConfigs.WhiteListDomainNames["Azure"], ClientConfigs.AzureURIs["Register"]), null, false, serializedRegisterDto);
+            #endif  
+            var (retCode, decryptedMessage) = E2eePayload.PreparedResponse(jsonResponseText);
+            PlayFabError playFabRegisterErrorDto = new PlayFabError();
+            RegisterPlayFabUserResult playFabRegisterSuccessDto = new RegisterPlayFabUserResult();
+            try
+            {
+                playFabRegisterErrorDto = JsonConvert.DeserializeObject<PlayFabError>(decryptedMessage);
+                playFabRegisterSuccessDto = JsonConvert.DeserializeObject<RegisterPlayFabUserResult>(decryptedMessage);
+            }
+            catch(JsonSerializationException ex)
+            {
+                #if DEBUG
+                Debug.Log(ex.Message);
+                #endif
+            }
+            if(playFabRegisterErrorDto.Error != PlayFabErrorCode.Success)
+            {
+                OnError(playFabRegisterErrorDto);
+                return;
+            }
+            if(playFabRegisterSuccessDto.EntityToken.EntityToken != null)
+            {
+                OnSuccess(playFabRegisterSuccessDto);
+            }
         }
 
-        void OnRegisterSuccess(RegisterPlayFabUserResult result)
+        private void OnSuccess(RegisterPlayFabUserResult result)
         {
-            ResultTxt.text = "Success!!!";
+            ResultTxt.text = Message.Success;
+            RegisterBtn.interactable = true;
         }
 
-        void OnRegisterError(PlayFabError error)
+        private void OnError(PlayFabError error)
         {
-            System.String s = System.String.Format("Error message: {0}", error.ErrorMessage);
-            Debug.Log(s);
-            ResultTxt.text = "Something gone wrong";
+            ResultTxt.text = error.ErrorMessage;
             RegisterBtn.interactable = true;
         }
     }

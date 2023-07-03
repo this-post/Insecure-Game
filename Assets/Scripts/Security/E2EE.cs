@@ -26,7 +26,7 @@ namespace Security
 {
     public class E2eePayload
     {
-        public static String Encryption(String plain)
+        private static String Encryption(String plain)
         {
             #if DEBUG
             Debug.Log(plain);
@@ -48,7 +48,7 @@ namespace Security
             return Conversion.HexToString(nonce.Concat(cipherText).Concat(aad).ToArray());
         }
 
-        public static String Decryption(String cipher)
+        private static String Decryption(String cipher)
         {
             byte[] sharedSecret = KeyAgreement.GetSharedSecret();
             byte[] nonce = Conversion.StringToByteArray(cipher.Substring(0, CryptoConstant.NonceSize * 2));
@@ -71,6 +71,40 @@ namespace Security
             int offset = cipherSpec.ProcessBytes(cipherText, 0, cipherText.Length, plainText, 0);
             cipherSpec.DoFinal(plainText, offset);
             return Encoding.UTF8.GetString(plainText);
+        }
+
+        public static GenericEncryptedBodyDto PreparedRequest(System.Object playFabRequestGenericDto)
+        {
+            String serializedReqDto = JsonConvert.SerializeObject(playFabRequestGenericDto);
+            String encryptedMessage = Encryption(serializedReqDto);
+            GenericEncryptedBodyDto encBodyDto = new GenericEncryptedBodyDto(){
+                KeyId = KeyAgreement.GetKeyId(),
+                Data = encryptedMessage
+            };
+            return encBodyDto;
+        }
+
+        public static Tuple<int, String> PreparedResponse(String jsonResponse)
+        {
+            EncryptedResponseDto encResDto = new EncryptedResponseDto();
+            try
+            {
+                encResDto = JsonConvert.DeserializeObject<EncryptedResponseDto>(jsonResponse);
+            }
+            catch(JsonSerializationException ex)
+            {
+                #if DEBUG
+                Debug.Log(ex.Message);
+                #endif
+            }
+            int code = encResDto.Code;
+            String encMessage = encResDto.Message;
+            String decryptedMessage = Decryption(encMessage);
+            // if(code != 0)
+            // {
+            //     throw new UnsuccessfulResponseException(code, decryptedMessage);
+            // }
+            return Tuple.Create(code, decryptedMessage);
         }
     }
 
@@ -105,14 +139,14 @@ namespace Security
             publicKeyDto.PublicKey = GetPublicKey();
             String serializedHttpBody = JsonConvert.SerializeObject(publicKeyDto);
             #if TEST
-            var (headers, jsonReponseText) = RequestHandler.Post(String.Format("{0}{1}", ClientConfigs.WhiteListDomainNames["Test"], ClientConfigs.AzureURLs["KeyExchange"]), null, false, serializedHttpBody);
+            var (headers, jsonResponseText) = RequestHandler.Post(String.Format("{0}{1}", ClientConfigs.WhiteListDomainNames["Test"], ClientConfigs.AzureURIs["KeyExchange"]), null, false, serializedHttpBody);
             #else
-            var (headers, jsonReponseText) = RequestHandler.Post(String.Format("{0}{1}", ClientConfigs.WhiteListDomainNames["Azure"], ClientConfigs.AzureURLs["KeyExchange"]), null, false, serializedHttpBody);
+            var (headers, jsonResponseText) = RequestHandler.Post(String.Format("{0}{1}", ClientConfigs.WhiteListDomainNames["Azure"], ClientConfigs.AzureURIs["KeyExchange"]), null, false, serializedHttpBody);
             #endif
             KeyExchangeDto kexDto = new KeyExchangeDto();
             try
             {
-                kexDto = JsonConvert.DeserializeObject<KeyExchangeDto>(jsonReponseText);
+                kexDto = JsonConvert.DeserializeObject<KeyExchangeDto>(jsonResponseText);
             }
             catch(JsonSerializationException ex)
             {
@@ -162,8 +196,12 @@ namespace Security
             ECPublicKeyParameters ecPubKey = (ECPublicKeyParameters)PublicKeyFactory.CreateKey(serverPublicKeyDerByte);
             IBasicAgreement aKeyAgree = AgreementUtilities.GetBasicAgreement("ECDH");
             aKeyAgree.Init(ecPrivKey);
-            // https://github.com/cose-wg/cose-issues/issues/3
-            BigInteger sharedSecret = aKeyAgree.CalculateAgreement(ecPubKey); // BoucyCastle's BigInteger will convert the shared secret to BigInt and sometime, they remove leading zero
+            /* Leading zero statement on ECDH shared secret -> https://github.com/cose-wg/cose-issues/issues/3
+            * BoucyCastle's BigInteger will convert the shared secret to BigInt and sometime, they remove leading zero
+            * But Python's Cryptography ECDH shared secret will return byte and keep the leading zero
+            * Hence, the server and the client is incompatible on this matter
+            */
+            BigInteger sharedSecret = aKeyAgree.CalculateAgreement(ecPubKey);
             // so, prepend 0x00 if the shared secret is not equal to 132/2 bytes
             byte[] sharedSecretByteArray = sharedSecret.ToByteArray();
             if(sharedSecretByteArray.Length != 66)
@@ -176,12 +214,12 @@ namespace Security
                 }
                 Array.Copy(sharedSecretByteArray, 0, prependedSharedSecret, 1, sharedSecretByteArray.Length);
                 #if DEBUG
-                Debug.Log("Shared secret (with leadding 0, if any): " + Conversion.HexToString(prependedSharedSecret));
+                Debug.Log("Shared secret (with leadding 0x00, if any): " + Conversion.HexToString(prependedSharedSecret));
                 #endif
                 return prependedSharedSecret;
             }
             #if DEBUG
-            Debug.Log("Shared secret (no leadding 0): " + Conversion.HexToString(sharedSecret.ToByteArray()));
+            Debug.Log("Shared secret (no leadding 0x00): " + Conversion.HexToString(sharedSecret.ToByteArray()));
             #endif
             // return sharedSecret.ToByteArray();
             return sharedSecretByteArray;

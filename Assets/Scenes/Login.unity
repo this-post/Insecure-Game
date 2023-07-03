@@ -609,10 +609,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afaba562a7b37424cbdd85f0f871594d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ResetPasswordBtn: {fileID: 244509944}
+  AccountRecoveryBtn: {fileID: 244509944}
   EmailField: {fileID: 831190509}
   ResultTxt: {fileID: 376200133}
-  PlayFabTitleId: CC95C
 --- !u!1 &376200131
 GameObject:
   m_ObjectHideFlags: 0

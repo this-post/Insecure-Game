@@ -99,7 +99,7 @@ namespace Security
         #if UNITY_ANDROID && !UNITY_EDITOR
         public static bool isOnEmulator()
         {
-            AndroidJavaClass osBuild = new AndroidJavaClass(Const.OSBuild);
+            AndroidJavaClass osBuild = new AndroidJavaClass(AndroidSpecifics.OSBuild);
             string fingerPrint = osBuild.GetStatic<string>("FINGERPRINT");
             string model = osBuild.GetStatic<string>("MODEL");
             string menufacturer = osBuild.GetStatic<string>("MANUFACTURER");
@@ -140,11 +140,11 @@ namespace Security
                 {
                     using(var client = new TcpClient())
                     {
-                        var result = client.BeginConnect(Const.LocalHost, port, null, null);
+                        var result = client.BeginConnect(ClientConfigs.LocalHost, port, null, null);
                         var success = result.AsyncWaitHandle.WaitOne(2000);
                         client.EndConnect(result);
                         #if DEBUG
-                        Debug.Log(String.Format("Frida port: {0}:{1} detected", Const.LocalHost, port));
+                        Debug.Log(String.Format("Frida port: {0}:{1} detected", ClientConfigs.LocalHost, port));
                         #endif
                         return true;
                     }

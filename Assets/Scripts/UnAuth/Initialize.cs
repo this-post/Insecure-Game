@@ -39,7 +39,8 @@ namespace UnAuth
                     QuitGame();
                 }
                 // PlayFab.Internal.PlayFabWebRequest.SkipCertificateValidation();
-                SceneManager.LoadScene(Const.LoginScene);
+                PlayFab.Internal.PlayFabWebRequest.CustomCertValidationHook = CertPinning.CertCheck;
+                SceneManager.LoadScene(Scenes.LoginScene);
             }
             else
             {

@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Net;
 
 using Constant;
+using Security;
 
 using Newtonsoft.Json;
 
@@ -27,6 +28,7 @@ namespace HttpManager
             
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(s_scheme + url);
             request.Proxy = null;
+            request.ServerCertificateValidationCallback = CertPinning.CertCheck;
             request.AllowAutoRedirect = allowRedirect;
             if(headers != null)
             {
@@ -35,6 +37,7 @@ namespace HttpManager
                     request.Headers[header.Key] = header.Value;
                 }
             }
+            request.Method = "GET";
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
             WebHeaderCollection responseHeaders = response.Headers;
             String responseText = new StreamReader(response.GetResponseStream(), Encoding.ASCII).ReadToEnd();
@@ -48,6 +51,7 @@ namespace HttpManager
         {
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(s_scheme + url);
             request.Proxy = null;
+            request.ServerCertificateValidationCallback = CertPinning.CertCheck;
             request.AllowAutoRedirect = allowRedirect;
             if(headers != null)
             {

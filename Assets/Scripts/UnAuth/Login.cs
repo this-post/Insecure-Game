@@ -9,6 +9,7 @@ using Security;
 using Constant;
 using HttpManager;
 using Util;
+using Main;
 
 using System;
 using System.Threading;
@@ -18,69 +19,32 @@ using Newtonsoft.Json;
 namespace UnAuth {
     public class Login : MonoBehaviour
     {
-        [Header("Login Screen")]
         public TMP_InputField EmailField;
         public TMP_InputField PasswordField;
         public TMP_Text ResultTxt;
         public Button LoginBtn;
+        public static PlayFabAuthenticationContext s_AuthContext; // to save the data between scene
 
         public void LoginWithEmail()
         {
-            #if DEBUG
-            Debug.Log(String.Format("Request Type: {0}", PlayFabSettings.RequestType));
-            Debug.Log(String.Format("Email: {0}", EmailField.text));
-            Debug.Log(String.Format("Password: {0}", PasswordField.text));
-            #endif
-
             LoginBtn.interactable = false;
-
-            // PlayFabLoginDto playFabLoginDto = new PlayFabLoginDto();
-            LoginWithEmailAddressRequest playFabLoginDto = new LoginWithEmailAddressRequest();
-            playFabLoginDto.Email = EmailField.text;
-            playFabLoginDto.Password = PasswordField.text;
+            LoginWithEmailAddressRequest playFabLoginDto = new LoginWithEmailAddressRequest(){
+                Email = EmailField.text,
+                Password = PasswordField.text
+            };
             if(String.IsNullOrEmpty(playFabLoginDto.Email) || String.IsNullOrEmpty(playFabLoginDto.Password))
             {
-                ResultTxt.text = Const.EmptyUserOrPassword;
+                ResultTxt.text = ErrorMessage.EmptyUserOrPassword;
                 LoginBtn.interactable = true;
                 return;
             }
-            String serializedPlayFabLoginDto = JsonConvert.SerializeObject(playFabLoginDto);
-            String encryptedMessage = E2eePayload.Encryption(serializedPlayFabLoginDto);
-            #if DEBUG
-            Debug.Log(encryptedMessage);
-            #endif
-            GenericEncryptedBodyDto encBodyDto = new GenericEncryptedBodyDto();
-            encBodyDto.KeyId = KeyAgreement.GetKeyId();
-            encBodyDto.Data = encryptedMessage;
-            String serializedLoginDto = JsonConvert.SerializeObject(encBodyDto);
+            String serializedLoginDto = JsonConvert.SerializeObject(E2eePayload.PreparedRequest(playFabLoginDto));
             #if TEST
-            var (headers, jsonReponseText) = RequestHandler.Post(String.Format("{0}{1}", ClientConfigs.WhiteListDomainNames["Test"], ClientConfigs.AzureURLs["Login"]), null, false, serializedLoginDto);
+            var (headers, jsonResponseText) = RequestHandler.Post(String.Format("{0}{1}", ClientConfigs.WhiteListDomainNames["Test"], ClientConfigs.AzureURIs["Login"]), null, false, serializedLoginDto);
             #else
-            var (headers, jsonReponseText) = RequestHandler.Post(String.Format("{0}{1}", ClientConfigs.WhiteListDomainNames["Azure"], ClientConfigs.AzureURLs["Login"]), null, false, serializedLoginDto);
+            var (headers, jsonResponseText) = RequestHandler.Post(String.Format("{0}{1}", ClientConfigs.WhiteListDomainNames["Azure"], ClientConfigs.AzureURIs["Login"]), null, false, serializedLoginDto);
             #endif
-            EncryptedResponseDto encResDto = new EncryptedResponseDto();
-            try
-            {
-                encResDto = JsonConvert.DeserializeObject<EncryptedResponseDto>(jsonReponseText);
-            }
-            catch(JsonSerializationException ex)
-            {
-                #if DEBUG
-                Debug.Log(ex.Message);
-                #endif
-            }
-            int code = encResDto.Code;
-            String encMessage = encResDto.Message;
-            String decryptedMessage = E2eePayload.Decryption(encMessage);
-            if(code != 0)
-            {
-                throw new UnsuccessfulResponseException(code, encMessage);
-            }
-            #if DEBUG
-            Debug.Log(decryptedMessage);
-            #endif
-            // PlayFabLoginErrorDto playFabLoginErrorDto = new PlayFabLoginErrorDto();
-            // PlayFabLoginSuccessDto playFabLoginSuccessDto = new PlayFabLoginSuccessDto();
+            var (retCode, decryptedMessage) = E2eePayload.PreparedResponse(jsonResponseText);
             PlayFabError playFabLoginErrorDto = new PlayFabError();
             LoginResult playFabLoginSuccessDto = new LoginResult();
             try
@@ -115,13 +79,11 @@ namespace UnAuth {
 
         private void OnSuccess(LoginResult result)
         {
-            #if DEBUG
-            String s = String.Format("Entity token: {0}", result.EntityToken.EntityToken);
-            Debug.Log(s);
-            #endif
-            ResultTxt.text = Const.LoginSuccessMsg;
-            Thread.Sleep(1000);
-            SceneManager.LoadScene(Const.MainScene);
+            ResultTxt.text = Message.Success;
+            Thread.Sleep(500);
+            result.AuthenticationContext = new PlayFabAuthenticationContext(result.SessionTicket, result.EntityToken.EntityToken, result.PlayFabId, result.EntityToken.Entity.Id, result.EntityToken.Entity.Type);
+            s_AuthContext = result.AuthenticationContext; // to save the data between scene
+            SceneManager.LoadScene(Scenes.MainScene);
         }
 
         private void OnError(PlayFabError error)

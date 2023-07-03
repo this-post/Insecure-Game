@@ -15,7 +15,7 @@ namespace Util
         public GetAndroidInstalledPackage()
         {
             // https://forum.unity.com/threads/using-androidjavaclass-to-return-installed-apps.337296/
-            // AndroidJavaClass jc = new AndroidJavaClass(Const.UnityPackageName);
+            // AndroidJavaClass jc = new AndroidJavaClass(AndroidSpecifics.UnityPackageName);
             // AndroidJavaObject currentActivity = jc.GetStatic<AndroidJavaObject>("currentActivity");
             // int flag = new AndroidJavaClass(Const.AndroidPM).GetStatic<int>("GET_META_DATA");
             // AndroidJavaObject pm = currentActivity.Call<AndroidJavaObject>("getPackageManager");
@@ -27,8 +27,8 @@ namespace Util
             //     InstalledPackages.Add(pm.Call<string>("getPackageName", currentObject));
             // }
             // https://gist.github.com/tinrab/2ee62648ba19f1101219
-            var pluginClass = new AndroidJavaClass(Const.AndroidPM);
-            var jc = new AndroidJavaClass(Const.UnityPackageName);
+            var pluginClass = new AndroidJavaClass(AndroidSpecifics.AndroidPM);
+            var jc = new AndroidJavaClass(AndroidSpecifics.UnityPackageName);
             var currentActivity = jc.GetStatic<AndroidJavaObject>("currentActivity");
             var packageManager = currentActivity.Call<AndroidJavaObject>("getPackageManager");
             

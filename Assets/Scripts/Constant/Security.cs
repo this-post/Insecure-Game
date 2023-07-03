@@ -178,4 +178,14 @@ namespace Constant
             4444 // default Needle
         };
     }
+
+    #if UNITY_ANDROID
+    public class AndroidSpecifics
+    {
+        public static readonly String GamePackageName = "com.vulnbuster.insecuregame";
+        public static readonly String UnityPackageName = "com.unity3d.player.UnityPlayer";
+        public static readonly String AndroidPM = "android.content.pm.PackageManager";
+        public static readonly String OSBuild = "android.os.Build";
+    }
+    #endif
 }

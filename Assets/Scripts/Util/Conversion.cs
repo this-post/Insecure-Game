@@ -16,7 +16,7 @@ namespace Util
             return to.ToString();
         }
 
-        public static byte[] StringToByteArray(String from) // Hex String to byte array only, use Encoding.ASCII.GetByte(non Hex string) instead if plain string is needed
+        public static byte[] StringToByteArray(String from) // Hex String to byte array only, use Encoding.ASCII.GetBytes(non Hex string) instead if plain string is needed
         {
             return Enumerable.Range(0, from.Length)
                      .Where(x => x % 2 == 0)

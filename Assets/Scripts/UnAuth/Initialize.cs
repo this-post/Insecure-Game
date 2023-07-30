@@ -17,6 +17,7 @@ namespace UnAuth
         {
             if(isSecureEnv())
             {
+                // TODO: delete only RawImage (on Shop)
                 #if UNITY_EDITOR // to delete the existing keypair, and enforcing KeyExchange
                 PlayerPrefs.DeleteAll();
                 #endif
@@ -39,7 +40,7 @@ namespace UnAuth
                     QuitGame();
                 }
                 // PlayFab.Internal.PlayFabWebRequest.SkipCertificateValidation();
-                PlayFab.Internal.PlayFabWebRequest.CustomCertValidationHook = CertPinning.CertCheck;
+                PlayFab.Internal.PlayFabWebRequest.CustomCertValidationHook = CertPinning.CertCheck; // if PlayFabAPI is directly used (currently, not)
                 SceneManager.LoadScene(Scenes.LoginScene);
             }
             else

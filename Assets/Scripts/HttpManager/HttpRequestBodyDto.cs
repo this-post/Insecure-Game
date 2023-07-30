@@ -20,6 +20,11 @@ namespace HttpManager
         public String Data { get; set; }
     }
 
+    public class ItemDto
+    {
+        public String ItemId { get; set; }
+    }
+
     // unuse, use built-in PlayFab SDK model instead
     public class PlayFabLoginDto
     {

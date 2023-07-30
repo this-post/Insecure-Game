@@ -29,7 +29,7 @@ namespace Security
         private static String Encryption(String plain)
         {
             #if DEBUG
-            Debug.Log(plain);
+            // Debug.Log(plain);
             #endif
             byte[] plainTextByte = Encoding.ASCII.GetBytes(plain);
             byte[] sharedSecret = KeyAgreement.GetSharedSecret();
@@ -38,31 +38,36 @@ namespace Security
             byte[] nonce = new byte[CryptoConstant.NonceSize];
             byte[] aad = new byte[CryptoConstant.AadSize];
             secureRandom.NextBytes(nonce);
-            secureRandom.NextBytes(aad);
+            aad = Encoding.ASCII.GetBytes(KeyAgreement.GetKeyId());
+            // secureRandom.NextBytes(aad);
             GcmBlockCipher cipherSpec = new GcmBlockCipher(new AesEngine());
             AeadParameters cipherParams = new AeadParameters(new KeyParameter(sessionKey), CryptoConstant.AadSize * 8, nonce, aad);
             cipherSpec.Init(true, cipherParams);
             byte[] cipherText = new byte[cipherSpec.GetOutputSize(plainTextByte.Length)];
             int offset = cipherSpec.ProcessBytes(plainTextByte, 0, plainTextByte.Length, cipherText, 0);
             cipherSpec.DoFinal(cipherText, offset);
-            return Conversion.HexToString(nonce.Concat(cipherText).Concat(aad).ToArray());
+            // return Conversion.HexToString(nonce.Concat(cipherText).Concat(aad).ToArray());
+            return Conversion.HexToString(nonce.Concat(cipherText).ToArray());
         }
 
         private static String Decryption(String cipher)
         {
             byte[] sharedSecret = KeyAgreement.GetSharedSecret();
             byte[] nonce = Conversion.StringToByteArray(cipher.Substring(0, CryptoConstant.NonceSize * 2));
-            byte[] aad = Conversion.StringToByteArray(cipher.Substring(cipher.Length - (CryptoConstant.AadSize * 2)));
-            int offsetBetweenNonceAndAad = cipher.Length - (CryptoConstant.NonceSize * 2) - (CryptoConstant.AadSize * 2);
-            byte[] cipherText = Conversion.StringToByteArray(cipher.Substring(CryptoConstant.NonceSize * 2, offsetBetweenNonceAndAad));
+            // byte[] aad = Conversion.StringToByteArray(cipher.Substring(cipher.Length - (CryptoConstant.AadSize * 2)));
+            byte[] aad = Encoding.ASCII.GetBytes(KeyAgreement.GetKeyId());
+            // int offsetBetweenNonceAndAad = cipher.Length - (CryptoConstant.NonceSize * 2) - (CryptoConstant.AadSize * 2);
+            int offsetBetweenNonceAndCipher = cipher.Length - (CryptoConstant.NonceSize * 2);
+            // byte[] cipherText = Conversion.StringToByteArray(cipher.Substring(CryptoConstant.NonceSize * 2, offsetBetweenNonceAndAad));
+            byte[] cipherText = Conversion.StringToByteArray(cipher.Substring(CryptoConstant.NonceSize * 2, offsetBetweenNonceAndCipher));
             byte[] sessionKey = KeyAgreement.GetKdfKey(sharedSecret);
             #if DEBUG
-            Debug.Log("Cipher: " + cipher);
-            Debug.Log("Session key: " + Conversion.HexToString(sessionKey));
-            Debug.Log("Shared secret: " + Conversion.HexToString(sharedSecret));
-            Debug.Log("Aad: " + Conversion.HexToString(aad));
-            Debug.Log("Nonce: " + Conversion.HexToString(nonce));
-            Debug.Log("Cipher: " + Conversion.HexToString(cipherText));
+            // Debug.Log("Cipher: " + cipher);
+            // Debug.Log("Session key: " + Conversion.HexToString(sessionKey));
+            // Debug.Log("Shared secret: " + Conversion.HexToString(sharedSecret));
+            // Debug.Log("AAD: " + Conversion.HexToString(aad));
+            // Debug.Log("Nonce: " + Conversion.HexToString(nonce));
+            // Debug.Log("Cipher: " + Conversion.HexToString(cipherText));
             #endif
             GcmBlockCipher cipherSpec = new GcmBlockCipher(new AesEngine());
             AeadParameters cipherParams = new AeadParameters(new KeyParameter(sessionKey), CryptoConstant.AadSize * 8, nonce, aad);
@@ -98,13 +103,22 @@ namespace Security
                 #endif
             }
             int code = encResDto.Code;
-            String encMessage = encResDto.Message;
-            String decryptedMessage = Decryption(encMessage);
+            String responseMessage = encResDto.Message;
+            String message = "";
+            if(code == 0 || code == 5000)
+            {
+                message = Decryption(responseMessage);
+            }
+            else
+            {
+                message = responseMessage;
+            }
+            // String decryptedMessage = Decryption(encMessage);
             // if(code != 0)
             // {
             //     throw new UnsuccessfulResponseException(code, decryptedMessage);
             // }
-            return Tuple.Create(code, decryptedMessage);
+            return Tuple.Create(code, message);
         }
     }
 
@@ -214,12 +228,12 @@ namespace Security
                 }
                 Array.Copy(sharedSecretByteArray, 0, prependedSharedSecret, 1, sharedSecretByteArray.Length);
                 #if DEBUG
-                Debug.Log("Shared secret (with leadding 0x00, if any): " + Conversion.HexToString(prependedSharedSecret));
+                // Debug.Log("Shared secret (with leadding 0x00, if any): " + Conversion.HexToString(prependedSharedSecret));
                 #endif
                 return prependedSharedSecret;
             }
             #if DEBUG
-            Debug.Log("Shared secret (no leadding 0x00): " + Conversion.HexToString(sharedSecret.ToByteArray()));
+            // Debug.Log("Shared secret (no leadding 0x00): " + Conversion.HexToString(sharedSecret.ToByteArray()));
             #endif
             // return sharedSecret.ToByteArray();
             return sharedSecretByteArray;

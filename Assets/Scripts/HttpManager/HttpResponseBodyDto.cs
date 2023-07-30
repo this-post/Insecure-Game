@@ -9,15 +9,15 @@ namespace HttpManager
         public String Message { get; set; }
     }
 
-    public class FingerprintCertSha512Dto
+    public class FingerprintCertSha256Dto
     {
         public String Url { get; set; }
-        public String Sha512 { get; set; }
+        public String Sha256 { get; set; }
     }
 
-    public class ResultCertSha512Dto
+    public class ResultCertSha256Dto
     {
-        public List<FingerprintCertSha512Dto> Fingerprint { get; set; }
+        public List<FingerprintCertSha256Dto> Fingerprint { get; set; }
     }
 
     public class ErrorResponseDto
@@ -32,6 +32,92 @@ namespace HttpManager
         public String KeyId { get; set; }
         public String Salt { get; set; }
         public String ServerPublicKey { get; set; }
+    }
+
+    public class BalanceDto
+    {
+        public int Balance { get; set; }
+    }
+
+    public class PurchasingResultDto
+    {
+        public bool Success { get; set; }
+        public int UpdatedBalance { get; set; }
+    }
+
+    public enum UserOrigination
+    {
+        Organic,
+        Steam,
+        Google,
+        Amazon,
+        Facebook,
+        Kongregate,
+        GamersFirst,
+        Unknown,
+        IOS,
+        LoadTest,
+        Android,
+        PSN,
+        GameCenter,
+        CustomId,
+        XboxLive,
+        Parse,
+        Twitch,
+        ServerCustomId,
+        NintendoSwitchDeviceId,
+        FacebookInstantGamesId,
+        OpenIdConnect,
+        Apple,
+        NintendoSwitchAccount,
+        GooglePlayGames
+    }
+
+    [Serializable]
+    public class EntityKey
+    {
+        public String Id { get; set; }
+        public String Type { get; set; }
+    }
+
+    public class UserTitleInfo
+    {
+        public String AvatarUrl { get; set; }
+        public DateTime Created { get; set; }
+        public String DisplayName { get; set; }
+        public DateTime? FirstLogin { get; set; }
+        public bool? isBanned { get; set; }
+        public DateTime? LastLogin { get; set; }
+        public UserOrigination? Origination { get; set; }
+        public EntityKey TitlePlayerAccount { get; set; }
+    }
+
+    [Serializable]
+    public class UserPrivateAccountInfo
+    {
+        public String Email { get; set; }
+    }
+
+    [Serializable]
+    public class UserCustomIdInfo
+    {
+        public String CustomId { get; set; }
+    }
+
+    public class UserAccountInfo
+    {
+        public String PlayFabId { get; set; }
+        public DateTime Created { get; set; }
+        public UserTitleInfo TitleInfo { get; set; }
+        public UserPrivateAccountInfo PrivateInfo { get; set; }
+        public UserCustomIdInfo CustomIdInfo { get; set; }
+        public String Username { get; set; }
+    }
+
+    // this availables via PlayFab.AdminModels, but we need to put the ENABLE_PLAYFABADMIN_API flag as a conditional compilation, so, we prevent it by creating by ourselve
+    public class LookupUserAccountInfoResult
+    {
+        public UserAccountInfo UserInfo { get; set; }
     }
 
     // unuse, use built-in PlayFab SDK model instead

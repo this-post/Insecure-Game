@@ -40,9 +40,9 @@ namespace Main
                 {ClientConfigs.SessionTicketHeaderKey, Login.s_AuthContext.ClientSessionTicket}
             };
             #if TEST
-            var (headers, jsonResponseText) = RequestHandler.Post(String.Format("{0}{1}", ClientConfigs.WhiteListDomainNames["Test"], ClientConfigs.AzureURIs["UpdateUserTitleDisplayName"]), xAuthHeader, false, serializedUpdateTitleNameDto);
+            var (headers, jsonResponseText) = RequestHandler.Post(String.Format("{0}{1}", ClientConfigs.WhiteListDomainNames["Test"], ClientConfigs.AzureURIs["UpdateDisplayName"]), xAuthHeader, false, serializedUpdateTitleNameDto);
             #else
-            var (headers, jsonResponseText) = RequestHandler.Post(String.Format("{0}{1}", ClientConfigs.WhiteListDomainNames["Azure"], ClientConfigs.AzureURIs["UpdateUserTitleDisplayName"]), xAuthHeader, false, serializedUpdateTitleNameDto);
+            var (headers, jsonResponseText) = RequestHandler.Post(String.Format("{0}{1}", ClientConfigs.WhiteListDomainNames["Azure"], ClientConfigs.AzureURIs["UpdateDisplayName"]), xAuthHeader, false, serializedUpdateTitleNameDto);
             #endif
             var (retCode, decryptedMessage) = E2eePayload.PreparedResponse(jsonResponseText);
             UpdateUserTitleDisplayNameResult playfabUpdateTitleNameSuccessDto = new UpdateUserTitleDisplayNameResult();

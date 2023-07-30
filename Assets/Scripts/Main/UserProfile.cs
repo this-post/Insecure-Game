@@ -22,11 +22,15 @@ namespace Main
     {
         public TMP_Text DisplayNameTxt;
         public Button StartBtn;
+        public Button BagBtn;
         public Button ShopBtn;
         public Button PreferenceBtn;
 
         void Start()
         {
+            /* when the new user doesn't set his display name yet, it's will be null or empty, 
+            * and GetUserProfile() will be called every time when this script (bound with Main scene) is populated.
+            So, we set the space instead to prevent those*/
             String displayName = PlayerPrefs.GetString("displayName");
             if(String.IsNullOrEmpty(displayName))
             {
@@ -36,15 +40,18 @@ namespace Main
             {
                 DisplayNameTxt.text = displayName;
             }
-            
         }
 
         private void GetUserProfile(PlayFabAuthenticationContext authContext)
         {
-            GetAccountInfoRequest getAccInfoReqDto = new GetAccountInfoRequest(){
-                PlayFabId = authContext.PlayFabId
+            // GetAccountInfoRequest getAccInfoReqDto = new GetAccountInfoRequest(){
+            //     PlayFabId = authContext.PlayFabId
+            // };
+            KeyIdDto keyIdDto = new KeyIdDto(){
+                KeyId = KeyAgreement.GetKeyId()
             };
-            String serializedGetAccInfoDto = JsonConvert.SerializeObject(E2eePayload.PreparedRequest(getAccInfoReqDto));
+            // String serializedGetAccInfoDto = JsonConvert.SerializeObject(E2eePayload.PreparedRequest(getAccInfoReqDto));
+            String serializedGetAccInfoDto = JsonConvert.SerializeObject(keyIdDto);
             Dictionary<String, String> xAuthHeader = new Dictionary<String, String>(){
                 {ClientConfigs.SessionTicketHeaderKey, authContext.ClientSessionTicket}
             };
@@ -54,12 +61,19 @@ namespace Main
             var (headers, jsonResponseText) = RequestHandler.Post(String.Format("{0}{1}", ClientConfigs.WhiteListDomainNames["Azure"], ClientConfigs.AzureURIs["GetAccountInfo"]), xAuthHeader, false, serializedGetAccInfoDto);
             #endif
             var (retCode, decryptedMessage) = E2eePayload.PreparedResponse(jsonResponseText);
-            GetAccountInfoResult playFabGetAccInfoSuccessDto = new GetAccountInfoResult();
-            PlayFabError playFabGetAccInfoErrorDto = new PlayFabError();
+            // GetAccountInfoResult playFabGetAccInfoSuccessDto = new GetAccountInfoResult();
+            LookupUserAccountInfoResult playFabGetAccInfoSuccessDto = new LookupUserAccountInfoResult();
+            ErrorResponseDto getAccInfoErrorDto = new ErrorResponseDto();
             try
             {
-                playFabGetAccInfoErrorDto = JsonConvert.DeserializeObject<PlayFabError>(decryptedMessage);
-                playFabGetAccInfoSuccessDto = JsonConvert.DeserializeObject<GetAccountInfoResult>(decryptedMessage);
+                if(retCode == 0 || retCode == 5000)
+                {
+                    playFabGetAccInfoSuccessDto = JsonConvert.DeserializeObject<LookupUserAccountInfoResult>(decryptedMessage);
+                }
+                else
+                {
+                    getAccInfoErrorDto = JsonConvert.DeserializeObject<ErrorResponseDto>(jsonResponseText);
+                }
             }
             catch(JsonSerializationException ex)
             {
@@ -67,26 +81,35 @@ namespace Main
                 Debug.Log(ex.Message);
                 #endif
             }
-            if(playFabGetAccInfoErrorDto.Error != PlayFabErrorCode.Success)
+            if(getAccInfoErrorDto.Code != 0)
             {
-                OnError(playFabGetAccInfoErrorDto);
+                OnError(getAccInfoErrorDto);
             }
-            if(playFabGetAccInfoSuccessDto.AccountInfo != null)
+            // if(playFabGetAccInfoSuccessDto.AccountInfo != null)
+            if(playFabGetAccInfoSuccessDto.UserInfo != null)
             {
                 OnSuccess(playFabGetAccInfoSuccessDto);
             }
         }
 
-        private void OnSuccess(GetAccountInfoResult result)
+        private void OnSuccess(LookupUserAccountInfoResult result)
         {
-            DisplayNameTxt.text = result.AccountInfo.TitleInfo.DisplayName;
-            PlayerPrefs.SetString("displayName", result.AccountInfo.TitleInfo.DisplayName);
+            // DisplayNameTxt.text = result.AccountInfo.TitleInfo.DisplayName;
+            String displayName = result.UserInfo.TitleInfo.DisplayName;
+            if(String.IsNullOrEmpty(displayName)){
+                DisplayNameTxt.text = " ";
+                PlayerPrefs.SetString("displayName", " ");
+            }
+            else{
+                DisplayNameTxt.text = displayName;
+                PlayerPrefs.SetString("displayName", displayName);
+            }
         }
 
-        private void OnError(PlayFabError error)
+        private void OnError(ErrorResponseDto error)
         {
             #if DEBUG
-            Debug.Log(error.ErrorMessage);
+            Debug.Log(error.Message);
             #endif
         }
 
@@ -98,6 +121,16 @@ namespace Main
         public void GoToShop()
         {
             SceneManager.LoadScene(Scenes.ShopScene);
+        }
+
+        public void GoToBag()
+        {
+            SceneManager.LoadScene(Scenes.BagScene);
+        }
+
+        public void StartGame()
+        {
+            SceneManager.LoadScene(Scenes.AdventureScene);
         }
     }
 }

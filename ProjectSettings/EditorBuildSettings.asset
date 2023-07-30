@@ -23,6 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Shop.unity
     guid: 1991f9035da3843ed9e73ce7e58f64c4
+  - enabled: 1
+    path: Assets/Scenes/Bag.unity
+    guid: dbb99a06730484a1797f80cc2b33bc5e
+  - enabled: 1
+    path: Assets/Scenes/Adventure.unity
+    guid: 5fef7f2b5ee2c4f039d25c8f46aee696
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 21e34c31fbe274dd3988d65d1cda3f7b, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: a78fa236a14864708ab61d692ac1b5aa, type: 2}

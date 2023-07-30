@@ -58,7 +58,7 @@ namespace UnAuth {
                 Debug.Log(ex.Message);
                 #endif
             }
-            Debug.Log(playFabLoginErrorDto.Error);
+            // Debug.Log(playFabLoginErrorDto.Error);
             if(playFabLoginErrorDto.Error != PlayFabErrorCode.Success)
             {
             //     #if DEBUG

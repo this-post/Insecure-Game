@@ -136,14 +136,14 @@ namespace Security
             pemWriter1.WriteObject(clientPubKey);
             pemWriter1.Writer.Flush();
             String clientPubKeyPem = sw1.ToString();
-            PlayerPrefs.SetString("pubKey", clientPubKeyPem);
+            PlayerPrefs.SetString(_PlayerPrefs.ClientPublicKey, clientPubKeyPem);
             pemWriter1.Writer.Close();
             StringWriter sw2 = new StringWriter();
             PemWriter pemWriter2 = new PemWriter(sw2);
             pemWriter2.WriteObject(clientPrivKey);
             pemWriter2.Writer.Flush();
             String clientPrivKeyPem = sw2.ToString();
-            PlayerPrefs.SetString("privKey", clientPrivKeyPem);
+            PlayerPrefs.SetString(_PlayerPrefs.ClientPrivateKey, clientPrivKeyPem);
             pemWriter2.Writer.Close();
         }
 
@@ -176,32 +176,32 @@ namespace Security
             String keyId = kexDto.KeyId;
             String salt = kexDto.Salt;
             String serverPublicKey = kexDto.ServerPublicKey;
-            PlayerPrefs.SetString("keyId", keyId);
-            PlayerPrefs.SetString("salt", salt);
-            PlayerPrefs.SetString("servPubKey", serverPublicKey);
+            PlayerPrefs.SetString(_PlayerPrefs.KeyId, keyId);
+            PlayerPrefs.SetString(_PlayerPrefs.Salt, salt);
+            PlayerPrefs.SetString(_PlayerPrefs.ServerPublicKey, serverPublicKey);
         }
 
         public static String GetKeyId()
         {
-            String keyId = PlayerPrefs.GetString("keyId");
+            String keyId = PlayerPrefs.GetString(_PlayerPrefs.KeyId);
             if(String.IsNullOrEmpty(keyId))
             {
-                throw new PlayerPrefsItemNotFoundException("keyId");
+                throw new PlayerPrefsItemNotFoundException(_PlayerPrefs.KeyId);
             }
             return keyId;
         }
 
         internal static byte[] GetSharedSecret()
         {
-            String clientPrivateKeyPem = PlayerPrefs.GetString("privKey");
-            String serverPublicKeyDer = PlayerPrefs.GetString("servPubKey");
+            String clientPrivateKeyPem = PlayerPrefs.GetString(_PlayerPrefs.ClientPrivateKey);
+            String serverPublicKeyDer = PlayerPrefs.GetString(_PlayerPrefs.ServerPublicKey);
             if(String.IsNullOrEmpty(clientPrivateKeyPem))
             {
-                throw new PlayerPrefsItemNotFoundException("privKey");
+                throw new PlayerPrefsItemNotFoundException(_PlayerPrefs.ClientPrivateKey);
             }
             if(String.IsNullOrEmpty(serverPublicKeyDer))
             {
-                throw new PlayerPrefsItemNotFoundException("servPubKey");
+                throw new PlayerPrefsItemNotFoundException(_PlayerPrefs.ServerPublicKey);
             }
             byte[] serverPublicKeyDerByte = Conversion.StringToByteArray(serverPublicKeyDer);
             PemReader pemReader = new PemReader(new StringReader(clientPrivateKeyPem));
@@ -241,10 +241,10 @@ namespace Security
 
         internal static byte[] GetKdfKey(byte[] sharedSecret)
         {
-            String salt = PlayerPrefs.GetString("salt");
+            String salt = PlayerPrefs.GetString(_PlayerPrefs.Salt);
             if(String.IsNullOrEmpty(salt))
             {
-                throw new PlayerPrefsItemNotFoundException("salt");
+                throw new PlayerPrefsItemNotFoundException(_PlayerPrefs.Salt);
             }
             var pdb = new Pkcs5S2ParametersGenerator(new Sha256Digest());
             pdb.Init(sharedSecret, Conversion.StringToByteArray(salt), CryptoConstant.Iterations);
@@ -254,10 +254,10 @@ namespace Security
 
         private static String GetPublicKey()
         {
-            String publicKeyPem = PlayerPrefs.GetString("pubKey");
+            String publicKeyPem = PlayerPrefs.GetString(_PlayerPrefs.ClientPublicKey);
             if(String.IsNullOrEmpty(publicKeyPem))
             {
-                throw new PlayerPrefsItemNotFoundException("pubKey");
+                throw new PlayerPrefsItemNotFoundException(_PlayerPrefs.ClientPublicKey);
             }
             String EcPublicKeyDerHexStr = EcPemtoDer(publicKeyPem, KeyType.Public);
             return EcPublicKeyDerHexStr;
@@ -265,10 +265,10 @@ namespace Security
 
         private static String GetPrivateKey()
         {
-            String privateKeyPem = PlayerPrefs.GetString("privKey");
+            String privateKeyPem = PlayerPrefs.GetString(_PlayerPrefs.ClientPrivateKey);
             if(String.IsNullOrEmpty(privateKeyPem))
             {
-                throw new PlayerPrefsItemNotFoundException("privKey");
+                throw new PlayerPrefsItemNotFoundException(_PlayerPrefs.ClientPrivateKey);
             }
             String EcPrivateKeyDerHexStr = EcPemtoDer(privateKeyPem, KeyType.Private);
             return EcPrivateKeyDerHexStr;
@@ -276,8 +276,8 @@ namespace Security
 
         public static bool IsKeyPairExists()
         {
-            String privateKey = PlayerPrefs.GetString("privKey");
-            String publicKey = PlayerPrefs.GetString("pubKey");
+            String privateKey = PlayerPrefs.GetString(_PlayerPrefs.ClientPrivateKey);
+            String publicKey = PlayerPrefs.GetString(_PlayerPrefs.ClientPublicKey);
             if(String.IsNullOrEmpty(privateKey) || String.IsNullOrEmpty(publicKey))
             {
                 return false;

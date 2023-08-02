@@ -70,8 +70,8 @@ namespace Main
 
         private void OnSuccess(UpdateUserTitleDisplayNameResult result)
         {
-            ResultTxt.text = "Success";
-            PlayerPrefs.SetString("displayName", result.DisplayName);
+            ResultTxt.text = Message.Success;
+            PlayerPrefs.SetString(_PlayerPrefs.DisplayName, result.DisplayName);
         }
 
         private void OnError(PlayFabError error)

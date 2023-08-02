@@ -17,15 +17,14 @@ namespace UnAuth
         {
             if(isSecureEnv())
             {
-                // TODO: delete only RawImage (on Shop)
-                #if UNITY_EDITOR // to delete the existing keypair, and enforcing KeyExchange
-                PlayerPrefs.DeleteAll();
-                #endif
+                // #if UNITY_EDITOR // to delete the existing keypair, and enforcing KeyExchange
+                // PlayerPrefs.DeleteAll();
+                // #endif
                 if(!KeyAgreement.IsKeyPairExists())
                 {
                     KeyAgreement.CreateKeyPair();
-                    // Debug.Log(PlayerPrefs.GetString("pubKey"));
-                    // Debug.Log(PlayerPrefs.GetString("privKey"));
+                    // Debug.Log(PlayerPrefs.GetString(_PlayerPrefs.ClientPublicKey));
+                    // Debug.Log(PlayerPrefs.GetString(_PlayerPrefs.ClientPrivateKey));
                     KeyAgreement.KeyExchange();
                 }
                 try

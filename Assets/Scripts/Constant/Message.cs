@@ -18,5 +18,6 @@ namespace Constant
     public class Message
     {
         public static readonly String Success = "Success";
+        public static readonly String Loading = "Loading...";
     }
 }

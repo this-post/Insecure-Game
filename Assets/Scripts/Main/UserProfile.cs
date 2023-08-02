@@ -30,8 +30,8 @@ namespace Main
         {
             /* when the new user doesn't set his display name yet, it's will be null or empty, 
             * and GetUserProfile() will be called every time when this script (bound with Main scene) is populated.
-            So, we set the space instead to prevent those*/
-            String displayName = PlayerPrefs.GetString("displayName");
+            * So, we set the space instead to prevent those*/
+            String displayName = PlayerPrefs.GetString(_PlayerPrefs.DisplayName);
             if(String.IsNullOrEmpty(displayName))
             {
                 GetUserProfile(Login.s_AuthContext);
@@ -98,11 +98,11 @@ namespace Main
             String displayName = result.UserInfo.TitleInfo.DisplayName;
             if(String.IsNullOrEmpty(displayName)){
                 DisplayNameTxt.text = " ";
-                PlayerPrefs.SetString("displayName", " ");
+                PlayerPrefs.SetString(_PlayerPrefs.DisplayName, " ");
             }
             else{
                 DisplayNameTxt.text = displayName;
-                PlayerPrefs.SetString("displayName", displayName);
+                PlayerPrefs.SetString(_PlayerPrefs.DisplayName, displayName);
             }
         }
 

@@ -40,7 +40,7 @@ namespace Main
         void Start()
         {
             // this will be newly set everytime when buy/sell is performed
-            int coin = PlayerPrefs.GetInt("coin", -1);
+            int coin = PlayerPrefs.GetInt(_PlayerPrefs.Coin, -1);
             if(coin == -1)
             {
                 GetUserBalance(Login.s_AuthContext);
@@ -122,7 +122,7 @@ namespace Main
         {
             int coin = result.Balance;
             DisplayVBCoinTxt.text = coin.ToString();
-            PlayerPrefs.SetInt("coin", coin);
+            PlayerPrefs.SetInt(_PlayerPrefs.Coin, coin);
         }
 
         private void OnGetBalanceError(ErrorResponseDto error)
@@ -335,9 +335,9 @@ namespace Main
                 ResultText.text = Message.Success;
                 int updated_coin = purchasingSuccessDto.UpdatedBalance;
                 DisplayVBCoinTxt.text = updated_coin.ToString();
-                PlayerPrefs.SetInt("coin", updated_coin);
+                PlayerPrefs.SetInt(_PlayerPrefs.Coin, updated_coin);
                 // Reset Inventory in the local storage to enforce downloading the updated inventory
-                PlayerPrefs.SetString("Inventory", "");
+                PlayerPrefs.SetString(_PlayerPrefs.Inventory, "");
             }
         }
 

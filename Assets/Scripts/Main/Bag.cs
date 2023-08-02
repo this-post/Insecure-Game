@@ -36,7 +36,7 @@ namespace Main
             SellMaskDudeBtn.interactable = false;
             SellPinkManBtn.interactable = false;
             SellVirtualGuyBtn.interactable = false;
-            String inventoryCache = PlayerPrefs.GetString("Inventory");
+            String inventoryCache = PlayerPrefs.GetString(_PlayerPrefs.Inventory);
             if(String.IsNullOrEmpty(inventoryCache))
             {
                 GetUserInventory(Login.s_AuthContext);
@@ -193,7 +193,7 @@ namespace Main
 
         public void Sell(String selectedCharacter)
         {
-            InventoryDto inventoryDto = JsonConvert.DeserializeObject<InventoryDto>(PlayerPrefs.GetString("Inventory"));
+            InventoryDto inventoryDto = JsonConvert.DeserializeObject<InventoryDto>(PlayerPrefs.GetString(_PlayerPrefs.Inventory));
             List<ItemInfoDto> itemInfo = inventoryDto.ItemInfo;
             switch (selectedCharacter)
             {
@@ -253,7 +253,7 @@ namespace Main
                 ResultText.text = Message.Success;
                 int updated_coin = sellingSuccessDto.UpdatedBalance;
                 // DisplayVBCoinTxt.text = updated_coin.ToString();
-                PlayerPrefs.SetInt("coin", updated_coin);
+                PlayerPrefs.SetInt(_PlayerPrefs.Coin, updated_coin);
                 // Update Inventory in the local storage
                 List<ItemInfoDto> itemInfo = inventoryDto.ItemInfo;
                 String itemName = itemInfo.Find(items => items.ItemId == itemId).DisplayName;
@@ -261,7 +261,7 @@ namespace Main
                 SetRawImage(Convert.FromBase64String(Images.Base64EncodedNotOwnedImage), itemName);
                 itemInfo.Remove(itemInfo.Find(items => items.ItemId == itemId));
                 String serializedInventory = JsonConvert.SerializeObject(inventoryDto);
-                PlayerPrefs.SetString("Inventory", serializedInventory);
+                PlayerPrefs.SetString(_PlayerPrefs.Inventory, serializedInventory);
             }
         }
 
@@ -279,7 +279,7 @@ namespace Main
     internal class InventoryDto
     {
         [JsonProperty]
-        internal String InventoryKeyName = "Inventory";
+        internal String InventoryKeyName = _PlayerPrefs.Inventory;
         [JsonProperty]
         internal List<ItemInfoDto> ItemInfo { get; set; }
     }

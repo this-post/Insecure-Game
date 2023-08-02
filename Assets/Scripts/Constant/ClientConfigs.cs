@@ -45,6 +45,18 @@ namespace Constant
         };
     }
 
+    public class _PlayerPrefs
+    {
+        public static readonly String Inventory = "Inventory";
+        public static readonly String Coin = "Coin";
+        public static readonly String DisplayName = "DisplayName";
+        public static readonly String ClientPublicKey = "PublicKey";
+        public static readonly String ClientPrivateKey = "PrivateKey";
+        public static readonly String KeyId = "KeyId";
+        public static readonly String Salt = "Salt";
+        public static readonly String ServerPublicKey = "ServerPublicKey";
+    }
+
     public class Scenes
     {
         public static readonly String LoadingScene = "Loading";

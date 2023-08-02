@@ -121,7 +121,7 @@ namespace HttpManager
             {
                 // We need 5xx response message here
                 responseText = new StreamReader(ex.Response.GetResponseStream()).ReadToEnd();
-                Debug.Log(responseText);
+                // Debug.Log(responseText);
                 responseHeaders = ex.Response.Headers;
                 ex.Response.Close();
                 return Tuple.Create(responseHeaders, responseText);

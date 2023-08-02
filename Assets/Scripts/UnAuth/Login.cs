@@ -81,6 +81,7 @@ namespace UnAuth {
         {
             ResultTxt.text = Message.Success;
             Thread.Sleep(500);
+            ResetNonPersistencePlayerPrefs();
             result.AuthenticationContext = new PlayFabAuthenticationContext(result.SessionTicket, result.EntityToken.EntityToken, result.PlayFabId, result.EntityToken.Entity.Id, result.EntityToken.Entity.Type);
             s_AuthContext = result.AuthenticationContext; // to save the data between scene
             SceneManager.LoadScene(Scenes.MainScene);
@@ -90,6 +91,16 @@ namespace UnAuth {
         {
             ResultTxt.text = error.ErrorMessage;
             LoginBtn.interactable = true;
+        }
+
+        private void ResetNonPersistencePlayerPrefs()
+        {
+            PlayerPrefs.DeleteKey(_PlayerPrefs.Inventory);
+            PlayerPrefs.DeleteKey(_PlayerPrefs.Coin);
+            PlayerPrefs.DeleteKey(_PlayerPrefs.DisplayName);
+            PlayerPrefs.DeleteKey(MainCharacters.MaskDude);
+            PlayerPrefs.DeleteKey(MainCharacters.PinkMan);
+            PlayerPrefs.DeleteKey(MainCharacters.VirtualGuy);
         }
     }
 }

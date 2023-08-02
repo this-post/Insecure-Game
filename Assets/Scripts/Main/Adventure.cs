@@ -24,7 +24,7 @@ namespace Main
 
         void Start()
         {
-            String inventoryCache = PlayerPrefs.GetString("Inventory");
+            String inventoryCache = PlayerPrefs.GetString(_PlayerPrefs.Inventory);
             if(String.IsNullOrEmpty(inventoryCache))
             {
                 GetUserInventory(Login.s_AuthContext);
